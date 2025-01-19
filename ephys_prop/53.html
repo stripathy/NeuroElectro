@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head><script type="text/javascript" src="https://web.archive.org/_static/js/bundle-playback.js?v=HxkREWBo" charset="utf-8"></script>
+<script type="text/javascript" src="https://web.archive.org/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
+<script type="text/javascript" src="https://web.archive.org/_static/js/ruffle/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://neuroelectro.org/ephys_prop/53/","20240713165439","https://web.archive.org/","web","/_static/",
+	      "1720889679");
+</script>
+<link rel="stylesheet" type="text/css" href="https://web.archive.org/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="https://web.archive.org/_static/css/iconochive.css?v=3PDvdIFv" />
+<!-- End Wayback Rewrite JS Include -->
+
+    <title>NeuroElectro :: adaptation ratio (other)</title>
+	
+    <link rel="shortcut icon" href="https://web.archive.org/web/20240713165439im_/https://neuroelectro.org/static/src/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://web.archive.org/web/20240713165439cs_/https://neuroelectro.org/static/bootstrap_old/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://web.archive.org/web/20240713165439cs_/https://neuroelectro.org/static/src/local.css"/>
+    
+    
+<script type="text/javascript" charset="utf-8" src="https://web.archive.org/web/20240713165439js_/https://neuroelectro.org/static/src/DataTables/media/js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://web.archive.org/web/20240713165439js_/https://neuroelectro.org/static/src/DataTables/media/js/jquery.dataTables.js"></script>
+<style type="text/css" title="currentStyle">
+    @import "https://web.archive.org/web/20240713165439cs_/https://neuroelectro.org/static/src/DataTables/media/css/demo_table.css";
+</style>
+<!--<script language="javascript" type="text/javascript" src="/static/src/jquery.min.js"></script>-->
+<script language="javascript" type="text/javascript" src="https://web.archive.org/web/20240713165439js_/https://neuroelectro.org/static/src/jquery.jqplot.min.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20240713165439js_/https://neuroelectro.org/static/src/plugins/jqplot.canvasTextRenderer.min.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20240713165439js_/https://neuroelectro.org/static/src/plugins/jqplot.canvasAxisTickRenderer.min.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20240713165439js_/https://neuroelectro.org/static/src/plugins/jqplot.categoryAxisRenderer.min.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20240713165439js_/https://neuroelectro.org/static/src/plugins/jqplot.logAxisRenderer.min.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20240713165439js_/https://neuroelectro.org/static/src/plugins/jqplot.highlighter.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20240713165439js_/https://neuroelectro.org/static/src/plugins/jqplot.canvasAxisLabelRenderer.min.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20240713165439js_/https://neuroelectro.org/static/src/plugins/jqplot.cursor.min.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20240713165439js_/https://neuroelectro.org/static/src/plugins/jqplot.pointLabels.min.js"></script>
+<!--<script type="text/javascript" src="/static/src/plugins/jqplot.eventListenerHooks.min.js"></script>-->
+<link rel="stylesheet" type="text/css" href="https://web.archive.org/web/20240713165439cs_/https://neuroelectro.org/static/src/jquery.jqplot.min.css"/>
+<script type="text/javascript" src="https://web.archive.org/web/20240713165439js_/https://neuroelectro.org/static/src/plugins/jqplot.ohlcRenderer.min.js"></script>
+  <!-- Add jQuery library -->
+  <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>-->
+  
+  <!-- Add mousewheel plugin (this is optional) -->
+  <script type="text/javascript" src="https://web.archive.org/web/20240713165439js_/https://neuroelectro.org/static/src/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+  
+  <!-- Add fancyBox -->
+  <link rel="stylesheet" href="https://web.archive.org/web/20240713165439cs_/https://neuroelectro.org/static/src/fancybox/source/jquery.fancybox.css?v=2.1.3" type="text/css" media="screen"/>
+  <script type="text/javascript" src="https://web.archive.org/web/20240713165439js_/https://neuroelectro.org/static/src/fancybox/source/jquery.fancybox.pack.js?v=2.1.3"></script>
+  
+  <!-- Optionally add helpers - button, thumbnail and/or media -->
+  <link rel="stylesheet" href="https://web.archive.org/web/20240713165439cs_/https://neuroelectro.org/static/src/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen"/>
+  <script type="text/javascript" src="https://web.archive.org/web/20240713165439js_/https://neuroelectro.org/static/src/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+  <script type="text/javascript" src="https://web.archive.org/web/20240713165439js_/https://neuroelectro.org/static/src/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+  
+  <link rel="stylesheet" href="https://web.archive.org/web/20240713165439cs_/https://neuroelectro.org/static/src/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen"/>
+  <script type="text/javascript" src="https://web.archive.org/web/20240713165439js_/https://neuroelectro.org/static/src/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<style type="text/css">
+.jqplot-axis {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90%; 
+}
+.jqplot-highlighter-tooltip {
+    background-color: #B4EEB4;
+    filter:alpha(opacity=90);
+    opacity:0.9;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p {
+  margin-left:25px;
+}
+table#norm_criteria_button {
+  margin-left:25px;
+  margin-right:25px;
+}
+#chart1{
+  margin-left:5px;
+  margin-right:5px;
+  margin-bottom:25px;
+}
+
+
+</style>
+
+	
+	
+     
+ 	<style>
+ 		#maintanence_message{
+ 			color: red;
+ 		    text-align: center;
+ 		}
+        .funding_logo {
+            display:inline-block;
+            text-align: center;
+        }
+        #supported_by{
+            text-align: center;
+            position: relative;
+            left: 35px;
+        }
+ 	</style>
+	
+    
+    <!--stuff for google tracking-->
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-35182339-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+	
+    </script>
+</head>
+
+
+<script>
+$(document).ready(function(){
+  var ticks = ['Hippocampus CA1 pyramidal cell', 'Hippocampus CA3 lacunosum moleculare neuron', 'Hippocampus CA3 stratum radiatum giant cell', 'Neocortex basket cell', 'Neocortex interneuron deep', 'Neocortex pyramidal cell layer 2-3', 'Neocortex pyramidal cell layer 5-6', 'Neocortex uncharacterized cell', 'Other', 'Subiculum pyramidal cell', 'Trochlear nucleus motoneurons'];
+  var customRenderer; 
+  if (0 == 1){
+    customRenderer = $.jqplot.LogAxisRenderer;
+  }
+  else{
+    customRenderer = $.jqplot.canvasAxisTickRenderer;
+  }
+  var plot1b = $.jqplot('chart1', [[[1.0081110863594174, 95.4, 'Hippocampus CA1 pyramidal cell', 'Dietary ?-3 polyunsaturated fatty acids improves learning performance</br>of diabetic rats by regulating the neuron excitability.', 'Yang RH; Wang F; Hou XH; Cao ZP; Wang B; Xu XN; Hu SJ', 'Neuroscience', '2012', '21096'], [1.9832626781674871, 3.05, 'Hippocampus CA3 lacunosum moleculare neuron (Hippocampus CA3b</br>lacunosum moleculare interneuron)', 'Quantitative morphometry of electrophysiologically identified CA3b</br>interneurons reveals robust local geometry and distinct cell classes.', 'Ascoli GA; Brown KM; Calixto E; Card JP; Galv\xe1n EJ; Perez-Rosello T;</br>Barrionuevo G', 'J. Comp. Neurol.', '2009', '46115'], [2.9937232688701454, 3.24, 'Hippocampus CA3 stratum radiatum giant cell (Hippocampus CA3b strata</br>radiatum interneuron)', 'Quantitative morphometry of electrophysiologically identified CA3b</br>interneurons reveals robust local geometry and distinct cell classes.', 'Ascoli GA; Brown KM; Calixto E; Card JP; Galv\xe1n EJ; Perez-Rosello T;</br>Barrionuevo G', 'J. Comp. Neurol.', '2009', '46115'], [3.9893735484460735, 1.0, 'Neocortex basket cell (Primary visual cortex layer 2/3 parvalbumin</br>expressing GABAergic interneuron)', 'Distinct balance of excitation and inhibition in an interareal</br>feedforward and feedback circuit of mouse visual cortex.', 'Yang W; Carrasquillo Y; Hooks BM; Nerbonne JM; Burkhalter A', 'J. Neurosci.', '2013', '46358'], [3.9957382168158557, 1.0, 'Neocortex basket cell (higher lateromedial extrastriate area layer 2/3</br>parvalbumin expressing GABAergic interneuron)', 'Distinct balance of excitation and inhibition in an interareal</br>feedforward and feedback circuit of mouse visual cortex.', 'Yang W; Carrasquillo Y; Hooks BM; Nerbonne JM; Burkhalter A', 'J. Neurosci.', '2013', '46358'], [3.998511327274078, 0.85, 'Neocortex basket cell', 'Parvalbumin-positive basket interneurons in monkey and rat prefrontal</br>cortex.', 'Povysheva NV; Zaitsev AV; Rotaru DC; Gonzalez-Burgos G; Lewis DA;</br>Krimer LS', 'J. Neurophysiol.', '2008', '280'], [3.988423634136961, 0.9, 'Neocortex basket cell', 'Parvalbumin-positive basket interneurons in monkey and rat prefrontal</br>cortex.', 'Povysheva NV; Zaitsev AV; Rotaru DC; Gonzalez-Burgos G; Lewis DA;</br>Krimer LS', 'J. Neurophysiol.', '2008', '280'], [5.011718026580974, 13.08, 'Neocortex interneuron deep (Medial prefrontal cortex layer V fast-</br>spiking interneurons)', 'Repeated cocaine exposure increases fast-spiking interneuron</br>excitability in the rat medial prefrontal cortex.', 'Campanac E; Hoffman DA', 'J. Neurophysiol.', '2013', '49025'], [6.008486984697381, 2.0, 'Neocortex pyramidal cell layer 2-3 (Primary visual cortex layer 2/3</br>pyramidal cell projecting to higher lateromedial extrastriate area)', 'Distinct balance of excitation and inhibition in an interareal</br>feedforward and feedback circuit of mouse visual cortex.', 'Yang W; Carrasquillo Y; Hooks BM; Nerbonne JM; Burkhalter A', 'J. Neurosci.', '2013', '46358'], [5.994940991650646, 58.0, 'Neocortex pyramidal cell layer 2-3 (Dorsolateral prefrontal cortex</br>layer 2/3 regular spiking high input resistance supragranular</br>pyramidal cells)', 'Electrophysiological classes of layer 2/3 pyramidal cells in monkey</br>prefrontal cortex.', 'Zaitsev AV; Povysheva NV; Gonzalez-Burgos G; Lewis DA', 'J. Neurophysiol.', '2012', '49564'], [6.019299924805633, 50.0, 'Neocortex pyramidal cell layer 2-3 (Dorsolateral prefrontal cortex</br>layer 2/3 regular spiking low input resistance supragranular pyramidal</br>cells)', 'Electrophysiological classes of layer 2/3 pyramidal cells in monkey</br>prefrontal cortex.', 'Zaitsev AV; Povysheva NV; Gonzalez-Burgos G; Lewis DA', 'J. Neurophysiol.', '2012', '49564'], [5.989378734348894, 2.0, 'Neocortex pyramidal cell layer 2-3 (higher lateromedial extrastriate</br>area layer 2/3 pyramidal cell projecting to primary visual cortex)', 'Distinct balance of excitation and inhibition in an interareal</br>feedforward and feedback circuit of mouse visual cortex.', 'Yang W; Carrasquillo Y; Hooks BM; Nerbonne JM; Burkhalter A', 'J. Neurosci.', '2013', '46358'], [6.0039930790851725, 76.0, 'Neocortex pyramidal cell layer 2-3 (Dorsolateral prefrontal cortex</br>layer 2/3  intermediate spiking supragranular pyramidal cells)', 'Electrophysiological classes of layer 2/3 pyramidal cells in monkey</br>prefrontal cortex.', 'Zaitsev AV; Povysheva NV; Gonzalez-Burgos G; Lewis DA', 'J. Neurophysiol.', '2012', '49564'], [5.98334953037292, 24.0, 'Neocortex pyramidal cell layer 2-3 (Somatosensory cortex layer 2/3</br>pyramidal neurons)', 'Electrophysiological properties of genetically identified subtypes of</br>layer 5 neocortical pyramidal neurons: Ca\xb2? dependence and</br>differential modulation by norepinephrine.', 'Guan D; Armstrong WE; Foehring RC', 'J. Neurophysiol.', '2015', '49056'], [6.003454135572392, 86.0, 'Neocortex pyramidal cell layer 2-3 (Dorsolateral prefrontal cortex</br>layer 2/3 low threshold spiking supragranular pyramidal cells)', 'Electrophysiological classes of layer 2/3 pyramidal cells in monkey</br>prefrontal cortex.', 'Zaitsev AV; Povysheva NV; Gonzalez-Burgos G; Lewis DA', 'J. Neurophysiol.', '2012', '49564'], [7.004164061239703, 0.026, 'Neocortex pyramidal cell layer 5-6 (Visual cortex layer 5</br>Tlx3-expressing corticocortical regular spiking slender-tufted</br>pyramidal neuron)', 'Three Types of Cortical Layer 5 Neurons That Differ in Brain-wide</br>Connectivity and Function.', 'Kim EJ; Juavinett AL; Kyubwa EM; Jacobs MW; Callaway EM', 'Neuron', '2015', '48877'], [7.011544485212636, 0.036, 'Neocortex pyramidal cell layer 5-6 (visual cortex layer 5</br>Glt25d2-expressing corticopontine intrinsically bursting thick-tufted</br>pyramidal neuron)', 'Three Types of Cortical Layer 5 Neurons That Differ in Brain-wide</br>Connectivity and Function.', 'Kim EJ; Juavinett AL; Kyubwa EM; Jacobs MW; Callaway EM', 'Neuron', '2015', '48877'], [6.998269112759236, 39.0, 'Neocortex pyramidal cell layer 5-6 (somatosensory cortex layer 5a</br>corticostriatal Etv1-expressing slender-tufted pyramidal neurons)', 'Electrophysiological properties of genetically identified subtypes of</br>layer 5 neocortical pyramidal neurons: Ca\xb2? dependence and</br>differential modulation by norepinephrine.', 'Guan D; Armstrong WE; Foehring RC', 'J. Neurophysiol.', '2015', '49056'], [7.016126484704925, 0.03, 'Neocortex pyramidal cell layer 5-6 (visual cortex layer 5 Efr3a-</br>expressing corticocortical cortico-nonstriatal projecting regular</br>spiking slender-tufted pyramidal neuron)', 'Three Types of Cortical Layer 5 Neurons That Differ in Brain-wide</br>Connectivity and Function.', 'Kim EJ; Juavinett AL; Kyubwa EM; Jacobs MW; Callaway EM', 'Neuron', '2015', '48877'], [6.998379899698343, 1.1, 'Neocortex pyramidal cell layer 5-6 (Somatosensory cortex layer 5b</br>Glt25d2-expressing thick-tufted pyramidal neurons )', 'Electrophysiological properties of genetically identified subtypes of</br>layer 5 neocortical pyramidal neurons: Ca\xb2? dependence and</br>differential modulation by norepinephrine.', 'Guan D; Armstrong WE; Foehring RC', 'J. Neurophysiol.', '2015', '49056'], [7.031280697721929, 4.33, 'Neocortex pyramidal cell layer 5-6 (Primary motor cortex layer 5</br>corticothalamic thick tufted pyramidal neuron)', 'Diversity of layer 5 projection neurons in the mouse motor cortex.', 'Oswald MJ; Tantirigama ML; Sonntag I; Hughes SM; Empson RM', 'Front Cell Neurosci', '2013', '27536'], [6.998535689956374, 3.0, 'Neocortex pyramidal cell layer 5-6 (Visual cortex layer 5b</br>corticopontine Glt25d2-expressing thick-tufted pyramidal cell)', 'Cell-type specific properties of pyramidal neurons in neocortex</br>underlying a layout that is modifiable depending on the cortical area.', 'Groh A; Meyer HS; Schmidt EF; Heintz N; Sakmann B; Krieger P', 'Cereb. Cortex', '2010', '48878'], [7.0035536965309575, 3.56, 'Neocortex pyramidal cell layer 5-6 (Primary motor cortex layer 5</br>corticospinal thick tufted pyramidal neuron)', 'Diversity of layer 5 projection neurons in the mouse motor cortex.', 'Oswald MJ; Tantirigama ML; Sonntag I; Hughes SM; Empson RM', 'Front Cell Neurosci', '2013', '27536'], [7.004078027139475, 17.0, 'Neocortex pyramidal cell layer 5-6 (Visual cortex layer 5a</br>corticostriatal Etv1-expressing slender-tufted pyramidal cell)', 'Cell-type specific properties of pyramidal neurons in neocortex</br>underlying a layout that is modifiable depending on the cortical area.', 'Groh A; Meyer HS; Schmidt EF; Heintz N; Sakmann B; Krieger P', 'Cereb. Cortex', '2010', '48878'], [6.983973720707161, 2.53, 'Neocortex pyramidal cell layer 5-6 (Primary motor cortex layer 5</br>corticocortical pyramidal neuron)', 'Diversity of layer 5 projection neurons in the mouse motor cortex.', 'Oswald MJ; Tantirigama ML; Sonntag I; Hughes SM; Empson RM', 'Front Cell Neurosci', '2013', '27536'], [7.004498662411888, 1.0, 'Neocortex pyramidal cell layer 5-6 (Barrel cortex layer 5b</br>corticopontine Glt25d2-expressing thick-tufted pyramidal cell)', 'Cell-type specific properties of pyramidal neurons in neocortex</br>underlying a layout that is modifiable depending on the cortical area.', 'Groh A; Meyer HS; Schmidt EF; Heintz N; Sakmann B; Krieger P', 'Cereb. Cortex', '2010', '48878'], [7.008685873097703, 2.45, 'Neocortex pyramidal cell layer 5-6 (Primary motor cortex layer 5</br>corticostriatal pyramidal neuron)', 'Diversity of layer 5 projection neurons in the mouse motor cortex.', 'Oswald MJ; Tantirigama ML; Sonntag I; Hughes SM; Empson RM', 'Front Cell Neurosci', '2013', '27536'], [7.007203000519258, 24.0, 'Neocortex pyramidal cell layer 5-6 (Barrel cortex layer 5a</br>corticostriatal Etv1-expressing slender-tufted pyramidal cell)', 'Cell-type specific properties of pyramidal neurons in neocortex</br>underlying a layout that is modifiable depending on the cortical area.', 'Groh A; Meyer HS; Schmidt EF; Heintz N; Sakmann B; Krieger P', 'Cereb. Cortex', '2010', '48878'], [7.989406749461687, 0.47, 'Neocortex uncharacterized cell (prefrontal cortex neurogliaform</br>Inhibitory Neuron)', 'Electrophysiological differences between neurogliaform cells from</br>monkey and rat prefrontal cortex.', 'Povysheva NV; Zaitsev AV; Kr\xf6ner S; Krimer OA; Rotaru DC; Gonzalez-</br>Burgos G; Lewis DA; Krimer LS', 'J. Neurophysiol.', '2007', '407'], [7.975813504429145, 0.69, 'Neocortex uncharacterized cell (prefrontal cortex neurogliaform</br>Inhibitory Neuron)', 'Electrophysiological differences between neurogliaform cells from</br>monkey and rat prefrontal cortex.', 'Povysheva NV; Zaitsev AV; Kr\xf6ner S; Krimer OA; Rotaru DC; Gonzalez-</br>Burgos G; Lewis DA; Krimer LS', 'J. Neurophysiol.', '2007', '407'], [9.002432945261612, 1.0, 'Other (Medial Amygdala PosteroVentral GABAergic smooth short dendrite</br>Neurons)', 'Functional properties and projections of neurons in the medial</br>amygdala.', 'Keshavarzi S; Sullivan RK; Ianno DJ; Sah P', 'J. Neurosci.', '2014', '46192'], [8.991436845349075, 0.52, 'Other (Commissural pre-B\xf6tzinger inspiratory glycinergic and GABAergic</br>interneurons)', 'Structural-functional properties of identified excitatory and</br>inhibitory interneurons within pre-Botzinger complex respiratory</br>microcircuits.', 'Koizumi H; Koshiya N; Chia JX; Cao F; Nugent J; Zhang R; Smith JC', 'J. Neurosci.', '2013', '46615'], [9.00958274886722, 0.57, 'Other (Commissural pre-B\xf6tzinger inspiratory GFP-expressing GABAergic</br>interneurons)', 'Structural-functional properties of identified excitatory and</br>inhibitory interneurons within pre-Botzinger complex respiratory</br>microcircuits.', 'Koizumi H; Koshiya N; Chia JX; Cao F; Nugent J; Zhang R; Smith JC', 'J. Neurosci.', '2013', '46615'], [8.995847311116568, 4.0, 'Other (Medial amygdala posteroventral division GFP negative non-</br>GABAergic neurons)', 'Functional properties and projections of neurons in the medial</br>amygdala.', 'Keshavarzi S; Sullivan RK; Ianno DJ; Sah P', 'J. Neurosci.', '2014', '46191'], [8.996511623035195, 69.4, 'Other (Hippocampal Medial Septum Diagonal Band GABAergic Regular</br>Spiking Neuron)', 'A parvalbumin-containing, axosomatic synaptic network in the rat</br>medial septum: relevance to rhythmogenesis.', 'Henderson Z; Fiddler G; Saha S; Boros A; Halasy K', 'Eur. J. Neurosci.', '2004', '16840'], [8.992443659441424, 1.0, 'Other (Medial amygdala posteroventral division GFP positive GABAergic</br>neurons)', 'Functional properties and projections of neurons in the medial</br>amygdala.', 'Keshavarzi S; Sullivan RK; Ianno DJ; Sah P', 'J. Neurosci.', '2014', '46191'], [9.003171156715217, 67.8, 'Other (Medial Septum Diagonal Band Cholinergic Slow Firing Neuron)', 'A parvalbumin-containing, axosomatic synaptic network in the rat</br>medial septum: relevance to rhythmogenesis.', 'Henderson Z; Fiddler G; Saha S; Boros A; Halasy K', 'Eur. J. Neurosci.', '2004', '16840'], [8.99582805273154, 68.8, 'Other (Hippocampal Medial Septum Diagonal Band GABAergic Burst Firing</br>Neuron)', 'A parvalbumin-containing, axosomatic synaptic network in the rat</br>medial septum: relevance to rhythmogenesis.', 'Henderson Z; Fiddler G; Saha S; Boros A; Halasy K', 'Eur. J. Neurosci.', '2004', '16840'], [8.993528375751936, 50.1, 'Other (Medial Septum Diagonal Band GABAergic Fast Spiking Neuron)', 'A parvalbumin-containing, axosomatic synaptic network in the rat</br>medial septum: relevance to rhythmogenesis.', 'Henderson Z; Fiddler G; Saha S; Boros A; Halasy K', 'Eur. J. Neurosci.', '2004', '16840'], [9.01130407515551, 2.0, 'Other (Medial Amygdala PosteroVentral Non-GABAergic pyramidal or</br>multipolar spiny dendrite multi-branched Neurons)', 'Functional properties and projections of neurons in the medial</br>amygdala.', 'Keshavarzi S; Sullivan RK; Ianno DJ; Sah P', 'J. Neurosci.', '2014', '46192'], [9.00005328225539, 1.0, 'Other ( Medial Amygdala PosteroVentral GABAergic multipolar spiny</br>dendrite spare-branched Type 1 Neurons)', 'Functional properties and projections of neurons in the medial</br>amygdala.', 'Keshavarzi S; Sullivan RK; Ianno DJ; Sah P', 'J. Neurosci.', '2014', '46192'], [8.99885852721737, 0.38, 'Other (Commissural pre-B\xf6tzinger inspiratory nonbursting glutamatergic</br>interneurons )', 'Structural-functional properties of identified excitatory and</br>inhibitory interneurons within pre-Botzinger complex respiratory</br>microcircuits.', 'Koizumi H; Koshiya N; Chia JX; Cao F; Nugent J; Zhang R; Smith JC', 'J. Neurosci.', '2013', '46615'], [8.993209582918563, 49.95, 'Other (Medial septum/diagonal band complex fast-spiking, non-</br>accommodating parvalbumin-immunoreactive neurons)', 'Perineuronal nets ensheath fast spiking, parvalbumin-immunoreactive</br>neurons in the medial septum/diagonal band complex.', 'Morris NP; Henderson Z', 'Eur. J. Neurosci.', '2000', '21226'], [9.011273251808563, 6.0, 'Other (Medial Amygdala PosteroVentral Non-GABAergic multipolar spiny</br>dendrite spare-branched Neurons)', 'Functional properties and projections of neurons in the medial</br>amygdala.', 'Keshavarzi S; Sullivan RK; Ianno DJ; Sah P', 'J. Neurosci.', '2014', '46192'], [8.998545279630651, 0.59, 'Other (Commissural pre-B\xf6tzinger inspiratory GABAergic interneurons)', 'Structural-functional properties of identified excitatory and</br>inhibitory interneurons within pre-Botzinger complex respiratory</br>microcircuits.', 'Koizumi H; Koshiya N; Chia JX; Cao F; Nugent J; Zhang R; Smith JC', 'J. Neurosci.', '2013', '46615'], [8.997419464764913, 73.86, 'Other (Medial septum/diagonal band complex fast-spiking, accommodating</br>parvalbumin-immunoreactive neurons)', 'Perineuronal nets ensheath fast spiking, parvalbumin-immunoreactive</br>neurons in the medial septum/diagonal band complex.', 'Morris NP; Henderson Z', 'Eur. J. Neurosci.', '2000', '21226'], [9.01102716583805, 1.0, 'Other ( Medial Amygdala PosteroVentral GABAergic multipolar spiny</br>dendrite spare-branched Type 3 Neurons)', 'Functional properties and projections of neurons in the medial</br>amygdala.', 'Keshavarzi S; Sullivan RK; Ianno DJ; Sah P', 'J. Neurosci.', '2014', '46192'], [9.010259688397836, 0.54, 'Other (Commissural pre-B\xf6tzinger inspiratory glycinergic interneurons)', 'Structural-functional properties of identified excitatory and</br>inhibitory interneurons within pre-Botzinger complex respiratory</br>microcircuits.', 'Koizumi H; Koshiya N; Chia JX; Cao F; Nugent J; Zhang R; Smith JC', 'J. Neurosci.', '2013', '46615'], [10.005179164825558, 25.0, 'Subiculum pyramidal cell (Presubiculum layer II irregular-spiking</br>neurons)', 'Regular-spiking cells in the presubiculum are hyperexcitable in a rat</br>model of temporal lobe epilepsy.', 'Abbasi S; Kumar SS', 'J. Neurophysiol.', '2014', '49626'], [9.995046318176929, 8.0, 'Subiculum pyramidal cell (Presubiculum layer II-III regular-spiking</br>neurons)', 'Regular-spiking cells in the presubiculum are hyperexcitable in a rat</br>model of temporal lobe epilepsy.', 'Abbasi S; Kumar SS', 'J. Neurophysiol.', '2014', '49626'], [11.009738631297974, -4.8, 'Trochlear nucleus motoneurons', 'Morphology, intrinsic membrane properties, and rotation-evoked</br>responses of trochlear motoneurons in the turtle.', 'Jones MS; Ariel M', 'J. Neurophysiol.', '2008', '5446']], [[]]], {
+    title: "adaptation ratio (other)",
+    series:[
+        {
+            showLine:false,
+            color:"#EAA228",
+        },
+        {
+            showLine:false,
+            color:"#4bb2c5",
+        }
+    ],
+    axesDefaults: {
+        tickRenderer: $.jqplot.CanvasAxisTickRenderer ,
+        tickOptions: {
+          fontSize: '12pt',
+          //formatString:'%.1f',
+        }
+        
+    },
+    axes: {
+      xaxis: {
+        renderer: $.jqplot.CategoryAxisRenderer,
+        ticks: ticks,
+        labelOptions:{
+            fontFamily: 'arial',
+        },
+        tickOptions: {
+          angle: -90,
+        }
+      },
+      yaxis: {
+        label: "None",
+        labelRenderer: $.jqplot.CanvasAxisLabelRenderer,
+        //renderer: $.jqplot.LogAxisRenderer,
+        renderer: customRenderer,
+        autoscale : true,
+        labelOptions:{
+            fontFamily: 'arial',
+            fontSize: '12pt',
+        },
+      },
+    },
+    highlighter: {
+        show: true,
+        sizeAdjust: 12,
+        tooltipAxes: 'y',
+        tooltipLocation: 'ne',
+        useAxesFormatters: false,
+        yvalues: 6,
+        formatString: '<table class="jqplot-highlighter"> \
+        <tr><td>Value:</td><td>%s (None)</td></tr> \
+        <tr><td>Neuron:</td><td>%s</td></tr> \
+        <tr><td>Title:</td><td>%s</td></tr> \
+        <tr><td>Authors:</td><td>%s</td></tr> \
+        <tr><td>Journal:</td><td>%s, %s</td></tr> \
+        </table>'
+    },
+    cursor:{
+        show: true, 
+        zoom: true,
+        looseZoom: true,
+        showTooltip:false, 
+        followMouse: true, 
+        showTooltipOutsideZoom: false, 
+        constrainOutsideZoom: false,
+    }, 
+/*    legend:{
+      show: true, 
+      location: 'n', 
+      placement: 'inside',
+      //marginLeft: 300,
+      labels: ['non-human curated', 'human curated'],
+    },*/
+  });
+  console.log(plot1b);
+    $('#chart1').bind('jqplotDataClick', 
+        function (ev, seriesIndex, pointIndex, data) {
+            var data_pt_ind = data[7];
+            var linkStr;
+            if (data_pt_ind < 0) // this is a hack to redirect non-data table ext data to the article page
+            {
+                linkStr = "/article/" + (-data_pt_ind);
+            }
+            else 
+            {
+                linkStr = "/data_table/" + data_pt_ind;
+            }
+            window.open(linkStr, '_self');
+            
+        }
+    );
+    // add id elements to corresponding neuron ticks based on the neuron id
+    
+        $(".jqplot-xaxis canvas")[0].id = 85;
+    
+        $(".jqplot-xaxis canvas")[1].id = 229;
+    
+        $(".jqplot-xaxis canvas")[2].id = 232;
+    
+        $(".jqplot-xaxis canvas")[3].id = 99;
+    
+        $(".jqplot-xaxis canvas")[4].id = 106;
+    
+        $(".jqplot-xaxis canvas")[5].id = 110;
+    
+        $(".jqplot-xaxis canvas")[6].id = 111;
+    
+        $(".jqplot-xaxis canvas")[7].id = 109;
+    
+        $(".jqplot-xaxis canvas")[8].id = 235;
+    
+        $(".jqplot-xaxis canvas")[9].id = 182;
+    
+        $(".jqplot-xaxis canvas")[10].id = 225;
+    
+
+    // function to keep x-axes active on zoom
+   $('#chart1').bind('jqplotZoom', function(ev, gridpos, datapos, plot, cursor){
+      resetXLabels();
+    });
+
+    // function to keep x-axes active after zoom out event
+   $('#chart1').bind('jqplotResetZoom', function(ev, gridpos, datapos, plot, cursor){
+      resetXLabels();
+    });
+
+   function resetXLabels(){
+      $(".jqplot-xaxis-tick")
+      .css({
+          cursor: "pointer",
+          zIndex: "1",
+      })
+      .click(function(){ 
+          var neuron_tick_id = $(this).attr('id');
+          var linkStr = "/neuron/" + neuron_tick_id;
+          window.open(linkStr, '_self');
+      })
+      .mouseenter(function(){ 
+          oldTop = $(this).css('top');
+          $(this).css({top: '10px'});
+      })
+      .mouseleave(function(){ 
+          $(this).css({top : oldTop});
+      });
+   }
+
+    //based on clicking an axis tick, open webpage corresponding to neuron id
+    resetXLabels();
+
+  // $("span.question").hover(function () {
+  //   $(this).append('<div class="tooltip"><p>Adaptation ratio, percent, index but not otherwise characterizable to an existing sub-definition</p></div>');
+  // }, function () {
+  //   $("div.tooltip").remove();
+  // });
+  $(".fancybox").fancybox();
+});
+</script>
+
+
+<div id="content">
+<body>
+	
+    <table align="center" width="1200px" class="logo_bar">
+        <tr>
+            <td class="logo_bar">
+                <div align="left">
+					
+					<a href="../index.html">
+				    	<img src="https://web.archive.org/web/20240902020046im_/https://neuroelectro.org/static/src/neuroelectro_logo_3.png" id="logo">
+				    </a>
+				    
+                </div>
+            </td>
+            <td class="logo_bar">
+                <div align="right">
+                <a href="../publications.html">
+                NeuroElectro Publications</a> &nbsp;
+                <br>
+                
+                </div>
+                
+            </td>
+        </tr>
+    </table>
+
+    
+
+<html>
+
+<head>
+
+<!--<link rel="stylesheet" type="text/css" href="/static/src/local.css" />-->
+<link href="https://web.archive.org/web/20240902020046cs_/https://neuroelectro.org/static/src/SimpleNavBarStyles.css" rel="stylesheet" type="text/css">
+<script src="https://web.archive.org/web/20240902020046js_/https://neuroelectro.org/static/src/SimpleNavBarScripts.js" language="JavaScript" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+
+
+
+<!-- ############### #### Navigation Bar #### ############### -->
+
+
+<!-- main nav bar titles -->
+<!-- Note how the the closing angle bracket of each </a> tag runs up against the next <a> tag,
+      to avoid leaving a gap between each menu title and the next one. -->
+      
+<div class="mynavbar">
+
+<a class="navbartitle" id="t1" href=https://neuroelectro.org/" onmouseout="HideItem('about_submenu');" onmouseover="ShowItem('about_submenu');">About</a><a class="navbartitle" id="t2" href="../neuron/index.html" onmouseout="HideItem('neuron_submenu');" onmouseover="ShowItem('neuron_submenu');">Neuron Types</a><a class="navbartitle" id="t3" href="index.html">Electrophysiology Properties</a><a class="navbartitle" id="t4" href="../article/index.html">Articles</a><a class="navbartitle" id="t5" href="../faqs.html" onmouseout="HideItem('faqs_submenu');" onmouseover="ShowItem('faqs_submenu');">FAQs</a><a class="navbartitle" id="t6" href="../api/docs.html" onmouseout="HideItem('api_submenu');" onmouseover="ShowItem('api_submenu');">Data/API</a><a class="navbartitle" id="t7" href="../contribute.html">Get Involved</a>
+
+    
+    <!-- about sub-menu, shown as needed  -->
+<div class="submenu" id="about_submenu" onmouseover="ShowItem('about_submenu');" onmouseout="HideItem('about_submenu');">
+  <div class="submenubox">
+    <ul>
+      <li><a href="../publications.html" class="submenlink">Publications</a></li>
+      <!-- <li><a href="/citation_info" class="submenlink">How to Cite</a></li> -->
+      <li><a href="https://groups.google.com/forum/#!forum/neuroelectro" class="submenlink" target="_blank">Mailing List</a></li>
+      <li><a href="../contact_info.html" class="submenlink">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+    <!-- neuron sub-menu, shown as needed  -->
+<div class="submenu" id="neuron_submenu" onmouseover="ShowItem('neuron_submenu');" onmouseout="HideItem('neuron_submenu');">
+  <div class="submenubox">
+    <ul>
+      <li><a href="../neuron/index.html" class="submenlink">Neuron Listing</a></li>
+        <li><a href="../neuron_search.html" class="submenlink">Neuron Search</a></li>
+      <li><a href="../neuron/clustering.html" class="submenlink">Neuron Clustering</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- api sub-menu, shown as needed  -->
+
+<div class="submenu" id="api_submenu" onmouseover="ShowItem('api_submenu');" onmouseout="HideItem('api_submenu');">
+  <div class="submenubox">
+    <ul>
+      <li><a href="../api/docs" class="submenlink">API Documentation</a></li>
+      <!-- <li><a href='/static/src/neuroelectro_data_download.zip' class="submenlink" target="_blank">Data Download</a></li>  -->
+      <li><a href="../publications.html" class="submenlink">How to Cite</a></li>
+      <li><a href="https://groups.google.com/forum/#!forum/neuroelectro" class="submenlink" target="_blank">Ask a Question</a></li>
+      <li><a href="https://github.com/neuroelectro" class="submenlink" target="_blank">Code Repository (GitHub)</a></li>
+    </ul>
+  </div>
+</div>
+
+
+</div>
+	
+<!-- ################## end of Navigation Bar ################### -->
+
+
+</body>
+</html>
+
+    
+
+    
+    
+<h1>adaptation ratio (other)  
+<!--<span class="question_tooltip">?</span>-->
+</h1>
+
+<p>
+Common definition: Adaptation ratio, percent, index but not otherwise characterizable to an existing sub-definition </br>
+</p>
+
+<!--
+<h2>Synonyms of this ephys property: </h2>
+<ul>
+
+</ul>
+<h2>Units of this ephys property: </h2>
+<li></li>
+-->
+
+<h2>Electrophysiological values of <i>adaptation ratio (other)</i> across neuron types from literature:</h2>
+  <table id="norm_criteria_button">
+  <tr>
+  <td>
+    <ul>
+    <lh>Standardization criteria:</lh>
+    <li> Values are unchanged from those reported. Refer to individual articles for definition and calculation methodology.</li>
+    <lh>Legend:</lh>
+    <li>Blue dots = text-mined values human curated; Orange dots = text-mined values not human curated </li>
+    <lh>Interactivity:</lh>
+    <li>Mouse over neuron report data points and click to view corresponding publication</li>
+    <li>Click on neuron name axis labels (e.g. Dentate gyrus granule cell) to view corresponding neuron page</li>
+    <li>Zoom in on a section of plot by dragging cursor. Zoom out by double clicking on plot.</li>
+    </ul>  
+  </td>
+  <td id="data_table_button">
+    <div style="text-align:center">
+      <a class="btn btn-large btn-info submit_button" href="../data/ephys_prop/53.html/53/data/index.html"><i class="icon-th-list icon-white"></i>  View data in table form</i></a>
+      <br>
+        <a class="fancybox btn btn-large btn-danger submit_button" data-fancybox-type="iframe" href="https://neuroelectro.org/nedm_comment_box/"><i class="icon-thumbs-down icon-white"></i> Report miscurated data</i></a>
+      </div>
+  </td>
+
+  </tr>
+  </table>
+
+<div id="chart1" style="height:800px;width:1190px; "></div>
+
+
+</body>   
+</div>
+<div id="footer">
+<footer>
+    
+    <table align="center" width="1200px" class="footer_bar">
+        <tr>
+            <td class="footer_bar">
+                <p align="left">
+                    &copy; 2012-2016 <a href="https://twitter.com/neuronJoy" target="_blank">Shreejoy Tripathy</a> and
+                    <a href="http://rick.gerk.in/" target="_blank">Richard Gerkin</a>
+                    <br> 
+                    University of British Columbia and Arizona State University
+                    
+                    <!--<br>Funding: NIH, NIF, and the RK Mellon Foundation-->
+                    <br>
+                    Release Version 5.0
+                    <!--Optimized for Mozilla Firefox, Safari, and fast internet connections -->
+                </p>
+            </td>
+            <td class="footer_bar">
+                <p align="center">
+                
+                <p align="left">Not signed in <a class="btn btn-small btn-primary" href="https://neuroelectro.org/accounts/login?next=/ephys_prop/53/"><i class="icon-user icon-white"></i>  Log in</a></p>
+                
+                </p>
+
+            </td>
+            <td class="footer_bar">
+                <div class="funding_logo_container" align="right">
+                    <a href="http://www.cihr-irsc.gc.ca/e/193.html" class="funding_logo">
+                        <img src="https://web.archive.org/web/20240713165439im_/https://neuroelectro.org/static/src/cihr_logo_big_e.png" id="logo" width="100" height="40">
+                    </a>
+                    <a href="http://neurodevnet.ca/" class="funding_logo">
+                        <img src="https://web.archive.org/web/20240713165439im_/https://neuroelectro.org/static/src/NeuroDevNetLOGO.jpg" id="logo" width="100" height="40">
+                    </a>
+                    <a href="http://www.nih.gov/" class="funding_logo">
+                        <img src="https://web.archive.org/web/20240713165439im_/https://neuroelectro.org/static/src/nihMasterLogo.png" id="logo" width="100" height="40">
+                    </a>
+                    <p id="supported_by">Support provided by</p>
+                </div>
+
+            </td>
+        </tr>
+    </table>
+    
+</footer>
+</div>
+</html>
+<!--
+     FILE ARCHIVED ON 16:54:39 Jul 13, 2024 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 18:20:36 Jan 06, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.773
+  exclusion.robots: 0.042
+  exclusion.robots.policy: 0.025
+  esindex: 0.013
+  cdx.remote: 10.972
+  LoadShardBlock: 424.833 (3)
+  PetaboxLoader3.resolve: 587.323 (4)
+  PetaboxLoader3.datanode: 118.262 (4)
+  load_resource: 291.107
+-->

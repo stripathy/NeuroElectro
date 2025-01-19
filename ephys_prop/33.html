@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head><script type="text/javascript" src="https://web.archive.org/_static/js/bundle-playback.js?v=HxkREWBo" charset="utf-8"></script>
+<script type="text/javascript" src="https://web.archive.org/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
+<script type="text/javascript" src="https://web.archive.org/_static/js/ruffle/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://www.neuroelectro.org/ephys_prop/33/","20240910032628","https://web.archive.org/","web","/_static/",
+	      "1725938788");
+</script>
+<link rel="stylesheet" type="text/css" href="https://web.archive.org/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="https://web.archive.org/_static/css/iconochive.css?v=3PDvdIFv" />
+<!-- End Wayback Rewrite JS Include -->
+
+    <title>NeuroElectro :: spike max decay slope</title>
+	
+    <link rel="shortcut icon" href="https://web.archive.org/web/20240910032628im_/https://www.neuroelectro.org/static/src/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://web.archive.org/web/20240910032628cs_/https://www.neuroelectro.org/static/bootstrap_old/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://web.archive.org/web/20240910032628cs_/https://www.neuroelectro.org/static/src/local.css"/>
+    
+    
+<script type="text/javascript" charset="utf-8" src="https://web.archive.org/web/20240910032628js_/https://www.neuroelectro.org/static/src/DataTables/media/js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://web.archive.org/web/20240910032628js_/https://www.neuroelectro.org/static/src/DataTables/media/js/jquery.dataTables.js"></script>
+<style type="text/css" title="currentStyle">
+    @import "https://web.archive.org/web/20240910032628cs_/https://www.neuroelectro.org/static/src/DataTables/media/css/demo_table.css";
+</style>
+<!--<script language="javascript" type="text/javascript" src="/static/src/jquery.min.js"></script>-->
+<script language="javascript" type="text/javascript" src="https://web.archive.org/web/20240910032628js_/https://www.neuroelectro.org/static/src/jquery.jqplot.min.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20240910032628js_/https://www.neuroelectro.org/static/src/plugins/jqplot.canvasTextRenderer.min.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20240910032628js_/https://www.neuroelectro.org/static/src/plugins/jqplot.canvasAxisTickRenderer.min.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20240910032628js_/https://www.neuroelectro.org/static/src/plugins/jqplot.categoryAxisRenderer.min.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20240910032628js_/https://www.neuroelectro.org/static/src/plugins/jqplot.logAxisRenderer.min.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20240910032628js_/https://www.neuroelectro.org/static/src/plugins/jqplot.highlighter.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20240910032628js_/https://www.neuroelectro.org/static/src/plugins/jqplot.canvasAxisLabelRenderer.min.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20240910032628js_/https://www.neuroelectro.org/static/src/plugins/jqplot.cursor.min.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20240910032628js_/https://www.neuroelectro.org/static/src/plugins/jqplot.pointLabels.min.js"></script>
+<!--<script type="text/javascript" src="/static/src/plugins/jqplot.eventListenerHooks.min.js"></script>-->
+<link rel="stylesheet" type="text/css" href="https://web.archive.org/web/20240910032628cs_/https://www.neuroelectro.org/static/src/jquery.jqplot.min.css"/>
+<script type="text/javascript" src="https://web.archive.org/web/20240910032628js_/https://www.neuroelectro.org/static/src/plugins/jqplot.ohlcRenderer.min.js"></script>
+  <!-- Add jQuery library -->
+  <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>-->
+  
+  <!-- Add mousewheel plugin (this is optional) -->
+  <script type="text/javascript" src="https://web.archive.org/web/20240910032628js_/https://www.neuroelectro.org/static/src/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+  
+  <!-- Add fancyBox -->
+  <link rel="stylesheet" href="https://web.archive.org/web/20240910032628cs_/https://www.neuroelectro.org/static/src/fancybox/source/jquery.fancybox.css?v=2.1.3" type="text/css" media="screen"/>
+  <script type="text/javascript" src="https://web.archive.org/web/20240910032628js_/https://www.neuroelectro.org/static/src/fancybox/source/jquery.fancybox.pack.js?v=2.1.3"></script>
+  
+  <!-- Optionally add helpers - button, thumbnail and/or media -->
+  <link rel="stylesheet" href="https://web.archive.org/web/20240910032628cs_/https://www.neuroelectro.org/static/src/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen"/>
+  <script type="text/javascript" src="https://web.archive.org/web/20240910032628js_/https://www.neuroelectro.org/static/src/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+  <script type="text/javascript" src="https://web.archive.org/web/20240910032628js_/https://www.neuroelectro.org/static/src/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+  
+  <link rel="stylesheet" href="https://web.archive.org/web/20240910032628cs_/https://www.neuroelectro.org/static/src/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen"/>
+  <script type="text/javascript" src="https://web.archive.org/web/20240910032628js_/https://www.neuroelectro.org/static/src/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<style type="text/css">
+.jqplot-axis {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90%; 
+}
+.jqplot-highlighter-tooltip {
+    background-color: #B4EEB4;
+    filter:alpha(opacity=90);
+    opacity:0.9;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p {
+  margin-left:25px;
+}
+table#norm_criteria_button {
+  margin-left:25px;
+  margin-right:25px;
+}
+#chart1{
+  margin-left:5px;
+  margin-right:5px;
+  margin-bottom:25px;
+}
+
+
+</style>
+
+	
+	
+     
+ 	<style>
+ 		#maintanence_message{
+ 			color: red;
+ 		    text-align: center;
+ 		}
+        .funding_logo {
+            display:inline-block;
+            text-align: center;
+        }
+        #supported_by{
+            text-align: center;
+            position: relative;
+            left: 35px;
+        }
+ 	</style>
+	
+    
+    <!--stuff for google tracking-->
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-35182339-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+	
+    </script>
+</head>
+
+
+<script>
+$(document).ready(function(){
+  var ticks = ['Cerebellum granule cell', 'Cerebellum Purkinje cell', 'Cochlear nucleus (ventral) bushy cell', 'Dentate gyrus granule cell', 'Dentate gyrus mossy cell', 'Dorsal root ganglion cell', 'Hippocampus CA1 basket cell', 'Hippocampus CA1 ivy neuron', 'Hippocampus CA1 neurogliaform cell', 'Hippocampus CA1 oriens lacunosum moleculare neuron', 'Hippocampus CA1 pyramidal cell', 'Hippocampus CA2 pyramidal neuron', 'Hippocampus CA3 pyramidal cell', 'Locus coeruleus noradrenergic neuron', 'Medial vestibular nucleus neuron', 'Neocortex basket cell', 'Neocortex interneuron deep', 'Neocortex Martinotti cell', 'Neocortex pyramidal cell layer 2-3', 'Neocortex pyramidal cell layer 5-6', 'Neocortex uncharacterized cell', 'Neostriatum gabaergic interneuron', 'Neostriatum medium spiny neuron', 'Nucleus of the solitary tract intrinsic cell', 'Nucleus of the solitary tract principal cell', 'Olfactory bulb (main) Blanes cell', 'Olfactory bulb (main) granule cell', 'Olfactory bulb (main) mitral cell', 'Olfactory cortex large multipolar cell', 'Other', 'Spinal cord ventral horn motor neuron alpha', 'Subiculum pyramidal cell', 'Substantia nigra pars compacta dopaminergic cell', 'Thalamic reticular nucleus cell', 'Thalamus relay cell'];
+  var customRenderer; 
+  if (0 == 1){
+    customRenderer = $.jqplot.LogAxisRenderer;
+  }
+  else{
+    customRenderer = $.jqplot.canvasAxisTickRenderer;
+  }
+  var plot1b = $.jqplot('chart1', [[[1.0094089688967867, 88.8, 'Cerebellum granule cell', 'Ionic mechanism of electroresponsiveness in cerebellar granule cells</br>implicates the action of a persistent sodium current.', "D'Angelo E; De Filippi G; Rossi P; Taglietti V", 'J. Neurophysiol.', '1998', '1290'], [1.0022186653102634, 94.5, 'Cerebellum granule cell', 'Ionic mechanism of electroresponsiveness in cerebellar granule cells</br>implicates the action of a persistent sodium current.', "D'Angelo E; De Filippi G; Rossi P; Taglietti V", 'J. Neurophysiol.', '1998', '1290'], [2.0033437059825134, 318.0, 'Cerebellum Purkinje cell', 'Calcium dynamics and electrophysiological properties of cerebellar</br>Purkinje cells in SCA1 transgenic mice.', 'Inoue T; Lin X; Kohlmeier KA; Orr HT; Zoghbi HY; Ross WN', 'J. Neurophysiol.', '2001', '1010'], [1.9843947995901372, 277.09, 'Cerebellum Purkinje cell', 'Aminopyridines correct early dysfunction and delay neurodegeneration</br>in a mouse model of spinocerebellar ataxia type 1.', "Hourez R; Servais L; Orduz D; Gall D; Millard I; de Kerchove d'Exaerde</br>A; Cheron G; Orr HT; Pandolfo M; Schiffmann SN", 'J. Neurosci.', '2011', '1575'], [1.992956148038609, 331.0, 'Cerebellum Purkinje cell', 'The leaner P/Q-type calcium channel mutation renders cerebellar</br>Purkinje neurons hyper-excitable and eliminates Ca2+-Na+ spike bursts.', 'Ovsepian SV; Friel DD', 'Eur. J. Neurosci.', '2008', '17398'], [2.997662673630404, 59.7, 'Cochlear nucleus (ventral) bushy cell ( anterior ventral cochlear</br>nucleus rostroventral third low frequency region neuron)', 'Synaptic transmission at the cochlear nucleus endbulb synapse during</br>age-related hearing loss in mice.', 'Wang Y; Manis PB', 'J. Neurophysiol.', '2005', '603'], [2.986178739498203, 73.9, 'Cochlear nucleus (ventral) bushy cell ( anterior ventral cochlear</br>nucleus dorsal third  high frequency region neuron)', 'Synaptic transmission at the cochlear nucleus endbulb synapse during</br>age-related hearing loss in mice.', 'Wang Y; Manis PB', 'J. Neurophysiol.', '2005', '603'], [3.0175165415920326, 75.7, 'Cochlear nucleus (ventral) bushy cell ( anterior ventral cochlear</br>nucleus dorsal third  high frequency region neuron)', 'Synaptic transmission at the cochlear nucleus endbulb synapse during</br>age-related hearing loss in mice.', 'Wang Y; Manis PB', 'J. Neurophysiol.', '2005', '603'], [3.0065284534284102, 70.6, 'Cochlear nucleus (ventral) bushy cell ( anterior ventral cochlear</br>nucleus dorsal third  high frequency region neuron)', 'Synaptic transmission at the cochlear nucleus endbulb synapse during</br>age-related hearing loss in mice.', 'Wang Y; Manis PB', 'J. Neurophysiol.', '2005', '603'], [2.990642207562363, 60.7, 'Cochlear nucleus (ventral) bushy cell ( anterior ventral cochlear</br>nucleus dorsal third  high frequency region neuron)', 'Synaptic transmission at the cochlear nucleus endbulb synapse during</br>age-related hearing loss in mice.', 'Wang Y; Manis PB', 'J. Neurophysiol.', '2005', '603'], [4.000894405024276, 26.0, 'Dentate gyrus granule cell', 'Preventing effect of L-type calcium channel blockade on</br>electrophysiological alterations in dentate gyrus granule cells</br>induced by entorhinal amyloid pathology.', 'Pourbadie HG; Naderi N; Mehranfard N; Janahmadi M; Khodagholi F;</br>Motamedi F', 'PLoS ONE', '2015', '44799'], [3.981492183315057, 93.0, 'Dentate gyrus granule cell', 'Competition from newborn granule cells does not drive axonal</br>retraction of silenced old granule cells in the adult hippocampus.', 'Lopez CM; Pelkey KA; Chittajallu R; Nakashiba T; T\xf3th K; Tonegawa S;</br>McBain CJ', 'Front Neural Circuits', '2012', '27848'], [4.974180050714625, 118.0, 'Dentate gyrus mossy cell', 'Proper layering is important for precisely timed activation of</br>hippocampal mossy cells.', 'Kowalski J; Geuting M; Paul S; Dieni S; Laurens J; Zhao S; Drakew A;</br>Haas CA; Frotscher M; Vida I', 'Cereb. Cortex', '2010', '36255'], [6.005891977808484, 100.0, 'Dorsal root ganglion cell', 'Similar electrophysiological changes in axotomized and neighboring</br>intact dorsal root ganglion neurons.', 'Ma C; Shu Y; Zheng Z; Chen Y; Yao H; Greenquist KW; White FA; LaMotte</br>RH', 'J. Neurophysiol.', '2003', '842'], [5.996203163624548, 133.0, 'Dorsal root ganglion cell', 'Similar electrophysiological changes in axotomized and neighboring</br>intact dorsal root ganglion neurons.', 'Ma C; Shu Y; Zheng Z; Chen Y; Yao H; Greenquist KW; White FA; LaMotte</br>RH', 'J. Neurophysiol.', '2003', '842'], [5.9917392107249645, 40.0, 'Dorsal root ganglion cell', 'Distinctive neurophysiological properties of embryonic trigeminal and</br>geniculate neurons in culture.', 'Grigaliunas A; Bradley RM; MacCallum DK; Mistretta CM', 'J. Neurophysiol.', '2002', '895'], [6.004518327964187, 68.2, 'Dorsal root ganglion cell (Large dorsal root ganglion cell )', 'Long-term IL-1? exposure causes subpopulation-dependent alterations in</br>rat dorsal root ganglion neuron excitability.', 'Stemkowski PL; Smith PA', 'J. Neurophysiol.', '2012', '3'], [6.001454812710307, 52.1, 'Dorsal root ganglion cell (Medium dorsal root ganglion cell)', 'Long-term IL-1? exposure causes subpopulation-dependent alterations in</br>rat dorsal root ganglion neuron excitability.', 'Stemkowski PL; Smith PA', 'J. Neurophysiol.', '2012', '3'], [5.989513886679588, 49.0, 'Dorsal root ganglion cell ( Small isolectin B4 negative dorsal root</br>ganglion cell)', 'Long-term IL-1? exposure causes subpopulation-dependent alterations in</br>rat dorsal root ganglion neuron excitability.', 'Stemkowski PL; Smith PA', 'J. Neurophysiol.', '2012', '3'], [6.010761732945889, 57.9, 'Dorsal root ganglion cell (Small isolectin B4 positive dorsal root</br>ganglion cell)', 'Long-term IL-1? exposure causes subpopulation-dependent alterations in</br>rat dorsal root ganglion neuron excitability.', 'Stemkowski PL; Smith PA', 'J. Neurophysiol.', '2012', '3'], [6.005556457726752, 154.2, 'Dorsal root ganglion cell (lumbar 4 and lumbar 5 dorsal root ganglion</br>large cell)', 'Hyperexcitability of axotomized and neighboring unaxotomized sensory</br>neurons is reduced days after perineural clonidine at the site of</br>injury.', 'Liu B; Eisenach JC', 'J. Neurophysiol.', '2005', '586'], [5.99187664871857, 69.8, 'Dorsal root ganglion cell', 'Similar electrophysiological changes in axotomized and neighboring</br>intact dorsal root ganglion neurons.', 'Ma C; Shu Y; Zheng Z; Chen Y; Yao H; Greenquist KW; White FA; LaMotte</br>RH', 'J. Neurophysiol.', '2003', '842'], [7.0034933715388075, 112.0, 'Hippocampus CA1 basket cell (Hippocampal MGE-derived, paravalbumin-</br>expressing, fast-spiking, basket, bistratified, and axo-axonic cells)', 'A blueprint for the spatiotemporal origins of mouse hippocampal</br>interneuron diversity.', 'Tricoire L; Pelkey KA; Erkkila BE; Jeffries BW; Yuan X; McBain CJ', 'J. Neurosci.', '2011', '1587'], [7.003274756324566, 55.0, 'Hippocampus CA1 basket cell (Hippocampal MGE and CGE derived, late-</br>spiking, NPY expressing cells)', 'A blueprint for the spatiotemporal origins of mouse hippocampal</br>interneuron diversity.', 'Tricoire L; Pelkey KA; Erkkila BE; Jeffries BW; Yuan X; McBain CJ', 'J. Neurosci.', '2011', '1587'], [7.01101694085311, 96.0, 'Hippocampus CA1 basket cell (Hippocampal MGE-derived, somatostatin</br>expressing cells)', 'A blueprint for the spatiotemporal origins of mouse hippocampal</br>interneuron diversity.', 'Tricoire L; Pelkey KA; Erkkila BE; Jeffries BW; Yuan X; McBain CJ', 'J. Neurosci.', '2011', '1587'], [7.005518489971087, 83.0, 'Hippocampus CA1 basket cell (hippocampal CCK, VGluT3 and VIP</br>expressing basket cells)', 'A blueprint for the spatiotemporal origins of mouse hippocampal</br>interneuron diversity.', 'Tricoire L; Pelkey KA; Erkkila BE; Jeffries BW; Yuan X; McBain CJ', 'J. Neurosci.', '2011', '1587'], [8.013384140457799, 71.0, 'Hippocampus CA1 ivy neuron', 'Common origins of hippocampal Ivy and nitric oxide synthase expressing</br>neurogliaform cells.', 'Tricoire L; Pelkey KA; Daw MI; Sousa VH; Miyoshi G; Jeffries B; Cauli</br>B; Fishell G; McBain CJ', 'J. Neurosci.', '2010', '1838'], [8.997567860602345, 72.0, 'Hippocampus CA1 neurogliaform cell (Hippocampus CA1 nitric oxide</br>synthase expressing neurogliaform cell )', 'Common origins of hippocampal Ivy and nitric oxide synthase expressing</br>neurogliaform cells.', 'Tricoire L; Pelkey KA; Daw MI; Sousa VH; Miyoshi G; Jeffries B; Cauli</br>B; Fishell G; McBain CJ', 'J. Neurosci.', '2010', '1838'], [8.992994977170643, 80.0, 'Hippocampus CA1 neurogliaform cell (Hippocampus CA1 non-nitric oxide</br>synthase expressing neurogliaform cell )', 'Common origins of hippocampal Ivy and nitric oxide synthase expressing</br>neurogliaform cells.', 'Tricoire L; Pelkey KA; Daw MI; Sousa VH; Miyoshi G; Jeffries B; Cauli</br>B; Fishell G; McBain CJ', 'J. Neurosci.', '2010', '1838'], [9.996138898600739, 47.7, 'Hippocampus CA1 oriens lacunosum moleculare neuron (Hippocampus CA1</br>and CA2 non-fast spiking stramum oriens neuron)', 'Morphological and electrophysiological properties of pyramidal-like</br>neurons in the stratum oriens of Cornu ammonis 1 and Cornu ammonis 2</br>area of Proechimys.', 'Scorza CA; Araujo BH; Leite LA; Torres LB; Otalora LF; Oliveira MS;</br>Garrido-Sanabria ER; Cavalheiro EA', 'Neuroscience', '2011', '24746'], [10.997530549384546, 108.0, 'Hippocampus CA1 pyramidal cell', 'Tetanus toxin induces long-term changes in excitation and inhibition</br>in the rat hippocampal CA1 area.', 'Vreugdenhil M; Hack SP; Draguhn A; Jefferys JG', 'Neuroscience', '2002', '23787'], [10.994886659177814, 47.1, 'Hippocampus CA1 pyramidal cell (Hippocampus CA1 non-fast spiking</br>stratum oriens pyramidal-like cell)', 'Morphological and electrophysiological properties of pyramidal-like</br>neurons in the stratum oriens of Cornu ammonis 1 and Cornu ammonis 2</br>area of Proechimys.', 'Scorza CA; Araujo BH; Leite LA; Torres LB; Otalora LF; Oliveira MS;</br>Garrido-Sanabria ER; Cavalheiro EA', 'Neuroscience', '2011', '24746'], [11.004885814957765, 41.7, 'Hippocampus CA1 pyramidal cell (Hippocampus CA1 non-fast spiking</br>pyramidal neuron)', 'Morphological and electrophysiological properties of pyramidal-like</br>neurons in the stratum oriens of Cornu ammonis 1 and Cornu ammonis 2</br>area of Proechimys.', 'Scorza CA; Araujo BH; Leite LA; Torres LB; Otalora LF; Oliveira MS;</br>Garrido-Sanabria ER; Cavalheiro EA', 'Neuroscience', '2011', '24746'], [11.00626182765581, 77.0, 'Hippocampus CA1 pyramidal cell', 'Downregulation of Spermine Augments Dendritic Persistent Sodium</br>Currents and Synaptic Integration after Status Epilepticus.', 'Royeck M; Kelly T; Opitz T; Otte DM; Rennhack A; Woitecki A; Pitsch J;</br>Becker A; Schoch S; Kaupp UB; Yaari Y; Zimmer A; Beck H', 'J. Neurosci.', '2015', '47377'], [11.008369378526282, 106.0, 'Hippocampus CA1 pyramidal cell', 'Reduced seizure threshold and altered network oscillatory properties</br>in a mouse model of Rett syndrome.', 'McLeod F; Ganley R; Williams L; Selfridge J; Bird A; Cobb SR', 'Neuroscience', '2013', '47754'], [11.00604551032531, 45.6, 'Hippocampus CA1 pyramidal cell', 'Normal electrical properties of hippocampal neurons modelling early</br>Huntington disease pathogenesis.', 'Shelbourne P; Coote E; Dadak S; Cobb SR', 'Brain Res.', '2007', '22662'], [11.004353551140577, 43.6, 'Hippocampus CA1 pyramidal cell', 'Normal electrical properties of hippocampal neurons modelling early</br>Huntington disease pathogenesis.', 'Shelbourne P; Coote E; Dadak S; Cobb SR', 'Brain Res.', '2007', '22662'], [10.997154577852463, 69.3, 'Hippocampus CA1 pyramidal cell', 'Alpha5GABAA receptors regulate the intrinsic excitability of mouse</br>hippocampal pyramidal neurons.', 'Bonin RP; Martin LJ; MacDonald JF; Orser BA', 'J. Neurophysiol.', '2007', '358'], [10.995281769869134, 112.0, 'Hippocampus CA1 pyramidal cell (Dorsal Hippocampus CA1 pyramidal cell)', 'Spatial Gene-Expression Gradients Underlie Prominent Heterogeneity of</br>CA1 Pyramidal Neurons.', 'Cembrowski MS; Bachman JL; Wang L; Sugino K; Shields BC; Spruston N', 'Neuron', '2016', '50019'], [10.991791275653418, 116.0, 'Hippocampus CA1 pyramidal cell (Ventral Hippocampus CA1 pyramidal</br>cell)', 'Spatial Gene-Expression Gradients Underlie Prominent Heterogeneity of</br>CA1 Pyramidal Neurons.', 'Cembrowski MS; Bachman JL; Wang L; Sugino K; Shields BC; Spruston N', 'Neuron', '2016', '50019'], [11.010611353755744, 80.7, 'Hippocampus CA1 pyramidal cell', 'Depression of synaptic transmission by vascular endothelial growth</br>factor in adult rat hippocampus and evidence for increased efficacy</br>after chronic seizures.', 'McCloskey DP; Croll SD; Scharfman HE', 'J. Neurosci.', '2005', '2430'], [12.006939523047237, 44.2, 'Hippocampus CA2 pyramidal neuron (Hippocampus CA2 non-fast spiking</br>pyramidal-like neuron)', 'Morphological and electrophysiological properties of pyramidal-like</br>neurons in the stratum oriens of Cornu ammonis 1 and Cornu ammonis 2</br>area of Proechimys.', 'Scorza CA; Araujo BH; Leite LA; Torres LB; Otalora LF; Oliveira MS;</br>Garrido-Sanabria ER; Cavalheiro EA', 'Neuroscience', '2011', '24746'], [12.01663161581146, 37.9, 'Hippocampus CA2 pyramidal neuron (Hippocampus CA2 non-fasting spiking</br>pyramidal neuron)', 'Morphological and electrophysiological properties of pyramidal-like</br>neurons in the stratum oriens of Cornu ammonis 1 and Cornu ammonis 2</br>area of Proechimys.', 'Scorza CA; Araujo BH; Leite LA; Torres LB; Otalora LF; Oliveira MS;</br>Garrido-Sanabria ER; Cavalheiro EA', 'Neuroscience', '2011', '24746'], [12.992833437703757, 147.6, 'Hippocampus CA3 pyramidal cell', 'Local circuit abnormalities in chronically epileptic rats after</br>intrahippocampal tetanus toxin injection in infancy.', 'Smith KL; Lee CL; Swann JW', 'J. Neurophysiol.', '1998', '1335'], [13.993559880850498, 55.0, 'Locus coeruleus noradrenergic neuron', 'Corticotropin-releasing hormone directly activates noradrenergic</br>neurons of the locus ceruleus recorded in vitro.', 'Jedema HP; Grace AA', 'J. Neurosci.', '2004', '2549'], [15.002021086959283, 142.0, 'Medial vestibular nucleus neuron (Medial vestibular nucleus non-</br>GABAergic neurons expressing Thy1)', 'Firing properties of GABAergic versus non-GABAergic vestibular nucleus</br>neurons conferred by a differential balance of potassium currents.', 'Gittis AH; du Lac S', 'J. Neurophysiol.', '2007', '382'], [15.00264788565614, 259.0, 'Medial vestibular nucleus neuron (medial vestibular nucleus</br>glycinergic neuron)', 'Transgenic mouse lines subdivide medial vestibular nucleus neurons</br>into discrete, neurochemically distinct populations.', 'Bagnall MW; Stevens RJ; du Lac S', 'J. Neurosci.', '2007', '2227'], [15.015848671449543, 472.0, 'Medial vestibular nucleus neuron (medial vestibular nucleus</br>glutamatergic neuron)', 'Transgenic mouse lines subdivide medial vestibular nucleus neurons</br>into discrete, neurochemically distinct populations.', 'Bagnall MW; Stevens RJ; du Lac S', 'J. Neurosci.', '2007', '2227'], [15.014878779679533, 107.0, 'Medial vestibular nucleus neuron (Medial vestibular nucleus GABAergic</br>neurons )', 'Firing properties of GABAergic versus non-GABAergic vestibular nucleus</br>neurons conferred by a differential balance of potassium currents.', 'Gittis AH; du Lac S', 'J. Neurophysiol.', '2007', '382'], [14.987957131062375, 255.0, 'Medial vestibular nucleus neuron (medial vestibular nucleus non-</br>glycinergic neuron)', 'Transgenic mouse lines subdivide medial vestibular nucleus neurons</br>into discrete, neurochemically distinct populations.', 'Bagnall MW; Stevens RJ; du Lac S', 'J. Neurosci.', '2007', '2227'], [15.0123928458538, 445.0, 'Medial vestibular nucleus neuron (medial vestibular nucleus</br>glycinergic neuron)', 'Transgenic mouse lines subdivide medial vestibular nucleus neurons</br>into discrete, neurochemically distinct populations.', 'Bagnall MW; Stevens RJ; du Lac S', 'J. Neurosci.', '2007', '2227'], [14.99924602286414, 202.0, 'Medial vestibular nucleus neuron (medial vestibular nucleus gabaergic</br>neuron)', 'Transgenic mouse lines subdivide medial vestibular nucleus neurons</br>into discrete, neurochemically distinct populations.', 'Bagnall MW; Stevens RJ; du Lac S', 'J. Neurosci.', '2007', '2226'], [15.017862039481937, 444.0, 'Medial vestibular nucleus neuron (medial vestibular nucleus</br>glutamatergic or glycinergic neuron)', 'Transgenic mouse lines subdivide medial vestibular nucleus neurons</br>into discrete, neurochemically distinct populations.', 'Bagnall MW; Stevens RJ; du Lac S', 'J. Neurosci.', '2007', '2226'], [15.006277474716025, 340.0, 'Medial vestibular nucleus neuron (medial vestibular nucleus</br>glutamatergic or glycinergic neuron)', 'Transgenic mouse lines subdivide medial vestibular nucleus neurons</br>into discrete, neurochemically distinct populations.', 'Bagnall MW; Stevens RJ; du Lac S', 'J. Neurosci.', '2007', '2226'], [14.977384147513586, 224.0, 'Medial vestibular nucleus neuron (medial vestibular nucleus gabaergic</br>neuron)', 'Transgenic mouse lines subdivide medial vestibular nucleus neurons</br>into discrete, neurochemically distinct populations.', 'Bagnall MW; Stevens RJ; du Lac S', 'J. Neurosci.', '2007', '2226'], [16.001761670836846, 84.07, 'Neocortex basket cell (Neocortex layer 5-6 fast-spiking GABAergic</br>interneuron)', 'Impaired fast-spiking, suppressed cortical inhibition, and increased</br>susceptibility to seizures in mice lacking Kv3.2 K+ channel proteins.', 'Lau D; Vega-Saenz de Miera EC; Contreras D; Ozaita A; Harvey M; Chow</br>A; Noebels JL; Paylor R; Morgan JI; Leonard CS; Rudy B', 'J. Neurosci.', '2000', '3096'], [16.005492897171813, 79.37, 'Neocortex basket cell (Neocortex layer 1-4 fast-spiking GABAergic</br>interneuron)', 'Impaired fast-spiking, suppressed cortical inhibition, and increased</br>susceptibility to seizures in mice lacking Kv3.2 K+ channel proteins.', 'Lau D; Vega-Saenz de Miera EC; Contreras D; Ozaita A; Harvey M; Chow</br>A; Noebels JL; Paylor R; Morgan JI; Leonard CS; Rudy B', 'J. Neurosci.', '2000', '3096'], [15.997582297261335, 0.136, 'Neocortex basket cell (Somatosensory cortex layer 2-3 nonpyramidal</br>multipolar fast-spiking inhibitory interneuron)', 'Integration of broadband conductance input in rat somatosensory</br>cortical inhibitory interneurons: an inhibition-controlled switch</br>between intrinsic and input-driven spiking in fast-spiking cells.', 'Tateno T; Robinson HP', 'J. Neurophysiol.', '2009', '260'], [16.00756751599642, 117.0, 'Neocortex basket cell (Somatosensory cortex layer 5 multipolar fast-</br>spiking parvalbumin positive interneuron)', 'Altered intrinsic properties of neuronal subtypes in malformed</br>epileptogenic cortex.', 'George AL; Jacobs KM', 'Brain Res.', '2011', '21349'], [16.97736664816405, 498.0, 'Neocortex interneuron deep (Presubiculum parvalbumin interneuron)', 'Diversity and overlap of parvalbumin and somatostatin expressing</br>interneurons in mouse presubiculum.', 'Nassar M; Simonnet J; Lofredi R; Cohen I; Savary E; Yanagawa Y; Miles</br>R; Fricker D', 'Front Neural Circuits', '2015', '27898'], [17.009234380853776, 22.8, 'Neocortex interneuron deep (posterior piriform cortex GABAergic</br>irregular-spiking inhibitory interneuron)', 'GABAergic inhibitory interneurons in the posterior piriform cortex of</br>the GAD67-GFP mouse.', 'Young A; Sun QQ', 'Cereb. Cortex', '2009', '36001'], [16.99202700622468, 355.0, 'Neocortex interneuron deep (Presubiculum somatostatin-expressing</br>interneuron)', 'Diversity and overlap of parvalbumin and somatostatin expressing</br>interneurons in mouse presubiculum.', 'Nassar M; Simonnet J; Lofredi R; Cohen I; Savary E; Yanagawa Y; Miles</br>R; Fricker D', 'Front Neural Circuits', '2015', '27898'], [16.999996265600164, 94.5, 'Neocortex interneuron deep (barrel cortex layer 6a GABAergic</br>inhibitory interneuron)', 'Inter- and intralaminar subcircuits of excitatory and inhibitory</br>neurons in layer 6a of the rat barrel cortex.', 'Kumar P; Ohana O', 'J. Neurophysiol.', '2008', '283'], [16.989737030976904, 353.0, 'Neocortex interneuron deep (Presubiculum somatostatin-expressing</br>interneuron)', 'Diversity and overlap of parvalbumin and somatostatin expressing</br>interneurons in mouse presubiculum.', 'Nassar M; Simonnet J; Lofredi R; Cohen I; Savary E; Yanagawa Y; Miles</br>R; Fricker D', 'Front Neural Circuits', '2015', '27898'], [17.018525656608258, 22.7, 'Neocortex interneuron deep (posterior piriform cortex GABAergic</br>regular-spiking non-pyramidal inhibitory interneuron)', 'GABAergic inhibitory interneurons in the posterior piriform cortex of</br>the GAD67-GFP mouse.', 'Young A; Sun QQ', 'Cereb. Cortex', '2009', '36001'], [16.998882869658893, 22.5, 'Neocortex interneuron deep (posterior piriform cortex GABAergic late-</br>spiking inhibitory interneuron)', 'GABAergic inhibitory interneurons in the posterior piriform cortex of</br>the GAD67-GFP mouse.', 'Young A; Sun QQ', 'Cereb. Cortex', '2009', '36001'], [18.005152989170774, 132.0, 'Neocortex Martinotti cell (Barrel Cortex GAD67 expressing,</br>somatostatin-containing Gabaergic interneurons)', 'Distinct subtypes of somatostatin-containing neocortical interneurons</br>revealed in transgenic mice.', 'Ma Y; Hu H; Berrebi AS; Mathers PH; Agmon A', 'J. Neurosci.', '2006', '2344'], [18.01819896652414, 33.19, 'Neocortex Martinotti cell (somatosensory cortex layer 6 martinotti</br>cell)', 'Anatomical, physiological and molecular properties of Martinotti cells</br>in the somatosensory cortex of the juvenile rat.', 'Wang Y; Toledo-Rodriguez M; Gupta A; Wu C; Silberberg G; Luo J;</br>Markram H', 'J. Physiol. (Lond.)', '2004', '7889'], [17.99909050111231, 166.0, 'Neocortex Martinotti cell (Barrel Cortex GAD67 expressing,</br>somatostatin-containing Gabaergic interneurons)', 'Distinct subtypes of somatostatin-containing neocortical interneurons</br>revealed in transgenic mice.', 'Ma Y; Hu H; Berrebi AS; Mathers PH; Agmon A', 'J. Neurosci.', '2006', '2344'], [18.005054729482058, 27.74, 'Neocortex Martinotti cell (somatosensory cortex layer 5 martinotti</br>cell)', 'Anatomical, physiological and molecular properties of Martinotti cells</br>in the somatosensory cortex of the juvenile rat.', 'Wang Y; Toledo-Rodriguez M; Gupta A; Wu C; Silberberg G; Luo J;</br>Markram H', 'J. Physiol. (Lond.)', '2004', '7889'], [18.002919764562545, 101.0, 'Neocortex Martinotti cell (Barrel Cortex GAD67 expressing,</br>somatostatin-containing Gabaergic interneurons)', 'Distinct subtypes of somatostatin-containing neocortical interneurons</br>revealed in transgenic mice.', 'Ma Y; Hu H; Berrebi AS; Mathers PH; Agmon A', 'J. Neurosci.', '2006', '2344'], [18.011104518284533, 85.0, 'Neocortex Martinotti cell (Somatosensory cortex layer 5 low threshold-</br>spiking interneuron)', 'Altered intrinsic properties of neuronal subtypes in malformed</br>epileptogenic cortex.', 'George AL; Jacobs KM', 'Brain Res.', '2011', '21349'], [18.99788985767132, 34.0, 'Neocortex pyramidal cell layer 2-3', 'Functional roles of Kv1 channels in neocortical pyramidal neurons.', 'Guan D; Lee JC; Higgs MH; Spain WJ; Foehring RC', 'J. Neurophysiol.', '2007', '398'], [19.009729913434807, 89.0, 'Neocortex pyramidal cell layer 2-3 (somatosensory cortex layer 2/3</br>pyramidal neurons)', 'Electrophysiological properties of genetically identified subtypes of</br>layer 5 neocortical pyramidal neurons: Ca\xb2? dependence and</br>differential modulation by norepinephrine.', 'Guan D; Armstrong WE; Foehring RC', 'J. Neurophysiol.', '2015', '49054'], [19.012129881662414, 79.8, 'Neocortex pyramidal cell layer 2-3 (Dysplastic Cortex Regular Spiking</br>Neuron)', 'Characterization of neuronal migration disorders in neocortical</br>structures. II. Intracellular in vitro recordings.', 'Luhmann HJ; Karpuk N; Q\xfc M; Zilles K', 'J. Neurophysiol.', '1998', '1296'], [18.99287724443887, 32.5, 'Neocortex pyramidal cell layer 2-3 (Somatosensory and motor cortex</br>layer 2-3 regular spiking pyramidal neurons)', 'Effects of temperature on calcium transients and Ca2+-dependent</br>afterhyperpolarizations in neocortical pyramidal neurons.', 'Lee JC; Callaway JC; Foehring RC', 'J. Neurophysiol.', '2005', '635'], [19.00659427261069, 44.0, 'Neocortex pyramidal cell layer 2-3 (Somatosensory and motor cortex</br>layer 2-3 regular spiking pyramidal neurons)', 'Effects of temperature on calcium transients and Ca2+-dependent</br>afterhyperpolarizations in neocortical pyramidal neurons.', 'Lee JC; Callaway JC; Foehring RC', 'J. Neurophysiol.', '2005', '635'], [19.98960220766482, 39.6, 'Neocortex pyramidal cell layer 5-6 (neocortex layer 5 large pyramidal</br>cell)', 'Maturation of "neocortex isole" in vivo in mice.', 'Zhou L; Gall D; Qu Y; Prigogine C; Cheron G; Tissir F; Schiffmann SN;</br>Goffinet AM', 'J. Neurosci.', '2010', '1770'], [19.992867578338828, 79.1, 'Neocortex pyramidal cell layer 5-6 (Layer 6a barrel cortex pyramidal</br>corticothalamic neuron with large terminal arbors)', 'Inter- and intralaminar subcircuits of excitatory and inhibitory</br>neurons in layer 6a of the rat barrel cortex.', 'Kumar P; Ohana O', 'J. Neurophysiol.', '2008', '282'], [19.99750559064149, 50.7, 'Neocortex pyramidal cell layer 5-6 (barrel cortex layer 6a</br>corticocortical pyramidal neuron with infragranular arborization</br>axons)', 'Inter- and intralaminar subcircuits of excitatory and inhibitory</br>neurons in layer 6a of the rat barrel cortex.', 'Kumar P; Ohana O', 'J. Neurophysiol.', '2008', '282'], [19.99785507505931, 175.0, 'Neocortex pyramidal cell layer 5-6 (Primary motor cortex layer 5b</br>corticospinal thick-tufted large pyramidal neuron)', 'Intrinsic electrophysiology of mouse corticospinal neurons: a class-</br>specific triad of spike-related properties.', 'Suter BA; Migliore M; Shepherd GM', 'Cereb. Cortex', '2013', '36261'], [20.002259419651924, 125.0, 'Neocortex pyramidal cell layer 5-6 (Somatosensory cortex layer 5b</br>Glt25d2-expressing thick-tufted pyramidal neurons )', 'Electrophysiological properties of genetically identified subtypes of</br>layer 5 neocortical pyramidal neurons: Ca\xb2? dependence and</br>differential modulation by norepinephrine.', 'Guan D; Armstrong WE; Foehring RC', 'J. Neurophysiol.', '2015', '49054'], [20.01081480399117, 147.0, 'Neocortex pyramidal cell layer 5-6 (Secondary somatosensory cortex</br>layer 5b corticospinal thick-tufted large pyramidal neuron)', 'Intrinsic electrophysiology of mouse corticospinal neurons: a class-</br>specific triad of spike-related properties.', 'Suter BA; Migliore M; Shepherd GM', 'Cereb. Cortex', '2013', '36261'], [20.018691181920865, 115.8, 'Neocortex pyramidal cell layer 5-6', 'Protein-kinase C-dependent phosphorylation inhibits the effect of the</br>antiepileptic drug topiramate on the persistent fraction of sodium</br>currents.', 'Curia G; Aracri P; Sancini G; Mantegazza M; Avanzini G; Franceschetti</br>S', 'Neuroscience', '2004', '21238'], [19.99509869962519, 105.0, 'Neocortex pyramidal cell layer 5-6 (somatosensory cortex layer 5a</br>corticostriatal Etv1-expressing slender-tufted pyramidal neurons)', 'Electrophysiological properties of genetically identified subtypes of</br>layer 5 neocortical pyramidal neurons: Ca\xb2? dependence and</br>differential modulation by norepinephrine.', 'Guan D; Armstrong WE; Foehring RC', 'J. Neurophysiol.', '2015', '49054'], [20.002036038928406, 66.0, 'Neocortex pyramidal cell layer 5-6 (Primary motor cortex layer 5b</br>corticostriatal pyramidal neuron )', 'Intrinsic electrophysiology of mouse corticospinal neurons: a class-</br>specific triad of spike-related properties.', 'Suter BA; Migliore M; Shepherd GM', 'Cereb. Cortex', '2013', '36261'], [20.0108555881673, 42.0, 'Neocortex pyramidal cell layer 5-6 (Somatosensory cortex layer 5</br>apical pyramidal cell)', 'Altered intrinsic properties of neuronal subtypes in malformed</br>epileptogenic cortex.', 'George AL; Jacobs KM', 'Brain Res.', '2011', '21349'], [20.00301378331982, 90.0, 'Neocortex pyramidal cell layer 5-6 (Somatosensory Cortex Layer V</br>Barrel Mixed Burst/Spike Cortical Neuron)', 'Differential modulatory effects of norepinephrine on synaptically</br>driven responses of layer V barrel field cortical neurons.', 'Waterhouse BD; Mouradian R; Sessler FM; Lin RC', 'Brain Res.', '2000', '25311'], [20.00257508867923, 134.0, 'Neocortex pyramidal cell layer 5-6 (Primary motor cortex layer 5b</br>corticospinal thick-tufted large pyramidal neuron)', 'Intrinsic electrophysiology of mouse corticospinal neurons: a class-</br>specific triad of spike-related properties.', 'Suter BA; Migliore M; Shepherd GM', 'Cereb. Cortex', '2013', '36261'], [20.00863716555284, 81.0, 'Neocortex pyramidal cell layer 5-6 (Somatosensory Cortex Layer V</br>Barrel Intrinsic Burst Cortical Neuron)', 'Differential modulatory effects of norepinephrine on synaptically</br>driven responses of layer V barrel field cortical neurons.', 'Waterhouse BD; Mouradian R; Sessler FM; Lin RC', 'Brain Res.', '2000', '25311'], [20.007558092201144, 95.0, 'Neocortex pyramidal cell layer 5-6 (Neocortex layer 5 Kv3.1 expressing</br>pyramidal cell)', 'Transgenic mice expressing a fluorescent in vivo label in a distinct</br>subpopulation of neocortical layer 5 pyramidal cells.', 'Akemann W; Zhong YM; Ichinohe N; Rockland KS; Kn\xf6pfel T', 'J. Comp. Neurol.', '2004', '45934'], [20.007448937982282, 153.0, 'Neocortex pyramidal cell layer 5-6 (Primary motor cortex layer 5b</br>corticospinal thick-tufted large pyramidal neuron)', 'Intrinsic electrophysiology of mouse corticospinal neurons: a class-</br>specific triad of spike-related properties.', 'Suter BA; Migliore M; Shepherd GM', 'Cereb. Cortex', '2013', '36261'], [19.98308749700854, 99.0, 'Neocortex pyramidal cell layer 5-6 (Neocortex layer 5 Kv3.1 non-</br>expressing pyramidal cell)', 'Transgenic mice expressing a fluorescent in vivo label in a distinct</br>subpopulation of neocortical layer 5 pyramidal cells.', 'Akemann W; Zhong YM; Ichinohe N; Rockland KS; Kn\xf6pfel T', 'J. Comp. Neurol.', '2004', '45934'], [21.00893068305008, 0.55, 'Neocortex uncharacterized cell (Parietal cortex pyramidal cells)', 'Maturation of "neocortex isole" in vivo in mice.', 'Zhou L; Gall D; Qu Y; Prigogine C; Cheron G; Tissir F; Schiffmann SN;</br>Goffinet AM', 'J. Neurosci.', '2010', '1771'], [20.995452830556957, 93.0, 'Neocortex uncharacterized cell (prefrontal cortex neurogliaform</br>Inhibitory Neuron)', 'Electrophysiological differences between neurogliaform cells from</br>monkey and rat prefrontal cortex.', 'Povysheva NV; Zaitsev AV; Kr\xf6ner S; Krimer OA; Rotaru DC; Gonzalez-</br>Burgos G; Lewis DA; Krimer LS', 'J. Neurophysiol.', '2007', '407'], [21.000031795099403, 95.0, 'Neocortex uncharacterized cell (prefrontal cortex neurogliaform</br>Inhibitory Neuron)', 'Electrophysiological differences between neurogliaform cells from</br>monkey and rat prefrontal cortex.', 'Povysheva NV; Zaitsev AV; Kr\xf6ner S; Krimer OA; Rotaru DC; Gonzalez-</br>Burgos G; Lewis DA; Krimer LS', 'J. Neurophysiol.', '2007', '407'], [21.01215911020181, 56.3, 'Neocortex uncharacterized cell (somatosensory cortex Layers II/III/V</br>ADP-negative Pyramidal Cell )', 'Spike sequences and mean firing rate in rat neocortical neurons in</br>vitro.', 'Karpuk N; Vorobyov V', 'Brain Res.', '2003', '24714'], [20.98946831596608, 87.5, 'Neocortex uncharacterized cell (somatosensory cortex Layers II/III/V</br>ADP-positive Pyramidal Cell)', 'Spike sequences and mean firing rate in rat neocortical neurons in</br>vitro.', 'Karpuk N; Vorobyov V', 'Brain Res.', '2003', '24714'], [22.00339202033251, 55.0, 'Neostriatum gabaergic interneuron (Neostriatum fast spiking gabaergic</br>interneuron)', 'Up and down states in striatal medium spiny neurons simultaneously</br>recorded with spontaneous activity in fast-spiking interneurons</br>studied in cortex-striatum-substantia nigra organotypic cultures.', 'Plenz D; Kitai ST', 'J. Neurosci.', '1998', '3439'], [21.99400456730421, 48.7, 'Neostriatum gabaergic interneuron (Neostriatum fast-spiking</br>interneuron)', 'Heterogeneity of spike frequency adaptation among medium spiny</br>neurones from the rat striatum.', 'Venance L; Glowinski J', 'Neuroscience', '2003', '24593'], [23.010813931141197, 85.5, 'Neostriatum medium spiny neuron', "Electrophysiological and morphological changes in striatal spiny</br>neurons in R6/2 Huntington's disease transgenic mice.", 'Klapstein GJ; Fisher RS; Zanjani H; Cepeda C; Jokel ES; Chesselet MF;</br>Levine MS', 'J. Neurophysiol.', '2001', '947'], [23.00203384570649, 40.0, 'Neostriatum medium spiny neuron', 'Up and down states in striatal medium spiny neurons simultaneously</br>recorded with spontaneous activity in fast-spiking interneurons</br>studied in cortex-striatum-substantia nigra organotypic cultures.', 'Plenz D; Kitai ST', 'J. Neurosci.', '1998', '3439'], [22.98171156409563, 98.1, 'Neostriatum medium spiny neuron', "Electrophysiological and morphological changes in striatal spiny</br>neurons in R6/2 Huntington's disease transgenic mice.", 'Klapstein GJ; Fisher RS; Zanjani H; Cepeda C; Jokel ES; Chesselet MF;</br>Levine MS', 'J. Neurophysiol.', '2001', '947'], [23.005806148693818, 8.8, 'Neostriatum medium spiny neuron', 'Heterogeneity of spike frequency adaptation among medium spiny</br>neurones from the rat striatum.', 'Venance L; Glowinski J', 'Neuroscience', '2003', '24593'], [23.013985935860568, 92.1, 'Neostriatum medium spiny neuron', 'P2Y1 receptor modulation of Ca2+-activated K+ currents in medium-sized</br>neurons from neonatal rat striatal slices.', 'Coppi E; Pedata F; Gibb AJ', 'J. Neurophysiol.', '2012', '7610'], [24.00223745232295, 93.16, 'Nucleus of the solitary tract intrinsic cell', 'H?O? induces delayed hyperexcitability in nucleus tractus solitarii</br>neurons.', 'Ostrowski TD; Hasser EM; Heesch CM; Kline DD', 'Neuroscience', '2014', '47587'], [25.00203202703517, 16.0, 'Nucleus of the solitary tract principal cell (rostral nucleus of the</br>solitary tract neuron)', 'Pre- and postnatal differences in membrane, action potential, and ion</br>channel properties of rostral nucleus of the solitary tract neurons.', 'Suwabe T; Mistretta CM; Krull C; Bradley RM', 'J. Neurophysiol.', '2011', '43'], [24.975574811227453, 61.96, 'Nucleus of the solitary tract principal cell', 'Exogenous brain-derived neurotrophic factor rescues synaptic</br>dysfunction in Mecp2-null mice.', 'Kline DD; Ogier M; Kunze DL; Katz DM', 'J. Neurosci.', '2010', '1803'], [25.010557383889093, 45.0, 'Nucleus of the solitary tract principal cell (rostral nucleus of the</br>solitary tract neuron)', 'Pre- and postnatal differences in membrane, action potential, and ion</br>channel properties of rostral nucleus of the solitary tract neurons.', 'Suwabe T; Mistretta CM; Krull C; Bradley RM', 'J. Neurophysiol.', '2011', '43'], [24.99911466818843, 22.0, 'Nucleus of the solitary tract principal cell (rostral nucleus of the</br>solitary tract neuron)', 'Pre- and postnatal differences in membrane, action potential, and ion</br>channel properties of rostral nucleus of the solitary tract neurons.', 'Suwabe T; Mistretta CM; Krull C; Bradley RM', 'J. Neurophysiol.', '2011', '43'], [25.98743781147182, 102.5, 'Olfactory bulb (main) Blanes cell (Olfactory bulb deep short-axon</br>cells)', 'Rapid Feedforward Inhibition and Asynchronous Excitation Regulate</br>Granule Cell Activity in the Mammalian Main Olfactory Bulb.', 'Burton SD; Urban NN', 'J. Neurosci.', '2015', '47255'], [27.001274189002448, 60.3, 'Olfactory bulb (main) granule cell', 'Rapid Feedforward Inhibition and Asynchronous Excitation Regulate</br>Granule Cell Activity in the Mammalian Main Olfactory Bulb.', 'Burton SD; Urban NN', 'J. Neurosci.', '2015', '47255'], [28.001932379624236, 77.9, 'Olfactory bulb (main) mitral cell', 'Postnatal development attunes olfactory bulb mitral cells to high-</br>frequency signaling.', 'Yu Y; Burton SD; Tripathy SJ; Urban NN', 'J. Neurophysiol.', '2015', '49227'], [29.01769053703224, 40.8, 'Olfactory cortex large multipolar cell (posterior piriform cortex</br>round smooth GABAergic fast-spiking inhibitory interneuron)', 'GABAergic inhibitory interneurons in the posterior piriform cortex of</br>the GAD67-GFP mouse.', 'Young A; Sun QQ', 'Cereb. Cortex', '2009', '36001'], [30.018354802634914, 80.0, 'Other (presubiculum regular spiking pyramidal cells in layer V/VI)', 'Cellular neuroanatomy of rat presubiculum.', 'Simonnet J; Eug\xe8ne E; Cohen I; Miles R; Fricker D', 'Eur. J. Neurosci.', '2013', '20457'], [29.980588526088795, 60.0, 'Other (Dentate gyrus GABAergic neurons)', 'Multiple roles for mammalian target of rapamycin signaling in both</br>glutamatergic and GABAergic synaptic transmission.', 'Weston MC; Chen H; Swann JW', 'J. Neurosci.', '2012', '46416'], [30.002979911580837, 45.6, 'Other (Lateral central amygdala early-spiking GABAergic neuron)', 'Wiring Specificity and Synaptic Diversity in the Mouse Lateral Central</br>Amygdala.', 'Hou WH; Kuo N; Fang GW; Huang HS; Wu KP; Zimmer A; Cheng JK; Lien CC', 'J. Neurosci.', '2016', '49947'], [30.009195550553248, 270.0, 'Other (Rostral ventromedial medulla fast-spiking on-response neurons)', 'Intrinsic membrane characteristics distinguish two subsets of</br>nociceptive modulatory neurons in rat RVM.', 'Zagon A; Meng X; Fields HL', 'J. Neurophysiol.', '1997', '1342'], [29.990179168154775, 89.0, 'Other (Dentate gyrus glutamergic neurons)', 'Multiple roles for mammalian target of rapamycin signaling in both</br>glutamatergic and GABAergic synaptic transmission.', 'Weston MC; Chen H; Swann JW', 'J. Neurosci.', '2012', '46416'], [30.01185398256759, 287.0, 'Other (Rostral ventromedial medulla fast-spiking off-response neurons)', 'Intrinsic membrane characteristics distinguish two subsets of</br>nociceptive modulatory neurons in rat RVM.', 'Zagon A; Meng X; Fields HL', 'J. Neurophysiol.', '1997', '1342'], [29.98148085790527, 53.1, 'Other (lamina terminalis- preoptic area-diagonal band of Broca GnRH</br>expressing neurons)', 'GABA- and glutamate-activated channels in green fluorescent protein-</br>tagged gonadotropin-releasing hormone neurons in transgenic mice.', 'Spergel DJ; Kr\xfcth U; Hanley DF; Sprengel R; Seeburg PH', 'J. Neurosci.', '1999', '3303'], [30.015750157425106, 191.0, 'Other ( rostral ventromedial medulla slow-spiking off -response</br>neurons)', 'Intrinsic membrane characteristics distinguish two subsets of</br>nociceptive modulatory neurons in rat RVM.', 'Zagon A; Meng X; Fields HL', 'J. Neurophysiol.', '1997', '1342'], [30.00582587168396, 63.1, 'Other (hypothalamic non-GnRH expressing neuron)', 'GABA- and glutamate-activated channels in green fluorescent protein-</br>tagged gonadotropin-releasing hormone neurons in transgenic mice.', 'Spergel DJ; Kr\xfcth U; Hanley DF; Sprengel R; Seeburg PH', 'J. Neurosci.', '1999', '3303'], [30.00472142655301, 206.0, 'Other (Rostral ventromedial medulla slow-spiking on-response neurons)', 'Intrinsic membrane characteristics distinguish two subsets of</br>nociceptive modulatory neurons in rat RVM.', 'Zagon A; Meng X; Fields HL', 'J. Neurophysiol.', '1997', '1342'], [30.00632048383085, 180.0, 'Other (Rostral ventromedial medulla neutral slow-spiking inhibitory</br>neurons)', 'Intrinsic membrane characteristics distinguish two subsets of</br>nociceptive modulatory neurons in rat RVM.', 'Zagon A; Meng X; Fields HL', 'J. Neurophysiol.', '1997', '1342'], [30.00327593638085, 124.0, 'Other (CA3 projecting hippocampus Granule Cell)', 'Two electrophysiologically distinct types of granule cells in</br>epileptic human hippocampus.', 'Dietrich D; Clusmann H; Kral T; Steinh\xe4user C; Bl\xfcmcke I; Heinemann U;</br>Schramm J', 'Neuroscience', '1999', '22572'], [29.99096166151916, 79.0, 'Other (resembled hippocampal Schaffer collateral associated cells and</br>hippocampal associational commissural-associated cells)', 'A blueprint for the spatiotemporal origins of mouse hippocampal</br>interneuron diversity.', 'Tricoire L; Pelkey KA; Erkkila BE; Jeffries BW; Yuan X; McBain CJ', 'J. Neurosci.', '2011', '1587'], [30.006191478887853, 42.75, 'Other (neocortex layer 1 classical stuttering GABAergic cells)', 'Synaptic and cellular organization of layer 1 of the developing rat</br>somatosensory cortex.', 'Muralidhar S; Wang Y; Markram H', 'Front Neuroanat', '2013', '28037'], [29.999365200662297, 103.0, 'Other (Basolateral amygdala cholecystokinin induced fast spiking type</br>1 interneurons)', 'Cholecystokinin excites interneurons in rat basolateral amygdala.', 'Chung L; Moore SD', 'J. Neurophysiol.', '2009', '225'], [30.01350922970886, 43.78, 'Other (somatosensory cortex layer 1 classical non-accomodating</br>GABAergic cells)', 'Synaptic and cellular organization of layer 1 of the developing rat</br>somatosensory cortex.', 'Muralidhar S; Wang Y; Markram H', 'Front Neuroanat', '2013', '28037'], [30.01093301610095, 85.0, 'Other (Basolateral amygdala cholecystokinin induced fast spiking type</br>2 interneurons)', 'Cholecystokinin excites interneurons in rat basolateral amygdala.', 'Chung L; Moore SD', 'J. Neurophysiol.', '2009', '225'], [30.003526520697218, 45.45, 'Other (somatosensory cortex layer 1 classical adapting GABAergic</br>cells)', 'Synaptic and cellular organization of layer 1 of the developing rat</br>somatosensory cortex.', 'Muralidhar S; Wang Y; Markram H', 'Front Neuroanat', '2013', '28037'], [29.992963993023412, 79.0, 'Other (Basolateral amygdala cholecystokinin induced projection</br>neurons)', 'Cholecystokinin excites interneurons in rat basolateral amygdala.', 'Chung L; Moore SD', 'J. Neurophysiol.', '2009', '225'], [29.980871479381126, 40.02, 'Other (somatosensory cortex layer 1 bursting non-accommodating</br>GABAergic cells)', 'Synaptic and cellular organization of layer 1 of the developing rat</br>somatosensory cortex.', 'Muralidhar S; Wang Y; Markram H', 'Front Neuroanat', '2013', '28037'], [30.00775076124091, 122.0, 'Other (presubiculum regular spiking pyramidal cells in layers II/III)', 'Cellular neuroanatomy of rat presubiculum.', 'Simonnet J; Eug\xe8ne E; Cohen I; Miles R; Fricker D', 'Eur. J. Neurosci.', '2013', '20457'], [30.001013306170684, 94.8, 'Other (Layer IV Excitatory Barrel Neurons)', 'Increased excitability of cortical neurons induced by associative</br>learning: an ex vivo study.', 'Bekisz M; Garkun Y; Wabno J; Hess G; Wrobel A; Kossut M', 'Eur. J. Neurosci.', '2010', '15545'], [30.0076715592723, 91.0, 'Other (presubiculum intrinsically bursting cells in layers IV)', 'Cellular neuroanatomy of rat presubiculum.', 'Simonnet J; Eug\xe8ne E; Cohen I; Miles R; Fricker D', 'Eur. J. Neurosci.', '2013', '20457'], [29.981958775987348, 97.0, 'Other (Basolateral amygdala cholecystokinin induced burst-spiking</br>interneurons)', 'Cholecystokinin excites interneurons in rat basolateral amygdala.', 'Chung L; Moore SD', 'J. Neurophysiol.', '2009', '225'], [30.001588406558163, 50.64, 'Other (neocortex layer 1 classical irregular spiking GABAergic cells)', 'Synaptic and cellular organization of layer 1 of the developing rat</br>somatosensory cortex.', 'Muralidhar S; Wang Y; Markram H', 'Front Neuroanat', '2013', '28037'], [29.994870382012948, 97.0, 'Other (presubiculum regular spiking pyramidal cells in layer V/VI)', 'Cellular neuroanatomy of rat presubiculum.', 'Simonnet J; Eug\xe8ne E; Cohen I; Miles R; Fricker D', 'Eur. J. Neurosci.', '2013', '20457'], [29.977394251269715, 86.0, 'Other (Basolateral amygdala cholecystokinin induced regular-firing</br>interneurons)', 'Cholecystokinin excites interneurons in rat basolateral amygdala.', 'Chung L; Moore SD', 'J. Neurophysiol.', '2009', '225'], [29.97646048812218, 43.6, 'Other (Lateral central amygdala late-spiking GABAergic neuron)', 'Wiring Specificity and Synaptic Diversity in the Mouse Lateral Central</br>Amygdala.', 'Hou WH; Kuo N; Fang GW; Huang HS; Wu KP; Zimmer A; Cheng JK; Lien CC', 'J. Neurosci.', '2016', '49947'], [30.000033882649138, 6.6, 'Other (Neostriatum long-lasting afterhyperpolarization interneuron)', 'Heterogeneity of spike frequency adaptation among medium spiny</br>neurones from the rat striatum.', 'Venance L; Glowinski J', 'Neuroscience', '2003', '24593'], [30.99178950301971, 82.1, 'Spinal cord ventral horn motor neuron alpha (spinal cord lumbar motor</br>neuron)', 'Early excitability changes in lumbar motoneurons of transgenic</br>SOD1G85R and SOD1G(93A-Low) mice.', 'Pambo-Pambo A; Durand J; Gueritaud JP', 'J. Neurophysiol.', '2009', '194'], [32.00122761572208, 109.0, 'Subiculum pyramidal cell (subiculum pyramidal neuron projecting to</br>lateral entorhinal cortex)', 'Target-specific output patterns are predicted by the distribution of</br>regular-spiking and bursting pyramidal neurons in the subiculum.', 'Kim Y; Spruston N', 'Hippocampus', '2012', '19522'], [32.00229436569469, 97.0, 'Subiculum pyramidal cell (subiculum pyramidal neuron projecting to</br>amygdala)', 'Target-specific output patterns are predicted by the distribution of</br>regular-spiking and bursting pyramidal neurons in the subiculum.', 'Kim Y; Spruston N', 'Hippocampus', '2012', '19522'], [31.992917355781792, 118.0, 'Subiculum pyramidal cell (subiculum regular spiking pyramidal neuron)', 'Target-specific output patterns are predicted by the distribution of</br>regular-spiking and bursting pyramidal neurons in the subiculum.', 'Kim Y; Spruston N', 'Hippocampus', '2012', '19522'], [31.99832225617412, 133.0, 'Subiculum pyramidal cell (subiculum bursting pyramidal neuron)', 'Target-specific output patterns are predicted by the distribution of</br>regular-spiking and bursting pyramidal neurons in the subiculum.', 'Kim Y; Spruston N', 'Hippocampus', '2012', '19522'], [31.99779196858138, 129.0, 'Subiculum pyramidal cell (subiculum pyramidal neuron projecting to</br>thalamic nucleus)', 'Target-specific output patterns are predicted by the distribution of</br>regular-spiking and bursting pyramidal neurons in the subiculum.', 'Kim Y; Spruston N', 'Hippocampus', '2012', '19522'], [31.990720698928033, 118.0, 'Subiculum pyramidal cell (subiculum pyramidal neuron projecting to</br>nucleus accumbens)', 'Target-specific output patterns are predicted by the distribution of</br>regular-spiking and bursting pyramidal neurons in the subiculum.', 'Kim Y; Spruston N', 'Hippocampus', '2012', '19522'], [32.001346508807124, 141.0, 'Subiculum pyramidal cell (subiculum pyramidal neuron projecting to</br>ventromedial hypothalamus)', 'Target-specific output patterns are predicted by the distribution of</br>regular-spiking and bursting pyramidal neurons in the subiculum.', 'Kim Y; Spruston N', 'Hippocampus', '2012', '19522'], [31.98924200747336, 138.0, 'Subiculum pyramidal cell (subiculum pyramidal neuron projecting to</br>presubiculum)', 'Target-specific output patterns are predicted by the distribution of</br>regular-spiking and bursting pyramidal neurons in the subiculum.', 'Kim Y; Spruston N', 'Hippocampus', '2012', '19522'], [31.993623719164958, 134.0, 'Subiculum pyramidal cell (Presubicular pyramidal cells)', 'Diversity and overlap of parvalbumin and somatostatin expressing</br>interneurons in mouse presubiculum.', 'Nassar M; Simonnet J; Lofredi R; Cohen I; Savary E; Yanagawa Y; Miles</br>R; Fricker D', 'Front Neural Circuits', '2015', '27898'], [31.98715021038227, 121.0, 'Subiculum pyramidal cell (subiculum pyramidal neuron projecting to</br>medial entorhinal cortex)', 'Target-specific output patterns are predicted by the distribution of</br>regular-spiking and bursting pyramidal neurons in the subiculum.', 'Kim Y; Spruston N', 'Hippocampus', '2012', '19522'], [32.005391309047134, 169.0, 'Subiculum pyramidal cell (subiculum pyramidal neuron projecting to</br>retrosplenial cortex)', 'Target-specific output patterns are predicted by the distribution of</br>regular-spiking and bursting pyramidal neurons in the subiculum.', 'Kim Y; Spruston N', 'Hippocampus', '2012', '19522'], [32.0043066913323, 109.0, 'Subiculum pyramidal cell (subiculum pyramidal neuron projecting to</br>orbitofrontal cortex)', 'Target-specific output patterns are predicted by the distribution of</br>regular-spiking and bursting pyramidal neurons in the subiculum.', 'Kim Y; Spruston N', 'Hippocampus', '2012', '19522'], [32.988268137264164, 20.2, 'Substantia nigra pars compacta dopaminergic cell', 'Non-linear developmental trajectory of electrical phenotype in rat</br>substantia nigra pars compacta dopaminergic neurons.', 'Dufour MA; Woodhouse A; Amendola J; Goaillard JM', 'Elife', '2014', '50026'], [33.010005396721525, 41.4, 'Substantia nigra pars compacta dopaminergic cell', 'Non-linear developmental trajectory of electrical phenotype in rat</br>substantia nigra pars compacta dopaminergic neurons.', 'Dufour MA; Woodhouse A; Amendola J; Goaillard JM', 'Elife', '2014', '50026'], [32.99961026777451, 43.2, 'Substantia nigra pars compacta dopaminergic cell', 'Non-linear developmental trajectory of electrical phenotype in rat</br>substantia nigra pars compacta dopaminergic neurons.', 'Dufour MA; Woodhouse A; Amendola J; Goaillard JM', 'Elife', '2014', '50026'], [33.003765777983936, 17.6, 'Substantia nigra pars compacta dopaminergic cell', 'Non-linear developmental trajectory of electrical phenotype in rat</br>substantia nigra pars compacta dopaminergic neurons.', 'Dufour MA; Woodhouse A; Amendola J; Goaillard JM', 'Elife', '2014', '50026'], [33.002267860871164, 44.0, 'Substantia nigra pars compacta dopaminergic cell', 'Regulation of action potential size and excitability in substantia</br>nigra compacta neurons: sensitivity to 4-aminopyridine.', 'Nedergaard S', 'J. Neurophysiol.', '1999', '1157'], [33.00206280868165, 30.9, 'Substantia nigra pars compacta dopaminergic cell', 'Non-linear developmental trajectory of electrical phenotype in rat</br>substantia nigra pars compacta dopaminergic neurons.', 'Dufour MA; Woodhouse A; Amendola J; Goaillard JM', 'Elife', '2014', '50026'], [33.00169738532444, 44.1, 'Substantia nigra pars compacta dopaminergic cell', 'Non-linear developmental trajectory of electrical phenotype in rat</br>substantia nigra pars compacta dopaminergic neurons.', 'Dufour MA; Woodhouse A; Amendola J; Goaillard JM', 'Elife', '2014', '50026'], [32.992644865799306, 41.1, 'Substantia nigra pars compacta dopaminergic cell', 'Non-linear developmental trajectory of electrical phenotype in rat</br>substantia nigra pars compacta dopaminergic neurons.', 'Dufour MA; Woodhouse A; Amendola J; Goaillard JM', 'Elife', '2014', '50026'], [33.011309995321206, 18.0, 'Substantia nigra pars compacta dopaminergic cell', 'Non-linear developmental trajectory of electrical phenotype in rat</br>substantia nigra pars compacta dopaminergic neurons.', 'Dufour MA; Woodhouse A; Amendola J; Goaillard JM', 'Elife', '2014', '50026'], [33.016804415108986, 29.7, 'Substantia nigra pars compacta dopaminergic cell', 'Non-linear developmental trajectory of electrical phenotype in rat</br>substantia nigra pars compacta dopaminergic neurons.', 'Dufour MA; Woodhouse A; Amendola J; Goaillard JM', 'Elife', '2014', '50026'], [33.00559133842257, 21.4, 'Substantia nigra pars compacta dopaminergic cell', 'Non-linear developmental trajectory of electrical phenotype in rat</br>substantia nigra pars compacta dopaminergic neurons.', 'Dufour MA; Woodhouse A; Amendola J; Goaillard JM', 'Elife', '2014', '50026'], [33.015683173809016, 42.6, 'Substantia nigra pars compacta dopaminergic cell', 'Non-linear developmental trajectory of electrical phenotype in rat</br>substantia nigra pars compacta dopaminergic neurons.', 'Dufour MA; Woodhouse A; Amendola J; Goaillard JM', 'Elife', '2014', '50026'], [32.99234918786479, 19.6, 'Substantia nigra pars compacta dopaminergic cell', 'Non-linear developmental trajectory of electrical phenotype in rat</br>substantia nigra pars compacta dopaminergic neurons.', 'Dufour MA; Woodhouse A; Amendola J; Goaillard JM', 'Elife', '2014', '50026'], [32.985228055575206, 16.9, 'Substantia nigra pars compacta dopaminergic cell', 'Non-linear developmental trajectory of electrical phenotype in rat</br>substantia nigra pars compacta dopaminergic neurons.', 'Dufour MA; Woodhouse A; Amendola J; Goaillard JM', 'Elife', '2014', '50026'], [32.99481895060877, 39.7, 'Substantia nigra pars compacta dopaminergic cell', 'Non-linear developmental trajectory of electrical phenotype in rat</br>substantia nigra pars compacta dopaminergic neurons.', 'Dufour MA; Woodhouse A; Amendola J; Goaillard JM', 'Elife', '2014', '50026'], [32.992086254620006, 38.8, 'Substantia nigra pars compacta dopaminergic cell', 'Non-linear developmental trajectory of electrical phenotype in rat</br>substantia nigra pars compacta dopaminergic neurons.', 'Dufour MA; Woodhouse A; Amendola J; Goaillard JM', 'Elife', '2014', '50026'], [33.99445260246705, 241.4, 'Thalamic reticular nucleus cell (Thalamic reticular nucleus fast-</br>spiking GABAergic cell)', 'Resilient RTN fast spiking in Kv3.1 null mice suggests redundancy in</br>the action potential repolarization mechanism.', 'Porcello DM; Ho CS; Joho RH; Huguenard JR', 'J. Neurophysiol.', '2002', '943'], [33.9935946413054, 543.5, 'Thalamic reticular nucleus cell (Thalamic reticular nucleus fast-</br>spiking GABAergic cell)', 'Resilient RTN fast spiking in Kv3.1 null mice suggests redundancy in</br>the action potential repolarization mechanism.', 'Porcello DM; Ho CS; Joho RH; Huguenard JR', 'J. Neurophysiol.', '2002', '943'], [35.02244061780223, 168.9, 'Thalamus relay cell (Lateral dorsal thalamic relay nucleus)', 'Differential regulation of action potential firing in adult murine</br>thalamocortical neurons by Kv3.2, Kv1, and SK potassium and N-type</br>calcium channels.', 'Kasten MR; Rudy B; Anderson MP', 'J. Physiol. (Lond.)', '2007', '7931']], [[]]], {
+    title: "spike max decay slope",
+    series:[
+        {
+            showLine:false,
+            color:"#EAA228",
+        },
+        {
+            showLine:false,
+            color:"#4bb2c5",
+        }
+    ],
+    axesDefaults: {
+        tickRenderer: $.jqplot.CanvasAxisTickRenderer ,
+        tickOptions: {
+          fontSize: '12pt',
+          //formatString:'%.1f',
+        }
+        
+    },
+    axes: {
+      xaxis: {
+        renderer: $.jqplot.CategoryAxisRenderer,
+        ticks: ticks,
+        labelOptions:{
+            fontFamily: 'arial',
+        },
+        tickOptions: {
+          angle: -90,
+        }
+      },
+      yaxis: {
+        label: "mV/ms",
+        labelRenderer: $.jqplot.CanvasAxisLabelRenderer,
+        //renderer: $.jqplot.LogAxisRenderer,
+        renderer: customRenderer,
+        autoscale : true,
+        labelOptions:{
+            fontFamily: 'arial',
+            fontSize: '12pt',
+        },
+      },
+    },
+    highlighter: {
+        show: true,
+        sizeAdjust: 12,
+        tooltipAxes: 'y',
+        tooltipLocation: 'ne',
+        useAxesFormatters: false,
+        yvalues: 6,
+        formatString: '<table class="jqplot-highlighter"> \
+        <tr><td>Value:</td><td>%s (mV/ms)</td></tr> \
+        <tr><td>Neuron:</td><td>%s</td></tr> \
+        <tr><td>Title:</td><td>%s</td></tr> \
+        <tr><td>Authors:</td><td>%s</td></tr> \
+        <tr><td>Journal:</td><td>%s, %s</td></tr> \
+        </table>'
+    },
+    cursor:{
+        show: true, 
+        zoom: true,
+        looseZoom: true,
+        showTooltip:false, 
+        followMouse: true, 
+        showTooltipOutsideZoom: false, 
+        constrainOutsideZoom: false,
+    }, 
+/*    legend:{
+      show: true, 
+      location: 'n', 
+      placement: 'inside',
+      //marginLeft: 300,
+      labels: ['non-human curated', 'human curated'],
+    },*/
+  });
+  console.log(plot1b);
+    $('#chart1').bind('jqplotDataClick', 
+        function (ev, seriesIndex, pointIndex, data) {
+            var data_pt_ind = data[7];
+            var linkStr;
+            if (data_pt_ind < 0) // this is a hack to redirect non-data table ext data to the article page
+            {
+                linkStr = "/article/" + (-data_pt_ind);
+            }
+            else 
+            {
+                linkStr = "/data_table/" + data_pt_ind;
+            }
+            window.open(linkStr, '_self');
+            
+        }
+    );
+    // add id elements to corresponding neuron ticks based on the neuron id
+    
+        $(".jqplot-xaxis canvas")[0].id = 21;
+    
+        $(".jqplot-xaxis canvas")[1].id = 18;
+    
+        $(".jqplot-xaxis canvas")[2].id = 37;
+    
+        $(".jqplot-xaxis canvas")[3].id = 66;
+    
+        $(".jqplot-xaxis canvas")[4].id = 68;
+    
+        $(".jqplot-xaxis canvas")[5].id = 72;
+    
+        $(".jqplot-xaxis canvas")[6].id = 82;
+    
+        $(".jqplot-xaxis canvas")[7].id = 210;
+    
+        $(".jqplot-xaxis canvas")[8].id = 83;
+    
+        $(".jqplot-xaxis canvas")[9].id = 84;
+    
+        $(".jqplot-xaxis canvas")[10].id = 85;
+    
+        $(".jqplot-xaxis canvas")[11].id = 87;
+    
+        $(".jqplot-xaxis canvas")[12].id = 89;
+    
+        $(".jqplot-xaxis canvas")[13].id = 94;
+    
+        $(".jqplot-xaxis canvas")[14].id = 223;
+    
+        $(".jqplot-xaxis canvas")[15].id = 99;
+    
+        $(".jqplot-xaxis canvas")[16].id = 106;
+    
+        $(".jqplot-xaxis canvas")[17].id = 98;
+    
+        $(".jqplot-xaxis canvas")[18].id = 110;
+    
+        $(".jqplot-xaxis canvas")[19].id = 111;
+    
+        $(".jqplot-xaxis canvas")[20].id = 109;
+    
+        $(".jqplot-xaxis canvas")[21].id = 209;
+    
+        $(".jqplot-xaxis canvas")[22].id = 117;
+    
+        $(".jqplot-xaxis canvas")[23].id = 121;
+    
+        $(".jqplot-xaxis canvas")[24].id = 122;
+    
+        $(".jqplot-xaxis canvas")[25].id = 127;
+    
+        $(".jqplot-xaxis canvas")[26].id = 128;
+    
+        $(".jqplot-xaxis canvas")[27].id = 129;
+    
+        $(".jqplot-xaxis canvas")[28].id = 134;
+    
+        $(".jqplot-xaxis canvas")[29].id = 235;
+    
+        $(".jqplot-xaxis canvas")[30].id = 177;
+    
+        $(".jqplot-xaxis canvas")[31].id = 182;
+    
+        $(".jqplot-xaxis canvas")[32].id = 183;
+    
+        $(".jqplot-xaxis canvas")[33].id = 190;
+    
+        $(".jqplot-xaxis canvas")[34].id = 194;
+    
+
+    // function to keep x-axes active on zoom
+   $('#chart1').bind('jqplotZoom', function(ev, gridpos, datapos, plot, cursor){
+      resetXLabels();
+    });
+
+    // function to keep x-axes active after zoom out event
+   $('#chart1').bind('jqplotResetZoom', function(ev, gridpos, datapos, plot, cursor){
+      resetXLabels();
+    });
+
+   function resetXLabels(){
+      $(".jqplot-xaxis-tick")
+      .css({
+          cursor: "pointer",
+          zIndex: "1",
+      })
+      .click(function(){ 
+          var neuron_tick_id = $(this).attr('id');
+          var linkStr = "/neuron/" + neuron_tick_id;
+          window.open(linkStr, '_self');
+      })
+      .mouseenter(function(){ 
+          oldTop = $(this).css('top');
+          $(this).css({top: '10px'});
+      })
+      .mouseleave(function(){ 
+          $(this).css({top : oldTop});
+      });
+   }
+
+    //based on clicking an axis tick, open webpage corresponding to neuron id
+    resetXLabels();
+
+  // $("span.question").hover(function () {
+  //   $(this).append('<div class="tooltip"><p>Maximum rate of rise of membrane voltage during spike falling phase</p></div>');
+  // }, function () {
+  //   $("div.tooltip").remove();
+  // });
+  $(".fancybox").fancybox();
+});
+</script>
+
+
+<div id="content">
+<body>
+	
+    <table align="center" width="1200px" class="logo_bar">
+        <tr>
+            <td class="logo_bar">
+                <div align="left">
+					
+					<a href="https://www.neuroelectro.org/">
+				    	<img src="https://web.archive.org/web/20240910032628im_/https://www.neuroelectro.org/static/src/neuroelectro_logo_3.png" id="logo">
+				    </a>
+				    
+                </div>
+            </td>
+            <td class="logo_bar">
+                <div align="right">
+                <a href="../publications.html">
+                NeuroElectro Publications</a> &nbsp;
+                <br>
+                
+                </div>
+                
+            </td>
+        </tr>
+    </table>
+
+    
+
+<html>
+
+<head>
+
+<!--<link rel="stylesheet" type="text/css" href="/static/src/local.css" />-->
+<link href="https://web.archive.org/web/20240910032628cs_/https://www.neuroelectro.org/static/src/SimpleNavBarStyles.css" rel="stylesheet" type="text/css">
+<script src="https://web.archive.org/web/20240910032628js_/https://www.neuroelectro.org/static/src/SimpleNavBarScripts.js" language="JavaScript" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+
+
+
+<!-- ############### #### Navigation Bar #### ############### -->
+
+
+<!-- main nav bar titles -->
+<!-- Note how the the closing angle bracket of each </a> tag runs up against the next <a> tag,
+      to avoid leaving a gap between each menu title and the next one. -->
+      
+<div class="mynavbar">
+
+<a class="navbartitle" id="t1" href="https://www.neuroelectro.org/" onmouseout="HideItem('about_submenu');" onmouseover="ShowItem('about_submenu');">About</a><a class="navbartitle" id="t2" href="../neuron/index.html" onmouseout="HideItem('neuron_submenu');" onmouseover="ShowItem('neuron_submenu');">Neuron Types</a><a class="navbartitle" id="t3" href="../ephys_prop/index.html">Electrophysiology Properties</a><a class="navbartitle" id="t4" href="../article/index.html">Articles</a><a class="navbartitle" id="t5" href="../faqs.html" onmouseout="HideItem('faqs_submenu');" onmouseover="ShowItem('faqs_submenu');">FAQs</a><a class="navbartitle" id="t6" href="../api/docs.html" onmouseout="HideItem('api_submenu');" onmouseover="ShowItem('api_submenu');">Data/API</a><a class="navbartitle" id="t7" href="../contribute.html">Get Involved</a>
+
+    
+    <!-- about sub-menu, shown as needed  -->
+<div class="submenu" id="about_submenu" onmouseover="ShowItem('about_submenu');" onmouseout="HideItem('about_submenu');">
+  <div class="submenubox">
+    <ul>
+      <li><a href="../publications.html" class="submenlink">Publications</a></li>
+      <!-- <li><a href="/citation_info" class="submenlink">How to Cite</a></li> -->
+      <li><a href="https://groups.google.com/forum/#!forum/neuroelectro" class="submenlink" target="_blank">Mailing List</a></li>
+      <li><a href="https://www.neuroelectro.org/contact_info" class="submenlink">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+    <!-- neuron sub-menu, shown as needed  -->
+<div class="submenu" id="neuron_submenu" onmouseover="ShowItem('neuron_submenu');" onmouseout="HideItem('neuron_submenu');">
+  <div class="submenubox">
+    <ul>
+      <li><a href="../neuron/index.html" class="submenlink">Neuron Listing</a></li>
+        <li><a href="https://www.neuroelectro.org/neuron_search" class="submenlink">Neuron Search</a></li>
+      <li><a href="../neuron/clustering.html" class="submenlink">Neuron Clustering</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- api sub-menu, shown as needed  -->
+
+<div class="submenu" id="api_submenu" onmouseover="ShowItem('api_submenu');" onmouseout="HideItem('api_submenu');">
+  <div class="submenubox">
+    <ul>
+      <li><a href="../api/docs.html" class="submenlink">API Documentation</a></li>
+      <!-- <li><a href='/static/src/neuroelectro_data_download.zip' class="submenlink" target="_blank">Data Download</a></li>  -->
+      <li><a href="../publications.html" class="submenlink">How to Cite</a></li>
+      <li><a href="https://groups.google.com/forum/#!forum/neuroelectro" class="submenlink" target="_blank">Ask a Question</a></li>
+      <li><a href="https://github.com/neuroelectro" class="submenlink" target="_blank">Code Repository (GitHub)</a></li>
+    </ul>
+  </div>
+</div>
+
+
+</div>
+
+<!-- ################## end of Navigation Bar ################### -->
+
+
+</body>
+</html>
+
+    
+
+    
+    
+<h1>spike max decay slope  
+<!--<span class="question_tooltip">?</span>-->
+</h1>
+
+<p>
+Common definition: Maximum rate of rise of membrane voltage during spike falling phase </br>
+</p>
+
+<!--
+<h2>Synonyms of this ephys property: </h2>
+<ul>
+
+</ul>
+<h2>Units of this ephys property: </h2>
+<li></li>
+-->
+
+<h2>Electrophysiological values of <i>spike max decay slope</i> across neuron types from literature:</h2>
+  <table id="norm_criteria_button">
+  <tr>
+  <td>
+    <ul>
+    <lh>Standardization criteria:</lh>
+    <li> Values are unchanged from those reported. Refer to individual articles for definition and calculation methodology.</li>
+    <lh>Legend:</lh>
+    <li>Blue dots = text-mined values human curated; Orange dots = text-mined values not human curated </li>
+    <lh>Interactivity:</lh>
+    <li>Mouse over neuron report data points and click to view corresponding publication</li>
+    <li>Click on neuron name axis labels (e.g. Dentate gyrus granule cell) to view corresponding neuron page</li>
+    <li>Zoom in on a section of plot by dragging cursor. Zoom out by double clicking on plot.</li>
+    </ul>  
+  </td>
+  <td id="data_table_button">
+    <div style="text-align:center">
+      <a class="btn btn-large btn-info submit_button" href="../data/ephys_prop/33.html/33/data/index.html"><i class="icon-th-list icon-white"></i>  View data in table form</i></a>
+      <br>
+        <a class="fancybox btn btn-large btn-danger submit_button" data-fancybox-type="iframe" href="https://www.neuroelectro.org/nedm_comment_box/"><i class="icon-thumbs-down icon-white"></i> Report miscurated data</i></a>
+      </div>
+  </td>
+
+  </tr>
+  </table>
+
+<div id="chart1" style="height:800px;width:1190px; "></div>
+
+
+</body>   
+</div>
+<div id="footer">
+<footer>
+    
+    <table align="center" width="1200px" class="footer_bar">
+        <tr>
+            <td class="footer_bar">
+                <p align="left">
+                    &copy; 2012-2016 <a href="https://twitter.com/neuronJoy" target="_blank">Shreejoy Tripathy</a> and
+                    <a href="http://rick.gerk.in/" target="_blank">Richard Gerkin</a>
+                    <br> 
+                    University of British Columbia and Arizona State University
+                    
+                    <!--<br>Funding: NIH, NIF, and the RK Mellon Foundation-->
+                    <br>
+                    Release Version 5.0
+                    <!--Optimized for Mozilla Firefox, Safari, and fast internet connections -->
+                </p>
+            </td>
+            <td class="footer_bar">
+                <p align="center">
+                
+                <p align="left">Not signed in <a class="btn btn-small btn-primary" href="https://www.neuroelectro.org/accounts/login?next=/ephys_prop/33/"><i class="icon-user icon-white"></i>  Log in</a></p>
+                
+                </p>
+
+            </td>
+            <td class="footer_bar">
+                <div class="funding_logo_container" align="right">
+                    <a href="http://www.cihr-irsc.gc.ca/e/193.html" class="funding_logo">
+                        <img src="https://web.archive.org/web/20240910032628im_/https://www.neuroelectro.org/static/src/cihr_logo_big_e.png" id="logo" width="100" height="40">
+                    </a>
+                    <a href="http://neurodevnet.ca/" class="funding_logo">
+                        <img src="https://web.archive.org/web/20240910032628im_/https://www.neuroelectro.org/static/src/NeuroDevNetLOGO.jpg" id="logo" width="100" height="40">
+                    </a>
+                    <a href="http://www.nih.gov/" class="funding_logo">
+                        <img src="https://web.archive.org/web/20240910032628im_/https://www.neuroelectro.org/static/src/nihMasterLogo.png" id="logo" width="100" height="40">
+                    </a>
+                    <p id="supported_by">Support provided by</p>
+                </div>
+
+            </td>
+        </tr>
+    </table>
+    
+</footer>
+</div>
+</html>
+<!--
+     FILE ARCHIVED ON 03:26:28 Sep 10, 2024 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 18:14:59 Jan 06, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 1.252
+  exclusion.robots: 0.024
+  exclusion.robots.policy: 0.015
+  esindex: 0.013
+  cdx.remote: 7.13
+  LoadShardBlock: 231.236 (3)
+  PetaboxLoader3.datanode: 120.728 (4)
+  PetaboxLoader3.resolve: 236.999 (2)
+  load_resource: 155.837
+-->

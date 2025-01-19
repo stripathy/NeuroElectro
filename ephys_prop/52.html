@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head><script type="text/javascript" src="https://web.archive.org/_static/js/bundle-playback.js?v=HxkREWBo" charset="utf-8"></script>
+<script type="text/javascript" src="https://web.archive.org/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
+<script type="text/javascript" src="https://web.archive.org/_static/js/ruffle/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://neuroelectro.org/ephys_prop/52/","20240910034516","https://web.archive.org/","web","/_static/",
+	      "1725939916");
+</script>
+<link rel="stylesheet" type="text/css" href="https://web.archive.org/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="https://web.archive.org/_static/css/iconochive.css?v=3PDvdIFv" />
+<!-- End Wayback Rewrite JS Include -->
+
+    <title>NeuroElectro :: adaptation percent (1 – first/last ISI)</title>
+	
+    <link rel="shortcut icon" href="https://web.archive.org/web/20240910034516im_/https://neuroelectro.org/static/src/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://web.archive.org/web/20240910034516cs_/https://neuroelectro.org/static/bootstrap_old/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://web.archive.org/web/20240910034516cs_/https://neuroelectro.org/static/src/local.css"/>
+    
+    
+<script type="text/javascript" charset="utf-8" src="https://web.archive.org/web/20240910034516js_/https://neuroelectro.org/static/src/DataTables/media/js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://web.archive.org/web/20240910034516js_/https://neuroelectro.org/static/src/DataTables/media/js/jquery.dataTables.js"></script>
+<style type="text/css" title="currentStyle">
+    @import "https://web.archive.org/web/20240910034516cs_/https://neuroelectro.org/static/src/DataTables/media/css/demo_table.css";
+</style>
+<!--<script language="javascript" type="text/javascript" src="/static/src/jquery.min.js"></script>-->
+<script language="javascript" type="text/javascript" src="https://web.archive.org/web/20240910034516js_/https://neuroelectro.org/static/src/jquery.jqplot.min.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20240910034516js_/https://neuroelectro.org/static/src/plugins/jqplot.canvasTextRenderer.min.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20240910034516js_/https://neuroelectro.org/static/src/plugins/jqplot.canvasAxisTickRenderer.min.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20240910034516js_/https://neuroelectro.org/static/src/plugins/jqplot.categoryAxisRenderer.min.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20240910034516js_/https://neuroelectro.org/static/src/plugins/jqplot.logAxisRenderer.min.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20240910034516js_/https://neuroelectro.org/static/src/plugins/jqplot.highlighter.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20240910034516js_/https://neuroelectro.org/static/src/plugins/jqplot.canvasAxisLabelRenderer.min.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20240910034516js_/https://neuroelectro.org/static/src/plugins/jqplot.cursor.min.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20240910034516js_/https://neuroelectro.org/static/src/plugins/jqplot.pointLabels.min.js"></script>
+<!--<script type="text/javascript" src="/static/src/plugins/jqplot.eventListenerHooks.min.js"></script>-->
+<link rel="stylesheet" type="text/css" href="https://web.archive.org/web/20240910034516cs_/https://neuroelectro.org/static/src/jquery.jqplot.min.css"/>
+<script type="text/javascript" src="https://web.archive.org/web/20240910034516js_/https://neuroelectro.org/static/src/plugins/jqplot.ohlcRenderer.min.js"></script>
+  <!-- Add jQuery library -->
+  <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>-->
+  
+  <!-- Add mousewheel plugin (this is optional) -->
+  <script type="text/javascript" src="https://web.archive.org/web/20240910034516js_/https://neuroelectro.org/static/src/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+  
+  <!-- Add fancyBox -->
+  <link rel="stylesheet" href="https://web.archive.org/web/20240910034516cs_/https://neuroelectro.org/static/src/fancybox/source/jquery.fancybox.css?v=2.1.3" type="text/css" media="screen"/>
+  <script type="text/javascript" src="https://web.archive.org/web/20240910034516js_/https://neuroelectro.org/static/src/fancybox/source/jquery.fancybox.pack.js?v=2.1.3"></script>
+  
+  <!-- Optionally add helpers - button, thumbnail and/or media -->
+  <link rel="stylesheet" href="https://web.archive.org/web/20240910034516cs_/https://neuroelectro.org/static/src/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen"/>
+  <script type="text/javascript" src="https://web.archive.org/web/20240910034516js_/https://neuroelectro.org/static/src/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+  <script type="text/javascript" src="https://web.archive.org/web/20240910034516js_/https://neuroelectro.org/static/src/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+  
+  <link rel="stylesheet" href="https://web.archive.org/web/20240910034516cs_/https://neuroelectro.org/static/src/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen"/>
+  <script type="text/javascript" src="https://web.archive.org/web/20240910034516js_/https://neuroelectro.org/static/src/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<style type="text/css">
+.jqplot-axis {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90%; 
+}
+.jqplot-highlighter-tooltip {
+    background-color: #B4EEB4;
+    filter:alpha(opacity=90);
+    opacity:0.9;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p {
+  margin-left:25px;
+}
+table#norm_criteria_button {
+  margin-left:25px;
+  margin-right:25px;
+}
+#chart1{
+  margin-left:5px;
+  margin-right:5px;
+  margin-bottom:25px;
+}
+
+
+</style>
+
+	
+	
+     
+ 	<style>
+ 		#maintanence_message{
+ 			color: red;
+ 		    text-align: center;
+ 		}
+        .funding_logo {
+            display:inline-block;
+            text-align: center;
+        }
+        #supported_by{
+            text-align: center;
+            position: relative;
+            left: 35px;
+        }
+ 	</style>
+	
+    
+    <!--stuff for google tracking-->
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-35182339-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+	
+    </script>
+</head>
+
+
+<script>
+$(document).ready(function(){
+  var ticks = ['Hippocampus CA1 basket cell', 'Hippocampus CA1 oriens lacunosum moleculare neuron', 'Hippocampus CA1 pyramidal cell', 'Neocortex basket cell', 'Neocortex bipolar neuron', 'Neocortex layer 4 stellate cell', 'Neocortex pyramidal cell layer 2-3', 'Neocortex pyramidal cell layer 5-6', 'Neocortex uncharacterized cell', 'Nucleus of the solitary tract principal cell', 'Other'];
+  var customRenderer; 
+  if (0 == 1){
+    customRenderer = $.jqplot.LogAxisRenderer;
+  }
+  else{
+    customRenderer = $.jqplot.canvasAxisTickRenderer;
+  }
+  var plot1b = $.jqplot('chart1', [[[1.0006876851211493, 20.0, 'Hippocampus CA1 basket cell (Hippocampus CA1 fast spiking basket cell)', 'Transition to seizures in the isolated immature mouse hippocampus: a</br>switch from dominant phasic inhibition to dominant phasic excitation.', 'Derchansky M; Jahromi SS; Mamani M; Shin DS; Sik A; Carlen PL', 'J. Physiol. (Lond.)', '2008', '8047'], [2.0028765603488483, 26.0, 'Hippocampus CA1 oriens lacunosum moleculare neuron (Hippocampus CA1</br>oriens lacunosum moleculare non-fast-spiking neuron)', 'Transition to seizures in the isolated immature mouse hippocampus: a</br>switch from dominant phasic inhibition to dominant phasic excitation.', 'Derchansky M; Jahromi SS; Mamani M; Shin DS; Sik A; Carlen PL', 'J. Physiol. (Lond.)', '2008', '8047'], [3.0013055481372337, 40.0, 'Hippocampus CA1 pyramidal cell', 'Transition to seizures in the isolated immature mouse hippocampus: a</br>switch from dominant phasic inhibition to dominant phasic excitation.', 'Derchansky M; Jahromi SS; Mamani M; Shin DS; Sik A; Carlen PL', 'J. Physiol. (Lond.)', '2008', '8047'], [2.996526913085748, 49.0, 'Hippocampus CA1 pyramidal cell', 'NMDA receptor-dependent long-term potentiation in mouse hippocampal</br>interneurons shows a unique dependence on Ca(2+)/calmodulin-dependent</br>kinases.', 'Lamsa K; Irvine EE; Giese KP; Kullmann DM', 'J. Physiol. (Lond.)', '2007', '11371'], [4.013077861572042, 17.6, 'Neocortex basket cell (Neocortex medial ganglionic eminence fast</br>spiking interneuron)', 'Physiologically distinct temporal cohorts of cortical interneurons</br>arise from telencephalic Olig2-expressing precursors.', 'Miyoshi G; Butt SJ; Takebayashi H; Fishell G', 'J. Neurosci.', '2007', '2180'], [3.985019985080784, 11.0, 'Neocortex basket cell (Neocortex Layer 2-3 Fast-Spiking Interneuron)', 'Lack of depolarization-induced suppression of inhibition (DSI) in</br>layer 2/3 interneurons that receive cannabinoid-sensitive inhibitory</br>inputs.', 'Lemtiri-Chlieh F; Levine ES', 'J. Neurophysiol.', '2007', '354'], [4.006076719097875, 9.1, 'Neocortex basket cell (Layer 5 somatosensory cortex Fast Spiking</br>parvalbumin positive interneurons )', 'Differential effects of Na+-K+ ATPase blockade on cortical layer V</br>neurons.', 'Anderson TR; Huguenard JR; Prince DA', 'J. Physiol. (Lond.)', '2010', '8365'], [3.999052347523946, 15.3, 'Neocortex basket cell (sensorimotor cortex fast spiking cell)', 'Molecular and physiological diversity of cortical nonpyramidal cells.', 'Cauli B; Audinat E; Lambolez B; Angulo MC; Ropert N; Tsuzuki K;</br>Hestrin S; Rossier J', 'J. Neurosci.', '1997', '15259'], [5.018625993872663, 60.4, 'Neocortex bipolar neuron (neocortex layer 2-3 cholinergic</br>interneurons)', 'Functional characterization of intrinsic cholinergic interneurons in</br>the cortex.', 'von Engelhardt J; Eliava M; Meyer AH; Rozov A; Monyer H', 'J. Neurosci.', '2007', '2204'], [5.998187684157171, 65.8, 'Neocortex layer 4 stellate cell (Layer 4 sensorimotor cortex spiny</br>stellate neurons)', 'Glutamatergic nonpyramidal neurons from neocortical layer VI and their</br>comparison with pyramidal and spiny stellate neurons.', 'Andjelic S; Gallopin T; Cauli B; Hill EL; Roux L; Badr S; Hu E; Tam\xe1s</br>G; Lambolez B', 'J. Neurophysiol.', '2009', '253'], [6.987034553354813, 68.0, 'Neocortex pyramidal cell layer 2-3', 'Lack of depolarization-induced suppression of inhibition (DSI) in</br>layer 2/3 interneurons that receive cannabinoid-sensitive inhibitory</br>inputs.', 'Lemtiri-Chlieh F; Levine ES', 'J. Neurophysiol.', '2007', '354'], [6.990632441953224, 52.0, 'Neocortex pyramidal cell layer 2-3 (Somatosensory cortex layer 2/3</br>pyramidal neurons)', 'Electrophysiological properties of genetically identified subtypes of</br>layer 5 neocortical pyramidal neurons: Ca\xb2? dependence and</br>differential modulation by norepinephrine.', 'Guan D; Armstrong WE; Foehring RC', 'J. Neurophysiol.', '2015', '49056'], [7.006166193961807, 71.4, 'Neocortex pyramidal cell layer 2-3 (somatosensory cortex layer 2/3</br>regular-spiking pyramidal neuron)', 'Threshold firing frequency-current relationships of neurons in rat</br>somatosensory cortex: type 1 and type 2 dynamics.', 'Tateno T; Harsch A; Robinson HP', 'J. Neurophysiol.', '2004', '700'], [6.995245347231616, 57.6, 'Neocortex pyramidal cell layer 2-3 (Layer 2/3 sensorimotor cortex</br>pyramidal neurons)', 'Glutamatergic nonpyramidal neurons from neocortical layer VI and their</br>comparison with pyramidal and spiny stellate neurons.', 'Andjelic S; Gallopin T; Cauli B; Hill EL; Roux L; Badr S; Hu E; Tam\xe1s</br>G; Lambolez B', 'J. Neurophysiol.', '2009', '253'], [8.00060249046584, 24.2, 'Neocortex pyramidal cell layer 5-6 (Layer 5 somatosensory barrel</br>cortex pyramidal neurons)', 'Effect of common anesthetics on dendritic properties in layer 5</br>neocortical pyramidal neurons.', 'Potez S; Larkum ME', 'J. Neurophysiol.', '2008', '319'], [8.016670037088305, 76.7, 'Neocortex pyramidal cell layer 5-6 (visual cortex layer 5 thick tufted</br>pyramidal cell projecting to superior colliculus)', 'Two populations of layer v pyramidal cells of the mouse neocortex:</br>development and sensitivity to anesthetics.', 'Christophe E; Doerflinger N; Lavery DJ; Moln\xe1r Z; Charpak S; Audinat E', 'J. Neurophysiol.', '2005', '581'], [8.004034692406659, 76.0, 'Neocortex pyramidal cell layer 5-6 (somatosensory cortex layer 5a</br>corticostriatal Etv1-expressing slender-tufted pyramidal neurons)', 'Electrophysiological properties of genetically identified subtypes of</br>layer 5 neocortical pyramidal neurons: Ca\xb2? dependence and</br>differential modulation by norepinephrine.', 'Guan D; Armstrong WE; Foehring RC', 'J. Neurophysiol.', '2015', '49056'], [7.980793058819238, 17.0, 'Neocortex pyramidal cell layer 5-6 (Somatosensory cortex layer 5b</br>Glt25d2-expressing thick-tufted pyramidal neurons )', 'Electrophysiological properties of genetically identified subtypes of</br>layer 5 neocortical pyramidal neurons: Ca\xb2? dependence and</br>differential modulation by norepinephrine.', 'Guan D; Armstrong WE; Foehring RC', 'J. Neurophysiol.', '2015', '49056'], [7.995811594206643, 15.0, 'Neocortex pyramidal cell layer 5-6 (Motor cortex layer 5 glutamatergic</br>excitatory pyramidal neurons synapsing onto motor cortex layer 5 fast-</br>spiking interneurons )', 'Developmental synaptic changes increase the range of integrative</br>capabilities of an identified excitatory neocortical connection.', 'Angulo MC; Staiger JF; Rossier J; Audinat E', 'J. Neurosci.', '1999', '3306'], [8.017847670195708, 18.5, 'Neocortex pyramidal cell layer 5-6 (Layer 5 somatosensory cortex large</br>amplitude pyramidal cells)', 'Differential effects of Na+-K+ ATPase blockade on cortical layer V</br>neurons.', 'Anderson TR; Huguenard JR; Prince DA', 'J. Physiol. (Lond.)', '2010', '8365'], [8.00653688817948, 12.0, 'Neocortex pyramidal cell layer 5-6 (Motor cortex layer 5 glutamatergic</br>excitatory pyramidal neurons synapsing onto motor cortex layer 5 fast-</br>spiking interneurons)', 'Developmental synaptic changes increase the range of integrative</br>capabilities of an identified excitatory neocortical connection.', 'Angulo MC; Staiger JF; Rossier J; Audinat E', 'J. Neurosci.', '1999', '3306'], [8.004955490887813, 48.7, 'Neocortex pyramidal cell layer 5-6 (Layer 6 sensorimotor cortex</br>nonpyramidal VGluT1 expressing neurons)', 'Glutamatergic nonpyramidal neurons from neocortical layer VI and their</br>comparison with pyramidal and spiny stellate neurons.', 'Andjelic S; Gallopin T; Cauli B; Hill EL; Roux L; Badr S; Hu E; Tam\xe1s</br>G; Lambolez B', 'J. Neurophysiol.', '2009', '253'], [7.982393950559544, 20.3, 'Neocortex pyramidal cell layer 5-6 (Layer 5 somatosensory cortex small</br>amplitude pyramidal cells )', 'Differential effects of Na+-K+ ATPase blockade on cortical layer V</br>neurons.', 'Anderson TR; Huguenard JR; Prince DA', 'J. Physiol. (Lond.)', '2010', '8365'], [8.003709325586568, 66.2, 'Neocortex pyramidal cell layer 5-6 (sensorimotor cortex pyramidal</br>cell)', 'Molecular and physiological diversity of cortical nonpyramidal cells.', 'Cauli B; Audinat E; Lambolez B; Angulo MC; Ropert N; Tsuzuki K;</br>Hestrin S; Rossier J', 'J. Neurosci.', '1997', '15259'], [8.002227763956268, 40.2, 'Neocortex pyramidal cell layer 5-6 (visual cortex layer 5</br>corticocortical pyramidal cell )', 'Two populations of layer v pyramidal cells of the mouse neocortex:</br>development and sensitivity to anesthetics.', 'Christophe E; Doerflinger N; Lavery DJ; Moln\xe1r Z; Charpak S; Audinat E', 'J. Neurophysiol.', '2005', '581'], [8.012024258009532, 59.5, 'Neocortex pyramidal cell layer 5-6 (Layer 5 sensorimotor cortex</br>pyramidal neurons)', 'Glutamatergic nonpyramidal neurons from neocortical layer VI and their</br>comparison with pyramidal and spiny stellate neurons.', 'Andjelic S; Gallopin T; Cauli B; Hill EL; Roux L; Badr S; Hu E; Tam\xe1s</br>G; Lambolez B', 'J. Neurophysiol.', '2009', '253'], [7.9968381452129, 32.8, 'Neocortex pyramidal cell layer 5-6 (visual cortex layer 5 thick tufted</br>pyramidal cell projecting to superior colliculus)', 'Two populations of layer v pyramidal cells of the mouse neocortex:</br>development and sensitivity to anesthetics.', 'Christophe E; Doerflinger N; Lavery DJ; Moln\xe1r Z; Charpak S; Audinat E', 'J. Neurophysiol.', '2005', '581'], [7.98723209677622, 77.3, 'Neocortex pyramidal cell layer 5-6 (visual cortex layer 5</br>corticocortical pyramidal cell)', 'Two populations of layer v pyramidal cells of the mouse neocortex:</br>development and sensitivity to anesthetics.', 'Christophe E; Doerflinger N; Lavery DJ; Moln\xe1r Z; Charpak S; Audinat E', 'J. Neurophysiol.', '2005', '581'], [8.991450602614407, 58.9, 'Neocortex uncharacterized cell (somatosensory cortex CGE-derived burst</br>non-adapting 2 interneuron)', 'Genetic fate mapping reveals that the caudal ganglionic eminence</br>produces a large and diverse population of superficial cortical</br>interneurons.', 'Miyoshi G; Hjerling-Leffler J; Karayannis T; Sousa VH; Butt SJ;</br>Battiste J; Johnson JE; Machold RP; Fishell G', 'J. Neurosci.', '2010', '1850'], [8.986734674960951, 36.3, 'Neocortex uncharacterized cell (neocortex layer 2/3 GABAergic delayed</br>non-fast-spiking Htr3a-expressing interneuron)', 'The largest group of superficial neocortical GABAergic interneurons</br>expresses ionotropic serotonin receptors.', 'Lee S; Hjerling-Leffler J; Zagha E; Fishell G; Rudy B', 'J. Neurosci.', '2010', '1681'], [8.990415556400922, 39.5, 'Neocortex uncharacterized cell (somatosensory cortex CGE-derived</br>irregular spiking interneuron)', 'Genetic fate mapping reveals that the caudal ganglionic eminence</br>produces a large and diverse population of superficial cortical</br>interneurons.', 'Miyoshi G; Hjerling-Leffler J; Karayannis T; Sousa VH; Butt SJ;</br>Battiste J; Johnson JE; Machold RP; Fishell G', 'J. Neurosci.', '2010', '1850'], [8.99099811555474, 31.8, 'Neocortex uncharacterized cell (somatosensory cortex CGE-derived</br>delayed non-fast spiking 3 interneuron)', 'Genetic fate mapping reveals that the caudal ganglionic eminence</br>produces a large and diverse population of superficial cortical</br>interneurons.', 'Miyoshi G; Hjerling-Leffler J; Karayannis T; Sousa VH; Butt SJ;</br>Battiste J; Johnson JE; Machold RP; Fishell G', 'J. Neurosci.', '2010', '1850'], [9.008244177534902, 46.6, 'Neocortex uncharacterized cell (sensorimotor cortex regular spiking</br>non-pyramidal cell)', 'Molecular and physiological diversity of cortical nonpyramidal cells.', 'Cauli B; Audinat E; Lambolez B; Angulo MC; Ropert N; Tsuzuki K;</br>Hestrin S; Rossier J', 'J. Neurosci.', '1997', '15259'], [8.995365351691433, 41.9, 'Neocortex uncharacterized cell (somatosensory cortex CGE-derived</br>delayed intrinsic bursting interneuron)', 'Genetic fate mapping reveals that the caudal ganglionic eminence</br>produces a large and diverse population of superficial cortical</br>interneurons.', 'Miyoshi G; Hjerling-Leffler J; Karayannis T; Sousa VH; Butt SJ;</br>Battiste J; Johnson JE; Machold RP; Fishell G', 'J. Neurosci.', '2010', '1850'], [9.008324497493003, 45.4, 'Neocortex uncharacterized cell (somatosensory cortex CGE-derived</br>sigmoid intrinsic bursting interneuron)', 'Genetic fate mapping reveals that the caudal ganglionic eminence</br>produces a large and diverse population of superficial cortical</br>interneurons.', 'Miyoshi G; Hjerling-Leffler J; Karayannis T; Sousa VH; Butt SJ;</br>Battiste J; Johnson JE; Machold RP; Fishell G', 'J. Neurosci.', '2010', '1850'], [9.004795138145617, 46.8, 'Neocortex uncharacterized cell (somatosensory cortex CGE-derived late</br>spiking 1 interneuron)', 'Genetic fate mapping reveals that the caudal ganglionic eminence</br>produces a large and diverse population of superficial cortical</br>interneurons.', 'Miyoshi G; Hjerling-Leffler J; Karayannis T; Sousa VH; Butt SJ;</br>Battiste J; Johnson JE; Machold RP; Fishell G', 'J. Neurosci.', '2010', '1850'], [8.998841374314903, 51.3, 'Neocortex uncharacterized cell (neocortex layer 2/3 GABAergic late-</br>spiking subtype 1 Htr3a-expressing interneuron)', 'The largest group of superficial neocortical GABAergic interneurons</br>expresses ionotropic serotonin receptors.', 'Lee S; Hjerling-Leffler J; Zagha E; Fishell G; Rudy B', 'J. Neurosci.', '2010', '1681'], [9.012447898029711, 58.0, 'Neocortex uncharacterized cell (somatosensory cortex CGE-derived late</br>spiking 2 interneuron)', 'Genetic fate mapping reveals that the caudal ganglionic eminence</br>produces a large and diverse population of superficial cortical</br>interneurons.', 'Miyoshi G; Hjerling-Leffler J; Karayannis T; Sousa VH; Butt SJ;</br>Battiste J; Johnson JE; Machold RP; Fishell G', 'J. Neurosci.', '2010', '1850'], [10.008513571376609, 32.4, 'Nucleus of the solitary tract principal cell (Ventrolateral Nucleus</br>Tractus Solitarii 4-AP-/TEA-responsive cell)', 'Localization and function of the Kv3.1b subunit in the rat medulla</br>oblongata: focus on the nucleus tractus solitarii.', 'Dallas ML; Atkinson L; Milligan CJ; Morris NP; Lewis DI; Deuchars SA;</br>Deuchars J', 'J. Physiol. (Lond.)', '2005', '7740'], [10.001288876259592, 39.0, 'Nucleus of the solitary tract principal cell (Comissural Nucleus</br>Tractus Solitarii 4-AP-/TEA-unresponsive commissural cell)', 'Localization and function of the Kv3.1b subunit in the rat medulla</br>oblongata: focus on the nucleus tractus solitarii.', 'Dallas ML; Atkinson L; Milligan CJ; Morris NP; Lewis DI; Deuchars SA;</br>Deuchars J', 'J. Physiol. (Lond.)', '2005', '7740'], [11.01520512214263, 72.2, 'Other (somatosensory cortex CGE-derived burst non-adapting 1</br>interneuron)', 'Genetic fate mapping reveals that the caudal ganglionic eminence</br>produces a large and diverse population of superficial cortical</br>interneurons.', 'Miyoshi G; Hjerling-Leffler J; Karayannis T; Sousa VH; Butt SJ;</br>Battiste J; Johnson JE; Machold RP; Fishell G', 'J. Neurosci.', '2010', '1850'], [10.99829591488282, 21.5, 'Other (lateral habenular nucleus thick spiny bipolar vertical cell)', 'Morphological and electrophysiological characteristics of neurons</br>within identified subnuclei of the lateral habenula in rat brain</br>slices.', 'Weiss T; Veh RW', 'Neuroscience', '2011', '24127'], [11.006539469054776, 66.1, 'Other (medial septal/diagonal band complex type II burst-firing</br>neurons projecting to fornix)', 'Morphology of local axon collaterals of electrophysiologically</br>characterised neurons in the rat medial septal/ diagonal band complex.', 'Henderson Z; Morris NP; Grimwood P; Fiddler G; Yang HW; Appenteng K', 'J. Comp. Neurol.', '2001', '46132'], [10.995775517399693, 41.0, 'Other (Stratum radiatum non-pyramidal regular-spiking non-rebounding</br>cells)', 'NMDA receptor-dependent long-term potentiation in mouse hippocampal</br>interneurons shows a unique dependence on Ca(2+)/calmodulin-dependent</br>kinases.', 'Lamsa K; Irvine EE; Giese KP; Kullmann DM', 'J. Physiol. (Lond.)', '2007', '11371'], [11.001189005315897, 63.7, 'Other (neocortex layer 2/3 GABAergic burst non-adapting subtype 1</br>Htr3a-expressing interneuron)', 'The largest group of superficial neocortical GABAergic interneurons</br>expresses ionotropic serotonin receptors.', 'Lee S; Hjerling-Leffler J; Zagha E; Fishell G; Rudy B', 'J. Neurosci.', '2010', '1681'], [10.99067082702717, 15.5, 'Other (Neocortex medial ganglionic eminence superficial layer delayed-</br>fast spiking Interneuron)', 'Physiologically distinct temporal cohorts of cortical interneurons</br>arise from telencephalic Olig2-expressing precursors.', 'Miyoshi G; Butt SJ; Takebayashi H; Fishell G', 'J. Neurosci.', '2007', '2180'], [10.98612503300051, 71.0, 'Other (Stratum radiatum non-pyramidal regular-spiking rapidly adapting</br>cells)', 'NMDA receptor-dependent long-term potentiation in mouse hippocampal</br>interneurons shows a unique dependence on Ca(2+)/calmodulin-dependent</br>kinases.', 'Lamsa K; Irvine EE; Giese KP; Kullmann DM', 'J. Physiol. (Lond.)', '2007', '11371'], [11.001356084023765, 21.8, 'Other (lateral habenular nucleus dense arbor neurogliaform cell )', 'Morphological and electrophysiological characteristics of neurons</br>within identified subnuclei of the lateral habenula in rat brain</br>slices.', 'Weiss T; Veh RW', 'Neuroscience', '2011', '24127'], [10.99951058933169, 15.4, 'Other (medial septum diagonal band of Broca fast firing large sag</br>VGLUT2-expressing neurons projecting to CA3 Hippocampal pyramidal</br>cells)', 'Glutamatergic neurons of the mouse medial septum and diagonal band of</br>Broca synaptically drive hippocampal pyramidal cells: relevance for</br>hippocampal theta rhythm.', 'Huh CY; Goutagny R; Williams S', 'J. Neurosci.', '2010', '1689'], [11.01411758224916, 59.4, 'Other (neocortex layer 2/3 GABAergic burst non-adapting subtype 2</br>Htr3a-expressing interneuron)', 'The largest group of superficial neocortical GABAergic interneurons</br>expresses ionotropic serotonin receptors.', 'Lee S; Hjerling-Leffler J; Zagha E; Fishell G; Rudy B', 'J. Neurosci.', '2010', '1681'], [10.983720571206083, 55.0, 'Other (Neocortex Layer 2-3 Regular-Spiking Non-Pyramidal Interneuron)', 'Lack of depolarization-induced suppression of inhibition (DSI) in</br>layer 2/3 interneurons that receive cannabinoid-sensitive inhibitory</br>inputs.', 'Lemtiri-Chlieh F; Levine ES', 'J. Neurophysiol.', '2007', '354'], [11.002101405876688, 44.4, 'Other (Neocortex medial ganglionic eminence deep and superficial layer</br>regular intrinsic bursting Interneuron)', 'Physiologically distinct temporal cohorts of cortical interneurons</br>arise from telencephalic Olig2-expressing precursors.', 'Miyoshi G; Butt SJ; Takebayashi H; Fishell G', 'J. Neurosci.', '2007', '2180'], [10.99640186011198, 34.0, 'Other (Stratum radiatum delayed spiking interneurons)', 'NMDA receptor-dependent long-term potentiation in mouse hippocampal</br>interneurons shows a unique dependence on Ca(2+)/calmodulin-dependent</br>kinases.', 'Lamsa K; Irvine EE; Giese KP; Kullmann DM', 'J. Physiol. (Lond.)', '2007', '11371'], [11.010780689111378, 32.2, 'Other (lateral habenular nucleus bursting cell)', 'Morphological and electrophysiological characteristics of neurons</br>within identified subnuclei of the lateral habenula in rat brain</br>slices.', 'Weiss T; Veh RW', 'Neuroscience', '2011', '24127'], [10.986806392652122, 13.4, 'Other (medial septum diagonal band of Broca fast firing</br>VGLUT2-expressing neurons projecting to CA3 Hippocampal pyramidal</br>cells)', 'Glutamatergic neurons of the mouse medial septum and diagonal band of</br>Broca synaptically drive hippocampal pyramidal cells: relevance for</br>hippocampal theta rhythm.', 'Huh CY; Goutagny R; Williams S', 'J. Neurosci.', '2010', '1689'], [11.002504726876463, 41.5, 'Other (neocortex layer 2/3 GABAergic irregular spiking bipolar Htr3a-</br>expressing interneuron)', 'The largest group of superficial neocortical GABAergic interneurons</br>expresses ionotropic serotonin receptors.', 'Lee S; Hjerling-Leffler J; Zagha E; Fishell G; Rudy B', 'J. Neurosci.', '2010', '1681'], [11.003978592354493, 33.1, 'Other (Neocortex medial ganglionic eminence non-fast spiking 2</br>interneuron)', 'Physiologically distinct temporal cohorts of cortical interneurons</br>arise from telencephalic Olig2-expressing precursors.', 'Miyoshi G; Butt SJ; Takebayashi H; Fishell G', 'J. Neurosci.', '2007', '2180'], [10.997117216298584, 41.0, 'Other (Stratum radiatum non-pyramidal regular-spiking rebounding</br>cells)', 'NMDA receptor-dependent long-term potentiation in mouse hippocampal</br>interneurons shows a unique dependence on Ca(2+)/calmodulin-dependent</br>kinases.', 'Lamsa K; Irvine EE; Giese KP; Kullmann DM', 'J. Physiol. (Lond.)', '2007', '11371'], [10.996481224995655, 23.5, 'Other (lateral habenular nucleus aspiny spherical cell )', 'Morphological and electrophysiological characteristics of neurons</br>within identified subnuclei of the lateral habenula in rat brain</br>slices.', 'Weiss T; Veh RW', 'Neuroscience', '2011', '24127'], [11.011721214465874, 37.3, 'Other (medial septum diagonal band of Broca burst firing</br>VGLUT2-expressing neurons projecting to CA3 Hippocampal pyramidal</br>cells)', 'Glutamatergic neurons of the mouse medial septum and diagonal band of</br>Broca synaptically drive hippocampal pyramidal cells: relevance for</br>hippocampal theta rhythm.', 'Huh CY; Goutagny R; Williams S', 'J. Neurosci.', '2010', '1689'], [10.996818717333738, 29.5, 'Other (Neocortex medial ganglionic eminence delayed non-fast spiking 1</br>interneuron)', 'Physiologically distinct temporal cohorts of cortical interneurons</br>arise from telencephalic Olig2-expressing precursors.', 'Miyoshi G; Butt SJ; Takebayashi H; Fishell G', 'J. Neurosci.', '2007', '2180'], [11.003697121947383, 80.0, 'Other (Stratum radiatum irregularly spiking interneurons )', 'NMDA receptor-dependent long-term potentiation in mouse hippocampal</br>interneurons shows a unique dependence on Ca(2+)/calmodulin-dependent</br>kinases.', 'Lamsa K; Irvine EE; Giese KP; Kullmann DM', 'J. Physiol. (Lond.)', '2007', '11371'], [11.005821425948161, 30.4, 'Other (lateral habenular nucleus aspiny spindle-shaped horizontal</br>fusiform cell )', 'Morphological and electrophysiological characteristics of neurons</br>within identified subnuclei of the lateral habenula in rat brain</br>slices.', 'Weiss T; Veh RW', 'Neuroscience', '2011', '24127'], [11.012823793791895, 51.8, 'Other (medial septum diagonal band of Broca cluster firing</br>VGLUT2-expressing neurons projecting to CA3 Hippocampal pyramidal</br>cells)', 'Glutamatergic neurons of the mouse medial septum and diagonal band of</br>Broca synaptically drive hippocampal pyramidal cells: relevance for</br>hippocampal theta rhythm.', 'Huh CY; Goutagny R; Williams S', 'J. Neurosci.', '2010', '1689'], [10.991757512270866, 18.0, 'Other (Hippocampus CA1 trilaminar fast spiking interneuron)', 'Transition to seizures in the isolated immature mouse hippocampus: a</br>switch from dominant phasic inhibition to dominant phasic excitation.', 'Derchansky M; Jahromi SS; Mamani M; Shin DS; Sik A; Carlen PL', 'J. Physiol. (Lond.)', '2008', '8047'], [11.004873947463631, 56.2, 'Other (somatosensory cortex layer 2/3 fast-spiking inhibitory</br>interneuron )', 'Threshold firing frequency-current relationships of neurons in rat</br>somatosensory cortex: type 1 and type 2 dynamics.', 'Tateno T; Harsch A; Robinson HP', 'J. Neurophysiol.', '2004', '700'], [10.990877175268938, 32.1, 'Other (Neocortex medial ganglionic eminence non-fast spiking 2</br>interneuron)', 'Physiologically distinct temporal cohorts of cortical interneurons</br>arise from telencephalic Olig2-expressing precursors.', 'Miyoshi G; Butt SJ; Takebayashi H; Fishell G', 'J. Neurosci.', '2007', '2180'], [11.012879522850154, 18.7, 'Other (lateral habenular nucleus tonic irregular-spiking )', 'Morphological and electrophysiological characteristics of neurons</br>within identified subnuclei of the lateral habenula in rat brain</br>slices.', 'Weiss T; Veh RW', 'Neuroscience', '2011', '24127'], [10.995683109288407, 27.3, 'Other (medial septum diagonal band of Broca slow firing</br>VGLUT2-expressing neurons projecting to CA3 Hippocampal pyramidal</br>cells)', 'Glutamatergic neurons of the mouse medial septum and diagonal band of</br>Broca synaptically drive hippocampal pyramidal cells: relevance for</br>hippocampal theta rhythm.', 'Huh CY; Goutagny R; Williams S', 'J. Neurosci.', '2010', '1689'], [11.013385713398515, 45.1, 'Other (Neocortex medial ganglionic eminence initial adapting</br>interneuron)', 'Physiologically distinct temporal cohorts of cortical interneurons</br>arise from telencephalic Olig2-expressing precursors.', 'Miyoshi G; Butt SJ; Takebayashi H; Fishell G', 'J. Neurosci.', '2007', '2180'], [10.993749904751883, 24.7, 'Other (lateral habenular nucleus aspiny spindle-shaped vertical</br>fusiform cell )', 'Morphological and electrophysiological characteristics of neurons</br>within identified subnuclei of the lateral habenula in rat brain</br>slices.', 'Weiss T; Veh RW', 'Neuroscience', '2011', '24127'], [11.026387395832952, 64.2, 'Other (medial septal/diagonal band complex slow firing cholinergic</br>neurons projecting to fornix)', 'Morphology of local axon collaterals of electrophysiologically</br>characterised neurons in the rat medial septal/ diagonal band complex.', 'Henderson Z; Morris NP; Grimwood P; Fiddler G; Yang HW; Appenteng K', 'J. Comp. Neurol.', '2001', '46132'], [10.999600967337505, 77.0, 'Other (Corpus callosum white matter interstitial adapting bursting</br>interneurons projecting to lower subcortical layers)', '5-HT(3A) receptor-bearing white matter interstitial GABAergic</br>interneurons are functionally integrated into cortical and subcortical</br>networks.', 'von Engelhardt J; Khrulev S; Eliava M; Wahlster S; Monyer H', 'J. Neurosci.', '2011', '1532'], [10.997616490619933, 33.4, 'Other (Neocortex medial ganglionic eminence superficial layer late</br>spiking interneuron)', 'Physiologically distinct temporal cohorts of cortical interneurons</br>arise from telencephalic Olig2-expressing precursors.', 'Miyoshi G; Butt SJ; Takebayashi H; Fishell G', 'J. Neurosci.', '2007', '2180'], [10.994738411300254, 24.4, 'Other (lateral habenular nucleus tonic regular-spiking cell)', 'Morphological and electrophysiological characteristics of neurons</br>within identified subnuclei of the lateral habenula in rat brain</br>slices.', 'Weiss T; Veh RW', 'Neuroscience', '2011', '24127'], [11.005854943724561, 68.9, 'Other ( medial septal/diagonal band complex  regular spiking neurons</br>projecting to fornix)', 'Morphology of local axon collaterals of electrophysiologically</br>characterised neurons in the rat medial septal/ diagonal band complex.', 'Henderson Z; Morris NP; Grimwood P; Fiddler G; Yang HW; Appenteng K', 'J. Comp. Neurol.', '2001', '46132'], [10.999928764859868, 30.0, 'Other (Corpus callosum white matter interstitial non-adapting</br>interneurons projecting to lower subcortical layers)', '5-HT(3A) receptor-bearing white matter interstitial GABAergic</br>interneurons are functionally integrated into cortical and subcortical</br>networks.', 'von Engelhardt J; Khrulev S; Eliava M; Wahlster S; Monyer H', 'J. Neurosci.', '2011', '1532'], [10.989984817813154, 15.4, 'Other (lateral habenular nucleus large round-ovoid polymorphic cell)', 'Morphological and electrophysiological characteristics of neurons</br>within identified subnuclei of the lateral habenula in rat brain</br>slices.', 'Weiss T; Veh RW', 'Neuroscience', '2011', '24127'], [10.995750541954715, 54.8, 'Other (medial septal/diagonal band complex type I burst-?ring neurons)', 'Morphology of local axon collaterals of electrophysiologically</br>characterised neurons in the rat medial septal/ diagonal band complex.', 'Henderson Z; Morris NP; Grimwood P; Fiddler G; Yang HW; Appenteng K', 'J. Comp. Neurol.', '2001', '46132'], [11.005996705604728, 70.0, 'Other (corpus callosum white matter interstitial non-adapting bursting</br>interneuron projecting to lower subcortical layers)', '5-HT(3A) receptor-bearing white matter interstitial GABAergic</br>interneurons are functionally integrated into cortical and subcortical</br>networks.', 'von Engelhardt J; Khrulev S; Eliava M; Wahlster S; Monyer H', 'J. Neurosci.', '2011', '1532'], [10.994330027024136, 41.7, 'Other (Neocortex medial ganglionic eminence deep and superficial layer</br>irregular intrinsic bursting interneuron)', 'Physiologically distinct temporal cohorts of cortical interneurons</br>arise from telencephalic Olig2-expressing precursors.', 'Miyoshi G; Butt SJ; Takebayashi H; Fishell G', 'J. Neurosci.', '2007', '2180'], [11.005948005050252, 22.9, 'Other (lateral habenular nucleus silent cell )', 'Morphological and electrophysiological characteristics of neurons</br>within identified subnuclei of the lateral habenula in rat brain</br>slices.', 'Weiss T; Veh RW', 'Neuroscience', '2011', '24127'], [11.014006362221917, 52.3, 'Other (medial septal/diagonal band complex fast spiking GABAergic</br>neurons projecting to fornix)', 'Morphology of local axon collaterals of electrophysiologically</br>characterised neurons in the rat medial septal/ diagonal band complex.', 'Henderson Z; Morris NP; Grimwood P; Fiddler G; Yang HW; Appenteng K', 'J. Comp. Neurol.', '2001', '46132'], [10.993057842539727, 47.0, 'Other (Corpus callosum white matter interstitial adapting interneurons</br>projecting to lower subcortical layers)', '5-HT(3A) receptor-bearing white matter interstitial GABAergic</br>interneurons are functionally integrated into cortical and subcortical</br>networks.', 'von Engelhardt J; Khrulev S; Eliava M; Wahlster S; Monyer H', 'J. Neurosci.', '2011', '1532'], [11.013678441707125, 26.0, 'Other (Stratum radiatum fast-spiking interneurons)', 'NMDA receptor-dependent long-term potentiation in mouse hippocampal</br>interneurons shows a unique dependence on Ca(2+)/calmodulin-dependent</br>kinases.', 'Lamsa K; Irvine EE; Giese KP; Kullmann DM', 'J. Physiol. (Lond.)', '2007', '11371'], [11.000540060921345, 36.2, 'Other (Neocortex medial ganglionic eminence non-fast spiking 1</br>interneuron)', 'Physiologically distinct temporal cohorts of cortical interneurons</br>arise from telencephalic Olig2-expressing precursors.', 'Miyoshi G; Butt SJ; Takebayashi H; Fishell G', 'J. Neurosci.', '2007', '2180'], [11.003795287235814, 53.9, 'Other (neocortex layer 2/3 GABAergic late-spiking subtype 2 Htr3a-</br>expressing interneuron)', 'The largest group of superficial neocortical GABAergic interneurons</br>expresses ionotropic serotonin receptors.', 'Lee S; Hjerling-Leffler J; Zagha E; Fishell G; Rudy B', 'J. Neurosci.', '2010', '1681']], [[]]], {
+    title: "adaptation percent (1 – first/last ISI)",
+    series:[
+        {
+            showLine:false,
+            color:"#EAA228",
+        },
+        {
+            showLine:false,
+            color:"#4bb2c5",
+        }
+    ],
+    axesDefaults: {
+        tickRenderer: $.jqplot.CanvasAxisTickRenderer ,
+        tickOptions: {
+          fontSize: '12pt',
+          //formatString:'%.1f',
+        }
+        
+    },
+    axes: {
+      xaxis: {
+        renderer: $.jqplot.CategoryAxisRenderer,
+        ticks: ticks,
+        labelOptions:{
+            fontFamily: 'arial',
+        },
+        tickOptions: {
+          angle: -90,
+        }
+      },
+      yaxis: {
+        label: "ratio",
+        labelRenderer: $.jqplot.CanvasAxisLabelRenderer,
+        //renderer: $.jqplot.LogAxisRenderer,
+        renderer: customRenderer,
+        autoscale : true,
+        labelOptions:{
+            fontFamily: 'arial',
+            fontSize: '12pt',
+        },
+      },
+    },
+    highlighter: {
+        show: true,
+        sizeAdjust: 12,
+        tooltipAxes: 'y',
+        tooltipLocation: 'ne',
+        useAxesFormatters: false,
+        yvalues: 6,
+        formatString: '<table class="jqplot-highlighter"> \
+        <tr><td>Value:</td><td>%s (ratio)</td></tr> \
+        <tr><td>Neuron:</td><td>%s</td></tr> \
+        <tr><td>Title:</td><td>%s</td></tr> \
+        <tr><td>Authors:</td><td>%s</td></tr> \
+        <tr><td>Journal:</td><td>%s, %s</td></tr> \
+        </table>'
+    },
+    cursor:{
+        show: true, 
+        zoom: true,
+        looseZoom: true,
+        showTooltip:false, 
+        followMouse: true, 
+        showTooltipOutsideZoom: false, 
+        constrainOutsideZoom: false,
+    }, 
+/*    legend:{
+      show: true, 
+      location: 'n', 
+      placement: 'inside',
+      //marginLeft: 300,
+      labels: ['non-human curated', 'human curated'],
+    },*/
+  });
+  console.log(plot1b);
+    $('#chart1').bind('jqplotDataClick', 
+        function (ev, seriesIndex, pointIndex, data) {
+            var data_pt_ind = data[7];
+            var linkStr;
+            if (data_pt_ind < 0) // this is a hack to redirect non-data table ext data to the article page
+            {
+                linkStr = "/article/" + (-data_pt_ind);
+            }
+            else 
+            {
+                linkStr = "/data_table/" + data_pt_ind;
+            }
+            window.open(linkStr, '_self');
+            
+        }
+    );
+    // add id elements to corresponding neuron ticks based on the neuron id
+    
+        $(".jqplot-xaxis canvas")[0].id = 82;
+    
+        $(".jqplot-xaxis canvas")[1].id = 84;
+    
+        $(".jqplot-xaxis canvas")[2].id = 85;
+    
+        $(".jqplot-xaxis canvas")[3].id = 99;
+    
+        $(".jqplot-xaxis canvas")[4].id = 101;
+    
+        $(".jqplot-xaxis canvas")[5].id = 107;
+    
+        $(".jqplot-xaxis canvas")[6].id = 110;
+    
+        $(".jqplot-xaxis canvas")[7].id = 111;
+    
+        $(".jqplot-xaxis canvas")[8].id = 109;
+    
+        $(".jqplot-xaxis canvas")[9].id = 122;
+    
+        $(".jqplot-xaxis canvas")[10].id = 235;
+    
+
+    // function to keep x-axes active on zoom
+   $('#chart1').bind('jqplotZoom', function(ev, gridpos, datapos, plot, cursor){
+      resetXLabels();
+    });
+
+    // function to keep x-axes active after zoom out event
+   $('#chart1').bind('jqplotResetZoom', function(ev, gridpos, datapos, plot, cursor){
+      resetXLabels();
+    });
+
+   function resetXLabels(){
+      $(".jqplot-xaxis-tick")
+      .css({
+          cursor: "pointer",
+          zIndex: "1",
+      })
+      .click(function(){ 
+          var neuron_tick_id = $(this).attr('id');
+          var linkStr = "/neuron/" + neuron_tick_id;
+          window.open(linkStr, '_self');
+      })
+      .mouseenter(function(){ 
+          oldTop = $(this).css('top');
+          $(this).css({top: '10px'});
+      })
+      .mouseleave(function(){ 
+          $(this).css({top : oldTop});
+      });
+   }
+
+    //based on clicking an axis tick, open webpage corresponding to neuron id
+    resetXLabels();
+
+  // $("span.question").hover(function () {
+  //   $(this).append('<div class="tooltip"><p>1 minus ratio of durations between early and late AP inter-spike intervals in an AP train, normalized to a percent</p></div>');
+  // }, function () {
+  //   $("div.tooltip").remove();
+  // });
+  $(".fancybox").fancybox();
+});
+</script>
+
+
+<div id="content">
+<body>
+	
+    <table align="center" width="1200px" class="logo_bar">
+        <tr>
+            <td class="logo_bar">
+                <div align="left">
+					
+					<a href="../index.html">
+				    	<img src="https://web.archive.org/web/20240902020046im_/https://neuroelectro.org/static/src/neuroelectro_logo_3.png" id="logo">
+				    </a>
+				    
+                </div>
+            </td>
+            <td class="logo_bar">
+                <div align="right">
+                <a href="../publications.html">
+                NeuroElectro Publications</a> &nbsp;
+                <br>
+                
+                </div>
+                
+            </td>
+        </tr>
+    </table>
+
+    
+
+<html>
+
+<head>
+
+<!--<link rel="stylesheet" type="text/css" href="/static/src/local.css" />-->
+<link href="https://web.archive.org/web/20240902020046cs_/https://neuroelectro.org/static/src/SimpleNavBarStyles.css" rel="stylesheet" type="text/css">
+<script src="https://web.archive.org/web/20240902020046js_/https://neuroelectro.org/static/src/SimpleNavBarScripts.js" language="JavaScript" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+
+
+
+<!-- ############### #### Navigation Bar #### ############### -->
+
+
+<!-- main nav bar titles -->
+<!-- Note how the the closing angle bracket of each </a> tag runs up against the next <a> tag,
+      to avoid leaving a gap between each menu title and the next one. -->
+      
+<div class="mynavbar">
+
+<a class="navbartitle" id="t1" href=https://neuroelectro.org/" onmouseout="HideItem('about_submenu');" onmouseover="ShowItem('about_submenu');">About</a><a class="navbartitle" id="t2" href="../neuron/index.html" onmouseout="HideItem('neuron_submenu');" onmouseover="ShowItem('neuron_submenu');">Neuron Types</a><a class="navbartitle" id="t3" href="index.html">Electrophysiology Properties</a><a class="navbartitle" id="t4" href="../article/index.html">Articles</a><a class="navbartitle" id="t5" href="../faqs.html" onmouseout="HideItem('faqs_submenu');" onmouseover="ShowItem('faqs_submenu');">FAQs</a><a class="navbartitle" id="t6" href="../api/docs.html" onmouseout="HideItem('api_submenu');" onmouseover="ShowItem('api_submenu');">Data/API</a><a class="navbartitle" id="t7" href="../contribute.html">Get Involved</a>
+
+    
+    <!-- about sub-menu, shown as needed  -->
+<div class="submenu" id="about_submenu" onmouseover="ShowItem('about_submenu');" onmouseout="HideItem('about_submenu');">
+  <div class="submenubox">
+    <ul>
+      <li><a href="../publications.html" class="submenlink">Publications</a></li>
+      <!-- <li><a href="/citation_info" class="submenlink">How to Cite</a></li> -->
+      <li><a href="https://groups.google.com/forum/#!forum/neuroelectro" class="submenlink" target="_blank">Mailing List</a></li>
+      <li><a href="../contact_info.html" class="submenlink">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+    <!-- neuron sub-menu, shown as needed  -->
+<div class="submenu" id="neuron_submenu" onmouseover="ShowItem('neuron_submenu');" onmouseout="HideItem('neuron_submenu');">
+  <div class="submenubox">
+    <ul>
+      <li><a href="../neuron/index.html" class="submenlink">Neuron Listing</a></li>
+        <li><a href="../neuron_search.html" class="submenlink">Neuron Search</a></li>
+      <li><a href="../neuron/clustering.html" class="submenlink">Neuron Clustering</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- api sub-menu, shown as needed  -->
+
+<div class="submenu" id="api_submenu" onmouseover="ShowItem('api_submenu');" onmouseout="HideItem('api_submenu');">
+  <div class="submenubox">
+    <ul>
+      <li><a href="../api/docs" class="submenlink">API Documentation</a></li>
+      <!-- <li><a href='/static/src/neuroelectro_data_download.zip' class="submenlink" target="_blank">Data Download</a></li>  -->
+      <li><a href="../publications.html" class="submenlink">How to Cite</a></li>
+      <li><a href="https://groups.google.com/forum/#!forum/neuroelectro" class="submenlink" target="_blank">Ask a Question</a></li>
+      <li><a href="https://github.com/neuroelectro" class="submenlink" target="_blank">Code Repository (GitHub)</a></li>
+    </ul>
+  </div>
+</div>
+
+
+</div>
+
+<!-- ################## end of Navigation Bar ################### -->
+
+
+</body>
+</html>
+
+    
+
+    
+    
+<h1>adaptation percent (1 – first/last ISI)  
+<!--<span class="question_tooltip">?</span>-->
+</h1>
+
+<p>
+Common definition: 1 minus ratio of durations between early and late AP inter-spike intervals in an AP train, normalized to a percent </br>
+</p>
+
+<!--
+<h2>Synonyms of this ephys property: </h2>
+<ul>
+
+</ul>
+<h2>Units of this ephys property: </h2>
+<li></li>
+-->
+
+<h2>Electrophysiological values of <i>adaptation percent (1 – first/last ISI)</i> across neuron types from literature:</h2>
+  <table id="norm_criteria_button">
+  <tr>
+  <td>
+    <ul>
+    <lh>Standardization criteria:</lh>
+    <li> Values are unchanged from those reported. Refer to individual articles for definition and calculation methodology.</li>
+    <lh>Legend:</lh>
+    <li>Blue dots = text-mined values human curated; Orange dots = text-mined values not human curated </li>
+    <lh>Interactivity:</lh>
+    <li>Mouse over neuron report data points and click to view corresponding publication</li>
+    <li>Click on neuron name axis labels (e.g. Dentate gyrus granule cell) to view corresponding neuron page</li>
+    <li>Zoom in on a section of plot by dragging cursor. Zoom out by double clicking on plot.</li>
+    </ul>  
+  </td>
+  <td id="data_table_button">
+    <div style="text-align:center">
+      <a class="btn btn-large btn-info submit_button" href="../data/ephys_prop/52.html/52/data/index.html"><i class="icon-th-list icon-white"></i>  View data in table form</i></a>
+      <br>
+        <a class="fancybox btn btn-large btn-danger submit_button" data-fancybox-type="iframe" href="https://neuroelectro.org/nedm_comment_box/"><i class="icon-thumbs-down icon-white"></i> Report miscurated data</i></a>
+      </div>
+  </td>
+
+  </tr>
+  </table>
+
+<div id="chart1" style="height:800px;width:1190px; "></div>
+
+
+</body>   
+</div>
+<div id="footer">
+<footer>
+    
+    <table align="center" width="1200px" class="footer_bar">
+        <tr>
+            <td class="footer_bar">
+                <p align="left">
+                    &copy; 2012-2016 <a href="https://twitter.com/neuronJoy" target="_blank">Shreejoy Tripathy</a> and
+                    <a href="http://rick.gerk.in/" target="_blank">Richard Gerkin</a>
+                    <br> 
+                    University of British Columbia and Arizona State University
+                    
+                    <!--<br>Funding: NIH, NIF, and the RK Mellon Foundation-->
+                    <br>
+                    Release Version 5.0
+                    <!--Optimized for Mozilla Firefox, Safari, and fast internet connections -->
+                </p>
+            </td>
+            <td class="footer_bar">
+                <p align="center">
+                
+                <p align="left">Not signed in <a class="btn btn-small btn-primary" href="https://neuroelectro.org/accounts/login?next=/ephys_prop/52/"><i class="icon-user icon-white"></i>  Log in</a></p>
+                
+                </p>
+
+            </td>
+            <td class="footer_bar">
+                <div class="funding_logo_container" align="right">
+                    <a href="http://www.cihr-irsc.gc.ca/e/193.html" class="funding_logo">
+                        <img src="https://web.archive.org/web/20240910034516im_/https://neuroelectro.org/static/src/cihr_logo_big_e.png" id="logo" width="100" height="40">
+                    </a>
+                    <a href="http://neurodevnet.ca/" class="funding_logo">
+                        <img src="https://web.archive.org/web/20240910034516im_/https://neuroelectro.org/static/src/NeuroDevNetLOGO.jpg" id="logo" width="100" height="40">
+                    </a>
+                    <a href="http://www.nih.gov/" class="funding_logo">
+                        <img src="https://web.archive.org/web/20240910034516im_/https://neuroelectro.org/static/src/nihMasterLogo.png" id="logo" width="100" height="40">
+                    </a>
+                    <p id="supported_by">Support provided by</p>
+                </div>
+
+            </td>
+        </tr>
+    </table>
+    
+</footer>
+</div>
+</html>
+<!--
+     FILE ARCHIVED ON 03:45:16 Sep 10, 2024 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 18:20:34 Jan 06, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.703
+  exclusion.robots: 0.034
+  exclusion.robots.policy: 0.021
+  esindex: 0.014
+  cdx.remote: 7.43
+  LoadShardBlock: 791.297 (3)
+  PetaboxLoader3.resolve: 713.005 (4)
+  PetaboxLoader3.datanode: 163.826 (4)
+  load_resource: 117.356
+-->

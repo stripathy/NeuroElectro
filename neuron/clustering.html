@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head><script type="text/javascript" src="https://web.archive.org/_static/js/bundle-playback.js?v=HxkREWBo" charset="utf-8"></script>
+<script type="text/javascript" src="https://web.archive.org/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
+<script type="text/javascript" src="https://web.archive.org/_static/js/ruffle/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("../../neuron/clustering.html/","20231202161210","https://web.archive.org/","web","/_static/",
+	      "1701533530");
+</script>
+<link rel="stylesheet" type="text/css" href="https://web.archive.org/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="https://web.archive.org/_static/css/iconochive.css?v=3PDvdIFv" />
+<!-- End Wayback Rewrite JS Include -->
+
+    <title>NeuroElectro :: Neuron clustering </title>
+	
+    <link rel="shortcut icon" href="https://web.archive.org/web/20231202161210im_/https://www.neuroelectro.org/static/src/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://web.archive.org/web/20231202161210cs_/https://www.neuroelectro.org/static/bootstrap_old/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://web.archive.org/web/20231202161210cs_/https://www.neuroelectro.org/static/src/local.css"/>
+    
+    
+		
+		<title>Neuron type addition</title>
+		<link type="text/css" href="https://web.archive.org/web/20231202161210cs_/https://www.neuroelectro.org/static/src/jquery-ui-1.8.24.custom.css" rel="stylesheet"/>
+		<script language="javascript" type="text/javascript" src="https://web.archive.org/web/20231202161210js_/https://www.neuroelectro.org/static/src/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript" src="https://web.archive.org/web/20231202161210js_/https://www.neuroelectro.org/static/src/jquery-ui-1.8.24.custom.min.js"></script>
+        <script type="text/javascript" src="https://web.archive.org/web/20231202161210js_/https://www.neuroelectro.org/static/src/jquery.jqplot.min.js"></script>
+        <script type="text/javascript" src="https://web.archive.org/web/20231202161210js_/https://www.neuroelectro.org/static/src/plugins/jqplot.bubbleRenderer.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://web.archive.org/web/20231202161210cs_/https://www.neuroelectro.org/static/src/jquery.jqplot.min.css"/>
+        <script type="text/javascript" src="https://web.archive.org/web/20231202161210js_/https://www.neuroelectro.org/static/src/plugins/jqplot.blockRenderer.min.js"></script>
+        <script type="text/javascript" src="https://web.archive.org/web/20231202161210js_/https://www.neuroelectro.org/static/src/plugins/jqplot.pointLabels.min.js"></script>
+        <script type="text/javascript" src="https://web.archive.org/web/20231202161210js_/https://www.neuroelectro.org/static/src/plugins/jqplot.cursor.min.js"></script>
+        <script type="text/javascript" src="https://web.archive.org/web/20231202161210js_/https://www.neuroelectro.org/static/src/plugins/jqplot.canvasAxisLabelRenderer.min.js"></script>
+        <script type="text/javascript" src="https://web.archive.org/web/20231202161210js_/https://www.neuroelectro.org/static/src/plugins/jqplot.canvasTextRenderer.min.js"></script>
+        <script type="text/javascript" src="https://web.archive.org/web/20231202161210js_/https://www.neuroelectro.org/static/src/plugins/jqplot.canvasAxisTickRenderer.min.js"></script>
+        <script type="text/javascript" src="https://web.archive.org/web/20231202161210js_/https://www.neuroelectro.org/static/src/plugins/jqplot.categoryAxisRenderer.min.js"></script>
+        <script type="text/javascript" src="https://web.archive.org/web/20231202161210js_/https://www.neuroelectro.org/static/src/plugins/jqplot.highlighter.min.js"></script>
+    <style>
+	.ui-combobox {
+		position: relative;
+		display: inline-block;
+        
+	}
+	.ui-combobox-toggle {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		margin-left: -1px;
+		padding: 0;
+		/* adjust styles for IE 6/7 */
+		*height: 1.7em;
+		*top: 0.1em;
+	}
+	.ui-combobox-input {
+		margin: 0;
+		padding: 0.3em;
+        width: 500px;
+        
+	}
+    .jqplot-highlighter-tooltip {
+        background-color: #B4EEB4;
+        filter:alpha(opacity=90);
+        opacity:0.75;
+        padding: 5px;
+        border-radius: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        z-index:3;
+    }
+    .jqplot-bubble-label {
+        font-size:20px;
+    }
+	</style>
+
+	
+	
+     
+ 	<style>
+ 		#maintanence_message{
+ 			color: red;
+ 		    text-align: center;
+ 		}
+        .funding_logo {
+            display:inline-block;
+            text-align: center;
+        }
+        #supported_by{
+            text-align: center;
+            position: relative;
+            left: 35px;
+        }
+ 	</style>
+	
+    
+    <!--stuff for google tracking-->
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-35182339-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+	
+    </script>
+</head>
+
+
+
+	<script>
+
+$(document).ready(function(){
+    var pts = [[0.745098039215686, 0.215686274509804, '1.41421356237', 'Globus pallidus principal cell', '78'], [0.490196078431373, 0.274509803921569, '1.41421356237', 'Olfactory cortex semilunar cell', '136'], [0.549019607843137, 0.0196078431372549, '1.73205080757', 'Amygdaloid nucleus paracapsular intercalated cell', '4'], [0.647058823529412, 0.490196078431373, '1.73205080757', 'Hippocampus CA1 neurogliaform cell', '83'], [0.882352941176471, 0.607843137254902, '1.73205080757', 'Hypothalamus oxytocin neuroendocrine magnocellular cell', '92'], [0.666666666666667, 0.843137254901961, '1.73205080757', 'Cerebellar nucleus cell', '208'], [0.313725490196078, 0.705882352941177, '2.0', 'Dentate gyrus basket cell', '65'], [0.529411764705882, 0.235294117647059, '2.0', 'Lateral amygdala projection neuron', '211'], [0.0980392156862745, 0.823529411764706, '2.2360679775', 'Hypoglossal nucleus motor neuron', '91'], [0.588235294117647, 0.666666666666667, '2.2360679775', 'Olfactory bulb (main) Blanes cell', '127'], [0.0392156862745098, 0.176470588235294, '2.2360679775', 'Olfactory cortex pyramidal cell', '135'], [0.92156862745098, 0.294117647058824, '2.2360679775', 'Thalamus parafascicular nucleus neuron', '212'], [0.0784313725490196, 1.0, '2.2360679775', 'Inferior olive neuron', '219'], [0.686274509803922, 0.745098039215686, '2.44948974278', 'Dentate gyrus hilar cell', '67'], [0.823529411764706, 0.92156862745098, '2.44948974278', 'Dorsal motor nucleus of vagus motor neuron', '71'], [0.784313725490196, 0.529411764705882, '2.44948974278', 'Substantia nigra pars reticulata interneuron GABA', '184'], [0.803921568627451, 0.333333333333333, '2.64575131106', 'Locus coeruleus noradrenergic neuron', '94'], [0.980392156862745, 0.862745098039216, '2.64575131106', 'Suprachiasmatic nucleus neuron', '213'], [0.941176470588235, 0.588235294117647, '2.64575131106', 'Paraventricular hypothalamic nucleus neurons', '217'], [0.725490196078431, 0.901960784313726, '2.82842712475', 'Basalis nucleus cholinergic neuron', '14'], [0.607843137254902, 0.627450980392157, '2.82842712475', 'Neostriatum cholinergic cell', '115'], [0.843137254901961, 0.431372549019608, '2.82842712475', 'Nucleus of the solitary tract principal cell', '122'], [0.411764705882353, 0.980392156862745, '2.82842712475', 'Olfactory bulb (main) external tufted cell', '132'], [0.372549019607843, 0.803921568627451, '3.0', 'Medial entorhinal cortex layer III pyramidal cell', '218'], [0.764705882352941, 0.549019607843137, '3.0', 'Medial vestibular nucleus neuron', '223'], [0.568627450980392, 0.470588235294118, '3.16227766017', 'Hippocampus CA1 oriens lacunosum moleculare neuron', '84'], [0.470588235294118, 0.254901960784314, '3.16227766017', 'Thalamic reticular nucleus cell', '190'], [0.627450980392157, 0.647058823529412, '3.16227766017', 'Inferior colliculus neuron', '207'], [0.333333333333333, 0.0588235294117647, '3.16227766017', 'Nucleus accumbens medium spiny neuron', '220'], [1.0, 0.0784313725490196, '3.31662479036', 'Cerebellum granule cell', '21'], [0.117647058823529, 0.764705882352941, '3.31662479036', 'Medial entorhinal cortex layer II stellate cell', '206'], [0.274509803921569, 0.686274509803922, '3.46410161514', 'Hippocampus CA1 basket cell', '82'], [0.352941176470588, 0.196078431372549, '3.60555127546', 'Neocortex layer 4 stellate cell', '107'], [0.862745098039216, 0.117647058823529, '3.60555127546', 'Olfactory bulb (main) granule cell', '128'], [0.0588235294117647, 0.392156862745098, '3.74165738677', 'Subiculum pyramidal cell', '182'], [0.96078431372549, 0.882352941176471, '3.74165738677', 'Ventral tegmental area dopamine neuron', '203'], [0.235294117647059, 0.372549019607843, '3.87298334621', 'Amygdala basolateral nucleus pyramidal neuron', '2'], [0.901960784313726, 0.725490196078431, '3.87298334621', 'Substantia nigra pars compacta dopaminergic cell', '183'], [0.294117647058824, 0.0980392156862745, '4.0', 'Neostriatum gabaergic interneuron', '209'], [0.509803921568627, 0.450980392156863, '4.24264068712', 'Thalamus relay cell', '194'], [0.0196078431372549, 0.941176470588235, '4.472135955', 'Cerebellum Purkinje cell', '18'], [0.392156862745098, 0.784313725490196, '5.09901951359', 'Olfactory bulb (main) mitral cell', '129'], [0.156862745098039, 0.96078431372549, '5.19615242271', 'Neocortex uncharacterized cell', '109'], [0.705882352941177, 0.568627450980392, '5.38516480713', 'Neocortex Martinotti cell', '98'], [0.431372549019608, 0.352941176470588, '5.47722557505', 'Hippocampus CA3 pyramidal cell', '89'], [0.254901960784314, 0.0392156862745098, '6.0', 'Neostriatum medium spiny neuron', '117'], [0.450980392156863, 0.156862745098039, '6.0827625303', 'Dentate gyrus granule cell', '66'], [0.176470588235294, 0.313725490196078, '7.61577310586', 'Neocortex basket cell', '99'], [0.196078431372549, 0.137254901960784, '8.0622577483', 'Neocortex pyramidal cell layer 2-3', '110'], [0.137254901960784, 0.411764705882353, '9.59166304663', 'Neocortex pyramidal cell layer 5-6', '111'], [0.215686274509804, 0.509803921568627, '11.0905365064', 'Hippocampus CA1 pyramidal cell', '85']]; 
+    
+    plot1 = $.jqplot('chart1',[pts],{
+        title: 'Neuron clustering based on electrophysiological properties',
+        seriesDefaults:{
+            renderer: $.jqplot.BubbleRenderer,
+            rendererOptions: {
+                bubbleAlpha: 0.3,
+                highlightAlpha: 0.85,
+                escapeHtml: false,
+                autoscaleBubbles: true,
+            },
+            shadow: false,
+        },
+        cursor:{
+            show: true, 
+            zoom: true,
+            looseZoom: true,
+              showTooltip:false, 
+              followMouse: true, 
+              showTooltipOutsideZoom: false, 
+              constrainOutsideZoom: true,
+        }, 
+        highlighter: {
+            show: false,
+            sizeAdjust: 12,
+            tooltipAxes: 'y',
+            tooltipLocation: 'ne',
+            yvalues: 4,
+            formatString: '<table class="jqplot-highlighter"> \
+            <tr><td>x index:</td><td>%s</td></tr> \
+            <tr><td>y index:</td><td>%s</td></tr> \
+            <tr><td>Neuron:</td><td>%s</td></tr> \
+            <tr><td>Num articles:</td><td>%s</td></tr></table>'
+        },
+    axesDefaults: {
+        tickRenderer: $.jqplot.CanvasAxisTickRenderer,
+        tickOptions: {
+          fontSize: '12pt',
+        }
+    },
+    axes: {
+      xaxis: {
+        label: 'Neuron-Electrophysiology PCA dimension 1 (rescaled)',
+        labelRenderer: $.jqplot.CanvasAxisLabelRenderer,
+      },
+      yaxis: {
+        label: 'Neuron-Electrophysiology PCA dimension 2 (rescaled)',
+        labelRenderer: $.jqplot.CanvasAxisLabelRenderer,
+      },
+    },
+    });   
+    $('#chart1').bind('jqplotDataClick', 
+        function (ev, seriesIndex, pointIndex, data) {
+            var data_pt_ind = data[4];
+            var linkStr = "/neuron/" + data_pt_ind;
+            window.open(linkStr, '_self');
+            
+        }
+    );
+    // add id elements to corresponding neuron ticks based on the neuron id
+    
+        //var neuronName = Amygdala basolateral nucleus pyramidal neuron;
+        $('.jqplot-bubble-label:contains(Amygdala basolateral nucleus pyramidal neuron)').attr("id", 2);
+    
+        //var neuronName = Amygdaloid nucleus paracapsular intercalated cell;
+        $('.jqplot-bubble-label:contains(Amygdaloid nucleus paracapsular intercalated cell)').attr("id", 4);
+    
+        //var neuronName = Basalis nucleus cholinergic neuron;
+        $('.jqplot-bubble-label:contains(Basalis nucleus cholinergic neuron)').attr("id", 14);
+    
+        //var neuronName = Cerebellar nucleus cell;
+        $('.jqplot-bubble-label:contains(Cerebellar nucleus cell)').attr("id", 208);
+    
+        //var neuronName = Cerebellum granule cell;
+        $('.jqplot-bubble-label:contains(Cerebellum granule cell)').attr("id", 21);
+    
+        //var neuronName = Cerebellum Purkinje cell;
+        $('.jqplot-bubble-label:contains(Cerebellum Purkinje cell)').attr("id", 18);
+    
+        //var neuronName = Dentate gyrus basket cell;
+        $('.jqplot-bubble-label:contains(Dentate gyrus basket cell)').attr("id", 65);
+    
+        //var neuronName = Dentate gyrus granule cell;
+        $('.jqplot-bubble-label:contains(Dentate gyrus granule cell)').attr("id", 66);
+    
+        //var neuronName = Dentate gyrus hilar cell;
+        $('.jqplot-bubble-label:contains(Dentate gyrus hilar cell)').attr("id", 67);
+    
+        //var neuronName = Dorsal motor nucleus of vagus motor neuron;
+        $('.jqplot-bubble-label:contains(Dorsal motor nucleus of vagus motor neuron)').attr("id", 71);
+    
+        //var neuronName = Globus pallidus principal cell;
+        $('.jqplot-bubble-label:contains(Globus pallidus principal cell)').attr("id", 78);
+    
+        //var neuronName = Hippocampus CA1 basket cell;
+        $('.jqplot-bubble-label:contains(Hippocampus CA1 basket cell)').attr("id", 82);
+    
+        //var neuronName = Hippocampus CA1 neurogliaform cell;
+        $('.jqplot-bubble-label:contains(Hippocampus CA1 neurogliaform cell)').attr("id", 83);
+    
+        //var neuronName = Hippocampus CA1 oriens lacunosum moleculare neuron;
+        $('.jqplot-bubble-label:contains(Hippocampus CA1 oriens lacunosum moleculare neuron)').attr("id", 84);
+    
+        //var neuronName = Hippocampus CA1 pyramidal cell;
+        $('.jqplot-bubble-label:contains(Hippocampus CA1 pyramidal cell)').attr("id", 85);
+    
+        //var neuronName = Hippocampus CA3 pyramidal cell;
+        $('.jqplot-bubble-label:contains(Hippocampus CA3 pyramidal cell)').attr("id", 89);
+    
+        //var neuronName = Hypoglossal nucleus motor neuron;
+        $('.jqplot-bubble-label:contains(Hypoglossal nucleus motor neuron)').attr("id", 91);
+    
+        //var neuronName = Hypothalamus oxytocin neuroendocrine magnocellular cell;
+        $('.jqplot-bubble-label:contains(Hypothalamus oxytocin neuroendocrine magnocellular cell)').attr("id", 92);
+    
+        //var neuronName = Inferior colliculus neuron;
+        $('.jqplot-bubble-label:contains(Inferior colliculus neuron)').attr("id", 207);
+    
+        //var neuronName = Inferior olive neuron;
+        $('.jqplot-bubble-label:contains(Inferior olive neuron)').attr("id", 219);
+    
+        //var neuronName = Lateral amygdala projection neuron;
+        $('.jqplot-bubble-label:contains(Lateral amygdala projection neuron)').attr("id", 211);
+    
+        //var neuronName = Locus coeruleus noradrenergic neuron;
+        $('.jqplot-bubble-label:contains(Locus coeruleus noradrenergic neuron)').attr("id", 94);
+    
+        //var neuronName = Medial entorhinal cortex layer II stellate cell;
+        $('.jqplot-bubble-label:contains(Medial entorhinal cortex layer II stellate cell)').attr("id", 206);
+    
+        //var neuronName = Medial entorhinal cortex layer III pyramidal cell;
+        $('.jqplot-bubble-label:contains(Medial entorhinal cortex layer III pyramidal cell)').attr("id", 218);
+    
+        //var neuronName = Medial vestibular nucleus neuron;
+        $('.jqplot-bubble-label:contains(Medial vestibular nucleus neuron)').attr("id", 223);
+    
+        //var neuronName = Neocortex basket cell;
+        $('.jqplot-bubble-label:contains(Neocortex basket cell)').attr("id", 99);
+    
+        //var neuronName = Neocortex layer 4 stellate cell;
+        $('.jqplot-bubble-label:contains(Neocortex layer 4 stellate cell)').attr("id", 107);
+    
+        //var neuronName = Neocortex Martinotti cell;
+        $('.jqplot-bubble-label:contains(Neocortex Martinotti cell)').attr("id", 98);
+    
+        //var neuronName = Neocortex pyramidal cell layer 2-3;
+        $('.jqplot-bubble-label:contains(Neocortex pyramidal cell layer 2-3)').attr("id", 110);
+    
+        //var neuronName = Neocortex pyramidal cell layer 5-6;
+        $('.jqplot-bubble-label:contains(Neocortex pyramidal cell layer 5-6)').attr("id", 111);
+    
+        //var neuronName = Neocortex uncharacterized cell;
+        $('.jqplot-bubble-label:contains(Neocortex uncharacterized cell)').attr("id", 109);
+    
+        //var neuronName = Neostriatum cholinergic cell;
+        $('.jqplot-bubble-label:contains(Neostriatum cholinergic cell)').attr("id", 115);
+    
+        //var neuronName = Neostriatum gabaergic interneuron;
+        $('.jqplot-bubble-label:contains(Neostriatum gabaergic interneuron)').attr("id", 209);
+    
+        //var neuronName = Neostriatum medium spiny neuron;
+        $('.jqplot-bubble-label:contains(Neostriatum medium spiny neuron)').attr("id", 117);
+    
+        //var neuronName = Nucleus accumbens medium spiny neuron;
+        $('.jqplot-bubble-label:contains(Nucleus accumbens medium spiny neuron)').attr("id", 220);
+    
+        //var neuronName = Nucleus of the solitary tract principal cell;
+        $('.jqplot-bubble-label:contains(Nucleus of the solitary tract principal cell)').attr("id", 122);
+    
+        //var neuronName = Olfactory bulb (main) Blanes cell;
+        $('.jqplot-bubble-label:contains(Olfactory bulb (main) Blanes cell)').attr("id", 127);
+    
+        //var neuronName = Olfactory bulb (main) external tufted cell;
+        $('.jqplot-bubble-label:contains(Olfactory bulb (main) external tufted cell)').attr("id", 132);
+    
+        //var neuronName = Olfactory bulb (main) granule cell;
+        $('.jqplot-bubble-label:contains(Olfactory bulb (main) granule cell)').attr("id", 128);
+    
+        //var neuronName = Olfactory bulb (main) mitral cell;
+        $('.jqplot-bubble-label:contains(Olfactory bulb (main) mitral cell)').attr("id", 129);
+    
+        //var neuronName = Olfactory cortex pyramidal cell;
+        $('.jqplot-bubble-label:contains(Olfactory cortex pyramidal cell)').attr("id", 135);
+    
+        //var neuronName = Olfactory cortex semilunar cell;
+        $('.jqplot-bubble-label:contains(Olfactory cortex semilunar cell)').attr("id", 136);
+    
+        //var neuronName = Paraventricular hypothalamic nucleus neurons;
+        $('.jqplot-bubble-label:contains(Paraventricular hypothalamic nucleus neurons)').attr("id", 217);
+    
+        //var neuronName = Subiculum pyramidal cell;
+        $('.jqplot-bubble-label:contains(Subiculum pyramidal cell)').attr("id", 182);
+    
+        //var neuronName = Substantia nigra pars compacta dopaminergic cell;
+        $('.jqplot-bubble-label:contains(Substantia nigra pars compacta dopaminergic cell)').attr("id", 183);
+    
+        //var neuronName = Substantia nigra pars reticulata interneuron GABA;
+        $('.jqplot-bubble-label:contains(Substantia nigra pars reticulata interneuron GABA)').attr("id", 184);
+    
+        //var neuronName = Suprachiasmatic nucleus neuron;
+        $('.jqplot-bubble-label:contains(Suprachiasmatic nucleus neuron)').attr("id", 213);
+    
+        //var neuronName = Thalamic reticular nucleus cell;
+        $('.jqplot-bubble-label:contains(Thalamic reticular nucleus cell)').attr("id", 190);
+    
+        //var neuronName = Thalamus parafascicular nucleus neuron;
+        $('.jqplot-bubble-label:contains(Thalamus parafascicular nucleus neuron)').attr("id", 212);
+    
+        //var neuronName = Thalamus relay cell;
+        $('.jqplot-bubble-label:contains(Thalamus relay cell)').attr("id", 194);
+    
+        //var neuronName = Ventral tegmental area dopamine neuron;
+        $('.jqplot-bubble-label:contains(Ventral tegmental area dopamine neuron)').attr("id", 203);
+    
+    
+$('#selectbox').change(function() {
+    var neuronId = $(this).val();
+    $('#' + neuronId).css('background', 'red');
+    $('#' + neuronId).show()
+    if (neuronId == "None_selected"){
+        $('.jqplot-bubble-label').css('background', 'none')
+    }
+});
+
+$('.names_radio input:radio').change(function() {
+    if ($(this).val() == "no"){
+        $('.jqplot-bubble-label').hide()
+        }
+    else{
+        $('.jqplot-bubble-label').show()
+    }
+    
+});
+
+});
+
+	</script>
+    
+
+
+<div id="content">
+<body>
+	
+    <table align="center" width="1200px" class="logo_bar">
+        <tr>
+            <td class="logo_bar">
+                <div align="left">
+					
+					<a href="../index.html">
+				    	<img src="https://web.archive.org/web/20231202161210im_/https://www.neuroelectro.org/static/src/neuroelectro_logo_3.png" id="logo">
+				    </a>
+				    
+                </div>
+            </td>
+            <td class="logo_bar">
+                <div align="right">
+                <a href="../publications.html">
+                NeuroElectro Publications</a> &nbsp;
+                <br>
+                
+                </div>
+                
+            </td>
+        </tr>
+    </table>
+
+    
+
+<html>
+
+<head>
+
+<!--<link rel="stylesheet" type="text/css" href="/static/src/local.css" />-->
+<link href="https://web.archive.org/web/20231202161210cs_/https://www.neuroelectro.org/static/src/SimpleNavBarStyles.css" rel="stylesheet" type="text/css">
+<script src="https://web.archive.org/web/20231202161210js_/https://www.neuroelectro.org/static/src/SimpleNavBarScripts.js" language="JavaScript" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+
+
+
+<!-- ############### #### Navigation Bar #### ############### -->
+
+
+<!-- main nav bar titles -->
+<!-- Note how the the closing angle bracket of each </a> tag runs up against the next <a> tag,
+      to avoid leaving a gap between each menu title and the next one. -->
+	
+ <div class="mynavbar">
+
+<a class="navbartitle" id="t1" href="../index.html" onmouseout="HideItem('about_submenu');" onmouseover="ShowItem('about_submenu');">About</a><a class="navbartitle" id="t2" href="index.html" onmouseout="HideItem('neuron_submenu');" onmouseover="ShowItem('neuron_submenu');">Neuron Types</a><a class="navbartitle" id="t3" href="../ephys_prop/index">Electrophysiology Properties</a><a class="navbartitle" id="t4" href="../article/index.html">Articles</a><a class="navbartitle" id="t5" href="../faqs" onmouseout="HideItem('faqs_submenu');" onmouseover="ShowItem('faqs_submenu');">FAQs</a><a class="navbartitle" id="t6" href="../api/docs" onmouseout="HideItem('api_submenu');" onmouseover="ShowItem('api_submenu');">Data/API</a><a class="navbartitle" id="t7" href="../contribute">Get Involved</a>
+
+    
+    <!-- about sub-menu, shown as needed  -->
+<div class="submenu" id="about_submenu" onmouseover="ShowItem('about_submenu');" onmouseout="HideItem('about_submenu');">
+  <div class="submenubox">
+    <ul>
+      <li><a href="../publications.html" class="submenlink">Publications</a></li>
+      <!-- <li><a href="/citation_info" class="submenlink">How to Cite</a></li> -->
+      <li><a href="https://groups.google.com/forum/#!forum/neuroelectro" class="submenlink" target="_blank">Mailing List</a></li>
+      <li><a href="../contact_info" class="submenlink">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+    <!-- neuron sub-menu, shown as needed  -->
+<div class="submenu" id="neuron_submenu" onmouseover="ShowItem('neuron_submenu');" onmouseout="HideItem('neuron_submenu');">
+  <div class="submenubox">
+    <ul>
+      <li><a href=index.html" class="submenlink">Neuron Listing</a></li>
+        <li><a href="../neuron_search.html" class="submenlink">Neuron Search</a></li>
+      <li><a href="../neuron/clustering.html" class="submenlink">Neuron Clustering</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- api sub-menu, shown as needed  -->
+
+<div class="submenu" id="api_submenu" onmouseover="ShowItem('api_submenu');" onmouseout="HideItem('api_submenu');">
+  <div class="submenubox">
+    <ul>
+      <li><a href="../api/docs.html" class="submenlink">API Documentation</a></li>
+      <!-- <li><a href='/static/src/neuroelectro_data_download.zip' class="submenlink" target="_blank">Data Download</a></li>  -->
+      <li><a href="../publications.html" class="submenlink">How to Cite</a></li>
+      <li><a href="https://groups.google.com/forum/#!forum/neuroelectro" class="submenlink" target="_blank">Ask a Question</a></li>
+      <li><a href="https://github.com/neuroelectro" class="submenlink" target="_blank">Code Repository (GitHub)</a></li>
+    </ul>
+  </div>
+</div>
+
+
+</div>
+
+<!-- ################## end of Navigation Bar ################### -->
+
+
+</body>
+</html>
+
+    
+
+    
+    
+<h2>Clustering of neuron types based on similarities in electrophysiological values:</h2>
+    <table>
+    <tr>
+    <td>
+    <ul>
+    <lh>Description:</lh>
+<li> Projection of NeuroElectro neuron types onto space defined by the first 2 electrophysiology principal components which collectively represent ~70% of variance. Neuron types are indicated by circles and circle size is proportional to number of corresponding articles indexed in NeuroElectro database.</li>
+<lh>Interactivity:</lh>
+<li>Click on neuron types to go to corresponding neuron page.</li>
+<li>Zoom in on a section of plot by dragging cursor. Zoom out by double clicking on plot.</li></ul>  
+    </td>
+    </tr>
+    </table>
+    
+<div id="chart1" style="height:800px;width:1200px; "></div>
+<br>
+
+<form class="names_radio" name="names_form">
+<input type="radio" name="showNames" value="yes" checked>Show neuron names<br>
+<input type="radio" name="showNames" value="no">Don't show neuron names
+</form>
+<br>
+<label>Display a specific neuron(s):</label>
+<select multiple="multiple" name="region_id" id="selectbox" size="6">
+<option value="None_selected">None selected</option>
+    
+    <option value="2">Amygdala basolateral nucleus pyramidal neuron</option>
+    
+    <option value="4">Amygdaloid nucleus paracapsular intercalated cell</option>
+    
+    <option value="14">Basalis nucleus cholinergic neuron</option>
+    
+    <option value="208">Cerebellar nucleus cell</option>
+    
+    <option value="21">Cerebellum granule cell</option>
+    
+    <option value="18">Cerebellum Purkinje cell</option>
+    
+    <option value="65">Dentate gyrus basket cell</option>
+    
+    <option value="66">Dentate gyrus granule cell</option>
+    
+    <option value="67">Dentate gyrus hilar cell</option>
+    
+    <option value="71">Dorsal motor nucleus of vagus motor neuron</option>
+    
+    <option value="78">Globus pallidus principal cell</option>
+    
+    <option value="82">Hippocampus CA1 basket cell</option>
+    
+    <option value="83">Hippocampus CA1 neurogliaform cell</option>
+    
+    <option value="84">Hippocampus CA1 oriens lacunosum moleculare neuron</option>
+    
+    <option value="85">Hippocampus CA1 pyramidal cell</option>
+    
+    <option value="89">Hippocampus CA3 pyramidal cell</option>
+    
+    <option value="91">Hypoglossal nucleus motor neuron</option>
+    
+    <option value="92">Hypothalamus oxytocin neuroendocrine magnocellular cell</option>
+    
+    <option value="207">Inferior colliculus neuron</option>
+    
+    <option value="219">Inferior olive neuron</option>
+    
+    <option value="211">Lateral amygdala projection neuron</option>
+    
+    <option value="94">Locus coeruleus noradrenergic neuron</option>
+    
+    <option value="206">Medial entorhinal cortex layer II stellate cell</option>
+    
+    <option value="218">Medial entorhinal cortex layer III pyramidal cell</option>
+    
+    <option value="223">Medial vestibular nucleus neuron</option>
+    
+    <option value="99">Neocortex basket cell</option>
+    
+    <option value="107">Neocortex layer 4 stellate cell</option>
+    
+    <option value="98">Neocortex Martinotti cell</option>
+    
+    <option value="110">Neocortex pyramidal cell layer 2-3</option>
+    
+    <option value="111">Neocortex pyramidal cell layer 5-6</option>
+    
+    <option value="109">Neocortex uncharacterized cell</option>
+    
+    <option value="115">Neostriatum cholinergic cell</option>
+    
+    <option value="209">Neostriatum gabaergic interneuron</option>
+    
+    <option value="117">Neostriatum medium spiny neuron</option>
+    
+    <option value="220">Nucleus accumbens medium spiny neuron</option>
+    
+    <option value="122">Nucleus of the solitary tract principal cell</option>
+    
+    <option value="127">Olfactory bulb (main) Blanes cell</option>
+    
+    <option value="132">Olfactory bulb (main) external tufted cell</option>
+    
+    <option value="128">Olfactory bulb (main) granule cell</option>
+    
+    <option value="129">Olfactory bulb (main) mitral cell</option>
+    
+    <option value="135">Olfactory cortex pyramidal cell</option>
+    
+    <option value="136">Olfactory cortex semilunar cell</option>
+    
+    <option value="217">Paraventricular hypothalamic nucleus neurons</option>
+    
+    <option value="182">Subiculum pyramidal cell</option>
+    
+    <option value="183">Substantia nigra pars compacta dopaminergic cell</option>
+    
+    <option value="184">Substantia nigra pars reticulata interneuron GABA</option>
+    
+    <option value="213">Suprachiasmatic nucleus neuron</option>
+    
+    <option value="190">Thalamic reticular nucleus cell</option>
+    
+    <option value="212">Thalamus parafascicular nucleus neuron</option>
+    
+    <option value="194">Thalamus relay cell</option>
+    
+    <option value="203">Ventral tegmental area dopamine neuron</option>
+    
+</select>
+<br>
+
+
+<!--<img src="/static/src/neurons_clustered.jpg">-->
+
+
+
+</body>   
+</div>
+<div id="footer">
+<footer>
+    
+    <table align="center" width="1200px" class="footer_bar">
+        <tr>
+            <td class="footer_bar">
+                <p align="left">
+                    &copy; 2012-2016 <a href="https://twitter.com/neuronJoy" target="_blank">Shreejoy Tripathy</a> and
+                    <a href="http://rick.gerk.in/" target="_blank">Richard Gerkin</a>
+                    <br> 
+                    University of British Columbia and Arizona State University
+                    
+                    <!--<br>Funding: NIH, NIF, and the RK Mellon Foundation-->
+                    <br>
+                    Release Version 5.0
+                    <!--Optimized for Mozilla Firefox, Safari, and fast internet connections -->
+                </p>
+            </td>
+            <td class="footer_bar">
+                <p align="center">
+                
+                <p align="left">Not signed in <a class="btn btn-small btn-primary" href="https://www.neuroelectro.org/accounts/login?next=/neuron/clustering/"><i class="icon-user icon-white"></i>  Log in</a></p>
+                
+                </p>
+
+            </td>
+            <td class="footer_bar">
+                <div class="funding_logo_container" align="right">
+                    <a href="http://www.cihr-irsc.gc.ca/e/193.html" class="funding_logo">
+                        <img src="https://web.archive.org/web/20231202161210im_/https://www.neuroelectro.org/static/src/cihr_logo_big_e.png" id="logo" width="100" height="40">
+                    </a>
+                    <a href="http://neurodevnet.ca/" class="funding_logo">
+                        <img src="https://web.archive.org/web/20231202161210im_/https://www.neuroelectro.org/static/src/NeuroDevNetLOGO.jpg" id="logo" width="100" height="40">
+                    </a>
+                    <a href="http://www.nih.gov/" class="funding_logo">
+                        <img src="https://web.archive.org/web/20231202161210im_/https://www.neuroelectro.org/static/src/nihMasterLogo.png" id="logo" width="100" height="40">
+                    </a>
+                    <p id="supported_by">Support provided by</p>
+                </div>
+
+            </td>
+        </tr>
+    </table>
+    
+</footer>
+</div>
+</html>
+<!--
+     FILE ARCHIVED ON 16:12:10 Dec 02, 2023 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 19:09:23 Dec 19, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.461
+  exclusion.robots: 0.019
+  exclusion.robots.policy: 0.009
+  esindex: 0.01
+  cdx.remote: 8.486
+  LoadShardBlock: 191.923 (3)
+  PetaboxLoader3.resolve: 180.783 (2)
+  PetaboxLoader3.datanode: 187.053 (4)
+  load_resource: 228.455
+-->

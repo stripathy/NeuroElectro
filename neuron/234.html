@@ -1,0 +1,2447 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head><script type="text/javascript" src="https://web.archive.org/_static/js/bundle-playback.js?v=HxkREWBo" charset="utf-8"></script>
+<script type="text/javascript" src="https://web.archive.org/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
+<script type="text/javascript" src="https://web.archive.org/_static/js/ruffle/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://neuroelectro.org/neuron/234/","20200921190157","https://web.archive.org/","web","/_static/",
+	      "1600714917");
+</script>
+<link rel="stylesheet" type="text/css" href="https://web.archive.org/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="https://web.archive.org/_static/css/iconochive.css?v=3PDvdIFv" />
+<!-- End Wayback Rewrite JS Include -->
+
+    <title>NeuroElectro :: BNST (ALG)</title>
+	
+    <link rel="shortcut icon" href="https://web.archive.org/web/20200921190157im_/https://neuroelectro.org/static/src/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://web.archive.org/web/20200921190157cs_/https://neuroelectro.org/static/bootstrap_old/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://web.archive.org/web/20200921190157cs_/https://neuroelectro.org/static/src/local.css"/>
+    
+    
+	<script type="text/javascript" charset="utf-8" src="https://web.archive.org/web/20200921190157js_/https://neuroelectro.org/static/src/DataTables/media/js/jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://web.archive.org/web/20200921190157js_/https://neuroelectro.org/static/src/DataTables/media/js/jquery.dataTables.js"></script>
+	<style type="text/css" title="currentStyle">
+	  @import "https://web.archive.org/web/20200921190157cs_/https://neuroelectro.org/static/src/DataTables/media/css/demo_table.css";
+	</style>
+	<!--<script language="javascript" type="text/javascript" src="/static/src/jquery.min.js"></script>-->
+	<script language="javascript" type="text/javascript" src="https://web.archive.org/web/20200921190157js_/https://neuroelectro.org/static/src/jquery.jqplot.min.js"></script>
+	<script type="text/javascript" src="https://web.archive.org/web/20200921190157js_/https://neuroelectro.org/static/src/plugins/jqplot.canvasTextRenderer.min.js"></script>
+	<script type="text/javascript" src="https://web.archive.org/web/20200921190157js_/https://neuroelectro.org/static/src/plugins/jqplot.canvasAxisTickRenderer.min.js"></script>
+	<script type="text/javascript" src="https://web.archive.org/web/20200921190157js_/https://neuroelectro.org/static/src/plugins/jqplot.categoryAxisRenderer.min.js"></script>
+	<script type="text/javascript" src="https://web.archive.org/web/20200921190157js_/https://neuroelectro.org/static/src/plugins/jqplot.highlighter.js"></script>
+	<script type="text/javascript" src="https://web.archive.org/web/20200921190157js_/https://neuroelectro.org/static/src/plugins/jqplot.canvasAxisLabelRenderer.min.js"></script>
+	<script type="text/javascript" src="https://web.archive.org/web/20200921190157js_/https://neuroelectro.org/static/src/plugins/jqplot.cursor.min.js"></script>
+	<script type="text/javascript" src="https://web.archive.org/web/20200921190157js_/https://neuroelectro.org/static/src/plugins/jqplot.pointLabels.min.js"></script>
+	<!--<script type="text/javascript" src="/static/src/plugins/jqplot.eventListenerHooks.min.js"></script>-->
+	<link rel="stylesheet" type="text/css" href="https://web.archive.org/web/20200921190157cs_/https://neuroelectro.org/static/src/jquery.jqplot.min.css"/>
+	<script type="text/javascript" src="https://web.archive.org/web/20200921190157js_/https://neuroelectro.org/static/src/plugins/jqplot.ohlcRenderer.min.js"></script>
+	    <!-- Add jQuery library -->
+	<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>-->
+	
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="https://web.archive.org/web/20200921190157js_/https://neuroelectro.org/static/src/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+	
+	<!-- Add fancyBox -->
+	<link rel="stylesheet" href="https://web.archive.org/web/20200921190157cs_/https://neuroelectro.org/static/src/fancybox/source/jquery.fancybox.css?v=2.1.3" type="text/css" media="screen"/>
+	<script type="text/javascript" src="https://web.archive.org/web/20200921190157js_/https://neuroelectro.org/static/src/fancybox/source/jquery.fancybox.pack.js?v=2.1.3"></script>
+	
+	<!-- Optionally add helpers - button, thumbnail and/or media -->
+		<link rel="stylesheet" href="https://web.archive.org/web/20200921190157cs_/https://neuroelectro.org/static/src/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen"/>
+		<script type="text/javascript" src="https://web.archive.org/web/20200921190157js_/https://neuroelectro.org/static/src/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+		<script type="text/javascript" src="https://web.archive.org/web/20200921190157js_/https://neuroelectro.org/static/src/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+		
+		<link rel="stylesheet" href="https://web.archive.org/web/20200921190157cs_/https://neuroelectro.org/static/src/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen"/>
+		<script type="text/javascript" src="https://web.archive.org/web/20200921190157js_/https://neuroelectro.org/static/src/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+		<script src="https://web.archive.org/web/20200921190157js_/https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+		<link href="https://web.archive.org/web/20200921190157cs_/https://neuroelectro.org/static/src/NinjaRadial/NinjaRadial.css" rel="stylesheet" type="text/css"/>
+	<script src="https://web.archive.org/web/20200921190157js_/https://neuroelectro.org/static/src/NinjaRadial/NinjaRadial.js" type="text/javascript"></script>
+	<script src="https://web.archive.org/web/20200921190157js_/https://neuroelectro.org/static/src/plugins/jquery.searchabledropdown-1.0.8.src.js" type="text/javascript"></script>
+    <link href="https://web.archive.org/web/20200921190157cs_/https://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
+	
+	
+	
+<style type="text/css">
+.jqplot-axis {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90%; 
+}
+.jqplot-highlighter-tooltip {
+    background-color: #B4EEB4;
+    filter:alpha(opacity=90);
+    opacity:0.9;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 2;
+}
+.ui-tooltip {
+    background-color: #B4EEB4;
+    font-family: Arial, Helvetica, sans-serif;
+    width:350px;
+    padding:10px;
+    border-radius: 5px;
+    opacity:0.9;
+    z-index: 2;
+}
+#ephys_prop_table {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.submit_button{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+</style>
+
+     
+ 	<style>
+ 		#maintanence_message{
+ 			color: red;
+ 		    text-align: center;
+ 		}
+        .funding_logo {
+            display:inline-block;
+            text-align: center;
+        }
+        #supported_by{
+            text-align: center;
+            position: relative;
+            left: 35px;
+        }
+ 	</style>
+	
+    
+    <!--stuff for google tracking-->
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-35182339-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+	
+    </script>
+</head>
+
+
+
+<script>
+
+
+
+
+$(document).ready(function(){
+  var xticks = ["Reports", "Mean+SD", "All neurons"]
+    
+    //var minVal = parseFloat([[2, 503.582, 194.076, &#39;6&#39;, &#39;2&#39;]]) - parseFloat([[2, 309.506002543377], [2, 697.659870472495]]);
+    //var maxVal = parseFloat([[2, 503.582, 194.076, &#39;6&#39;, &#39;2&#39;]]) + parseFloat([[2, 309.506002543377], [2, 697.659870472495]]);
+  //bDat = [ [ [1.5, minVal], [3.5, minVal]],
+  //[ [1.5, maxVal], [3.5, maxVal]] ]; 
+
+  var yaxisLabel = "input resistance (MΩ)";  
+
+  var highlighterPos = 'ne';
+    
+    
+
+  //var dataSeries = [[[0.9877141282159323, 226.0, 'BNST (ALG) (Bed Nucleus of the Stria Terminalis ALG Type III CRF</br>expressing neuron)', 'Central CRF neurons are not created equal: phenotypic differences in</br>CRF-containing neurons of the rat paraventricular hypothalamus and the</br>bed nucleus of the stria terminalis.', 'Dabrowska J; Hazra R; Guo JD; Dewitt S; Rainnie DG', 'Front Neurosci', '2013', '28155'], [0.9900600235560053, 377.4, 'BNST (ALG) (BNST Type II depolarizing sag burst-firing neuron)', 'Differential expression of intrinsic membrane currents in defined cell</br>types of the anterolateral bed nucleus of the stria terminalis.', 'Hammack SE; Mania I; Rainnie DG', 'J. Neurophysiol.', '2007', '372'], [0.9866906631961528, 452.6, 'BNST (ALG) (BNST Type I depolarizing sag regular-firing neuron)', 'Differential expression of intrinsic membrane currents in defined cell</br>types of the anterolateral bed nucleus of the stria terminalis.', 'Hammack SE; Mania I; Rainnie DG', 'J. Neurophysiol.', '2007', '372'], [0.9674155180549167, 357.8, 'BNST (ALG) (BNST Type III non-depolarizing sag regular-firing neuron)', 'Differential expression of intrinsic membrane currents in defined cell</br>types of the anterolateral bed nucleus of the stria terminalis.', 'Hammack SE; Mania I; Rainnie DG', 'J. Neurophysiol.', '2007', '372'], [0.9978844896254883, 715.7, 'BNST (ALG) (Bed nucleus of the stria terminalus anterolateral sector</br>cell)', 'CGRP inhibits neurons of the bed nucleus of the stria terminalis:</br>implications for the regulation of fear and anxiety.', 'Gungor NZ; Pare D', 'J. Neurosci.', '2014', '46281'], [1.0102746374761586, 254.0, 'BNST (ALG) ( BNST anterolateral regular firing neuron)', 'Distribution and functional expression of Kv4 family ? subunits and</br>associated KChIP ? subunits in the bed nucleus of the stria</br>terminalis.', 'Rainnie DG; Hazra R; Dabrowska J; Guo JD; Li CC; Dewitt S; Muly EC', 'J. Comp. Neurol.', '2014', '45718'], [0.9972450744422642, 400.0, 'BNST (ALG) (BNST anterolateral regular firing and burst firing neuron)', 'Distribution and functional expression of Kv4 family ? subunits and</br>associated KChIP ? subunits in the bed nucleus of the stria</br>terminalis.', 'Rainnie DG; Hazra R; Dabrowska J; Guo JD; Li CC; Dewitt S; Muly EC', 'J. Comp. Neurol.', '2014', '45718'], [0.999844628679615, 658.3, 'BNST (ALG) (anterolateral sector BNST central amygdala-projecting non-</br>ChR2-expressing nonresponsive cell)', 'Optogenetic study of the projections from the bed nucleus of the stria</br>terminalis to the central amygdala.', 'Gungor NZ; Yamamoto R; Par\xe9 D', 'J. Neurophysiol.', '2015', '49485'], [1.0029609410641973, 706.9, 'BNST (ALG) (anterolateral sector BNST central amygdala-projecting</br>regular spiking ChR2-expressing responsive cell)', 'Optogenetic study of the projections from the bed nucleus of the stria</br>terminalis to the central amygdala.', 'Gungor NZ; Yamamoto R; Par\xe9 D', 'J. Neurophysiol.', '2015', '49485'], [1.0027785817331234, 539.1, 'BNST (ALG) (anterolateral bed nucleus of the stria terminalis neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49196'], [0.987107150761411, 729.0, 'BNST (ALG) (anteromedial bed nucleus of the stria terminalis neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49196'], [1.0117996997369412, 799.0, 'BNST (ALG) (anteroventral bed nucleus of the stria terminalis neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49196'], [0.9980639020822035, 722.0, 'BNST (ALG) (anterior bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [0.9907496771034784, 546.7, 'BNST (ALG) (anterior bed nucleus of the stria terminalis fast spiking</br>neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [0.9986647942298952, 622.6, 'BNST (ALG) (anterior bed nucleus of the stria terminalis spontaneously</br>active neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [0.9844561111440993, 686.4, 'BNST (ALG) (anterior bed nucleus of the stria terminalis low-threshold</br>bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [1.0208966594726845, 452.0, 'BNST (ALG) (anterior bed nucleus of the stria terminalis late firing</br>neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [1.0090531458808156, 850.1, 'BNST (ALG) (anteroventral bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49197'], [0.9937517046238511, 876.9, 'BNST (ALG) (anteromedial bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49197'], [0.9973089676846796, 554.9, 'BNST (ALG) (anterolateral bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49197'], [1.0120539231296415, 567.3, 'BNST (ALG) (anterolateral bed nucleus of the stria terminalis low-</br>threshold bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49198'], [1.001038708060863, 803.2, 'BNST (ALG) (anteroventral bed nucleus of the stria terminalis low-</br>threshold bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49198'], [0.9838967929691519, 690.5, 'BNST (ALG) (anteromedial bed nucleus of the stria terminalis low-</br>threshold bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49198']], [[2, 309.506002543377], [2, 697.659870472495]], [[2, 503.582, 194.076, '6', '2']], [[3, 59.593844099992964], [3, 602.9116360305591]], [[3, 331.252, 271.658, '121', '2']]];
+  var dataSeries = [[[]], [[0.9877141282159323, 226.0, 'BNST (ALG) (Bed Nucleus of the Stria Terminalis ALG Type III CRF</br>expressing neuron)', 'Central CRF neurons are not created equal: phenotypic differences in</br>CRF-containing neurons of the rat paraventricular hypothalamus and the</br>bed nucleus of the stria terminalis.', 'Dabrowska J; Hazra R; Guo JD; Dewitt S; Rainnie DG', 'Front Neurosci', '2013', '28155'], [0.9900600235560053, 377.4, 'BNST (ALG) (BNST Type II depolarizing sag burst-firing neuron)', 'Differential expression of intrinsic membrane currents in defined cell</br>types of the anterolateral bed nucleus of the stria terminalis.', 'Hammack SE; Mania I; Rainnie DG', 'J. Neurophysiol.', '2007', '372'], [0.9866906631961528, 452.6, 'BNST (ALG) (BNST Type I depolarizing sag regular-firing neuron)', 'Differential expression of intrinsic membrane currents in defined cell</br>types of the anterolateral bed nucleus of the stria terminalis.', 'Hammack SE; Mania I; Rainnie DG', 'J. Neurophysiol.', '2007', '372'], [0.9674155180549167, 357.8, 'BNST (ALG) (BNST Type III non-depolarizing sag regular-firing neuron)', 'Differential expression of intrinsic membrane currents in defined cell</br>types of the anterolateral bed nucleus of the stria terminalis.', 'Hammack SE; Mania I; Rainnie DG', 'J. Neurophysiol.', '2007', '372'], [0.9978844896254883, 715.7, 'BNST (ALG) (Bed nucleus of the stria terminalus anterolateral sector</br>cell)', 'CGRP inhibits neurons of the bed nucleus of the stria terminalis:</br>implications for the regulation of fear and anxiety.', 'Gungor NZ; Pare D', 'J. Neurosci.', '2014', '46281'], [1.0102746374761586, 254.0, 'BNST (ALG) ( BNST anterolateral regular firing neuron)', 'Distribution and functional expression of Kv4 family ? subunits and</br>associated KChIP ? subunits in the bed nucleus of the stria</br>terminalis.', 'Rainnie DG; Hazra R; Dabrowska J; Guo JD; Li CC; Dewitt S; Muly EC', 'J. Comp. Neurol.', '2014', '45718'], [0.9972450744422642, 400.0, 'BNST (ALG) (BNST anterolateral regular firing and burst firing neuron)', 'Distribution and functional expression of Kv4 family ? subunits and</br>associated KChIP ? subunits in the bed nucleus of the stria</br>terminalis.', 'Rainnie DG; Hazra R; Dabrowska J; Guo JD; Li CC; Dewitt S; Muly EC', 'J. Comp. Neurol.', '2014', '45718'], [0.999844628679615, 658.3, 'BNST (ALG) (anterolateral sector BNST central amygdala-projecting non-</br>ChR2-expressing nonresponsive cell)', 'Optogenetic study of the projections from the bed nucleus of the stria</br>terminalis to the central amygdala.', 'Gungor NZ; Yamamoto R; Par\xe9 D', 'J. Neurophysiol.', '2015', '49485'], [1.0029609410641973, 706.9, 'BNST (ALG) (anterolateral sector BNST central amygdala-projecting</br>regular spiking ChR2-expressing responsive cell)', 'Optogenetic study of the projections from the bed nucleus of the stria</br>terminalis to the central amygdala.', 'Gungor NZ; Yamamoto R; Par\xe9 D', 'J. Neurophysiol.', '2015', '49485'], [1.0027785817331234, 539.1, 'BNST (ALG) (anterolateral bed nucleus of the stria terminalis neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49196'], [0.987107150761411, 729.0, 'BNST (ALG) (anteromedial bed nucleus of the stria terminalis neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49196'], [1.0117996997369412, 799.0, 'BNST (ALG) (anteroventral bed nucleus of the stria terminalis neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49196'], [0.9980639020822035, 722.0, 'BNST (ALG) (anterior bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [0.9907496771034784, 546.7, 'BNST (ALG) (anterior bed nucleus of the stria terminalis fast spiking</br>neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [0.9986647942298952, 622.6, 'BNST (ALG) (anterior bed nucleus of the stria terminalis spontaneously</br>active neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [0.9844561111440993, 686.4, 'BNST (ALG) (anterior bed nucleus of the stria terminalis low-threshold</br>bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [1.0208966594726845, 452.0, 'BNST (ALG) (anterior bed nucleus of the stria terminalis late firing</br>neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [1.0090531458808156, 850.1, 'BNST (ALG) (anteroventral bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49197'], [0.9937517046238511, 876.9, 'BNST (ALG) (anteromedial bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49197'], [0.9973089676846796, 554.9, 'BNST (ALG) (anterolateral bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49197'], [1.0120539231296415, 567.3, 'BNST (ALG) (anterolateral bed nucleus of the stria terminalis low-</br>threshold bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49198'], [1.001038708060863, 803.2, 'BNST (ALG) (anteroventral bed nucleus of the stria terminalis low-</br>threshold bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49198'], [0.9838967929691519, 690.5, 'BNST (ALG) (anteromedial bed nucleus of the stria terminalis low-</br>threshold bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49198']], [[2, 309.506002543377], [2, 697.659870472495]], [[2, 503.582, 194.076, '6', '2']], [[3, 59.593844099992964], [3, 602.9116360305591]], [[3, 331.252, 271.658, '121', '2']]];
+  var plot1b = $.jqplot('chart0', dataSeries, {
+    //title: "input resistance",
+    series:[
+        {
+            showLine:false,
+            color:"#EAA228",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                yvalues: 5,
+                tooltipFadeSpeed: .1,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Value: </td><td>%s (MΩ)</td></tr> \
+                <tr><td>Neuron:</td><td>%s</td></tr> \
+                <tr><td>Title:</td><td>%s</td></tr> \
+                <tr><td>Authors:</td><td>%s</td></tr> \
+                <tr><td>Journal:</td><td>%s, %s</td></tr> \
+                </table>'
+            },
+        },
+        {
+            showLine:false,
+            color:"#4bb2c5",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                tooltipFadeSpeed: .1,
+                yvalues: 5,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Value: </td><td>%s (MΩ)</td></tr> \
+                <tr><td>Neuron:</td><td>%s</td></tr> \
+                <tr><td>Title:</td><td>%s</td></tr> \
+                <tr><td>Authors:</td><td>%s</td></tr> \
+                <tr><td>Journal:</td><td>%s, %s</td></tr> \
+                </table>'
+            },
+        },
+        {
+            showLine:true,
+            color: "#c5b47f",
+            showMarker: false,
+            showTooltip: false,
+        },
+        {
+            showLine:false,
+            color: "#c5b47f",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                tooltipFadeSpeed: .1,
+                yvalues: 3,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Mean value: </td><td>%.2f (MΩ)</td></tr> \
+                <tr><td>S.D. value: </td><td>%.2f (MΩ)</td></tr> \
+                <tr><td># articles: </td><td>%s</td></tr></table>'
+            },
+        },
+        {
+            showLine:true,
+            color: "#FA8072",
+            showMarker: false,
+            showTooltip: false,
+        },
+        {
+            showLine:false,
+            color: "#FA8072",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                tooltipFadeSpeed: .1,
+                yvalues: 3,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Mean value: </td><td>%.2f (MΩ)</td></tr> \
+                <tr><td>S.D. value: </td><td>%.2f (MΩ)</td></tr> \
+                <tr><td># neurons: </td><td>%s</td></tr></table>'
+            },
+        },
+    ],
+    axesDefaults: {
+        tickRenderer: $.jqplot.CanvasAxisTickRenderer,
+        tickOptions: {
+          fontSize: '12pt',
+        }
+    },
+    axes: {
+      xaxis: {
+        renderer: $.jqplot.CategoryAxisRenderer,
+        labelOptions:{
+            fontFamily: 'arial',
+        },
+        min: .5,
+        max: 3.5,
+        ticks: xticks,
+        tickOptions: {
+          angle: -90,
+        }
+      },
+      yaxis: {
+        label: yaxisLabel,
+        labelRenderer: $.jqplot.CanvasAxisLabelRenderer,
+        autoscale : true,
+        labelOptions:{
+            fontFamily: 'arial',
+            fontSize: '12pt',
+        },
+      },
+    },
+    highlighter: {
+        show: true,
+    },
+    cursor:{
+        show: true, 
+        zoom: true,
+        looseZoom: true,
+          showTooltip:false, 
+          followMouse: true, 
+          showTooltipOutsideZoom: false, 
+          constrainOutsideZoom: true,
+    }, 
+  });
+        $('#chart0').bind('jqplotDataClick', 
+            function (ev, seriesIndex, pointIndex, data) {
+                if (seriesIndex == 0 || seriesIndex == 1)
+                    {
+                        var data_pt_ind = data[7];
+                        var linkStr;
+                        if (data_pt_ind < 0) // this is a hack to redirect non-data table ext data to the article page
+                        {
+                            linkStr = "/article/" + (-data_pt_ind);
+                        }
+                        else 
+                        {
+                            linkStr = "/data_table/" + data_pt_ind;
+                        }
+                        window.open(linkStr, '_self');
+                    }
+                else
+                    {
+                        var data_pt_ind = data[4];
+                        var linkStr = "/ephys_prop/" + data_pt_ind;
+                        window.open(linkStr, '_self');                    
+                    }
+                
+                
+            }
+        );
+        //assign each jqplot's y-axis label an id the same as the id of the ephys prop
+        $('#chart0').find(".jqplot-yaxis canvas")[0].id = 2;
+        $('#chart0').find(".jqplot-yaxis canvas")[0].title = 'Common Definition: Input resistance measured at steady-state voltage response to current injection <br/> <br/> Standardization Criteria: Values corrected for differences in units, but are otherwise unchanged. Refer to individual articles for specific definitions and calculation methodologies.';
+        
+
+      
+    //var minVal = parseFloat([[2, -64.001, 3.632, &#39;6&#39;, &#39;3&#39;]]) - parseFloat([[2, -67.63437623775941], [2, -60.368798365415195]]);
+    //var maxVal = parseFloat([[2, -64.001, 3.632, &#39;6&#39;, &#39;3&#39;]]) + parseFloat([[2, -67.63437623775941], [2, -60.368798365415195]]);
+  //bDat = [ [ [1.5, minVal], [3.5, minVal]],
+  //[ [1.5, maxVal], [3.5, maxVal]] ]; 
+
+  var yaxisLabel = "resting membrane potential (mV)";  
+
+  var highlighterPos = 'ne';
+    
+    
+
+  //var dataSeries = [[[1.0055522431856407, -66.4, 'BNST (ALG) (Bed Nucleus of the Stria Terminalis ALG Type III CRF</br>expressing neuron)', 'Central CRF neurons are not created equal: phenotypic differences in</br>CRF-containing neurons of the rat paraventricular hypothalamus and the</br>bed nucleus of the stria terminalis.', 'Dabrowska J; Hazra R; Guo JD; Dewitt S; Rainnie DG', 'Front Neurosci', '2013', '28155'], [1.0170409102323155, -58.4, 'BNST (ALG) (BNST Type II depolarizing sag burst-firing neuron)', 'Differential expression of intrinsic membrane currents in defined cell</br>types of the anterolateral bed nucleus of the stria terminalis.', 'Hammack SE; Mania I; Rainnie DG', 'J. Neurophysiol.', '2007', '372'], [0.9819549122790907, -60.6, 'BNST (ALG) (BNST Type I depolarizing sag regular-firing neuron)', 'Differential expression of intrinsic membrane currents in defined cell</br>types of the anterolateral bed nucleus of the stria terminalis.', 'Hammack SE; Mania I; Rainnie DG', 'J. Neurophysiol.', '2007', '372'], [0.9995559281612008, -64.8, 'BNST (ALG) (BNST Type III non-depolarizing sag regular-firing neuron)', 'Differential expression of intrinsic membrane currents in defined cell</br>types of the anterolateral bed nucleus of the stria terminalis.', 'Hammack SE; Mania I; Rainnie DG', 'J. Neurophysiol.', '2007', '372'], [0.995751982051539, -61.5, 'BNST (ALG) (Bed nucleus of the stria terminalus anterolateral sector</br>cell)', 'CGRP inhibits neurons of the bed nucleus of the stria terminalis:</br>implications for the regulation of fear and anxiety.', 'Gungor NZ; Pare D', 'J. Neurosci.', '2014', '46281'], [0.9930776808355841, -63.9, 'BNST (ALG) ( BNST anterolateral regular firing neuron)', 'Distribution and functional expression of Kv4 family ? subunits and</br>associated KChIP ? subunits in the bed nucleus of the stria</br>terminalis.', 'Rainnie DG; Hazra R; Dabrowska J; Guo JD; Li CC; Dewitt S; Muly EC', 'J. Comp. Neurol.', '2014', '45718'], [0.9954511707175393, -58.3, 'BNST (ALG) (BNST anterolateral regular firing and burst firing neuron)', 'Distribution and functional expression of Kv4 family ? subunits and</br>associated KChIP ? subunits in the bed nucleus of the stria</br>terminalis.', 'Rainnie DG; Hazra R; Dabrowska J; Guo JD; Li CC; Dewitt S; Muly EC', 'J. Comp. Neurol.', '2014', '45718'], [0.9927499551922961, -62.5, 'BNST (ALG) (anterolateral sector BNST central amygdala-projecting non-</br>ChR2-expressing nonresponsive cell)', 'Optogenetic study of the projections from the bed nucleus of the stria</br>terminalis to the central amygdala.', 'Gungor NZ; Yamamoto R; Par\xe9 D', 'J. Neurophysiol.', '2015', '49485'], [1.0072329258845076, -62.9, 'BNST (ALG) (anterolateral sector BNST central amygdala-projecting</br>regular spiking ChR2-expressing responsive cell)', 'Optogenetic study of the projections from the bed nucleus of the stria</br>terminalis to the central amygdala.', 'Gungor NZ; Yamamoto R; Par\xe9 D', 'J. Neurophysiol.', '2015', '49485'], [0.9819991926647508, -72.6, 'BNST (ALG) (anterolateral bed nucleus of the stria terminalis neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49196'], [1.0029970880419081, -69.1, 'BNST (ALG) (anteromedial bed nucleus of the stria terminalis neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49196'], [1.0026643298094355, -69.5, 'BNST (ALG) (anteroventral bed nucleus of the stria terminalis neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49196'], [0.9871026299967439, -70.6, 'BNST (ALG) (anterior bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [0.9923788126231149, -76.9, 'BNST (ALG) (anterior bed nucleus of the stria terminalis fast spiking</br>neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [1.01645430063899, -63.0, 'BNST (ALG) (anterior bed nucleus of the stria terminalis spontaneously</br>active neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [0.9788169677735499, -68.7, 'BNST (ALG) (anterior bed nucleus of the stria terminalis low-threshold</br>bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [1.0081571779118257, -85.8, 'BNST (ALG) (anterior bed nucleus of the stria terminalis late firing</br>neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [1.0030863515625148, -71.1, 'BNST (ALG) (anteroventral bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49197'], [1.005899166084399, -70.7, 'BNST (ALG) (anteromedial bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49197'], [1.0038574864820213, -70.4, 'BNST (ALG) (anterolateral bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49197'], [0.9982802231844681, -67.8, 'BNST (ALG) (anterolateral bed nucleus of the stria terminalis low-</br>threshold bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49198'], [0.9992802417356632, -70.7, 'BNST (ALG) (anteroventral bed nucleus of the stria terminalis low-</br>threshold bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49198'], [1.0016555718909463, -67.7, 'BNST (ALG) (anteromedial bed nucleus of the stria terminalis low-</br>threshold bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49198']], [[2, -67.63437623775941], [2, -60.368798365415195]], [[2, -64.001, 3.632, '6', '3']], [[3, -70.00829406932012], [3, -55.94928375966909]], [[3, -62.978, 7.029, '114', '3']]];
+  var dataSeries = [[[]], [[1.0055522431856407, -66.4, 'BNST (ALG) (Bed Nucleus of the Stria Terminalis ALG Type III CRF</br>expressing neuron)', 'Central CRF neurons are not created equal: phenotypic differences in</br>CRF-containing neurons of the rat paraventricular hypothalamus and the</br>bed nucleus of the stria terminalis.', 'Dabrowska J; Hazra R; Guo JD; Dewitt S; Rainnie DG', 'Front Neurosci', '2013', '28155'], [1.0170409102323155, -58.4, 'BNST (ALG) (BNST Type II depolarizing sag burst-firing neuron)', 'Differential expression of intrinsic membrane currents in defined cell</br>types of the anterolateral bed nucleus of the stria terminalis.', 'Hammack SE; Mania I; Rainnie DG', 'J. Neurophysiol.', '2007', '372'], [0.9819549122790907, -60.6, 'BNST (ALG) (BNST Type I depolarizing sag regular-firing neuron)', 'Differential expression of intrinsic membrane currents in defined cell</br>types of the anterolateral bed nucleus of the stria terminalis.', 'Hammack SE; Mania I; Rainnie DG', 'J. Neurophysiol.', '2007', '372'], [0.9995559281612008, -64.8, 'BNST (ALG) (BNST Type III non-depolarizing sag regular-firing neuron)', 'Differential expression of intrinsic membrane currents in defined cell</br>types of the anterolateral bed nucleus of the stria terminalis.', 'Hammack SE; Mania I; Rainnie DG', 'J. Neurophysiol.', '2007', '372'], [0.995751982051539, -61.5, 'BNST (ALG) (Bed nucleus of the stria terminalus anterolateral sector</br>cell)', 'CGRP inhibits neurons of the bed nucleus of the stria terminalis:</br>implications for the regulation of fear and anxiety.', 'Gungor NZ; Pare D', 'J. Neurosci.', '2014', '46281'], [0.9930776808355841, -63.9, 'BNST (ALG) ( BNST anterolateral regular firing neuron)', 'Distribution and functional expression of Kv4 family ? subunits and</br>associated KChIP ? subunits in the bed nucleus of the stria</br>terminalis.', 'Rainnie DG; Hazra R; Dabrowska J; Guo JD; Li CC; Dewitt S; Muly EC', 'J. Comp. Neurol.', '2014', '45718'], [0.9954511707175393, -58.3, 'BNST (ALG) (BNST anterolateral regular firing and burst firing neuron)', 'Distribution and functional expression of Kv4 family ? subunits and</br>associated KChIP ? subunits in the bed nucleus of the stria</br>terminalis.', 'Rainnie DG; Hazra R; Dabrowska J; Guo JD; Li CC; Dewitt S; Muly EC', 'J. Comp. Neurol.', '2014', '45718'], [0.9927499551922961, -62.5, 'BNST (ALG) (anterolateral sector BNST central amygdala-projecting non-</br>ChR2-expressing nonresponsive cell)', 'Optogenetic study of the projections from the bed nucleus of the stria</br>terminalis to the central amygdala.', 'Gungor NZ; Yamamoto R; Par\xe9 D', 'J. Neurophysiol.', '2015', '49485'], [1.0072329258845076, -62.9, 'BNST (ALG) (anterolateral sector BNST central amygdala-projecting</br>regular spiking ChR2-expressing responsive cell)', 'Optogenetic study of the projections from the bed nucleus of the stria</br>terminalis to the central amygdala.', 'Gungor NZ; Yamamoto R; Par\xe9 D', 'J. Neurophysiol.', '2015', '49485'], [0.9819991926647508, -72.6, 'BNST (ALG) (anterolateral bed nucleus of the stria terminalis neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49196'], [1.0029970880419081, -69.1, 'BNST (ALG) (anteromedial bed nucleus of the stria terminalis neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49196'], [1.0026643298094355, -69.5, 'BNST (ALG) (anteroventral bed nucleus of the stria terminalis neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49196'], [0.9871026299967439, -70.6, 'BNST (ALG) (anterior bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [0.9923788126231149, -76.9, 'BNST (ALG) (anterior bed nucleus of the stria terminalis fast spiking</br>neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [1.01645430063899, -63.0, 'BNST (ALG) (anterior bed nucleus of the stria terminalis spontaneously</br>active neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [0.9788169677735499, -68.7, 'BNST (ALG) (anterior bed nucleus of the stria terminalis low-threshold</br>bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [1.0081571779118257, -85.8, 'BNST (ALG) (anterior bed nucleus of the stria terminalis late firing</br>neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [1.0030863515625148, -71.1, 'BNST (ALG) (anteroventral bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49197'], [1.005899166084399, -70.7, 'BNST (ALG) (anteromedial bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49197'], [1.0038574864820213, -70.4, 'BNST (ALG) (anterolateral bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49197'], [0.9982802231844681, -67.8, 'BNST (ALG) (anterolateral bed nucleus of the stria terminalis low-</br>threshold bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49198'], [0.9992802417356632, -70.7, 'BNST (ALG) (anteroventral bed nucleus of the stria terminalis low-</br>threshold bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49198'], [1.0016555718909463, -67.7, 'BNST (ALG) (anteromedial bed nucleus of the stria terminalis low-</br>threshold bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49198']], [[2, -67.63437623775941], [2, -60.368798365415195]], [[2, -64.001, 3.632, '6', '3']], [[3, -70.00829406932012], [3, -55.94928375966909]], [[3, -62.978, 7.029, '114', '3']]];
+  var plot1b = $.jqplot('chart1', dataSeries, {
+    //title: "resting membrane potential",
+    series:[
+        {
+            showLine:false,
+            color:"#EAA228",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                yvalues: 5,
+                tooltipFadeSpeed: .1,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Value: </td><td>%s (mV)</td></tr> \
+                <tr><td>Neuron:</td><td>%s</td></tr> \
+                <tr><td>Title:</td><td>%s</td></tr> \
+                <tr><td>Authors:</td><td>%s</td></tr> \
+                <tr><td>Journal:</td><td>%s, %s</td></tr> \
+                </table>'
+            },
+        },
+        {
+            showLine:false,
+            color:"#4bb2c5",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                tooltipFadeSpeed: .1,
+                yvalues: 5,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Value: </td><td>%s (mV)</td></tr> \
+                <tr><td>Neuron:</td><td>%s</td></tr> \
+                <tr><td>Title:</td><td>%s</td></tr> \
+                <tr><td>Authors:</td><td>%s</td></tr> \
+                <tr><td>Journal:</td><td>%s, %s</td></tr> \
+                </table>'
+            },
+        },
+        {
+            showLine:true,
+            color: "#c5b47f",
+            showMarker: false,
+            showTooltip: false,
+        },
+        {
+            showLine:false,
+            color: "#c5b47f",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                tooltipFadeSpeed: .1,
+                yvalues: 3,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Mean value: </td><td>%.2f (mV)</td></tr> \
+                <tr><td>S.D. value: </td><td>%.2f (mV)</td></tr> \
+                <tr><td># articles: </td><td>%s</td></tr></table>'
+            },
+        },
+        {
+            showLine:true,
+            color: "#FA8072",
+            showMarker: false,
+            showTooltip: false,
+        },
+        {
+            showLine:false,
+            color: "#FA8072",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                tooltipFadeSpeed: .1,
+                yvalues: 3,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Mean value: </td><td>%.2f (mV)</td></tr> \
+                <tr><td>S.D. value: </td><td>%.2f (mV)</td></tr> \
+                <tr><td># neurons: </td><td>%s</td></tr></table>'
+            },
+        },
+    ],
+    axesDefaults: {
+        tickRenderer: $.jqplot.CanvasAxisTickRenderer,
+        tickOptions: {
+          fontSize: '12pt',
+        }
+    },
+    axes: {
+      xaxis: {
+        renderer: $.jqplot.CategoryAxisRenderer,
+        labelOptions:{
+            fontFamily: 'arial',
+        },
+        min: .5,
+        max: 3.5,
+        ticks: xticks,
+        tickOptions: {
+          angle: -90,
+        }
+      },
+      yaxis: {
+        label: yaxisLabel,
+        labelRenderer: $.jqplot.CanvasAxisLabelRenderer,
+        autoscale : true,
+        labelOptions:{
+            fontFamily: 'arial',
+            fontSize: '12pt',
+        },
+      },
+    },
+    highlighter: {
+        show: true,
+    },
+    cursor:{
+        show: true, 
+        zoom: true,
+        looseZoom: true,
+          showTooltip:false, 
+          followMouse: true, 
+          showTooltipOutsideZoom: false, 
+          constrainOutsideZoom: true,
+    }, 
+  });
+        $('#chart1').bind('jqplotDataClick', 
+            function (ev, seriesIndex, pointIndex, data) {
+                if (seriesIndex == 0 || seriesIndex == 1)
+                    {
+                        var data_pt_ind = data[7];
+                        var linkStr;
+                        if (data_pt_ind < 0) // this is a hack to redirect non-data table ext data to the article page
+                        {
+                            linkStr = "/article/" + (-data_pt_ind);
+                        }
+                        else 
+                        {
+                            linkStr = "/data_table/" + data_pt_ind;
+                        }
+                        window.open(linkStr, '_self');
+                    }
+                else
+                    {
+                        var data_pt_ind = data[4];
+                        var linkStr = "/ephys_prop/" + data_pt_ind;
+                        window.open(linkStr, '_self');                    
+                    }
+                
+                
+            }
+        );
+        //assign each jqplot's y-axis label an id the same as the id of the ephys prop
+        $('#chart1').find(".jqplot-yaxis canvas")[0].id = 3;
+        $('#chart1').find(".jqplot-yaxis canvas")[0].title = 'Common Definition: Membrane potential at the onset of whole-cell recording <br/> <br/> Standardization Criteria: Values unchanged from those reported. Refer to individual articles for specific definitions and calculation methodologies.';
+        
+
+      
+    //var minVal = parseFloat([[2, -41.754, 4.179, &#39;6&#39;, &#39;7&#39;]]) - parseFloat([[2, -45.933690615412274], [2, -37.57503954331793]]);
+    //var maxVal = parseFloat([[2, -41.754, 4.179, &#39;6&#39;, &#39;7&#39;]]) + parseFloat([[2, -45.933690615412274], [2, -37.57503954331793]]);
+  //bDat = [ [ [1.5, minVal], [3.5, minVal]],
+  //[ [1.5, maxVal], [3.5, maxVal]] ]; 
+
+  var yaxisLabel = "spike threshold (mV)";  
+
+  var highlighterPos = 'ne';
+    
+    
+
+  //var dataSeries = [[[1.0131467020603144, -39.0, 'BNST (ALG) (Bed Nucleus of the Stria Terminalis ALG Type III CRF</br>expressing neuron)', 'Central CRF neurons are not created equal: phenotypic differences in</br>CRF-containing neurons of the rat paraventricular hypothalamus and the</br>bed nucleus of the stria terminalis.', 'Dabrowska J; Hazra R; Guo JD; Dewitt S; Rainnie DG', 'Front Neurosci', '2013', '28155'], [1.002135135626446, -44.2, 'BNST (ALG) (BNST Type II depolarizing sag burst-firing neuron)', 'Differential expression of intrinsic membrane currents in defined cell</br>types of the anterolateral bed nucleus of the stria terminalis.', 'Hammack SE; Mania I; Rainnie DG', 'J. Neurophysiol.', '2007', '372'], [1.0162138116194646, -43.2, 'BNST (ALG) (BNST Type I depolarizing sag regular-firing neuron)', 'Differential expression of intrinsic membrane currents in defined cell</br>types of the anterolateral bed nucleus of the stria terminalis.', 'Hammack SE; Mania I; Rainnie DG', 'J. Neurophysiol.', '2007', '372'], [1.0070913218993183, -42.75, 'BNST (ALG) (BNST Type III non-depolarizing sag regular-firing neuron)', 'Differential expression of intrinsic membrane currents in defined cell</br>types of the anterolateral bed nucleus of the stria terminalis.', 'Hammack SE; Mania I; Rainnie DG', 'J. Neurophysiol.', '2007', '372'], [0.987535391174561, -48.1, 'BNST (ALG) (Bed nucleus of the stria terminalus anterolateral sector</br>cell)', 'CGRP inhibits neurons of the bed nucleus of the stria terminalis:</br>implications for the regulation of fear and anxiety.', 'Gungor NZ; Pare D', 'J. Neurosci.', '2014', '46281'], [0.9920430148367366, -33.2, 'BNST (ALG) ( BNST anterolateral regular firing neuron)', 'Distribution and functional expression of Kv4 family ? subunits and</br>associated KChIP ? subunits in the bed nucleus of the stria</br>terminalis.', 'Rainnie DG; Hazra R; Dabrowska J; Guo JD; Li CC; Dewitt S; Muly EC', 'J. Comp. Neurol.', '2014', '45718'], [1.0154369668433536, -36.6, 'BNST (ALG) (BNST anterolateral regular firing and burst firing neuron)', 'Distribution and functional expression of Kv4 family ? subunits and</br>associated KChIP ? subunits in the bed nucleus of the stria</br>terminalis.', 'Rainnie DG; Hazra R; Dabrowska J; Guo JD; Li CC; Dewitt S; Muly EC', 'J. Comp. Neurol.', '2014', '45718'], [0.9929441337231641, -45.5, 'BNST (ALG) (anterolateral sector BNST central amygdala-projecting non-</br>ChR2-expressing nonresponsive cell)', 'Optogenetic study of the projections from the bed nucleus of the stria</br>terminalis to the central amygdala.', 'Gungor NZ; Yamamoto R; Par\xe9 D', 'J. Neurophysiol.', '2015', '49485'], [1.0014087826884348, -43.1, 'BNST (ALG) (anterolateral sector BNST central amygdala-projecting</br>regular spiking ChR2-expressing responsive cell)', 'Optogenetic study of the projections from the bed nucleus of the stria</br>terminalis to the central amygdala.', 'Gungor NZ; Yamamoto R; Par\xe9 D', 'J. Neurophysiol.', '2015', '49485'], [1.0138485069136933, -41.3, 'BNST (ALG) (anterolateral bed nucleus of the stria terminalis neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49196'], [1.010969925319667, -41.1, 'BNST (ALG) (anteromedial bed nucleus of the stria terminalis neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49196'], [0.9906982886282424, -39.3, 'BNST (ALG) (anteroventral bed nucleus of the stria terminalis neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49196'], [0.9906214635264364, -40.8, 'BNST (ALG) (anterior bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [1.0053766605750643, -40.1, 'BNST (ALG) (anterior bed nucleus of the stria terminalis fast spiking</br>neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [1.0071025872933401, -45.3, 'BNST (ALG) (anterior bed nucleus of the stria terminalis spontaneously</br>active neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [1.0017585816346044, -40.6, 'BNST (ALG) (anterior bed nucleus of the stria terminalis low-threshold</br>bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [1.0192602753423217, -40.4, 'BNST (ALG) (anterior bed nucleus of the stria terminalis late firing</br>neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [1.0010076879509677, -37.1, 'BNST (ALG) (anteroventral bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49197'], [0.997105450609215, -41.6, 'BNST (ALG) (anteromedial bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49197'], [0.994899200132392, -42.3, 'BNST (ALG) (anterolateral bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49197'], [0.9841343219557773, -41.8, 'BNST (ALG) (anterolateral bed nucleus of the stria terminalis low-</br>threshold bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49198'], [0.9833408223206789, -39.3, 'BNST (ALG) (anteroventral bed nucleus of the stria terminalis low-</br>threshold bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49198'], [1.0089662130140853, -40.8, 'BNST (ALG) (anteromedial bed nucleus of the stria terminalis low-</br>threshold bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49198']], [[2, -45.933690615412274], [2, -37.57503954331793]], [[2, -41.754, 4.179, '6', '7']], [[3, -47.36573534282104], [3, -35.634629650484754]], [[3, -41.5, 5.865, '103', '7']]];
+  var dataSeries = [[[]], [[1.0131467020603144, -39.0, 'BNST (ALG) (Bed Nucleus of the Stria Terminalis ALG Type III CRF</br>expressing neuron)', 'Central CRF neurons are not created equal: phenotypic differences in</br>CRF-containing neurons of the rat paraventricular hypothalamus and the</br>bed nucleus of the stria terminalis.', 'Dabrowska J; Hazra R; Guo JD; Dewitt S; Rainnie DG', 'Front Neurosci', '2013', '28155'], [1.002135135626446, -44.2, 'BNST (ALG) (BNST Type II depolarizing sag burst-firing neuron)', 'Differential expression of intrinsic membrane currents in defined cell</br>types of the anterolateral bed nucleus of the stria terminalis.', 'Hammack SE; Mania I; Rainnie DG', 'J. Neurophysiol.', '2007', '372'], [1.0162138116194646, -43.2, 'BNST (ALG) (BNST Type I depolarizing sag regular-firing neuron)', 'Differential expression of intrinsic membrane currents in defined cell</br>types of the anterolateral bed nucleus of the stria terminalis.', 'Hammack SE; Mania I; Rainnie DG', 'J. Neurophysiol.', '2007', '372'], [1.0070913218993183, -42.75, 'BNST (ALG) (BNST Type III non-depolarizing sag regular-firing neuron)', 'Differential expression of intrinsic membrane currents in defined cell</br>types of the anterolateral bed nucleus of the stria terminalis.', 'Hammack SE; Mania I; Rainnie DG', 'J. Neurophysiol.', '2007', '372'], [0.987535391174561, -48.1, 'BNST (ALG) (Bed nucleus of the stria terminalus anterolateral sector</br>cell)', 'CGRP inhibits neurons of the bed nucleus of the stria terminalis:</br>implications for the regulation of fear and anxiety.', 'Gungor NZ; Pare D', 'J. Neurosci.', '2014', '46281'], [0.9920430148367366, -33.2, 'BNST (ALG) ( BNST anterolateral regular firing neuron)', 'Distribution and functional expression of Kv4 family ? subunits and</br>associated KChIP ? subunits in the bed nucleus of the stria</br>terminalis.', 'Rainnie DG; Hazra R; Dabrowska J; Guo JD; Li CC; Dewitt S; Muly EC', 'J. Comp. Neurol.', '2014', '45718'], [1.0154369668433536, -36.6, 'BNST (ALG) (BNST anterolateral regular firing and burst firing neuron)', 'Distribution and functional expression of Kv4 family ? subunits and</br>associated KChIP ? subunits in the bed nucleus of the stria</br>terminalis.', 'Rainnie DG; Hazra R; Dabrowska J; Guo JD; Li CC; Dewitt S; Muly EC', 'J. Comp. Neurol.', '2014', '45718'], [0.9929441337231641, -45.5, 'BNST (ALG) (anterolateral sector BNST central amygdala-projecting non-</br>ChR2-expressing nonresponsive cell)', 'Optogenetic study of the projections from the bed nucleus of the stria</br>terminalis to the central amygdala.', 'Gungor NZ; Yamamoto R; Par\xe9 D', 'J. Neurophysiol.', '2015', '49485'], [1.0014087826884348, -43.1, 'BNST (ALG) (anterolateral sector BNST central amygdala-projecting</br>regular spiking ChR2-expressing responsive cell)', 'Optogenetic study of the projections from the bed nucleus of the stria</br>terminalis to the central amygdala.', 'Gungor NZ; Yamamoto R; Par\xe9 D', 'J. Neurophysiol.', '2015', '49485'], [1.0138485069136933, -41.3, 'BNST (ALG) (anterolateral bed nucleus of the stria terminalis neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49196'], [1.010969925319667, -41.1, 'BNST (ALG) (anteromedial bed nucleus of the stria terminalis neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49196'], [0.9906982886282424, -39.3, 'BNST (ALG) (anteroventral bed nucleus of the stria terminalis neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49196'], [0.9906214635264364, -40.8, 'BNST (ALG) (anterior bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [1.0053766605750643, -40.1, 'BNST (ALG) (anterior bed nucleus of the stria terminalis fast spiking</br>neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [1.0071025872933401, -45.3, 'BNST (ALG) (anterior bed nucleus of the stria terminalis spontaneously</br>active neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [1.0017585816346044, -40.6, 'BNST (ALG) (anterior bed nucleus of the stria terminalis low-threshold</br>bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [1.0192602753423217, -40.4, 'BNST (ALG) (anterior bed nucleus of the stria terminalis late firing</br>neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [1.0010076879509677, -37.1, 'BNST (ALG) (anteroventral bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49197'], [0.997105450609215, -41.6, 'BNST (ALG) (anteromedial bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49197'], [0.994899200132392, -42.3, 'BNST (ALG) (anterolateral bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49197'], [0.9841343219557773, -41.8, 'BNST (ALG) (anterolateral bed nucleus of the stria terminalis low-</br>threshold bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49198'], [0.9833408223206789, -39.3, 'BNST (ALG) (anteroventral bed nucleus of the stria terminalis low-</br>threshold bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49198'], [1.0089662130140853, -40.8, 'BNST (ALG) (anteromedial bed nucleus of the stria terminalis low-</br>threshold bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49198']], [[2, -45.933690615412274], [2, -37.57503954331793]], [[2, -41.754, 4.179, '6', '7']], [[3, -47.36573534282104], [3, -35.634629650484754]], [[3, -41.5, 5.865, '103', '7']]];
+  var plot1b = $.jqplot('chart2', dataSeries, {
+    //title: "spike threshold",
+    series:[
+        {
+            showLine:false,
+            color:"#EAA228",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                yvalues: 5,
+                tooltipFadeSpeed: .1,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Value: </td><td>%s (mV)</td></tr> \
+                <tr><td>Neuron:</td><td>%s</td></tr> \
+                <tr><td>Title:</td><td>%s</td></tr> \
+                <tr><td>Authors:</td><td>%s</td></tr> \
+                <tr><td>Journal:</td><td>%s, %s</td></tr> \
+                </table>'
+            },
+        },
+        {
+            showLine:false,
+            color:"#4bb2c5",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                tooltipFadeSpeed: .1,
+                yvalues: 5,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Value: </td><td>%s (mV)</td></tr> \
+                <tr><td>Neuron:</td><td>%s</td></tr> \
+                <tr><td>Title:</td><td>%s</td></tr> \
+                <tr><td>Authors:</td><td>%s</td></tr> \
+                <tr><td>Journal:</td><td>%s, %s</td></tr> \
+                </table>'
+            },
+        },
+        {
+            showLine:true,
+            color: "#c5b47f",
+            showMarker: false,
+            showTooltip: false,
+        },
+        {
+            showLine:false,
+            color: "#c5b47f",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                tooltipFadeSpeed: .1,
+                yvalues: 3,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Mean value: </td><td>%.2f (mV)</td></tr> \
+                <tr><td>S.D. value: </td><td>%.2f (mV)</td></tr> \
+                <tr><td># articles: </td><td>%s</td></tr></table>'
+            },
+        },
+        {
+            showLine:true,
+            color: "#FA8072",
+            showMarker: false,
+            showTooltip: false,
+        },
+        {
+            showLine:false,
+            color: "#FA8072",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                tooltipFadeSpeed: .1,
+                yvalues: 3,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Mean value: </td><td>%.2f (mV)</td></tr> \
+                <tr><td>S.D. value: </td><td>%.2f (mV)</td></tr> \
+                <tr><td># neurons: </td><td>%s</td></tr></table>'
+            },
+        },
+    ],
+    axesDefaults: {
+        tickRenderer: $.jqplot.CanvasAxisTickRenderer,
+        tickOptions: {
+          fontSize: '12pt',
+        }
+    },
+    axes: {
+      xaxis: {
+        renderer: $.jqplot.CategoryAxisRenderer,
+        labelOptions:{
+            fontFamily: 'arial',
+        },
+        min: .5,
+        max: 3.5,
+        ticks: xticks,
+        tickOptions: {
+          angle: -90,
+        }
+      },
+      yaxis: {
+        label: yaxisLabel,
+        labelRenderer: $.jqplot.CanvasAxisLabelRenderer,
+        autoscale : true,
+        labelOptions:{
+            fontFamily: 'arial',
+            fontSize: '12pt',
+        },
+      },
+    },
+    highlighter: {
+        show: true,
+    },
+    cursor:{
+        show: true, 
+        zoom: true,
+        looseZoom: true,
+          showTooltip:false, 
+          followMouse: true, 
+          showTooltipOutsideZoom: false, 
+          constrainOutsideZoom: true,
+    }, 
+  });
+        $('#chart2').bind('jqplotDataClick', 
+            function (ev, seriesIndex, pointIndex, data) {
+                if (seriesIndex == 0 || seriesIndex == 1)
+                    {
+                        var data_pt_ind = data[7];
+                        var linkStr;
+                        if (data_pt_ind < 0) // this is a hack to redirect non-data table ext data to the article page
+                        {
+                            linkStr = "/article/" + (-data_pt_ind);
+                        }
+                        else 
+                        {
+                            linkStr = "/data_table/" + data_pt_ind;
+                        }
+                        window.open(linkStr, '_self');
+                    }
+                else
+                    {
+                        var data_pt_ind = data[4];
+                        var linkStr = "/ephys_prop/" + data_pt_ind;
+                        window.open(linkStr, '_self');                    
+                    }
+                
+                
+            }
+        );
+        //assign each jqplot's y-axis label an id the same as the id of the ephys prop
+        $('#chart2').find(".jqplot-yaxis canvas")[0].id = 7;
+        $('#chart2').find(".jqplot-yaxis canvas")[0].title = 'Common Definition: Voltage at which AP is initiated (as assessed by measuring rising slope of membrane voltage) <br/> <br/> Standardization Criteria: Values are unchanged from those reported. Refer to individual articles for specific calculation methodology, such as voltage slope criterion for AP threshold determination or which APs are used to define spike theshold (i.e., evoked using rheobase current, via synaptic input, etc.).';
+        
+
+      
+    //var minVal = parseFloat([[2, 0.794, 0.36, &#39;7&#39;, &#39;6&#39;]]) - parseFloat([[2, 0.434376280502072], [2, 1.154902631062554]]);
+    //var maxVal = parseFloat([[2, 0.794, 0.36, &#39;7&#39;, &#39;6&#39;]]) + parseFloat([[2, 0.434376280502072], [2, 1.154902631062554]]);
+  //bDat = [ [ [1.5, minVal], [3.5, minVal]],
+  //[ [1.5, maxVal], [3.5, maxVal]] ]; 
+
+  var yaxisLabel = "spike half-width (ms)";  
+
+  var highlighterPos = 'ne';
+    
+    
+        highlighterPos = 'nw';
+    
+
+  //var dataSeries = [[[0.9867306105425043, 0.026, 'BNST (ALG)', 'A transcriptomic analysis of type I-III neurons in the bed nucleus of</br>the stria terminalis.', 'Hazra R; Guo JD; Ryan SJ; Jasnow AM; Dabrowska J; Rainnie DG', 'Mol. Cell. Neurosci.', '2011', '25599'], [1.0041977096508476, 0.228, 'BNST (ALG)', 'A transcriptomic analysis of type I-III neurons in the bed nucleus of</br>the stria terminalis.', 'Hazra R; Guo JD; Ryan SJ; Jasnow AM; Dabrowska J; Rainnie DG', 'Mol. Cell. Neurosci.', '2011', '25599'], [0.9933561547440025, 1.04, 'BNST (ALG) (Bed Nucleus of the Stria Terminalis ALG Type III CRF</br>expressing neuron)', 'Central CRF neurons are not created equal: phenotypic differences in</br>CRF-containing neurons of the rat paraventricular hypothalamus and the</br>bed nucleus of the stria terminalis.', 'Dabrowska J; Hazra R; Guo JD; Dewitt S; Rainnie DG', 'Front Neurosci', '2013', '28155'], [1.000949647066832, 1.1, 'BNST (ALG) (BNST Type II depolarizing sag burst-firing neuron)', 'Differential expression of intrinsic membrane currents in defined cell</br>types of the anterolateral bed nucleus of the stria terminalis.', 'Hammack SE; Mania I; Rainnie DG', 'J. Neurophysiol.', '2007', '372'], [0.986638796515137, 0.95, 'BNST (ALG) (BNST Type I depolarizing sag regular-firing neuron)', 'Differential expression of intrinsic membrane currents in defined cell</br>types of the anterolateral bed nucleus of the stria terminalis.', 'Hammack SE; Mania I; Rainnie DG', 'J. Neurophysiol.', '2007', '372'], [0.9971913735433208, 0.96, 'BNST (ALG) (BNST Type III non-depolarizing sag regular-firing neuron)', 'Differential expression of intrinsic membrane currents in defined cell</br>types of the anterolateral bed nucleus of the stria terminalis.', 'Hammack SE; Mania I; Rainnie DG', 'J. Neurophysiol.', '2007', '372'], [1.0120157283077933, 0.48, 'BNST (ALG) (Bed nucleus of the stria terminalus anterolateral sector</br>cell)', 'CGRP inhibits neurons of the bed nucleus of the stria terminalis:</br>implications for the regulation of fear and anxiety.', 'Gungor NZ; Pare D', 'J. Neurosci.', '2014', '46281'], [1.0008824230530937, 1.12, 'BNST (ALG) ( BNST anterolateral regular firing neuron)', 'Distribution and functional expression of Kv4 family ? subunits and</br>associated KChIP ? subunits in the bed nucleus of the stria</br>terminalis.', 'Rainnie DG; Hazra R; Dabrowska J; Guo JD; Li CC; Dewitt S; Muly EC', 'J. Comp. Neurol.', '2014', '45718'], [1.0094267142706763, 0.95, 'BNST (ALG) (BNST anterolateral regular firing and burst firing neuron)', 'Distribution and functional expression of Kv4 family ? subunits and</br>associated KChIP ? subunits in the bed nucleus of the stria</br>terminalis.', 'Rainnie DG; Hazra R; Dabrowska J; Guo JD; Li CC; Dewitt S; Muly EC', 'J. Comp. Neurol.', '2014', '45718'], [0.9934914452458383, 0.69, 'BNST (ALG) (anterolateral sector BNST central amygdala-projecting non-</br>ChR2-expressing nonresponsive cell)', 'Optogenetic study of the projections from the bed nucleus of the stria</br>terminalis to the central amygdala.', 'Gungor NZ; Yamamoto R; Par\xe9 D', 'J. Neurophysiol.', '2015', '49485'], [0.988477343118183, 0.62, 'BNST (ALG) (anterolateral sector BNST central amygdala-projecting</br>regular spiking ChR2-expressing responsive cell)', 'Optogenetic study of the projections from the bed nucleus of the stria</br>terminalis to the central amygdala.', 'Gungor NZ; Yamamoto R; Par\xe9 D', 'J. Neurophysiol.', '2015', '49485'], [1.001004064809775, 1.31, 'BNST (ALG) (anterolateral bed nucleus of the stria terminalis neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49196'], [0.9952361422137344, 1.37, 'BNST (ALG) (anteromedial bed nucleus of the stria terminalis neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49196'], [1.0083841265490088, 1.06, 'BNST (ALG) (anteroventral bed nucleus of the stria terminalis neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49196'], [1.0018472001190946, 1.22, 'BNST (ALG) (anterior bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [1.0143725741108824, 1.32, 'BNST (ALG) (anterior bed nucleus of the stria terminalis fast spiking</br>neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [1.0009986326952767, 0.77, 'BNST (ALG) (anterior bed nucleus of the stria terminalis spontaneously</br>active neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [0.9986532574304063, 1.28, 'BNST (ALG) (anterior bed nucleus of the stria terminalis low-threshold</br>bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [0.9919904214852555, 1.37, 'BNST (ALG) (anterior bed nucleus of the stria terminalis late firing</br>neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [1.005812666748554, 1.01, 'BNST (ALG) (anteroventral bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49197'], [0.9960031180635736, 1.27, 'BNST (ALG) (anteromedial bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49197'], [1.019812720575544, 1.3, 'BNST (ALG) (anterolateral bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49197'], [0.9809455941618106, 1.33, 'BNST (ALG) (anterolateral bed nucleus of the stria terminalis low-</br>threshold bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49198'], [1.0027743817798043, 1.12, 'BNST (ALG) (anteroventral bed nucleus of the stria terminalis low-</br>threshold bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49198'], [0.9884219365280855, 1.38, 'BNST (ALG) (anteromedial bed nucleus of the stria terminalis low-</br>threshold bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49198']], [[2, 0.434376280502072], [2, 1.154902631062554]], [[2, 0.794, 0.36, '7', '6']], [[3, 0.6548957761813421], [3, 1.6674076563701181]], [[3, 1.161, 0.506, '96', '6']]];
+  var dataSeries = [[[]], [[0.9867306105425043, 0.026, 'BNST (ALG)', 'A transcriptomic analysis of type I-III neurons in the bed nucleus of</br>the stria terminalis.', 'Hazra R; Guo JD; Ryan SJ; Jasnow AM; Dabrowska J; Rainnie DG', 'Mol. Cell. Neurosci.', '2011', '25599'], [1.0041977096508476, 0.228, 'BNST (ALG)', 'A transcriptomic analysis of type I-III neurons in the bed nucleus of</br>the stria terminalis.', 'Hazra R; Guo JD; Ryan SJ; Jasnow AM; Dabrowska J; Rainnie DG', 'Mol. Cell. Neurosci.', '2011', '25599'], [0.9933561547440025, 1.04, 'BNST (ALG) (Bed Nucleus of the Stria Terminalis ALG Type III CRF</br>expressing neuron)', 'Central CRF neurons are not created equal: phenotypic differences in</br>CRF-containing neurons of the rat paraventricular hypothalamus and the</br>bed nucleus of the stria terminalis.', 'Dabrowska J; Hazra R; Guo JD; Dewitt S; Rainnie DG', 'Front Neurosci', '2013', '28155'], [1.000949647066832, 1.1, 'BNST (ALG) (BNST Type II depolarizing sag burst-firing neuron)', 'Differential expression of intrinsic membrane currents in defined cell</br>types of the anterolateral bed nucleus of the stria terminalis.', 'Hammack SE; Mania I; Rainnie DG', 'J. Neurophysiol.', '2007', '372'], [0.986638796515137, 0.95, 'BNST (ALG) (BNST Type I depolarizing sag regular-firing neuron)', 'Differential expression of intrinsic membrane currents in defined cell</br>types of the anterolateral bed nucleus of the stria terminalis.', 'Hammack SE; Mania I; Rainnie DG', 'J. Neurophysiol.', '2007', '372'], [0.9971913735433208, 0.96, 'BNST (ALG) (BNST Type III non-depolarizing sag regular-firing neuron)', 'Differential expression of intrinsic membrane currents in defined cell</br>types of the anterolateral bed nucleus of the stria terminalis.', 'Hammack SE; Mania I; Rainnie DG', 'J. Neurophysiol.', '2007', '372'], [1.0120157283077933, 0.48, 'BNST (ALG) (Bed nucleus of the stria terminalus anterolateral sector</br>cell)', 'CGRP inhibits neurons of the bed nucleus of the stria terminalis:</br>implications for the regulation of fear and anxiety.', 'Gungor NZ; Pare D', 'J. Neurosci.', '2014', '46281'], [1.0008824230530937, 1.12, 'BNST (ALG) ( BNST anterolateral regular firing neuron)', 'Distribution and functional expression of Kv4 family ? subunits and</br>associated KChIP ? subunits in the bed nucleus of the stria</br>terminalis.', 'Rainnie DG; Hazra R; Dabrowska J; Guo JD; Li CC; Dewitt S; Muly EC', 'J. Comp. Neurol.', '2014', '45718'], [1.0094267142706763, 0.95, 'BNST (ALG) (BNST anterolateral regular firing and burst firing neuron)', 'Distribution and functional expression of Kv4 family ? subunits and</br>associated KChIP ? subunits in the bed nucleus of the stria</br>terminalis.', 'Rainnie DG; Hazra R; Dabrowska J; Guo JD; Li CC; Dewitt S; Muly EC', 'J. Comp. Neurol.', '2014', '45718'], [0.9934914452458383, 0.69, 'BNST (ALG) (anterolateral sector BNST central amygdala-projecting non-</br>ChR2-expressing nonresponsive cell)', 'Optogenetic study of the projections from the bed nucleus of the stria</br>terminalis to the central amygdala.', 'Gungor NZ; Yamamoto R; Par\xe9 D', 'J. Neurophysiol.', '2015', '49485'], [0.988477343118183, 0.62, 'BNST (ALG) (anterolateral sector BNST central amygdala-projecting</br>regular spiking ChR2-expressing responsive cell)', 'Optogenetic study of the projections from the bed nucleus of the stria</br>terminalis to the central amygdala.', 'Gungor NZ; Yamamoto R; Par\xe9 D', 'J. Neurophysiol.', '2015', '49485'], [1.001004064809775, 1.31, 'BNST (ALG) (anterolateral bed nucleus of the stria terminalis neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49196'], [0.9952361422137344, 1.37, 'BNST (ALG) (anteromedial bed nucleus of the stria terminalis neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49196'], [1.0083841265490088, 1.06, 'BNST (ALG) (anteroventral bed nucleus of the stria terminalis neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49196'], [1.0018472001190946, 1.22, 'BNST (ALG) (anterior bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [1.0143725741108824, 1.32, 'BNST (ALG) (anterior bed nucleus of the stria terminalis fast spiking</br>neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [1.0009986326952767, 0.77, 'BNST (ALG) (anterior bed nucleus of the stria terminalis spontaneously</br>active neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [0.9986532574304063, 1.28, 'BNST (ALG) (anterior bed nucleus of the stria terminalis low-threshold</br>bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [0.9919904214852555, 1.37, 'BNST (ALG) (anterior bed nucleus of the stria terminalis late firing</br>neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [1.005812666748554, 1.01, 'BNST (ALG) (anteroventral bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49197'], [0.9960031180635736, 1.27, 'BNST (ALG) (anteromedial bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49197'], [1.019812720575544, 1.3, 'BNST (ALG) (anterolateral bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49197'], [0.9809455941618106, 1.33, 'BNST (ALG) (anterolateral bed nucleus of the stria terminalis low-</br>threshold bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49198'], [1.0027743817798043, 1.12, 'BNST (ALG) (anteroventral bed nucleus of the stria terminalis low-</br>threshold bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49198'], [0.9884219365280855, 1.38, 'BNST (ALG) (anteromedial bed nucleus of the stria terminalis low-</br>threshold bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49198']], [[2, 0.434376280502072], [2, 1.154902631062554]], [[2, 0.794, 0.36, '7', '6']], [[3, 0.6548957761813421], [3, 1.6674076563701181]], [[3, 1.161, 0.506, '96', '6']]];
+  var plot1b = $.jqplot('chart3', dataSeries, {
+    //title: "spike half-width",
+    series:[
+        {
+            showLine:false,
+            color:"#EAA228",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                yvalues: 5,
+                tooltipFadeSpeed: .1,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Value: </td><td>%s (ms)</td></tr> \
+                <tr><td>Neuron:</td><td>%s</td></tr> \
+                <tr><td>Title:</td><td>%s</td></tr> \
+                <tr><td>Authors:</td><td>%s</td></tr> \
+                <tr><td>Journal:</td><td>%s, %s</td></tr> \
+                </table>'
+            },
+        },
+        {
+            showLine:false,
+            color:"#4bb2c5",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                tooltipFadeSpeed: .1,
+                yvalues: 5,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Value: </td><td>%s (ms)</td></tr> \
+                <tr><td>Neuron:</td><td>%s</td></tr> \
+                <tr><td>Title:</td><td>%s</td></tr> \
+                <tr><td>Authors:</td><td>%s</td></tr> \
+                <tr><td>Journal:</td><td>%s, %s</td></tr> \
+                </table>'
+            },
+        },
+        {
+            showLine:true,
+            color: "#c5b47f",
+            showMarker: false,
+            showTooltip: false,
+        },
+        {
+            showLine:false,
+            color: "#c5b47f",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                tooltipFadeSpeed: .1,
+                yvalues: 3,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Mean value: </td><td>%.2f (ms)</td></tr> \
+                <tr><td>S.D. value: </td><td>%.2f (ms)</td></tr> \
+                <tr><td># articles: </td><td>%s</td></tr></table>'
+            },
+        },
+        {
+            showLine:true,
+            color: "#FA8072",
+            showMarker: false,
+            showTooltip: false,
+        },
+        {
+            showLine:false,
+            color: "#FA8072",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                tooltipFadeSpeed: .1,
+                yvalues: 3,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Mean value: </td><td>%.2f (ms)</td></tr> \
+                <tr><td>S.D. value: </td><td>%.2f (ms)</td></tr> \
+                <tr><td># neurons: </td><td>%s</td></tr></table>'
+            },
+        },
+    ],
+    axesDefaults: {
+        tickRenderer: $.jqplot.CanvasAxisTickRenderer,
+        tickOptions: {
+          fontSize: '12pt',
+        }
+    },
+    axes: {
+      xaxis: {
+        renderer: $.jqplot.CategoryAxisRenderer,
+        labelOptions:{
+            fontFamily: 'arial',
+        },
+        min: .5,
+        max: 3.5,
+        ticks: xticks,
+        tickOptions: {
+          angle: -90,
+        }
+      },
+      yaxis: {
+        label: yaxisLabel,
+        labelRenderer: $.jqplot.CanvasAxisLabelRenderer,
+        autoscale : true,
+        labelOptions:{
+            fontFamily: 'arial',
+            fontSize: '12pt',
+        },
+      },
+    },
+    highlighter: {
+        show: true,
+    },
+    cursor:{
+        show: true, 
+        zoom: true,
+        looseZoom: true,
+          showTooltip:false, 
+          followMouse: true, 
+          showTooltipOutsideZoom: false, 
+          constrainOutsideZoom: true,
+    }, 
+  });
+        $('#chart3').bind('jqplotDataClick', 
+            function (ev, seriesIndex, pointIndex, data) {
+                if (seriesIndex == 0 || seriesIndex == 1)
+                    {
+                        var data_pt_ind = data[7];
+                        var linkStr;
+                        if (data_pt_ind < 0) // this is a hack to redirect non-data table ext data to the article page
+                        {
+                            linkStr = "/article/" + (-data_pt_ind);
+                        }
+                        else 
+                        {
+                            linkStr = "/data_table/" + data_pt_ind;
+                        }
+                        window.open(linkStr, '_self');
+                    }
+                else
+                    {
+                        var data_pt_ind = data[4];
+                        var linkStr = "/ephys_prop/" + data_pt_ind;
+                        window.open(linkStr, '_self');                    
+                    }
+                
+                
+            }
+        );
+        //assign each jqplot's y-axis label an id the same as the id of the ephys prop
+        $('#chart3').find(".jqplot-yaxis canvas")[0].id = 6;
+        $('#chart3').find(".jqplot-yaxis canvas")[0].title = 'Common Definition: Calculated as the AP duration at the membrane voltage halfway between AP threshold and AP peak. Most commonly calculated using first AP in train at rheobase. current. <br/> <br/> Standardization Criteria: Values manually standardized case-by-case to correspond to calculation definition of AP width at half-max amplitude. Since authors use different APs for defining spike half-width (i.e., evoked using rheobase current, via synaptic input, etc.), please refer to individual articles for specific methodology.';
+        
+
+      
+    //var minVal = parseFloat([[2, 76.597, 6.071, &#39;5&#39;, &#39;5&#39;]]) - parseFloat([[2, 70.52618524743451], [2, 82.6690528478035]]);
+    //var maxVal = parseFloat([[2, 76.597, 6.071, &#39;5&#39;, &#39;5&#39;]]) + parseFloat([[2, 70.52618524743451], [2, 82.6690528478035]]);
+  //bDat = [ [ [1.5, minVal], [3.5, minVal]],
+  //[ [1.5, maxVal], [3.5, maxVal]] ]; 
+
+  var yaxisLabel = "spike amplitude (mV)";  
+
+  var highlighterPos = 'ne';
+    
+          highlighterPos = 'nw';
+    
+    
+
+  //var dataSeries = [[[1.0020627595555236, 76.9, 'BNST (ALG) (Bed Nucleus of the Stria Terminalis ALG Type III CRF</br>expressing neuron)', 'Central CRF neurons are not created equal: phenotypic differences in</br>CRF-containing neurons of the rat paraventricular hypothalamus and the</br>bed nucleus of the stria terminalis.', 'Dabrowska J; Hazra R; Guo JD; Dewitt S; Rainnie DG', 'Front Neurosci', '2013', '28155'], [0.9956800596242037, 82.0, 'BNST (ALG) (BNST Type II depolarizing sag burst-firing neuron)', 'Differential expression of intrinsic membrane currents in defined cell</br>types of the anterolateral bed nucleus of the stria terminalis.', 'Hammack SE; Mania I; Rainnie DG', 'J. Neurophysiol.', '2007', '372'], [0.9989654802891517, 75.7, 'BNST (ALG) (BNST Type I depolarizing sag regular-firing neuron)', 'Differential expression of intrinsic membrane currents in defined cell</br>types of the anterolateral bed nucleus of the stria terminalis.', 'Hammack SE; Mania I; Rainnie DG', 'J. Neurophysiol.', '2007', '372'], [0.989248129489934, 69.3, 'BNST (ALG) (BNST Type III non-depolarizing sag regular-firing neuron)', 'Differential expression of intrinsic membrane currents in defined cell</br>types of the anterolateral bed nucleus of the stria terminalis.', 'Hammack SE; Mania I; Rainnie DG', 'J. Neurophysiol.', '2007', '372'], [0.9935894721189339, 87.8, 'BNST (ALG) (Bed nucleus of the stria terminalus anterolateral sector</br>cell)', 'CGRP inhibits neurons of the bed nucleus of the stria terminalis:</br>implications for the regulation of fear and anxiety.', 'Gungor NZ; Pare D', 'J. Neurosci.', '2014', '46281'], [0.9891130580572917, 71.2, 'BNST (ALG) ( BNST anterolateral regular firing neuron)', 'Distribution and functional expression of Kv4 family ? subunits and</br>associated KChIP ? subunits in the bed nucleus of the stria</br>terminalis.', 'Rainnie DG; Hazra R; Dabrowska J; Guo JD; Li CC; Dewitt S; Muly EC', 'J. Comp. Neurol.', '2014', '45718'], [1.0044232158890982, 73.4, 'BNST (ALG) (BNST anterolateral regular firing and burst firing neuron)', 'Distribution and functional expression of Kv4 family ? subunits and</br>associated KChIP ? subunits in the bed nucleus of the stria</br>terminalis.', 'Rainnie DG; Hazra R; Dabrowska J; Guo JD; Li CC; Dewitt S; Muly EC', 'J. Comp. Neurol.', '2014', '45718'], [1.0000602919141075, 73.3, 'BNST (ALG) (anterolateral bed nucleus of the stria terminalis neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49196'], [0.9982150237851858, 71.4, 'BNST (ALG) (anteromedial bed nucleus of the stria terminalis neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49196'], [1.002461098906771, 68.9, 'BNST (ALG) (anteroventral bed nucleus of the stria terminalis neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49196'], [1.0005693968301177, 71.7, 'BNST (ALG) (anterior bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [0.9977804600567471, 74.3, 'BNST (ALG) (anterior bed nucleus of the stria terminalis fast spiking</br>neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [0.99645565846022, 62.9, 'BNST (ALG) (anterior bed nucleus of the stria terminalis spontaneously</br>active neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [0.9994977122460943, 71.0, 'BNST (ALG) (anterior bed nucleus of the stria terminalis low-threshold</br>bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [1.005256316223082, 71.9, 'BNST (ALG) (anterior bed nucleus of the stria terminalis late firing</br>neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [1.0164855215924413, 67.5, 'BNST (ALG) (anteroventral bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49197'], [1.0097607821603638, 67.9, 'BNST (ALG) (anteromedial bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49197'], [1.004184360693669, 73.4, 'BNST (ALG) (anterolateral bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49197'], [0.9993636235863426, 70.9, 'BNST (ALG) (anterolateral bed nucleus of the stria terminalis low-</br>threshold bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49198'], [1.0073743973844282, 68.2, 'BNST (ALG) (anteroventral bed nucleus of the stria terminalis low-</br>threshold bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49198'], [1.0176490883374794, 71.2, 'BNST (ALG) (anteromedial bed nucleus of the stria terminalis low-</br>threshold bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49198']], [[2, 70.52618524743451], [2, 82.6690528478035]], [[2, 76.597, 6.071, '5', '5']], [[3, 57.470268401130305], [3, 82.1174716655147]], [[3, 69.793, 12.323, '98', '5']]];
+  var dataSeries = [[[]], [[1.0020627595555236, 76.9, 'BNST (ALG) (Bed Nucleus of the Stria Terminalis ALG Type III CRF</br>expressing neuron)', 'Central CRF neurons are not created equal: phenotypic differences in</br>CRF-containing neurons of the rat paraventricular hypothalamus and the</br>bed nucleus of the stria terminalis.', 'Dabrowska J; Hazra R; Guo JD; Dewitt S; Rainnie DG', 'Front Neurosci', '2013', '28155'], [0.9956800596242037, 82.0, 'BNST (ALG) (BNST Type II depolarizing sag burst-firing neuron)', 'Differential expression of intrinsic membrane currents in defined cell</br>types of the anterolateral bed nucleus of the stria terminalis.', 'Hammack SE; Mania I; Rainnie DG', 'J. Neurophysiol.', '2007', '372'], [0.9989654802891517, 75.7, 'BNST (ALG) (BNST Type I depolarizing sag regular-firing neuron)', 'Differential expression of intrinsic membrane currents in defined cell</br>types of the anterolateral bed nucleus of the stria terminalis.', 'Hammack SE; Mania I; Rainnie DG', 'J. Neurophysiol.', '2007', '372'], [0.989248129489934, 69.3, 'BNST (ALG) (BNST Type III non-depolarizing sag regular-firing neuron)', 'Differential expression of intrinsic membrane currents in defined cell</br>types of the anterolateral bed nucleus of the stria terminalis.', 'Hammack SE; Mania I; Rainnie DG', 'J. Neurophysiol.', '2007', '372'], [0.9935894721189339, 87.8, 'BNST (ALG) (Bed nucleus of the stria terminalus anterolateral sector</br>cell)', 'CGRP inhibits neurons of the bed nucleus of the stria terminalis:</br>implications for the regulation of fear and anxiety.', 'Gungor NZ; Pare D', 'J. Neurosci.', '2014', '46281'], [0.9891130580572917, 71.2, 'BNST (ALG) ( BNST anterolateral regular firing neuron)', 'Distribution and functional expression of Kv4 family ? subunits and</br>associated KChIP ? subunits in the bed nucleus of the stria</br>terminalis.', 'Rainnie DG; Hazra R; Dabrowska J; Guo JD; Li CC; Dewitt S; Muly EC', 'J. Comp. Neurol.', '2014', '45718'], [1.0044232158890982, 73.4, 'BNST (ALG) (BNST anterolateral regular firing and burst firing neuron)', 'Distribution and functional expression of Kv4 family ? subunits and</br>associated KChIP ? subunits in the bed nucleus of the stria</br>terminalis.', 'Rainnie DG; Hazra R; Dabrowska J; Guo JD; Li CC; Dewitt S; Muly EC', 'J. Comp. Neurol.', '2014', '45718'], [1.0000602919141075, 73.3, 'BNST (ALG) (anterolateral bed nucleus of the stria terminalis neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49196'], [0.9982150237851858, 71.4, 'BNST (ALG) (anteromedial bed nucleus of the stria terminalis neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49196'], [1.002461098906771, 68.9, 'BNST (ALG) (anteroventral bed nucleus of the stria terminalis neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49196'], [1.0005693968301177, 71.7, 'BNST (ALG) (anterior bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [0.9977804600567471, 74.3, 'BNST (ALG) (anterior bed nucleus of the stria terminalis fast spiking</br>neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [0.99645565846022, 62.9, 'BNST (ALG) (anterior bed nucleus of the stria terminalis spontaneously</br>active neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [0.9994977122460943, 71.0, 'BNST (ALG) (anterior bed nucleus of the stria terminalis low-threshold</br>bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [1.005256316223082, 71.9, 'BNST (ALG) (anterior bed nucleus of the stria terminalis late firing</br>neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [1.0164855215924413, 67.5, 'BNST (ALG) (anteroventral bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49197'], [1.0097607821603638, 67.9, 'BNST (ALG) (anteromedial bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49197'], [1.004184360693669, 73.4, 'BNST (ALG) (anterolateral bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49197'], [0.9993636235863426, 70.9, 'BNST (ALG) (anterolateral bed nucleus of the stria terminalis low-</br>threshold bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49198'], [1.0073743973844282, 68.2, 'BNST (ALG) (anteroventral bed nucleus of the stria terminalis low-</br>threshold bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49198'], [1.0176490883374794, 71.2, 'BNST (ALG) (anteromedial bed nucleus of the stria terminalis low-</br>threshold bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49198']], [[2, 70.52618524743451], [2, 82.6690528478035]], [[2, 76.597, 6.071, '5', '5']], [[3, 57.470268401130305], [3, 82.1174716655147]], [[3, 69.793, 12.323, '98', '5']]];
+  var plot1b = $.jqplot('chart4', dataSeries, {
+    //title: "spike amplitude",
+    series:[
+        {
+            showLine:false,
+            color:"#EAA228",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                yvalues: 5,
+                tooltipFadeSpeed: .1,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Value: </td><td>%s (mV)</td></tr> \
+                <tr><td>Neuron:</td><td>%s</td></tr> \
+                <tr><td>Title:</td><td>%s</td></tr> \
+                <tr><td>Authors:</td><td>%s</td></tr> \
+                <tr><td>Journal:</td><td>%s, %s</td></tr> \
+                </table>'
+            },
+        },
+        {
+            showLine:false,
+            color:"#4bb2c5",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                tooltipFadeSpeed: .1,
+                yvalues: 5,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Value: </td><td>%s (mV)</td></tr> \
+                <tr><td>Neuron:</td><td>%s</td></tr> \
+                <tr><td>Title:</td><td>%s</td></tr> \
+                <tr><td>Authors:</td><td>%s</td></tr> \
+                <tr><td>Journal:</td><td>%s, %s</td></tr> \
+                </table>'
+            },
+        },
+        {
+            showLine:true,
+            color: "#c5b47f",
+            showMarker: false,
+            showTooltip: false,
+        },
+        {
+            showLine:false,
+            color: "#c5b47f",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                tooltipFadeSpeed: .1,
+                yvalues: 3,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Mean value: </td><td>%.2f (mV)</td></tr> \
+                <tr><td>S.D. value: </td><td>%.2f (mV)</td></tr> \
+                <tr><td># articles: </td><td>%s</td></tr></table>'
+            },
+        },
+        {
+            showLine:true,
+            color: "#FA8072",
+            showMarker: false,
+            showTooltip: false,
+        },
+        {
+            showLine:false,
+            color: "#FA8072",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                tooltipFadeSpeed: .1,
+                yvalues: 3,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Mean value: </td><td>%.2f (mV)</td></tr> \
+                <tr><td>S.D. value: </td><td>%.2f (mV)</td></tr> \
+                <tr><td># neurons: </td><td>%s</td></tr></table>'
+            },
+        },
+    ],
+    axesDefaults: {
+        tickRenderer: $.jqplot.CanvasAxisTickRenderer,
+        tickOptions: {
+          fontSize: '12pt',
+        }
+    },
+    axes: {
+      xaxis: {
+        renderer: $.jqplot.CategoryAxisRenderer,
+        labelOptions:{
+            fontFamily: 'arial',
+        },
+        min: .5,
+        max: 3.5,
+        ticks: xticks,
+        tickOptions: {
+          angle: -90,
+        }
+      },
+      yaxis: {
+        label: yaxisLabel,
+        labelRenderer: $.jqplot.CanvasAxisLabelRenderer,
+        autoscale : true,
+        labelOptions:{
+            fontFamily: 'arial',
+            fontSize: '12pt',
+        },
+      },
+    },
+    highlighter: {
+        show: true,
+    },
+    cursor:{
+        show: true, 
+        zoom: true,
+        looseZoom: true,
+          showTooltip:false, 
+          followMouse: true, 
+          showTooltipOutsideZoom: false, 
+          constrainOutsideZoom: true,
+    }, 
+  });
+        $('#chart4').bind('jqplotDataClick', 
+            function (ev, seriesIndex, pointIndex, data) {
+                if (seriesIndex == 0 || seriesIndex == 1)
+                    {
+                        var data_pt_ind = data[7];
+                        var linkStr;
+                        if (data_pt_ind < 0) // this is a hack to redirect non-data table ext data to the article page
+                        {
+                            linkStr = "/article/" + (-data_pt_ind);
+                        }
+                        else 
+                        {
+                            linkStr = "/data_table/" + data_pt_ind;
+                        }
+                        window.open(linkStr, '_self');
+                    }
+                else
+                    {
+                        var data_pt_ind = data[4];
+                        var linkStr = "/ephys_prop/" + data_pt_ind;
+                        window.open(linkStr, '_self');                    
+                    }
+                
+                
+            }
+        );
+        //assign each jqplot's y-axis label an id the same as the id of the ephys prop
+        $('#chart4').find(".jqplot-yaxis canvas")[0].id = 5;
+        $('#chart4').find(".jqplot-yaxis canvas")[0].title = 'Common Definition: Voltage indicating height of action potential. Usually calculated as the difference between AP peak and AP threshold voltages. Commonly measured using first AP in train at rheobase current. <br/> <br/> Standardization Criteria: Values manually standardized case-by-case to correspond to calculation definition of difference between AP peak and AP threshold. Since authors use different APs for defining spike amplitude (e.g., evoked using rheobase current, via synaptic input, etc.), please refer to individual articles for specific methodology.';
+        
+
+      
+    //var minVal = parseFloat([[2, 40.096, 8.052, &#39;4&#39;, &#39;4&#39;]]) - parseFloat([[2, 32.04307443448686], [2, 48.14906842265594]]);
+    //var maxVal = parseFloat([[2, 40.096, 8.052, &#39;4&#39;, &#39;4&#39;]]) + parseFloat([[2, 32.04307443448686], [2, 48.14906842265594]]);
+  //bDat = [ [ [1.5, minVal], [3.5, minVal]],
+  //[ [1.5, maxVal], [3.5, maxVal]] ]; 
+
+  var yaxisLabel = "membrane time constant (ms)";  
+
+  var highlighterPos = 'ne';
+    
+    
+
+  //var dataSeries = [[[0.9998187345452246, 31.44, 'BNST (ALG) (BNST Type II depolarizing sag burst-firing neuron)', 'Differential expression of intrinsic membrane currents in defined cell</br>types of the anterolateral bed nucleus of the stria terminalis.', 'Hammack SE; Mania I; Rainnie DG', 'J. Neurophysiol.', '2007', '372'], [1.0075310063097964, 32.7, 'BNST (ALG) (BNST Type I depolarizing sag regular-firing neuron)', 'Differential expression of intrinsic membrane currents in defined cell</br>types of the anterolateral bed nucleus of the stria terminalis.', 'Hammack SE; Mania I; Rainnie DG', 'J. Neurophysiol.', '2007', '372'], [0.9882653317103598, 29.22, 'BNST (ALG) (BNST Type III non-depolarizing sag regular-firing neuron)', 'Differential expression of intrinsic membrane currents in defined cell</br>types of the anterolateral bed nucleus of the stria terminalis.', 'Hammack SE; Mania I; Rainnie DG', 'J. Neurophysiol.', '2007', '372'], [1.008865002849503, 46.9, 'BNST (ALG) (Bed nucleus of the stria terminalus anterolateral sector</br>cell)', 'CGRP inhibits neurons of the bed nucleus of the stria terminalis:</br>implications for the regulation of fear and anxiety.', 'Gungor NZ; Pare D', 'J. Neurosci.', '2014', '46281'], [0.9919772540471214, 51.6, 'BNST (ALG) (anterolateral sector BNST central amygdala-projecting non-</br>ChR2-expressing nonresponsive cell)', 'Optogenetic study of the projections from the bed nucleus of the stria</br>terminalis to the central amygdala.', 'Gungor NZ; Yamamoto R; Par\xe9 D', 'J. Neurophysiol.', '2015', '49485'], [1.0020615454675896, 46.9, 'BNST (ALG) (anterolateral sector BNST central amygdala-projecting</br>regular spiking ChR2-expressing responsive cell)', 'Optogenetic study of the projections from the bed nucleus of the stria</br>terminalis to the central amygdala.', 'Gungor NZ; Yamamoto R; Par\xe9 D', 'J. Neurophysiol.', '2015', '49485'], [1.0083046099558963, 29.5, 'BNST (ALG) (anterolateral bed nucleus of the stria terminalis neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49196'], [0.99989156240291, 32.7, 'BNST (ALG) (anteromedial bed nucleus of the stria terminalis neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49196'], [0.9873729826915466, 36.7, 'BNST (ALG) (anteroventral bed nucleus of the stria terminalis neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49196'], [0.9992655415973654, 31.5, 'BNST (ALG) (anterior bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [0.9910017311371727, 38.6, 'BNST (ALG) (anterior bed nucleus of the stria terminalis fast spiking</br>neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [1.0052384210822898, 48.4, 'BNST (ALG) (anterior bed nucleus of the stria terminalis spontaneously</br>active neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [1.0218143600995633, 30.4, 'BNST (ALG) (anterior bed nucleus of the stria terminalis low-threshold</br>bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [1.0044001327049017, 23.3, 'BNST (ALG) (anterior bed nucleus of the stria terminalis late firing</br>neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [1.0070880062705145, 35.0, 'BNST (ALG) (anteroventral bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49197'], [1.0089528202451856, 34.6, 'BNST (ALG) (anteromedial bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49197'], [1.005318005512561, 27.7, 'BNST (ALG) (anterolateral bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49197'], [0.992124904464406, 29.4, 'BNST (ALG) (anterolateral bed nucleus of the stria terminalis low-</br>threshold bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49198'], [1.0050452249039017, 34.2, 'BNST (ALG) (anteroventral bed nucleus of the stria terminalis low-</br>threshold bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49198'], [1.0186547035108933, 31.6, 'BNST (ALG) (anteromedial bed nucleus of the stria terminalis low-</br>threshold bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49198']], [[2, 32.04307443448686], [2, 48.14906842265594]], [[2, 40.096, 8.052, '4', '4']], [[3, 8.657604848973], [3, 40.3274733902408]], [[3, 24.492, 15.834, '86', '4']]];
+  var dataSeries = [[[]], [[0.9998187345452246, 31.44, 'BNST (ALG) (BNST Type II depolarizing sag burst-firing neuron)', 'Differential expression of intrinsic membrane currents in defined cell</br>types of the anterolateral bed nucleus of the stria terminalis.', 'Hammack SE; Mania I; Rainnie DG', 'J. Neurophysiol.', '2007', '372'], [1.0075310063097964, 32.7, 'BNST (ALG) (BNST Type I depolarizing sag regular-firing neuron)', 'Differential expression of intrinsic membrane currents in defined cell</br>types of the anterolateral bed nucleus of the stria terminalis.', 'Hammack SE; Mania I; Rainnie DG', 'J. Neurophysiol.', '2007', '372'], [0.9882653317103598, 29.22, 'BNST (ALG) (BNST Type III non-depolarizing sag regular-firing neuron)', 'Differential expression of intrinsic membrane currents in defined cell</br>types of the anterolateral bed nucleus of the stria terminalis.', 'Hammack SE; Mania I; Rainnie DG', 'J. Neurophysiol.', '2007', '372'], [1.008865002849503, 46.9, 'BNST (ALG) (Bed nucleus of the stria terminalus anterolateral sector</br>cell)', 'CGRP inhibits neurons of the bed nucleus of the stria terminalis:</br>implications for the regulation of fear and anxiety.', 'Gungor NZ; Pare D', 'J. Neurosci.', '2014', '46281'], [0.9919772540471214, 51.6, 'BNST (ALG) (anterolateral sector BNST central amygdala-projecting non-</br>ChR2-expressing nonresponsive cell)', 'Optogenetic study of the projections from the bed nucleus of the stria</br>terminalis to the central amygdala.', 'Gungor NZ; Yamamoto R; Par\xe9 D', 'J. Neurophysiol.', '2015', '49485'], [1.0020615454675896, 46.9, 'BNST (ALG) (anterolateral sector BNST central amygdala-projecting</br>regular spiking ChR2-expressing responsive cell)', 'Optogenetic study of the projections from the bed nucleus of the stria</br>terminalis to the central amygdala.', 'Gungor NZ; Yamamoto R; Par\xe9 D', 'J. Neurophysiol.', '2015', '49485'], [1.0083046099558963, 29.5, 'BNST (ALG) (anterolateral bed nucleus of the stria terminalis neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49196'], [0.99989156240291, 32.7, 'BNST (ALG) (anteromedial bed nucleus of the stria terminalis neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49196'], [0.9873729826915466, 36.7, 'BNST (ALG) (anteroventral bed nucleus of the stria terminalis neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49196'], [0.9992655415973654, 31.5, 'BNST (ALG) (anterior bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [0.9910017311371727, 38.6, 'BNST (ALG) (anterior bed nucleus of the stria terminalis fast spiking</br>neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [1.0052384210822898, 48.4, 'BNST (ALG) (anterior bed nucleus of the stria terminalis spontaneously</br>active neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [1.0218143600995633, 30.4, 'BNST (ALG) (anterior bed nucleus of the stria terminalis low-threshold</br>bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [1.0044001327049017, 23.3, 'BNST (ALG) (anterior bed nucleus of the stria terminalis late firing</br>neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49195'], [1.0070880062705145, 35.0, 'BNST (ALG) (anteroventral bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49197'], [1.0089528202451856, 34.6, 'BNST (ALG) (anteromedial bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49197'], [1.005318005512561, 27.7, 'BNST (ALG) (anterolateral bed nucleus of the stria terminalis regular</br>spiking neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49197'], [0.992124904464406, 29.4, 'BNST (ALG) (anterolateral bed nucleus of the stria terminalis low-</br>threshold bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49198'], [1.0050452249039017, 34.2, 'BNST (ALG) (anteroventral bed nucleus of the stria terminalis low-</br>threshold bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49198'], [1.0186547035108933, 31.6, 'BNST (ALG) (anteromedial bed nucleus of the stria terminalis low-</br>threshold bursting neuron)', 'Contrasting distribution of physiological cell types in different</br>regions of the bed nucleus of the stria terminalis.', 'Rodr\xedguez-Sierra OE; Turesson HK; Pare D', 'J. Neurophysiol.', '2013', '49198']], [[2, 32.04307443448686], [2, 48.14906842265594]], [[2, 40.096, 8.052, '4', '4']], [[3, 8.657604848973], [3, 40.3274733902408]], [[3, 24.492, 15.834, '86', '4']]];
+  var plot1b = $.jqplot('chart5', dataSeries, {
+    //title: "membrane time constant",
+    series:[
+        {
+            showLine:false,
+            color:"#EAA228",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                yvalues: 5,
+                tooltipFadeSpeed: .1,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Value: </td><td>%s (ms)</td></tr> \
+                <tr><td>Neuron:</td><td>%s</td></tr> \
+                <tr><td>Title:</td><td>%s</td></tr> \
+                <tr><td>Authors:</td><td>%s</td></tr> \
+                <tr><td>Journal:</td><td>%s, %s</td></tr> \
+                </table>'
+            },
+        },
+        {
+            showLine:false,
+            color:"#4bb2c5",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                tooltipFadeSpeed: .1,
+                yvalues: 5,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Value: </td><td>%s (ms)</td></tr> \
+                <tr><td>Neuron:</td><td>%s</td></tr> \
+                <tr><td>Title:</td><td>%s</td></tr> \
+                <tr><td>Authors:</td><td>%s</td></tr> \
+                <tr><td>Journal:</td><td>%s, %s</td></tr> \
+                </table>'
+            },
+        },
+        {
+            showLine:true,
+            color: "#c5b47f",
+            showMarker: false,
+            showTooltip: false,
+        },
+        {
+            showLine:false,
+            color: "#c5b47f",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                tooltipFadeSpeed: .1,
+                yvalues: 3,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Mean value: </td><td>%.2f (ms)</td></tr> \
+                <tr><td>S.D. value: </td><td>%.2f (ms)</td></tr> \
+                <tr><td># articles: </td><td>%s</td></tr></table>'
+            },
+        },
+        {
+            showLine:true,
+            color: "#FA8072",
+            showMarker: false,
+            showTooltip: false,
+        },
+        {
+            showLine:false,
+            color: "#FA8072",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                tooltipFadeSpeed: .1,
+                yvalues: 3,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Mean value: </td><td>%.2f (ms)</td></tr> \
+                <tr><td>S.D. value: </td><td>%.2f (ms)</td></tr> \
+                <tr><td># neurons: </td><td>%s</td></tr></table>'
+            },
+        },
+    ],
+    axesDefaults: {
+        tickRenderer: $.jqplot.CanvasAxisTickRenderer,
+        tickOptions: {
+          fontSize: '12pt',
+        }
+    },
+    axes: {
+      xaxis: {
+        renderer: $.jqplot.CategoryAxisRenderer,
+        labelOptions:{
+            fontFamily: 'arial',
+        },
+        min: .5,
+        max: 3.5,
+        ticks: xticks,
+        tickOptions: {
+          angle: -90,
+        }
+      },
+      yaxis: {
+        label: yaxisLabel,
+        labelRenderer: $.jqplot.CanvasAxisLabelRenderer,
+        autoscale : true,
+        labelOptions:{
+            fontFamily: 'arial',
+            fontSize: '12pt',
+        },
+      },
+    },
+    highlighter: {
+        show: true,
+    },
+    cursor:{
+        show: true, 
+        zoom: true,
+        looseZoom: true,
+          showTooltip:false, 
+          followMouse: true, 
+          showTooltipOutsideZoom: false, 
+          constrainOutsideZoom: true,
+    }, 
+  });
+        $('#chart5').bind('jqplotDataClick', 
+            function (ev, seriesIndex, pointIndex, data) {
+                if (seriesIndex == 0 || seriesIndex == 1)
+                    {
+                        var data_pt_ind = data[7];
+                        var linkStr;
+                        if (data_pt_ind < 0) // this is a hack to redirect non-data table ext data to the article page
+                        {
+                            linkStr = "/article/" + (-data_pt_ind);
+                        }
+                        else 
+                        {
+                            linkStr = "/data_table/" + data_pt_ind;
+                        }
+                        window.open(linkStr, '_self');
+                    }
+                else
+                    {
+                        var data_pt_ind = data[4];
+                        var linkStr = "/ephys_prop/" + data_pt_ind;
+                        window.open(linkStr, '_self');                    
+                    }
+                
+                
+            }
+        );
+        //assign each jqplot's y-axis label an id the same as the id of the ephys prop
+        $('#chart5').find(".jqplot-yaxis canvas")[0].id = 4;
+        $('#chart5').find(".jqplot-yaxis canvas")[0].title = 'Common Definition: Time constant for the membrane to repolarize after a small current injection of fixed amplitude and duration <br/> <br/> Standardization Criteria: Values corrected for differences in units, but are otherwise unchanged. Refer to individual articles for specific definitions and calculation methodologies.';
+        
+
+      
+    //var minVal = parseFloat([[2, 28.9, 11.9, &#39;2&#39;, &#39;8&#39;]]) - parseFloat([[2, 17.0], [2, 40.8]]);
+    //var maxVal = parseFloat([[2, 28.9, 11.9, &#39;2&#39;, &#39;8&#39;]]) + parseFloat([[2, 17.0], [2, 40.8]]);
+  //bDat = [ [ [1.5, minVal], [3.5, minVal]],
+  //[ [1.5, maxVal], [3.5, maxVal]] ]; 
+
+  var yaxisLabel = "rheobase (pA)";  
+
+  var highlighterPos = 'ne';
+    
+    
+
+  //var dataSeries = [[[0.9939192222852407, 40.8, 'BNST (ALG) (Bed nucleus of the stria terminalus anterolateral sector</br>cell)', 'CGRP inhibits neurons of the bed nucleus of the stria terminalis:</br>implications for the regulation of fear and anxiety.', 'Gungor NZ; Pare D', 'J. Neurosci.', '2014', '46281'], [0.9942122525488233, 18.7, 'BNST (ALG) (anterolateral sector BNST central amygdala-projecting non-</br>ChR2-expressing nonresponsive cell)', 'Optogenetic study of the projections from the bed nucleus of the stria</br>terminalis to the central amygdala.', 'Gungor NZ; Yamamoto R; Par\xe9 D', 'J. Neurophysiol.', '2015', '49485'], [0.9941114990992038, 15.3, 'BNST (ALG) (anterolateral sector BNST central amygdala-projecting</br>regular spiking ChR2-expressing responsive cell)', 'Optogenetic study of the projections from the bed nucleus of the stria</br>terminalis to the central amygdala.', 'Gungor NZ; Yamamoto R; Par\xe9 D', 'J. Neurophysiol.', '2015', '49485']], [[2, 17.0], [2, 40.8]], [[2, 28.9, 11.9, '2', '8']], [[3, -152.74121018568798], [3, 657.2858618127759]], [[3, 252.272, 405.013, '60', '8']]];
+  var dataSeries = [[[]], [[0.9939192222852407, 40.8, 'BNST (ALG) (Bed nucleus of the stria terminalus anterolateral sector</br>cell)', 'CGRP inhibits neurons of the bed nucleus of the stria terminalis:</br>implications for the regulation of fear and anxiety.', 'Gungor NZ; Pare D', 'J. Neurosci.', '2014', '46281'], [0.9942122525488233, 18.7, 'BNST (ALG) (anterolateral sector BNST central amygdala-projecting non-</br>ChR2-expressing nonresponsive cell)', 'Optogenetic study of the projections from the bed nucleus of the stria</br>terminalis to the central amygdala.', 'Gungor NZ; Yamamoto R; Par\xe9 D', 'J. Neurophysiol.', '2015', '49485'], [0.9941114990992038, 15.3, 'BNST (ALG) (anterolateral sector BNST central amygdala-projecting</br>regular spiking ChR2-expressing responsive cell)', 'Optogenetic study of the projections from the bed nucleus of the stria</br>terminalis to the central amygdala.', 'Gungor NZ; Yamamoto R; Par\xe9 D', 'J. Neurophysiol.', '2015', '49485']], [[2, 17.0], [2, 40.8]], [[2, 28.9, 11.9, '2', '8']], [[3, -152.74121018568798], [3, 657.2858618127759]], [[3, 252.272, 405.013, '60', '8']]];
+  var plot1b = $.jqplot('chart6', dataSeries, {
+    //title: "rheobase",
+    series:[
+        {
+            showLine:false,
+            color:"#EAA228",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                yvalues: 5,
+                tooltipFadeSpeed: .1,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Value: </td><td>%s (pA)</td></tr> \
+                <tr><td>Neuron:</td><td>%s</td></tr> \
+                <tr><td>Title:</td><td>%s</td></tr> \
+                <tr><td>Authors:</td><td>%s</td></tr> \
+                <tr><td>Journal:</td><td>%s, %s</td></tr> \
+                </table>'
+            },
+        },
+        {
+            showLine:false,
+            color:"#4bb2c5",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                tooltipFadeSpeed: .1,
+                yvalues: 5,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Value: </td><td>%s (pA)</td></tr> \
+                <tr><td>Neuron:</td><td>%s</td></tr> \
+                <tr><td>Title:</td><td>%s</td></tr> \
+                <tr><td>Authors:</td><td>%s</td></tr> \
+                <tr><td>Journal:</td><td>%s, %s</td></tr> \
+                </table>'
+            },
+        },
+        {
+            showLine:true,
+            color: "#c5b47f",
+            showMarker: false,
+            showTooltip: false,
+        },
+        {
+            showLine:false,
+            color: "#c5b47f",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                tooltipFadeSpeed: .1,
+                yvalues: 3,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Mean value: </td><td>%.2f (pA)</td></tr> \
+                <tr><td>S.D. value: </td><td>%.2f (pA)</td></tr> \
+                <tr><td># articles: </td><td>%s</td></tr></table>'
+            },
+        },
+        {
+            showLine:true,
+            color: "#FA8072",
+            showMarker: false,
+            showTooltip: false,
+        },
+        {
+            showLine:false,
+            color: "#FA8072",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                tooltipFadeSpeed: .1,
+                yvalues: 3,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Mean value: </td><td>%.2f (pA)</td></tr> \
+                <tr><td>S.D. value: </td><td>%.2f (pA)</td></tr> \
+                <tr><td># neurons: </td><td>%s</td></tr></table>'
+            },
+        },
+    ],
+    axesDefaults: {
+        tickRenderer: $.jqplot.CanvasAxisTickRenderer,
+        tickOptions: {
+          fontSize: '12pt',
+        }
+    },
+    axes: {
+      xaxis: {
+        renderer: $.jqplot.CategoryAxisRenderer,
+        labelOptions:{
+            fontFamily: 'arial',
+        },
+        min: .5,
+        max: 3.5,
+        ticks: xticks,
+        tickOptions: {
+          angle: -90,
+        }
+      },
+      yaxis: {
+        label: yaxisLabel,
+        labelRenderer: $.jqplot.CanvasAxisLabelRenderer,
+        autoscale : true,
+        labelOptions:{
+            fontFamily: 'arial',
+            fontSize: '12pt',
+        },
+      },
+    },
+    highlighter: {
+        show: true,
+    },
+    cursor:{
+        show: true, 
+        zoom: true,
+        looseZoom: true,
+          showTooltip:false, 
+          followMouse: true, 
+          showTooltipOutsideZoom: false, 
+          constrainOutsideZoom: true,
+    }, 
+  });
+        $('#chart6').bind('jqplotDataClick', 
+            function (ev, seriesIndex, pointIndex, data) {
+                if (seriesIndex == 0 || seriesIndex == 1)
+                    {
+                        var data_pt_ind = data[7];
+                        var linkStr;
+                        if (data_pt_ind < 0) // this is a hack to redirect non-data table ext data to the article page
+                        {
+                            linkStr = "/article/" + (-data_pt_ind);
+                        }
+                        else 
+                        {
+                            linkStr = "/data_table/" + data_pt_ind;
+                        }
+                        window.open(linkStr, '_self');
+                    }
+                else
+                    {
+                        var data_pt_ind = data[4];
+                        var linkStr = "/ephys_prop/" + data_pt_ind;
+                        window.open(linkStr, '_self');                    
+                    }
+                
+                
+            }
+        );
+        //assign each jqplot's y-axis label an id the same as the id of the ephys prop
+        $('#chart6').find(".jqplot-yaxis canvas")[0].id = 8;
+        $('#chart6').find(".jqplot-yaxis canvas")[0].title = 'Common Definition: Minimum current injected somatically required to fire AP <br/> <br/> Standardization Criteria: Values corrected for differences in reported units, but are otherwise unchanged. Refer to individual articles for specific definitions and calculation methodologies.';
+        
+
+      
+    //var minVal = parseFloat([[2, 0.313, 0.0, &#39;1&#39;, &#39;13&#39;]]) - parseFloat([[2, 0.3135], [2, 0.3135]]);
+    //var maxVal = parseFloat([[2, 0.313, 0.0, &#39;1&#39;, &#39;13&#39;]]) + parseFloat([[2, 0.3135], [2, 0.3135]]);
+  //bDat = [ [ [1.5, minVal], [3.5, minVal]],
+  //[ [1.5, maxVal], [3.5, maxVal]] ]; 
+
+  var yaxisLabel = "sag ratio (ratio)";  
+
+  var highlighterPos = 'ne';
+    
+    
+
+  //var dataSeries = [[[1.0130567285092331, 0.295, 'BNST (ALG)', 'A transcriptomic analysis of type I-III neurons in the bed nucleus of</br>the stria terminalis.', 'Hazra R; Guo JD; Ryan SJ; Jasnow AM; Dabrowska J; Rainnie DG', 'Mol. Cell. Neurosci.', '2011', '25599'], [0.9981020093702094, 0.332, 'BNST (ALG)', 'A transcriptomic analysis of type I-III neurons in the bed nucleus of</br>the stria terminalis.', 'Hazra R; Guo JD; Ryan SJ; Jasnow AM; Dabrowska J; Rainnie DG', 'Mol. Cell. Neurosci.', '2011', '25599']], [[2, 0.3135], [2, 0.3135]], [[2, 0.313, 0.0, '1', '13']], [[3, 0.30660989609534905], [3, 0.958987350268183]], [[3, 0.632, 0.326, '43', '13']]];
+  var dataSeries = [[[]], [[1.0130567285092331, 0.295, 'BNST (ALG)', 'A transcriptomic analysis of type I-III neurons in the bed nucleus of</br>the stria terminalis.', 'Hazra R; Guo JD; Ryan SJ; Jasnow AM; Dabrowska J; Rainnie DG', 'Mol. Cell. Neurosci.', '2011', '25599'], [0.9981020093702094, 0.332, 'BNST (ALG)', 'A transcriptomic analysis of type I-III neurons in the bed nucleus of</br>the stria terminalis.', 'Hazra R; Guo JD; Ryan SJ; Jasnow AM; Dabrowska J; Rainnie DG', 'Mol. Cell. Neurosci.', '2011', '25599']], [[2, 0.3135], [2, 0.3135]], [[2, 0.313, 0.0, '1', '13']], [[3, 0.30660989609534905], [3, 0.958987350268183]], [[3, 0.632, 0.326, '43', '13']]];
+  var plot1b = $.jqplot('chart7', dataSeries, {
+    //title: "sag ratio",
+    series:[
+        {
+            showLine:false,
+            color:"#EAA228",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                yvalues: 5,
+                tooltipFadeSpeed: .1,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Value: </td><td>%s (ratio)</td></tr> \
+                <tr><td>Neuron:</td><td>%s</td></tr> \
+                <tr><td>Title:</td><td>%s</td></tr> \
+                <tr><td>Authors:</td><td>%s</td></tr> \
+                <tr><td>Journal:</td><td>%s, %s</td></tr> \
+                </table>'
+            },
+        },
+        {
+            showLine:false,
+            color:"#4bb2c5",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                tooltipFadeSpeed: .1,
+                yvalues: 5,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Value: </td><td>%s (ratio)</td></tr> \
+                <tr><td>Neuron:</td><td>%s</td></tr> \
+                <tr><td>Title:</td><td>%s</td></tr> \
+                <tr><td>Authors:</td><td>%s</td></tr> \
+                <tr><td>Journal:</td><td>%s, %s</td></tr> \
+                </table>'
+            },
+        },
+        {
+            showLine:true,
+            color: "#c5b47f",
+            showMarker: false,
+            showTooltip: false,
+        },
+        {
+            showLine:false,
+            color: "#c5b47f",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                tooltipFadeSpeed: .1,
+                yvalues: 3,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Mean value: </td><td>%.2f (ratio)</td></tr> \
+                <tr><td>S.D. value: </td><td>%.2f (ratio)</td></tr> \
+                <tr><td># articles: </td><td>%s</td></tr></table>'
+            },
+        },
+        {
+            showLine:true,
+            color: "#FA8072",
+            showMarker: false,
+            showTooltip: false,
+        },
+        {
+            showLine:false,
+            color: "#FA8072",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                tooltipFadeSpeed: .1,
+                yvalues: 3,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Mean value: </td><td>%.2f (ratio)</td></tr> \
+                <tr><td>S.D. value: </td><td>%.2f (ratio)</td></tr> \
+                <tr><td># neurons: </td><td>%s</td></tr></table>'
+            },
+        },
+    ],
+    axesDefaults: {
+        tickRenderer: $.jqplot.CanvasAxisTickRenderer,
+        tickOptions: {
+          fontSize: '12pt',
+        }
+    },
+    axes: {
+      xaxis: {
+        renderer: $.jqplot.CategoryAxisRenderer,
+        labelOptions:{
+            fontFamily: 'arial',
+        },
+        min: .5,
+        max: 3.5,
+        ticks: xticks,
+        tickOptions: {
+          angle: -90,
+        }
+      },
+      yaxis: {
+        label: yaxisLabel,
+        labelRenderer: $.jqplot.CanvasAxisLabelRenderer,
+        autoscale : true,
+        labelOptions:{
+            fontFamily: 'arial',
+            fontSize: '12pt',
+        },
+      },
+    },
+    highlighter: {
+        show: true,
+    },
+    cursor:{
+        show: true, 
+        zoom: true,
+        looseZoom: true,
+          showTooltip:false, 
+          followMouse: true, 
+          showTooltipOutsideZoom: false, 
+          constrainOutsideZoom: true,
+    }, 
+  });
+        $('#chart7').bind('jqplotDataClick', 
+            function (ev, seriesIndex, pointIndex, data) {
+                if (seriesIndex == 0 || seriesIndex == 1)
+                    {
+                        var data_pt_ind = data[7];
+                        var linkStr;
+                        if (data_pt_ind < 0) // this is a hack to redirect non-data table ext data to the article page
+                        {
+                            linkStr = "/article/" + (-data_pt_ind);
+                        }
+                        else 
+                        {
+                            linkStr = "/data_table/" + data_pt_ind;
+                        }
+                        window.open(linkStr, '_self');
+                    }
+                else
+                    {
+                        var data_pt_ind = data[4];
+                        var linkStr = "/ephys_prop/" + data_pt_ind;
+                        window.open(linkStr, '_self');                    
+                    }
+                
+                
+            }
+        );
+        //assign each jqplot's y-axis label an id the same as the id of the ephys prop
+        $('#chart7').find(".jqplot-yaxis canvas")[0].id = 13;
+        $('#chart7').find(".jqplot-yaxis canvas")[0].title = 'Common Definition: Ratio between the steady state decrease in the voltage and the largest decrease in voltage following a hyperpolarizing current step. <br/> <br/> Standardization Criteria: Values manually standardized case-by-case to correspond to common calculation definition. For example, sag ratios reported as a percent difference have been manually adjusted to correspond to a ratio. Refer to individual articles for further definition details.';
+        
+
+      
+    //var minVal = parseFloat([[2, -0.154, 0.0, &#39;1&#39;, &#39;27&#39;]]) - parseFloat([[2, -0.154], [2, -0.154]]);
+    //var maxVal = parseFloat([[2, -0.154, 0.0, &#39;1&#39;, &#39;27&#39;]]) + parseFloat([[2, -0.154], [2, -0.154]]);
+  //bDat = [ [ [1.5, minVal], [3.5, minVal]],
+  //[ [1.5, maxVal], [3.5, maxVal]] ]; 
+
+  var yaxisLabel = "adaptation ratio (ratio)";  
+
+  var highlighterPos = 'ne';
+    
+    
+        highlighterPos = 'nw';
+    
+
+  //var dataSeries = [[[0.9966062610175668, -0.065, 'BNST (ALG)', 'A transcriptomic analysis of type I-III neurons in the bed nucleus of</br>the stria terminalis.', 'Hazra R; Guo JD; Ryan SJ; Jasnow AM; Dabrowska J; Rainnie DG', 'Mol. Cell. Neurosci.', '2011', '25599'], [1.0016059747402415, -0.243, 'BNST (ALG)', 'A transcriptomic analysis of type I-III neurons in the bed nucleus of</br>the stria terminalis.', 'Hazra R; Guo JD; Ryan SJ; Jasnow AM; Dabrowska J; Rainnie DG', 'Mol. Cell. Neurosci.', '2011', '25599']], [[2, -0.154], [2, -0.154]], [[2, -0.154, 0.0, '1', '27']], [[3, 0.307992272782722], [3, 0.757523488886908]], [[3, 0.532, 0.224, '28', '27']]];
+  var dataSeries = [[[0.9976673872298477, 0.55, 'BNST (ALG) (Type III BNST(ALG) Neuron)', 'A transcriptomic analysis of type I-III neurons in the bed nucleus of</br>the stria terminalis.', 'Hazra R; Guo JD; Ryan SJ; Jasnow AM; Dabrowska J; Rainnie DG', 'Mol. Cell. Neurosci.', '2011', '25596'], [1.0023449458411973, 0.19, 'BNST (ALG) (Type II BNST(ALG) Neuron)', 'A transcriptomic analysis of type I-III neurons in the bed nucleus of</br>the stria terminalis.', 'Hazra R; Guo JD; Ryan SJ; Jasnow AM; Dabrowska J; Rainnie DG', 'Mol. Cell. Neurosci.', '2011', '25596'], [1.0032145217848722, 0.82, 'BNST (ALG) (Type I BNST(ALG) Neuron)', 'A transcriptomic analysis of type I-III neurons in the bed nucleus of</br>the stria terminalis.', 'Hazra R; Guo JD; Ryan SJ; Jasnow AM; Dabrowska J; Rainnie DG', 'Mol. Cell. Neurosci.', '2011', '25596']], [[0.9966062610175668, -0.065, 'BNST (ALG)', 'A transcriptomic analysis of type I-III neurons in the bed nucleus of</br>the stria terminalis.', 'Hazra R; Guo JD; Ryan SJ; Jasnow AM; Dabrowska J; Rainnie DG', 'Mol. Cell. Neurosci.', '2011', '25599'], [1.0016059747402415, -0.243, 'BNST (ALG)', 'A transcriptomic analysis of type I-III neurons in the bed nucleus of</br>the stria terminalis.', 'Hazra R; Guo JD; Ryan SJ; Jasnow AM; Dabrowska J; Rainnie DG', 'Mol. Cell. Neurosci.', '2011', '25599']], [[2, -0.154], [2, -0.154]], [[2, -0.154, 0.0, '1', '27']], [[3, 0.307992272782722], [3, 0.757523488886908]], [[3, 0.532, 0.224, '28', '27']]];
+  var plot1b = $.jqplot('chart8', dataSeries, {
+    //title: "adaptation ratio",
+    series:[
+        {
+            showLine:false,
+            color:"#EAA228",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                yvalues: 5,
+                tooltipFadeSpeed: .1,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Value: </td><td>%s (ratio)</td></tr> \
+                <tr><td>Neuron:</td><td>%s</td></tr> \
+                <tr><td>Title:</td><td>%s</td></tr> \
+                <tr><td>Authors:</td><td>%s</td></tr> \
+                <tr><td>Journal:</td><td>%s, %s</td></tr> \
+                </table>'
+            },
+        },
+        {
+            showLine:false,
+            color:"#4bb2c5",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                tooltipFadeSpeed: .1,
+                yvalues: 5,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Value: </td><td>%s (ratio)</td></tr> \
+                <tr><td>Neuron:</td><td>%s</td></tr> \
+                <tr><td>Title:</td><td>%s</td></tr> \
+                <tr><td>Authors:</td><td>%s</td></tr> \
+                <tr><td>Journal:</td><td>%s, %s</td></tr> \
+                </table>'
+            },
+        },
+        {
+            showLine:true,
+            color: "#c5b47f",
+            showMarker: false,
+            showTooltip: false,
+        },
+        {
+            showLine:false,
+            color: "#c5b47f",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                tooltipFadeSpeed: .1,
+                yvalues: 3,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Mean value: </td><td>%.2f (ratio)</td></tr> \
+                <tr><td>S.D. value: </td><td>%.2f (ratio)</td></tr> \
+                <tr><td># articles: </td><td>%s</td></tr></table>'
+            },
+        },
+        {
+            showLine:true,
+            color: "#FA8072",
+            showMarker: false,
+            showTooltip: false,
+        },
+        {
+            showLine:false,
+            color: "#FA8072",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                tooltipFadeSpeed: .1,
+                yvalues: 3,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Mean value: </td><td>%.2f (ratio)</td></tr> \
+                <tr><td>S.D. value: </td><td>%.2f (ratio)</td></tr> \
+                <tr><td># neurons: </td><td>%s</td></tr></table>'
+            },
+        },
+    ],
+    axesDefaults: {
+        tickRenderer: $.jqplot.CanvasAxisTickRenderer,
+        tickOptions: {
+          fontSize: '12pt',
+        }
+    },
+    axes: {
+      xaxis: {
+        renderer: $.jqplot.CategoryAxisRenderer,
+        labelOptions:{
+            fontFamily: 'arial',
+        },
+        min: .5,
+        max: 3.5,
+        ticks: xticks,
+        tickOptions: {
+          angle: -90,
+        }
+      },
+      yaxis: {
+        label: yaxisLabel,
+        labelRenderer: $.jqplot.CanvasAxisLabelRenderer,
+        autoscale : true,
+        labelOptions:{
+            fontFamily: 'arial',
+            fontSize: '12pt',
+        },
+      },
+    },
+    highlighter: {
+        show: true,
+    },
+    cursor:{
+        show: true, 
+        zoom: true,
+        looseZoom: true,
+          showTooltip:false, 
+          followMouse: true, 
+          showTooltipOutsideZoom: false, 
+          constrainOutsideZoom: true,
+    }, 
+  });
+        $('#chart8').bind('jqplotDataClick', 
+            function (ev, seriesIndex, pointIndex, data) {
+                if (seriesIndex == 0 || seriesIndex == 1)
+                    {
+                        var data_pt_ind = data[7];
+                        var linkStr;
+                        if (data_pt_ind < 0) // this is a hack to redirect non-data table ext data to the article page
+                        {
+                            linkStr = "/article/" + (-data_pt_ind);
+                        }
+                        else 
+                        {
+                            linkStr = "/data_table/" + data_pt_ind;
+                        }
+                        window.open(linkStr, '_self');
+                    }
+                else
+                    {
+                        var data_pt_ind = data[4];
+                        var linkStr = "/ephys_prop/" + data_pt_ind;
+                        window.open(linkStr, '_self');                    
+                    }
+                
+                
+            }
+        );
+        //assign each jqplot's y-axis label an id the same as the id of the ephys prop
+        $('#chart8').find(".jqplot-yaxis canvas")[0].id = 27;
+        $('#chart8').find(".jqplot-yaxis canvas")[0].title = 'Common Definition: Ratio of durations between early and late AP inter-spike intervals in an AP train <br/> <br/> Standardization Criteria: Values have been manually standardized to reflect ratio of early to late AP inter-spike intervals. Note however that authors use different early and late inter-spike intervals used in definition calculation which has not been accounted for. Refer to individual articles for specific details.';
+        
+
+      
+    //var minVal = parseFloat([[2, 5.1, 0.2, &#39;2&#39;, &#39;19&#39;]]) - parseFloat([[2, 4.8999999999999995], [2, 5.3]]);
+    //var maxVal = parseFloat([[2, 5.1, 0.2, &#39;2&#39;, &#39;19&#39;]]) + parseFloat([[2, 4.8999999999999995], [2, 5.3]]);
+  //bDat = [ [ [1.5, minVal], [3.5, minVal]],
+  //[ [1.5, maxVal], [3.5, maxVal]] ]; 
+
+  var yaxisLabel = "fast AHP amplitude (mV)";  
+
+  var highlighterPos = 'ne';
+    
+          highlighterPos = 'nw';
+    
+    
+
+  //var dataSeries = [[[0.9906463937251009, 4.9, 'BNST (ALG) (Bed Nucleus of the Stria Terminalis ALG Type III CRF</br>expressing neuron)', 'Central CRF neurons are not created equal: phenotypic differences in</br>CRF-containing neurons of the rat paraventricular hypothalamus and the</br>bed nucleus of the stria terminalis.', 'Dabrowska J; Hazra R; Guo JD; Dewitt S; Rainnie DG', 'Front Neurosci', '2013', '28155'], [1.0032973102676204, 3.4, 'BNST (ALG) ( BNST anterolateral regular firing neuron)', 'Distribution and functional expression of Kv4 family ? subunits and</br>associated KChIP ? subunits in the bed nucleus of the stria</br>terminalis.', 'Rainnie DG; Hazra R; Dabrowska J; Guo JD; Li CC; Dewitt S; Muly EC', 'J. Comp. Neurol.', '2014', '45718'], [0.994985306723784, 7.2, 'BNST (ALG) (BNST anterolateral regular firing and burst firing neuron)', 'Distribution and functional expression of Kv4 family ? subunits and</br>associated KChIP ? subunits in the bed nucleus of the stria</br>terminalis.', 'Rainnie DG; Hazra R; Dabrowska J; Guo JD; Li CC; Dewitt S; Muly EC', 'J. Comp. Neurol.', '2014', '45718']], [[2, 4.8999999999999995], [2, 5.3]], [[2, 5.1, 0.2, '2', '19']], [[3, 6.14679639393584], [3, 17.14357381399136]], [[3, 11.645, 5.498, '36', '19']]];
+  var dataSeries = [[[]], [[0.9906463937251009, 4.9, 'BNST (ALG) (Bed Nucleus of the Stria Terminalis ALG Type III CRF</br>expressing neuron)', 'Central CRF neurons are not created equal: phenotypic differences in</br>CRF-containing neurons of the rat paraventricular hypothalamus and the</br>bed nucleus of the stria terminalis.', 'Dabrowska J; Hazra R; Guo JD; Dewitt S; Rainnie DG', 'Front Neurosci', '2013', '28155'], [1.0032973102676204, 3.4, 'BNST (ALG) ( BNST anterolateral regular firing neuron)', 'Distribution and functional expression of Kv4 family ? subunits and</br>associated KChIP ? subunits in the bed nucleus of the stria</br>terminalis.', 'Rainnie DG; Hazra R; Dabrowska J; Guo JD; Li CC; Dewitt S; Muly EC', 'J. Comp. Neurol.', '2014', '45718'], [0.994985306723784, 7.2, 'BNST (ALG) (BNST anterolateral regular firing and burst firing neuron)', 'Distribution and functional expression of Kv4 family ? subunits and</br>associated KChIP ? subunits in the bed nucleus of the stria</br>terminalis.', 'Rainnie DG; Hazra R; Dabrowska J; Guo JD; Li CC; Dewitt S; Muly EC', 'J. Comp. Neurol.', '2014', '45718']], [[2, 4.8999999999999995], [2, 5.3]], [[2, 5.1, 0.2, '2', '19']], [[3, 6.14679639393584], [3, 17.14357381399136]], [[3, 11.645, 5.498, '36', '19']]];
+  var plot1b = $.jqplot('chart9', dataSeries, {
+    //title: "fast AHP amplitude",
+    series:[
+        {
+            showLine:false,
+            color:"#EAA228",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                yvalues: 5,
+                tooltipFadeSpeed: .1,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Value: </td><td>%s (mV)</td></tr> \
+                <tr><td>Neuron:</td><td>%s</td></tr> \
+                <tr><td>Title:</td><td>%s</td></tr> \
+                <tr><td>Authors:</td><td>%s</td></tr> \
+                <tr><td>Journal:</td><td>%s, %s</td></tr> \
+                </table>'
+            },
+        },
+        {
+            showLine:false,
+            color:"#4bb2c5",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                tooltipFadeSpeed: .1,
+                yvalues: 5,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Value: </td><td>%s (mV)</td></tr> \
+                <tr><td>Neuron:</td><td>%s</td></tr> \
+                <tr><td>Title:</td><td>%s</td></tr> \
+                <tr><td>Authors:</td><td>%s</td></tr> \
+                <tr><td>Journal:</td><td>%s, %s</td></tr> \
+                </table>'
+            },
+        },
+        {
+            showLine:true,
+            color: "#c5b47f",
+            showMarker: false,
+            showTooltip: false,
+        },
+        {
+            showLine:false,
+            color: "#c5b47f",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                tooltipFadeSpeed: .1,
+                yvalues: 3,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Mean value: </td><td>%.2f (mV)</td></tr> \
+                <tr><td>S.D. value: </td><td>%.2f (mV)</td></tr> \
+                <tr><td># articles: </td><td>%s</td></tr></table>'
+            },
+        },
+        {
+            showLine:true,
+            color: "#FA8072",
+            showMarker: false,
+            showTooltip: false,
+        },
+        {
+            showLine:false,
+            color: "#FA8072",
+            highlighter: {
+                sizeAdjust: 12,
+                tooltipAxes: 'y',
+                tooltipLocation: highlighterPos,
+                useAxesFormatters: false,
+                tooltipFadeSpeed: .1,
+                yvalues: 3,
+                formatString: '<table class="jqplot-highlighter"> \
+                <tr><td>Mean value: </td><td>%.2f (mV)</td></tr> \
+                <tr><td>S.D. value: </td><td>%.2f (mV)</td></tr> \
+                <tr><td># neurons: </td><td>%s</td></tr></table>'
+            },
+        },
+    ],
+    axesDefaults: {
+        tickRenderer: $.jqplot.CanvasAxisTickRenderer,
+        tickOptions: {
+          fontSize: '12pt',
+        }
+    },
+    axes: {
+      xaxis: {
+        renderer: $.jqplot.CategoryAxisRenderer,
+        labelOptions:{
+            fontFamily: 'arial',
+        },
+        min: .5,
+        max: 3.5,
+        ticks: xticks,
+        tickOptions: {
+          angle: -90,
+        }
+      },
+      yaxis: {
+        label: yaxisLabel,
+        labelRenderer: $.jqplot.CanvasAxisLabelRenderer,
+        autoscale : true,
+        labelOptions:{
+            fontFamily: 'arial',
+            fontSize: '12pt',
+        },
+      },
+    },
+    highlighter: {
+        show: true,
+    },
+    cursor:{
+        show: true, 
+        zoom: true,
+        looseZoom: true,
+          showTooltip:false, 
+          followMouse: true, 
+          showTooltipOutsideZoom: false, 
+          constrainOutsideZoom: true,
+    }, 
+  });
+        $('#chart9').bind('jqplotDataClick', 
+            function (ev, seriesIndex, pointIndex, data) {
+                if (seriesIndex == 0 || seriesIndex == 1)
+                    {
+                        var data_pt_ind = data[7];
+                        var linkStr;
+                        if (data_pt_ind < 0) // this is a hack to redirect non-data table ext data to the article page
+                        {
+                            linkStr = "/article/" + (-data_pt_ind);
+                        }
+                        else 
+                        {
+                            linkStr = "/data_table/" + data_pt_ind;
+                        }
+                        window.open(linkStr, '_self');
+                    }
+                else
+                    {
+                        var data_pt_ind = data[4];
+                        var linkStr = "/ephys_prop/" + data_pt_ind;
+                        window.open(linkStr, '_self');                    
+                    }
+                
+                
+            }
+        );
+        //assign each jqplot's y-axis label an id the same as the id of the ephys prop
+        $('#chart9').find(".jqplot-yaxis canvas")[0].id = 19;
+        $('#chart9').find(".jqplot-yaxis canvas")[0].title = 'Common Definition: Calculated as the difference between AP threshold and AP trough, explictly refered to by author as fast. <br/> <br/> Standardization Criteria: Values have been algorithmically standardized to correspond to calculation definition of difference between AP threshold and AHP trough. Since authors use different definitions for “fast” and which APs are used for defining AHP amplitudes (e.g., evoked using rheobase current, via synaptic input, etc.), please refer to individual articles for specific methodology.';
+        
+
+    
+/*
+
+*/
+    var oldTop = '0px';
+
+    $(".jqplot-yaxis-label")
+    .css({
+        cursor: "pointer",
+        zIndex: "1",
+    })
+    .click(function(){ 
+        var ephys_label_id = $(this).attr('id');
+        var linkStr = "/ephys_prop/" + ephys_label_id;
+        window.open(linkStr, '_self');
+    })
+    .tooltip({
+        track: true,
+        position: { my: "left+15 center", at: "right center" },
+        content: function() {
+            return $(this).attr('title');
+        },
+    });
+
+
+    
+    $(".fancybox").fancybox();
+
+    
+    
+    //Stuff for data table display
+    $('#article_list_table').dataTable({
+        "iDisplayLength": 5
+    });
+    var aTable = $('#article_list_table').dataTable();
+    aTable.fnSort( [ [4,'desc']] );  
+
+/*    $('#neuron_list_table').dataTable({
+        "iDisplayLength": 5
+    });
+    var aTable = $('#neuron_list_table').dataTable();
+    aTable.fnSort( [ [4,'desc']] );  */
+
+        // function to keep x-axes active on zoom
+/*   $(".chart").bind('jqplotZoom', function(ev, gridpos, datapos, plot, cursor){
+        resetYLabels(gridpos)
+    });*/
+    // function to keep x-axes active after zoom out event
+   $(".chart").bind('jqplotResetZoom', function(ev, gridpos, datapos, plot, cursor){
+        resetYLabels(gridpos)
+    });
+
+   function resetYLabels(gridpos){
+    var oldTop = '0px';
+    var chart_id = gridpos.targetId;
+    console.log(gridpos);
+    $(chart_id + " .jqplot-yaxis-label")
+    .css({
+        cursor: "pointer",
+        zIndex: "1"
+    })
+    .click(function(){ 
+        var ephys_label_id = $(this).attr('id');
+        var linkStr = "/ephys_prop/" + ephys_label_id;
+        window.open(linkStr, '_self');
+    })
+    .tooltip({
+        track: true,
+        position: { my: "left+15 center", at: "right center" },
+        content: function() {
+            return $(this).attr('title');
+        },
+    });
+   }
+
+});
+
+
+</script>
+
+
+
+<div id="content">
+<body>
+	
+    <table align="center" width="1200px" class="logo_bar">
+        <tr>
+            <td class="logo_bar">
+                <div align="left">
+					
+					<a href="https://neuroelectro.org/">
+				    	<img src="https://web.archive.org/web/20200921190157im_/https://neuroelectro.org/static/src/neuroelectro_logo_3.png" id="logo">
+				    </a>
+				    
+                </div>
+            </td>
+            <td class="logo_bar">
+                <div align="right">
+                <a href="../../publications.html">
+                NeuroElectro Publications</a> &nbsp;
+                <br>
+                
+                </div>
+                
+            </td>
+        </tr>
+    </table>
+
+    
+
+<html>
+
+<head>
+
+<!--<link rel="stylesheet" type="text/css" href="/static/src/local.css" />-->
+<link href="https://web.archive.org/web/20200921190157cs_/https://neuroelectro.org/static/src/SimpleNavBarStyles.css" rel="stylesheet" type="text/css">
+<script src="https://web.archive.org/web/20200921190157js_/https://neuroelectro.org/static/src/SimpleNavBarScripts.js" language="JavaScript" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+
+
+
+<!-- ############### #### Navigation Bar #### ############### -->
+
+
+<!-- main nav bar titles -->
+<!-- Note how the the closing angle bracket of each </a> tag runs up against the next <a> tag,
+      to avoid leaving a gap between each menu title and the next one. -->
+      
+<div class="mynavbar">
+
+<a class="navbartitle" id="t1" href="https://neuroelectro.org/" onmouseout="HideItem('about_submenu');" onmouseover="ShowItem('about_submenu');">About</a><a class="navbartitle" id="t2" href="../../neuron/index.html" onmouseout="HideItem('neuron_submenu');" onmouseover="ShowItem('neuron_submenu');">Neuron Types</a><a class="navbartitle" id="t3" href="../../ephys_prop/index.html">Electrophysiology Properties</a><a class="navbartitle" id="t4" href="../../article/index.html">Articles</a><a class="navbartitle" id="t5" href="../../faqs.html" onmouseout="HideItem('faqs_submenu');" onmouseover="ShowItem('faqs_submenu');">FAQs</a><a class="navbartitle" id="t6" href="../../api/docs.html" onmouseout="HideItem('api_submenu');" onmouseover="ShowItem('api_submenu');">Data/API</a><a class="navbartitle" id="t7" href="../../contribute.html">Get Involved</a>
+
+    
+    <!-- about sub-menu, shown as needed  -->
+<div class="submenu" id="about_submenu" onmouseover="ShowItem('about_submenu');" onmouseout="HideItem('about_submenu');">
+  <div class="submenubox">
+    <ul>
+      <li><a href="../../publications.html" class="submenlink">Publications</a></li>
+      <!-- <li><a href="/citation_info" class="submenlink">How to Cite</a></li> -->
+      <li><a href="https://groups.google.com/forum/#!forum/neuroelectro" class="submenlink" target="_blank">Mailing List</a></li>
+      <li><a href="https://neuroelectro.org/contact_info" class="submenlink">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+    <!-- neuron sub-menu, shown as needed  -->
+<div class="submenu" id="neuron_submenu" onmouseover="ShowItem('neuron_submenu');" onmouseout="HideItem('neuron_submenu');">
+  <div class="submenubox">
+    <ul>
+      <li><a href="../../neuron/index.html" class="submenlink">Neuron Listing</a></li>
+        <li><a href="https://neuroelectro.org/neuron_search" class="submenlink">Neuron Search</a></li>
+      <li><a href="../../neuron/clustering.html" class="submenlink">Neuron Clustering</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- api sub-menu, shown as needed  -->
+
+<div class="submenu" id="api_submenu" onmouseover="ShowItem('api_submenu');" onmouseout="HideItem('api_submenu');">
+  <div class="submenubox">
+    <ul>
+      <li><a href="../../api/docs.html" class="submenlink">API Documentation</a></li>
+      <!-- <li><a href='/static/src/neuroelectro_data_download.zip' class="submenlink" target="_blank">Data Download</a></li>  -->
+      <li><a href="../../publications.html" class="submenlink">How to Cite</a></li>
+      <li><a href="https://groups.google.com/forum/#!forum/neuroelectro" class="submenlink" target="_blank">Ask a Question</a></li>
+      <li><a href="https://github.com/neuroelectro" class="submenlink" target="_blank">Code Repository (GitHub)</a></li>
+    </ul>
+  </div>
+</div>
+
+
+</div>
+
+<!-- ################## end of Navigation Bar ################### -->
+
+
+</body>
+</html>
+
+    
+
+    
+    
+<h1>
+    BNST (ALG) 
+    
+</h1>
+
+    <h2>Electrophysiological properties of <i>BNST (ALG)s</i> from literature:</h2>
+
+    <table>
+    <tr>
+    <td>
+    <ul>
+    <lh>Legend:</lh>
+    <li>Reports: Blue dots indicate human-curated values; Orange dots indicate non-human curated values</li>
+    <li>Mean+SD: mean and standard deviation of human-curated neuron measurements</li>
+    <li>All neurons: mean and standard deviation computed over all neurons in database</li>
+    <lh>Interactivity:</lh>
+    <li>Mouse over neuron report data points and click to view corresponding publication</li>
+    <li>Mouse over y- axis labels to view definition or click to view values across neuron types</li>
+    <li>Zoom in on a section of plot by dragging cursor. Zoom out by double clicking on plot.</li>
+    <li>Legend: Blue dots = text-mined values human curated; Orange dots = text-mined values not human curated </li>
+    </ul>  
+    </td>
+    <td>
+        <div style="text-align:center">
+        <a class="btn btn-large btn-info submit_button" href="../data/234.html/index.html"><i class="icon-th-list icon-white"></i> View data in table form</i></a>
+        <br>
+        <a class="fancybox btn btn-large btn-danger submit_button" data-fancybox-type="iframe" href="https://neuroelectro.org/nedm_comment_box/"><i class="icon-thumbs-down icon-white"></i> Report miscurated data</i></a>
+        </div>
+    </td>
+    </tr>
+    </table>
+    </br>
+
+    <table id="ephys_prop_table">
+    
+        
+            <tr>
+        
+        <td>
+        <br>
+        <div>
+        <div id="chart0" style="height:260px;width:220px;" class="chart"></div>
+        <br>
+        <div>
+        </td>
+        
+    
+        
+        <td>
+        <br>
+        <div>
+        <div id="chart1" style="height:260px;width:220px;" class="chart"></div>
+        <br>
+        <div>
+        </td>
+        
+    
+        
+        <td>
+        <br>
+        <div>
+        <div id="chart2" style="height:260px;width:220px;" class="chart"></div>
+        <br>
+        <div>
+        </td>
+        
+    
+        
+        <td>
+        <br>
+        <div>
+        <div id="chart3" style="height:260px;width:220px;" class="chart"></div>
+        <br>
+        <div>
+        </td>
+        
+    
+        
+        <td>
+        <br>
+        <div>
+        <div id="chart4" style="height:260px;width:220px;" class="chart"></div>
+        <br>
+        <div>
+        </td>
+        
+            </tr>
+            
+        
+    
+        
+            <tr>
+        
+        <td>
+        <br>
+        <div>
+        <div id="chart5" style="height:260px;width:220px;" class="chart"></div>
+        <br>
+        <div>
+        </td>
+        
+    
+        
+        <td>
+        <br>
+        <div>
+        <div id="chart6" style="height:260px;width:220px;" class="chart"></div>
+        <br>
+        <div>
+        </td>
+        
+    
+        
+        <td>
+        <br>
+        <div>
+        <div id="chart7" style="height:260px;width:220px;" class="chart"></div>
+        <br>
+        <div>
+        </td>
+        
+    
+        
+        <td>
+        <br>
+        <div>
+        <div id="chart8" style="height:260px;width:220px;" class="chart"></div>
+        <br>
+        <div>
+        </td>
+        
+    
+        
+        <td>
+        <br>
+        <div>
+        <div id="chart9" style="height:260px;width:220px;" class="chart"></div>
+        <br>
+        <div>
+        </td>
+        
+            </tr>
+            
+        
+    
+    </table>
+
+
+<table>
+    <tr>
+        <td style="text-align: center;">
+            <a class="btn btn-large btn-info submit_button" href="../data/234.html/index.html"><i class="icon-th-list icon-white"></i> View data in table form</i></a>
+        </td>
+
+		<!--  
+        <td style="text-align: center;">
+            
+                    <a id="sign_in_button" class="btn btn-large btn-primary submit_button" href="/accounts/login?next=/neuron/234/"><i class="icon-user icon-white"></i> Contribute neuron data (login required)</a>
+            
+        </td>
+        -->
+    </tr>
+</table>
+
+
+<h1>Articles with extracted electrophysiology properties:</h1>
+    <table id="article_list_table" class="display">
+    <thead>
+    <tr>
+    <th>Article Title</th>
+    <th>Authors</th>
+    <th>Journal</th>
+    <th>Year</th>
+    <th>Electrophys values</th>
+    <th>Neuron types</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+        <td>
+        Differential expression of intrinsic membrane currents in defined cell types of the anterolateral bed nucleus of the stria terminalis.
+        (<a href="https://neuroelectro.org/article/34021/">NeuroElectro data</a>)
+        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/17537902/" target="_blank">PubMed</a>)
+        </td>
+        <td>Hammack SE; Mania I; Rainnie DG</td>
+        <td>J. Neurophysiol.</td>
+        <td>2007</td>
+        <td>24</a></td>
+        <td>1</a></td>
+        </tr>
+    
+        <tr>
+        <td>
+        A transcriptomic analysis of type I-III neurons in the bed nucleus of the stria terminalis.
+        (<a href="https://neuroelectro.org/article/83890/">NeuroElectro data</a>)
+        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/21310239/" target="_blank">PubMed</a>)
+        </td>
+        <td>Hazra R; Guo JD; Ryan SJ; Jasnow AM; Dabrowska J; Rainnie DG</td>
+        <td>Mol. Cell. Neurosci.</td>
+        <td>2011</td>
+        <td>42</a></td>
+        <td>1</a></td>
+        </tr>
+    
+        <tr>
+        <td>
+        Central CRF neurons are not created equal: phenotypic differences in CRF-containing neurons of the rat paraventricular hypothalamus and the bed nucleus of the stria terminalis.
+        (<a href="https://neuroelectro.org/article/85926/">NeuroElectro data</a>)
+        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/24009552/" target="_blank">PubMed</a>)
+        </td>
+        <td>Dabrowska J; Hazra R; Guo JD; Dewitt S; Rainnie DG</td>
+        <td>Front Neurosci</td>
+        <td>2013</td>
+        <td>24</a></td>
+        <td>2</a></td>
+        </tr>
+    
+        <tr>
+        <td>
+        Distribution and functional expression of Kv4 family α subunits and associated KChIP β subunits in the bed nucleus of the stria terminalis.
+        (<a href="https://neuroelectro.org/article/91783/">NeuroElectro data</a>)
+        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/24037673/" target="_blank">PubMed</a>)
+        </td>
+        <td>Rainnie DG; Hazra R; Dabrowska J; Guo JD; Li CC; Dewitt S; Muly EC</td>
+        <td>J. Comp. Neurol.</td>
+        <td>2014</td>
+        <td>16</a></td>
+        <td>1</a></td>
+        </tr>
+    
+        <tr>
+        <td>
+        CGRP inhibits neurons of the bed nucleus of the stria terminalis: implications for the regulation of fear and anxiety.
+        (<a href="https://neuroelectro.org/article/91995/">NeuroElectro data</a>)
+        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/24381268/" target="_blank">PubMed</a>)
+        </td>
+        <td>Gungor NZ; Pare D</td>
+        <td>J. Neurosci.</td>
+        <td>2014</td>
+        <td>9</a></td>
+        <td>1</a></td>
+        </tr>
+    
+        <tr>
+        <td>
+        Contrasting distribution of physiological cell types in different regions of the bed nucleus of the stria terminalis.
+        (<a href="https://neuroelectro.org/article/93296/">NeuroElectro data</a>)
+        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/23926040/" target="_blank">PubMed</a>)
+        </td>
+        <td>Rodríguez-Sierra OE; Turesson HK; Pare D</td>
+        <td>J. Neurophysiol.</td>
+        <td>2013</td>
+        <td>84</a></td>
+        <td>1</a></td>
+        </tr>
+    
+        <tr>
+        <td>
+        Optogenetic study of the projections from the bed nucleus of the stria terminalis to the central amygdala.
+        (<a href="https://neuroelectro.org/article/93416/">NeuroElectro data</a>)
+        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/26400259/" target="_blank">PubMed</a>)
+        </td>
+        <td>Gungor NZ; Yamamoto R; Paré D</td>
+        <td>J. Neurophysiol.</td>
+        <td>2015</td>
+        <td>54</a></td>
+        <td>3</a></td>
+        </tr>
+    
+    </tbody>
+    </table>
+
+
+
+
+<br>
+<h2>Expert curators for BNST (ALG)s:</h2>
+
+
+<p>No assigned expert curators:</p>
+
+
+        <a class="fancybox submit_button btn btn-medium btn-primary" href="https://neuroelectro.org/accounts/login?next=/neuron/234/"><i class="icon-user icon-white"></i> Become a neuron curator (login required)</a>
+
+<br>
+
+<!--
+        <div class='row-fluid'>
+            <div class='span3 offset1'><a class="btn btn-small btn-primary" href="./curator_ask">Become a curator!</a></div>
+        </div>
+        <a href="/neuron/234/curate_list/">View current list of papers to curate for this neuron</a>     
+-->
+
+<h2>More information about BNST (ALG)s in other resources:</h2>
+<ul>
+<li>View information about <i>BNST (ALG)s</i> across database resources at the <a href="https://neuinfo.org/mynif/search.php?list=cover&amp;q=BNST (ALG)" target="_blank">
+    Neuroscience Information Framework</a>
+</li>
+
+
+<!--<h2>Genes differentially expressed in BNST (ALG)s (from the Allen Brain Atlas): </h2>-->
+<li>View genes differentially expressed in brain regions containing <i>BNST (ALG)s</i> from the <a href="http://mouse.brain-map.org/search/show?page_num=0&amp;domain1=8&amp;domain2=&amp;domain1_threshold=0,50&amp;domain2_threshold=1,50&amp;image_set=P56&amp;search_type=differential" target="_blank">Allen Institute Mouse Brain Atlas</a></li>
+
+
+
+
+
+
+
+
+
+</body>   
+</div>
+<div id="footer">
+<footer>
+    
+    <table align="center" width="1200px" class="footer_bar">
+        <tr>
+            <td class="footer_bar">
+                <p align="left">
+                    &copy; 2012-2016 <a href="https://twitter.com/neuronJoy" target="_blank">Shreejoy Tripathy</a> and
+                    <a href="http://rick.gerk.in/" target="_blank">Richard Gerkin</a>
+                    <br> 
+                    University of British Columbia and Arizona State University
+                    
+                    <!--<br>Funding: NIH, NIF, and the RK Mellon Foundation-->
+                    <br>
+                    Release Version 5.0
+                    <!--Optimized for Mozilla Firefox, Safari, and fast internet connections -->
+                </p>
+            </td>
+            <td class="footer_bar">
+                <p align="center">
+                
+                <p align="left">Not signed in <a class="btn btn-small btn-primary" href="https://neuroelectro.org/accounts/login?next=/neuron/234/"><i class="icon-user icon-white"></i>  Log in</a></p>
+                
+                </p>
+
+            </td>
+            <td class="footer_bar">
+                <div class="funding_logo_container" align="right">
+                    <a href="http://www.cihr-irsc.gc.ca/e/193.html" class="funding_logo">
+                        <img src="https://web.archive.org/web/20200921190157im_/https://neuroelectro.org/static/src/cihr_logo_big_e.png" id="logo" width="100" height="40">
+                    </a>
+                    <a href="http://neurodevnet.ca/" class="funding_logo">
+                        <img src="https://web.archive.org/web/20200921190157im_/https://neuroelectro.org/static/src/NeuroDevNetLOGO.jpg" id="logo" width="100" height="40">
+                    </a>
+                    <a href="http://www.nih.gov/" class="funding_logo">
+                        <img src="https://web.archive.org/web/20200921190157im_/https://neuroelectro.org/static/src/nihMasterLogo.png" id="logo" width="100" height="40">
+                    </a>
+                    <p id="supported_by">Support provided by</p>
+                </div>
+
+            </td>
+        </tr>
+    </table>
+    
+</footer>
+</div>
+</html>
+<!--
+     FILE ARCHIVED ON 19:01:57 Sep 21, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:47:34 Jan 06, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.568
+  exclusion.robots: 0.043
+  exclusion.robots.policy: 0.031
+  esindex: 0.011
+  cdx.remote: 20.007
+  LoadShardBlock: 169.606 (3)
+  PetaboxLoader3.datanode: 104.761 (4)
+  PetaboxLoader3.resolve: 182.819 (2)
+  load_resource: 183.407
+-->

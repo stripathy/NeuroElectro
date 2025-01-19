@@ -1,0 +1,101 @@
+/* CSS Document */
+
+body {
+	text-align:left; /* Hack for IE5/Win */
+	background-color: #FBFBFB; /* light gray outside content box */
+}
+#content {
+  width: 1200px; 
+	margin:20px auto; /* Right and left margin widths set to "auto" */
+	text-align:left; /* Counteract to IE5/Win Hack */
+	border: 1px solid #aaa;
+	background-color: #eee; /* white background within content box */
+}
+h1 {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 22px;
+	margin-left: 20px;
+}
+h2 {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 20px;
+	margin-left: 20px;
+}
+li,p{
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 15px;
+}
+td,th{
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 16px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+div{
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+}
+footer{
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    text-align:center;
+    font-size: 12px;
+}
+#logo{
+    display: block;
+    margin-left: 10px;
+}
+
+h1.keys {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 9px;
+	line-height: 9px;
+	color: #dde;
+	padding: 0; border: 0;
+	margin: 10px auto;
+	text-align: center;
+	width: 610px;
+}
+a.smalllnk {color:gray;}
+a.smalllnk:link {color:gray; text-decoration: none;}
+a.smalllnk:visited {color:gray; text-decoration: none;}
+a.smalllnk:active {color:gray; text-decoration: none;}
+a.smalllnk:hover {color:blue; text-decoration: underline; }
+
+a.akeys {color:#dde;}
+a.akeys:link {color:#dde; text-decoration: none;}
+a.akeys:visited {color:#dde; text-decoration: none;}
+a.akeys:active {color:#dde; text-decoration: none;}
+a.akeys:hover {color:#dde; text-decoration: none; }
+
+.dataTables_wrapper {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.dataTable {
+	border-left: 1px solid gray;
+	border-right: 1px solid gray;
+	border-bottom: 1px solid gray;
+}
+/*
+     FILE ARCHIVED ON 08:00:41 Dec 14, 2021 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 04:59:48 Jan 13, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 9.235
+  exclusion.robots: 0.024
+  exclusion.robots.policy: 0.01
+  esindex: 0.013
+  cdx.remote: 72.814
+  LoadShardBlock: 195.016 (3)
+  PetaboxLoader3.resolve: 151.544 (3)
+  PetaboxLoader3.datanode: 162.1 (4)
+  load_resource: 125.927
+*/

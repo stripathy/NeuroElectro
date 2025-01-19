@@ -1,0 +1,4580 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head><script type="text/javascript" src="https://web.archive.org/_static/js/bundle-playback.js?v=HxkREWBo" charset="utf-8"></script>
+<script type="text/javascript" src="https://web.archive.org/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
+<script type="text/javascript" src="https://web.archive.org/_static/js/ruffle/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("../../../../../ephys_prop/48.htmldata/","20211028102021","https://web.archive.org/","web","/_static/",
+	      "1635416421");
+</script>
+<link rel="stylesheet" type="text/css" href="https://web.archive.org/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="https://web.archive.org/_static/css/iconochive.css?v=3PDvdIFv" />
+<!-- End Wayback Rewrite JS Include -->
+
+    <title>NeuroElectro :: adaptation ratio (last/first ISI) Data</title>
+	
+    <link rel="shortcut icon" href="https://web.archive.org/web/20211028102021im_/https://neuroelectro.org/static/src/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://web.archive.org/web/20211028102021cs_/https://neuroelectro.org/static/bootstrap_old/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://web.archive.org/web/20211028102021cs_/https://neuroelectro.org/static/src/local.css"/>
+    
+    
+        <script type="text/javascript" charset="utf-8" src="https://web.archive.org/web/20211028102021js_/https://neuroelectro.org/static/src/DataTables/media/js/jquery.js"></script>
+
+  <script type="text/javascript" src="https://web.archive.org/web/20211028102021js_/https://neuroelectro.org/static/src/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+  
+  <!-- Add fancyBox -->
+  <link rel="stylesheet" href="https://web.archive.org/web/20211028102021cs_/https://neuroelectro.org/static/src/fancybox/source/jquery.fancybox.css?v=2.1.3" type="text/css" media="screen"/>
+  <script type="text/javascript" src="https://web.archive.org/web/20211028102021js_/https://neuroelectro.org/static/src/fancybox/source/jquery.fancybox.pack.js?v=2.1.3"></script>
+  
+  <!-- Optionally add helpers - button, thumbnail and/or media -->
+  <link rel="stylesheet" href="https://web.archive.org/web/20211028102021cs_/https://neuroelectro.org/static/src/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen"/>
+  <script type="text/javascript" src="https://web.archive.org/web/20211028102021js_/https://neuroelectro.org/static/src/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+  <script type="text/javascript" src="https://web.archive.org/web/20211028102021js_/https://neuroelectro.org/static/src/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+  
+  <link rel="stylesheet" href="https://web.archive.org/web/20211028102021cs_/https://neuroelectro.org/static/src/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen"/>
+  <script type="text/javascript" src="https://web.archive.org/web/20211028102021js_/https://neuroelectro.org/static/src/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+	
+	
+     
+ 	<style>
+ 		#maintanence_message{
+ 			color: red;
+ 		    text-align: center;
+ 		}
+        .funding_logo {
+            display:inline-block;
+            text-align: center;
+        }
+        #supported_by{
+            text-align: center;
+            position: relative;
+            left: 35px;
+        }
+ 	</style>
+	
+    
+    <!--stuff for google tracking-->
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-35182339-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+	
+    </script>
+</head>
+
+
+
+
+
+<div id="content">
+<body>
+	
+    <table align="center" width="1200px" class="logo_bar">
+        <tr>
+            <td class="logo_bar">
+                <div align="left">
+					
+					<a href="https://neuroelectro.org/">
+				    	<img src="https://web.archive.org/web/20211028102021im_/https://neuroelectro.org/static/src/neuroelectro_logo_3.png" id="logo">
+				    </a>
+				    
+                </div>
+            </td>
+            <td class="logo_bar">
+                <div align="right">
+                <a href="../../../../../publications.html">
+                NeuroElectro Publications</a> &nbsp;
+                <br>
+                
+                </div>
+                
+            </td>
+        </tr>
+    </table>
+
+    
+
+<html>
+
+<head>
+
+<!--<link rel="stylesheet" type="text/css" href="/static/src/local.css" />-->
+<link href="https://web.archive.org/web/20211028102021cs_/https://neuroelectro.org/static/src/SimpleNavBarStyles.css" rel="stylesheet" type="text/css">
+<script src="https://web.archive.org/web/20211028102021js_/https://neuroelectro.org/static/src/SimpleNavBarScripts.js" language="JavaScript" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+
+
+
+<!-- ############### #### Navigation Bar #### ############### -->
+
+
+<!-- main nav bar titles -->
+<!-- Note how the the closing angle bracket of each </a> tag runs up against the next <a> tag,
+      to avoid leaving a gap between each menu title and the next one. -->
+      
+<div class="mynavbar">
+
+<a class="navbartitle" id="t1" href="https://neuroelectro.org/" onmouseout="HideItem('about_submenu');" onmouseover="ShowItem('about_submenu');">About</a><a class="navbartitle" id="t2" href="../../../../../neuron/index.html" onmouseout="HideItem('neuron_submenu');" onmouseover="ShowItem('neuron_submenu');">Neuron Types</a><a class="navbartitle" id="t3" href="../../../../../ephys_prop/index.html">Electrophysiology Properties</a><a class="navbartitle" id="t4" href="../../../../../article/index.html">Articles</a><a class="navbartitle" id="t5" href="../../../../../faqs.html" onmouseout="HideItem('faqs_submenu');" onmouseover="ShowItem('faqs_submenu');">FAQs</a><a class="navbartitle" id="t6" href="../../../../../api/docs.html" onmouseout="HideItem('api_submenu');" onmouseover="ShowItem('api_submenu');">Data/API</a><a class="navbartitle" id="t7" href="../../../../../contribute.html">Get Involved</a>
+
+    
+    <!-- about sub-menu, shown as needed  -->
+<div class="submenu" id="about_submenu" onmouseover="ShowItem('about_submenu');" onmouseout="HideItem('about_submenu');">
+  <div class="submenubox">
+    <ul>
+      <li><a href="../../../../../publications.html" class="submenlink">Publications</a></li>
+      <!-- <li><a href="/citation_info" class="submenlink">How to Cite</a></li> -->
+      <li><a href="https://groups.google.com/forum/#!forum/neuroelectro" class="submenlink" target="_blank">Mailing List</a></li>
+      <li><a href="https://neuroelectro.org/contact_info" class="submenlink">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+    <!-- neuron sub-menu, shown as needed  -->
+<div class="submenu" id="neuron_submenu" onmouseover="ShowItem('neuron_submenu');" onmouseout="HideItem('neuron_submenu');">
+  <div class="submenubox">
+    <ul>
+      <li><a href="../../../../../neuron/index.html" class="submenlink">Neuron Listing</a></li>
+        <li><a href="https://neuroelectro.org/neuron_search" class="submenlink">Neuron Search</a></li>
+      <li><a href="../../../../../neuron/clustering.html" class="submenlink">Neuron Clustering</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- api sub-menu, shown as needed  -->
+
+<div class="submenu" id="api_submenu" onmouseover="ShowItem('api_submenu');" onmouseout="HideItem('api_submenu');">
+  <div class="submenubox">
+    <ul>
+      <li><a href="../../../../../api/docs.html" class="submenlink">API Documentation</a></li>
+      <!-- <li><a href='/static/src/neuroelectro_data_download.zip' class="submenlink" target="_blank">Data Download</a></li>  -->
+      <li><a href="../../../../../publications.html" class="submenlink">How to Cite</a></li>
+      <li><a href="https://groups.google.com/forum/#!forum/neuroelectro" class="submenlink" target="_blank">Ask a Question</a></li>
+      <li><a href="https://github.com/neuroelectro" class="submenlink" target="_blank">Code Repository (GitHub)</a></li>
+    </ul>
+  </div>
+</div>
+
+
+</div>
+
+<!-- ################## end of Navigation Bar ################### -->
+
+
+</body>
+</html>
+
+    
+
+    
+    
+<script language="javascript" type="text/javascript">
+$(document).ready( function () {
+    $(".fancybox").fancybox();
+    $('#neuron_ephys_table').dataTable({
+        "iDisplayLength": 25
+    });
+    var oTable = $('#neuron_ephys_table').dataTable();
+    oTable.fnSort( [ [0,'asc']] );
+} );
+</script>
+
+<h1>adaptation ratio (last/first ISI)  
+<!--<span class="question_tooltip">?</span>-->
+</h1>
+
+<p>
+Common definition: Ratio of durations between late and early AP inter-spike intervals in an AP train </br>
+</p>
+
+<h2>Electrophysiological values of <i>adaptation ratio (last/first ISI)</i> across neuron types from literature:</h2>
+  <table id="norm_criteria_button">
+  <tr>
+  <td>
+    <ul>
+    <lh>Normalization criteria:</lh>
+    <li> Values are unchanged from those reported. Refer to individual articles for definition and calculation methodology.</li>
+    </ul>  
+  </td>
+  <td id="data_table_button">
+    <div style="text-align:center">
+      <a class="btn btn-large btn-info submit_button" href="../../../../../ephys_prop/48.html"><i class="fa fa-bar-chart-o"></i> View data in graphical form</i></a>
+      <br>
+        <a class="fancybox btn btn-large btn-danger submit_button" data-fancybox-type="iframe" href="https://neuroelectro.org/nedm_comment_box/"><i class="icon-thumbs-down icon-white"></i> Report miscurated data</i></a>
+      </div>
+  </td>
+  </tr>
+  </table>
+  
+ <!DOCTYPE html>
+<html>
+<head>
+<script language="Javascript" type="text/javascript" src="https://web.archive.org/web/20211028102021js_/https://neuroelectro.org/static/src/jquery.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="https://web.archive.org/web/20211028102021js_/https://neuroelectro.org/static/src/DataTables/media/js/jquery.js"></script>
+        <script type="text/javascript" charset="utf-8" src="https://web.archive.org/web/20211028102021js_/https://neuroelectro.org/static/src/DataTables/media/js/jquery.dataTables.js"></script>
+        <style type="text/css" title="currentStyle">
+            @import "https://web.archive.org/web/20211028102021cs_/https://neuroelectro.org/static/src/DataTables/media/css/demo_table.css";
+        </style>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+
+<script language="javascript" type="text/javascript">
+$(document).ready( function () {
+    $('#neuron_ephys_table').dataTable({
+        "iDisplayLength": 25
+    });
+    var oTable = $('#neuron_ephys_table').dataTable();
+    oTable.fnSort( [ [0,'asc']] );
+} );
+</script>
+
+<body>
+<h1>Neuron electrophysiology data values (Table form)</h1>
+<table id="neuron_ephys_table" class="display">
+    <thead>
+        <tr>
+            <th>Neuron Type</th>
+            <th>Neuron Description</th>
+            <th>Ephys Prop</th>
+            <th>Article</th>
+            <th>Extracted Value</th>
+            <th>Standardized Value</th>
+      		<th>Content Source</th>
+            <!-- <th>Error</th>
+            <th>n</th> -->
+        </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            <td><a href="../../../../../neuron/14.html">Basalis nucleus cholinergic neuron</a></td>
+            <td>
+                
+                    Basal forebrain ChAT-expressing early-firing neurons
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Adult mouse basal forebrain harbors two distinct cholinergic populations defined by their electrophysiology.
+	        (<a href="../../../../../article/ephys_prop/85699.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/22586380/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/85699.html">2.74
+          		
+          			± 2.57 
+          		
+          		
+          			(70)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/85699.html">
+             
+              2.74 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/27619.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/14.html">Basalis nucleus cholinergic neuron</a></td>
+            <td>
+                
+                    Basal forebrain ChAT-expressing late-firing neurons
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Adult mouse basal forebrain harbors two distinct cholinergic populations defined by their electrophysiology.
+	        (<a href="../../../../../article/ephys_prop/85699.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/22586380/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/85699.html">1.33
+          		
+          			± 0.57 
+          		
+          		
+          			(33)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/85699.html">
+             
+              1.33 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/27619.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/64.html">Dentate gyrus axo-axonic cell</a></td>
+            <td>
+                
+                    Dentate gyrus fast-spiking axo-axnonic interneurons
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Endocannabinoid-mediated long-term depression of afferent excitatory synapses in hippocampal pyramidal cells and GABAergic interneurons.
+	        (<a href="../../../../../article/ephys_prop/92211.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/23055515/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/92211.html">1.8
+          		
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/92211.html">
+             
+              1.8 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/46827.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/82.html">Hippocampus CA1 basket cell</a></td>
+            <td>
+                
+                    hippocampus CA1 vasoactive intestinal polypeptide expressing Cck-expressing basket cells
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Dendritic inhibition provided by interneuron-specific cells controls the firing rate and timing of the hippocampal feedback inhibitory circuitry.
+	        (<a href="../../../../../article/ephys_prop/92102.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/24671999/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/92102.html">4.05
+          		
+          			± 0.4 
+          		
+          		
+          			(6)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/92102.html">
+             
+              4.05 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/46563.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/82.html">Hippocampus CA1 basket cell</a></td>
+            <td>
+                
+                    Hippocampus CA1 fast-spiking basket interneurons
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Endocannabinoid-mediated long-term depression of afferent excitatory synapses in hippocampal pyramidal cells and GABAergic interneurons.
+	        (<a href="../../../../../article/ephys_prop/92211.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/23055515/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/92211.html">1.76
+          		
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/92211.html">
+             
+              1.76 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/46827.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/82.html">Hippocampus CA1 basket cell</a></td>
+            <td>
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Characterization of neurons in the CA2 subfield of the adult rat hippocampus.
+	        (<a href="../../../../../article/ephys_prop/30098.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/17611285/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/30098.html">1.4
+          		
+          			± 0.5 
+          		
+          		
+          			(10)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/30098.html">
+             
+              1.4 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/2184.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/81.html">Hippocampus CA1 IS-I neuron</a></td>
+            <td>
+                
+                    hippocampus CA1 type 3 vasoactive intestinal polypeptide expressing calretinin expressing interneurons
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Dendritic inhibition provided by interneuron-specific cells controls the firing rate and timing of the hippocampal feedback inhibitory circuitry.
+	        (<a href="../../../../../article/ephys_prop/92102.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/24671999/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/92102.html">3.16
+          		
+          			± 0.9 
+          		
+          		
+          			(8)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/92102.html">
+             
+              3.16 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/46563.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/210.html">Hippocampus CA1 ivy neuron</a></td>
+            <td>
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Common origins of hippocampal Ivy and nitric oxide synthase expressing neurogliaform cells.
+	        (<a href="../../../../../article/ephys_prop/35516.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/20147544/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/35516.html">1.22
+          		
+          			± 0.05 
+          		
+          		
+          			(13)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/35516.html">
+             
+              1.22 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/1838.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/83.html">Hippocampus CA1 neurogliaform cell</a></td>
+            <td>
+                
+                    Hippocampus CA1 nitric oxide synthase expressing neurogliaform cell 
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Common origins of hippocampal Ivy and nitric oxide synthase expressing neurogliaform cells.
+	        (<a href="../../../../../article/ephys_prop/35516.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/20147544/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/35516.html">1.14
+          		
+          			± 0.1 
+          		
+          		
+          			(25)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/35516.html">
+             
+              1.14 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/1838.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/83.html">Hippocampus CA1 neurogliaform cell</a></td>
+            <td>
+                
+                    Hippocampus CA1 non-nitric oxide synthase expressing neurogliaform cell 
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Common origins of hippocampal Ivy and nitric oxide synthase expressing neurogliaform cells.
+	        (<a href="../../../../../article/ephys_prop/35516.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/20147544/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/35516.html">1.01
+          		
+          			± 0.06 
+          		
+          		
+          			(10)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/35516.html">
+             
+              1.01 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/1838.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/84.html">Hippocampus CA1 oriens lacunosum moleculare neuron</a></td>
+            <td>
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Endocannabinoid-mediated long-term depression of afferent excitatory synapses in hippocampal pyramidal cells and GABAergic interneurons.
+	        (<a href="../../../../../article/ephys_prop/92211.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/23055515/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/92211.html">1.9
+          		
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/92211.html">
+             
+              1.9 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/46827.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/85.html">Hippocampus CA1 pyramidal cell</a></td>
+            <td>
+                
+                    Hippocampus CA1 stratum radiatum pyramidal immunized with ovalbumin neurons 
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Hippocampal function is compromised in an animal model of multiple sclerosis.
+	        (<a href="../../../../../article/ephys_prop/92518.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/25795599/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/92518.html">1.88
+          		
+          			± 0.35 
+          		
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/92518.html">
+             
+              1.88 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/47576.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/85.html">Hippocampus CA1 pyramidal cell</a></td>
+            <td>
+                
+                    Hippocampus CA1 stratum radiatum pyramidal immunized with ovalbumin neurons 
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Hippocampal function is compromised in an animal model of multiple sclerosis.
+	        (<a href="../../../../../article/ephys_prop/92518.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/25795599/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/92518.html">2.0
+          		
+          			± 0.18 
+          		
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/92518.html">
+             
+              2.0 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/47576.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/85.html">Hippocampus CA1 pyramidal cell</a></td>
+            <td>
+                
+                    Ventral Hippocampus CA1 pyramidal cell
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Mapping the electrophysiological and morphological properties of CA1 pyramidal neurons along the longitudinal hippocampal axis.
+	        (<a href="../../../../../article/ephys_prop/119496.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/26333017/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/119496.html">1.6
+          		
+          			± 0.07 
+          		
+          		
+          			(26)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/119496.html">
+             
+              1.6 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/50018.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/85.html">Hippocampus CA1 pyramidal cell</a></td>
+            <td>
+                
+                    Dorsal Hippocampus CA1 pyramidal cell
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Mapping the electrophysiological and morphological properties of CA1 pyramidal neurons along the longitudinal hippocampal axis.
+	        (<a href="../../../../../article/ephys_prop/119496.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/26333017/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/119496.html">2.56
+          		
+          			± 0.14 
+          		
+          		
+          			(26)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/119496.html">
+             
+              2.56 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/50018.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/85.html">Hippocampus CA1 pyramidal cell</a></td>
+            <td>
+                
+                    Doral End fo Intermediate Hippocampus CA1 pyramidal cell
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Mapping the electrophysiological and morphological properties of CA1 pyramidal neurons along the longitudinal hippocampal axis.
+	        (<a href="../../../../../article/ephys_prop/119496.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/26333017/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/119496.html">2.39
+          		
+          			± 0.11 
+          		
+          		
+          			(34)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/119496.html">
+             
+              2.39 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/50018.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/85.html">Hippocampus CA1 pyramidal cell</a></td>
+            <td>
+                
+                    Ventral End fo Intermediate Hippocampus CA1 pyramidal cell
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Mapping the electrophysiological and morphological properties of CA1 pyramidal neurons along the longitudinal hippocampal axis.
+	        (<a href="../../../../../article/ephys_prop/119496.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/26333017/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/119496.html">2.1
+          		
+          			± 0.14 
+          		
+          		
+          			(23)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/119496.html">
+             
+              2.1 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/50018.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/86.html">Hippocampus CA2 basket cell broad</a></td>
+            <td>
+                
+                    HIppocampus CA2 wide arbor basket cell
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Characterization of neurons in the CA2 subfield of the adult rat hippocampus.
+	        (<a href="../../../../../article/ephys_prop/30098.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/17611285/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/30098.html">2.9
+          		
+          			± 1.9 
+          		
+          		
+          			(10)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/30098.html">
+             
+              2.9 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/2184.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/230.html">Hippocampus CA3 basket cell</a></td>
+            <td>
+                
+                    Hippocampus CA3 basket CB1-expressing cell
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Anatomically heterogeneous populations of CB1 cannabinoid receptor-expressing interneurons in the CA3 region of the hippocampus show homogeneous input-output characteristics.
+	        (<a href="../../../../../article/ephys_prop/91551.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/25044969/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/91551.html">3.7
+          		
+          		
+          			(14)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/91551.html">
+             
+              3.7 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/45189.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/230.html">Hippocampus CA3 basket cell</a></td>
+            <td>
+                
+                    hippocampus CA3 parvalbumin-expressing basket cells
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Different input and output properties characterize parvalbumin-positive basket and Axo-axonic cells in the hippocampal CA3 subfield.
+	        (<a href="../../../../../article/ephys_prop/91557.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/23733415/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/91557.html">1.03
+          		
+          		
+          			(13)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/91557.html">
+             
+              1.03 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/45207.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/88.html">Hippocampus CA3 oriens interneuron</a></td>
+            <td>
+                
+                    hippocampus CA3 parvalbumin-expressing axo-axonic cells
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Different input and output properties characterize parvalbumin-positive basket and Axo-axonic cells in the hippocampal CA3 subfield.
+	        (<a href="../../../../../article/ephys_prop/91557.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/23733415/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/91557.html">1.64
+          		
+          		
+          			(20)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/91557.html">
+             
+              1.64 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/45207.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/94.html">Locus coeruleus noradrenergic neuron</a></td>
+            <td>
+                
+                    Locus coeruleus GFP-expressing TH-expressing noradrenergic neuron
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Intrinsic membrane properties of locus coeruleus neurons in Mecp2-null mice.
+	        (<a href="../../../../../article/ephys_prop/5132.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/20042730/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/5132.html">1.47
+          		
+          			± 0.07 
+          		
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/5132.html">
+             
+              1.47 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/49872.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/99.html">Neocortex basket cell</a></td>
+            <td>
+                
+                    Somatosensory cortex layer 4 GABAergic parvalbumin-immunoreactive interneuron
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Altered firing rates and patterns in interneurons in experimental cortical dysplasia.
+	        (<a href="../../../../../article/ephys_prop/88477.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/21084454/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/88477.html">1.02
+          		
+          			± 0.08 
+          		
+          		
+          			(121)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/88477.html">
+             
+              1.02 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/36057.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/99.html">Neocortex basket cell</a></td>
+            <td>
+                
+                    Visual cortex layer 2/3 parvalbumin-expressing interneuron
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Synapse-associated protein 97 regulates the membrane properties of fast-spiking parvalbumin interneurons in the visual cortex.
+	        (<a href="../../../../../article/ephys_prop/92258.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/23904610/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/92258.html">1.03
+          		
+          			± 0.12 
+          		
+          		
+          			(14)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/92258.html">
+             
+              1.03 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/46958.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/99.html">Neocortex basket cell</a></td>
+            <td>
+                
+                    Visual cortex layer 2-3 inhibitory fast spiking interneuron
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Subtype-specific dendritic Ca(2+) dynamics of inhibitory interneurons in the rat visual cortex.
+	        (<a href="../../../../../article/ephys_prop/27420.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/20554844/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/27420.html">0.97
+          		
+          			± 0.01 
+          		
+          		
+          			(11)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/27420.html">
+             
+              0.97 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/152.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/99.html">Neocortex basket cell</a></td>
+            <td>
+                
+                    Visual cortex layer 2/3 parvalbumin-expressing interneuron
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Synapse-associated protein 97 regulates the membrane properties of fast-spiking parvalbumin interneurons in the visual cortex.
+	        (<a href="../../../../../article/ephys_prop/92258.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/23904610/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/92258.html">1.3
+          		
+          			± 0.09 
+          		
+          		
+          			(20)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/92258.html">
+             
+              1.3 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/46958.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/99.html">Neocortex basket cell</a></td>
+            <td>
+                
+                    dorsolateral prefrontal cortex layer 2/3 basket cell
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Functional properties of fast spiking interneurons and their synaptic connections with pyramidal cells in primate dorsolateral prefrontal cortex.
+	        (<a href="../../../../../article/ephys_prop/34258.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/15385591/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/34258.html">1.09
+          		
+          			± 0.05 
+          		
+          		
+          			(16)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/34258.html">
+             
+              1.09 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/673.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/99.html">Neocortex basket cell</a></td>
+            <td>
+                
+                    Sensorimotor cortex layer V locally projecting fast-spiking GABAergic basket interneuron
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Major differences in inhibitory synaptic transmission onto two neocortical interneuron subclasses.
+	        (<a href="../../../../../article/ephys_prop/23747.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/14573546/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/23747.html">1.1
+          		
+          			± 0.06 
+          		
+          		
+          			(18)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/23747.html">
+             
+              1.1 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/2687.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/99.html">Neocortex basket cell</a></td>
+            <td>
+                
+                    Auditory cortex layer 2-3 fast-spiking interneuron
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Development of inhibitory timescales in auditory cortex.
+	        (<a href="../../../../../article/ephys_prop/88458.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/21068186/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/88458.html">1.1
+          		
+          			± 0.2 
+          		
+          		
+          			(50)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/88458.html">
+             
+              1.1 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/36008.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/99.html">Neocortex basket cell</a></td>
+            <td>
+                
+                    primary auditory cortex layer 2-4 fast-spiking parvalbumin-positive GFP-expressing round basket cell
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Spatial profile of excitatory and inhibitory synaptic connectivity in mouse primary auditory cortex.
+	        (<a href="../../../../../article/ephys_prop/92109.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/22514322/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/92109.html">1.29
+          		
+          		
+          			(26)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/92109.html">
+             
+              1.29 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/46582.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/99.html">Neocortex basket cell</a></td>
+            <td>
+                
+                    Sensorimotor cortex layer V locally projecting low threshold-spiking GABAergic basket interneuron
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Major differences in inhibitory synaptic transmission onto two neocortical interneuron subclasses.
+	        (<a href="../../../../../article/ephys_prop/23747.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/14573546/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/23747.html">0.8
+          		
+          			± 0.03 
+          		
+          		
+          			(16)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/23747.html">
+             
+              0.8 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/2687.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/99.html">Neocortex basket cell</a></td>
+            <td>
+                
+                    Auditory cortex layer 2-3 fast-spiking interneuron
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Development of inhibitory timescales in auditory cortex.
+	        (<a href="../../../../../article/ephys_prop/88458.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/21068186/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/88458.html">1.4
+          		
+          			± 0.3 
+          		
+          		
+          			(36)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/88458.html">
+             
+              1.4 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/36008.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/99.html">Neocortex basket cell</a></td>
+            <td>
+                
+                    somatosensory cortex layer 2/3 fast-spiking cell
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Spike-timing-dependent plasticity of neocortical excitatory synapses on inhibitory interneurons depends on target cell type.
+	        (<a href="../../../../../article/ephys_prop/36072.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/17804631/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/36072.html">1.07
+          		
+          			± 0.01 
+          		
+          		
+          			(21)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/36072.html">
+             
+              1.07 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/2158.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/99.html">Neocortex basket cell</a></td>
+            <td>
+                
+                    Auditory cortex layer 2-3 fast-spiking interneuron
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Development of inhibitory timescales in auditory cortex.
+	        (<a href="../../../../../article/ephys_prop/88458.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/21068186/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/88458.html">1.1
+          		
+          			± 0.1 
+          		
+          		
+          			(59)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/88458.html">
+             
+              1.1 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/36008.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/99.html">Neocortex basket cell</a></td>
+            <td>
+                
+                    Auditory cortex fast-spiking cell
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Age-dependent effect of hearing loss on cortical inhibitory synapse function.
+	        (<a href="../../../../../article/ephys_prop/33708.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/22090457/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/33708.html">1.4
+          		
+          			± 0.2 
+          		
+          		
+          			(10)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/33708.html">
+             
+              1.4 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/28.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/104.html">Neocortex chandelier cell</a></td>
+            <td>
+                
+                    dorsolateral prefrontal cortex layer 2/3 chandelier cell
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Functional properties of fast spiking interneurons and their synaptic connections with pyramidal cells in primate dorsolateral prefrontal cortex.
+	        (<a href="../../../../../article/ephys_prop/34258.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/15385591/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/34258.html">1.1
+          		
+          			± 0.04 
+          		
+          		
+          			(12)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/34258.html">
+             
+              1.1 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/673.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/106.html">Neocortex interneuron deep</a></td>
+            <td>
+                
+                    Visual Cortex layer 2/3 parvalbumin-expressing weakly stuttering interneuron
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Subgroups of parvalbumin-expressing interneurons in layers 2/3 of the visual cortex.
+	        (<a href="../../../../../article/ephys_prop/93207.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/23274311/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/93207.html">0.89
+          		
+          			± 0.11 
+          		
+          		
+          			(18)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/93207.html">
+             
+              0.89 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/49009.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/106.html">Neocortex interneuron deep</a></td>
+            <td>
+                
+                    Visual Cortex layer 2/3 parvalbumin-expressing strongly stuttering interneuron
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Subgroups of parvalbumin-expressing interneurons in layers 2/3 of the visual cortex.
+	        (<a href="../../../../../article/ephys_prop/93207.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/23274311/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/93207.html">1.22
+          		
+          			± 0.38 
+          		
+          		
+          			(31)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/93207.html">
+             
+              1.22 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/49009.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/106.html">Neocortex interneuron deep</a></td>
+            <td>
+                
+                    Neocortex layer II-IV  depolarization-induced suppression of inhibition sensitive multipolar Nonadapting interneuron
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Cell type-specific regulation of inhibition via cannabinoid type 1 receptors in rat neocortex.
+	        (<a href="../../../../../article/ephys_prop/93507.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/23054605/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/93507.html">1.24
+          		
+          			± 0.53 
+          		
+          		
+          			(13)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/93507.html">
+             
+              1.24 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/49695.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/106.html">Neocortex interneuron deep</a></td>
+            <td>
+                
+                    Neocortex layer II-IV  depolarization-induced suppression of inhibition sensitive multipolar adapting interneuron
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Cell type-specific regulation of inhibition via cannabinoid type 1 receptors in rat neocortex.
+	        (<a href="../../../../../article/ephys_prop/93507.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/23054605/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/93507.html">3.2
+          		
+          			± 0.8 
+          		
+          		
+          			(6)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/93507.html">
+             
+              3.2 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/49695.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/106.html">Neocortex interneuron deep</a></td>
+            <td>
+                
+                    Neocortex layer II-IV  depolarization-induced suppression of inhibition insensitive multipolar Nonadapting interneuron
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Cell type-specific regulation of inhibition via cannabinoid type 1 receptors in rat neocortex.
+	        (<a href="../../../../../article/ephys_prop/93507.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/23054605/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/93507.html">1.15
+          		
+          			± 1.0 
+          		
+          		
+          			(5)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/93507.html">
+             
+              1.15 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/49695.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/106.html">Neocortex interneuron deep</a></td>
+            <td>
+                
+                    primary auditory cortex layer 2-4 fast-spiking inhibitory cell
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Spatial profile of excitatory and inhibitory synaptic connectivity in mouse primary auditory cortex.
+	        (<a href="../../../../../article/ephys_prop/92109.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/22514322/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/92109.html">1.27
+          		
+          		
+          			(52)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/92109.html">
+             
+              1.27 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/46582.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/106.html">Neocortex interneuron deep</a></td>
+            <td>
+                
+                    Visual Cortex layer 2/3 parvalbumin-expressing continuous-firing interneuron
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Subgroups of parvalbumin-expressing interneurons in layers 2/3 of the visual cortex.
+	        (<a href="../../../../../article/ephys_prop/93207.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/23274311/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/93207.html">0.96
+          		
+          			± 0.06 
+          		
+          		
+          			(22)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/93207.html">
+             
+              0.96 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/49009.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/106.html">Neocortex interneuron deep</a></td>
+            <td>
+                
+                    Visual Cortex layer 2/3 parvalbumin-expressing continuous-firing high-frequency interneuron
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Subgroups of parvalbumin-expressing interneurons in layers 2/3 of the visual cortex.
+	        (<a href="../../../../../article/ephys_prop/93207.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/23274311/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/93207.html">0.98
+          		
+          			± 0.12 
+          		
+          		
+          			(11)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/93207.html">
+             
+              0.98 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/49009.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/98.html">Neocortex Martinotti cell</a></td>
+            <td>
+                
+                    somatosensory cortex layer 2/3 low-threshold spiking cell
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Spike-timing-dependent plasticity of neocortical excitatory synapses on inhibitory interneurons depends on target cell type.
+	        (<a href="../../../../../article/ephys_prop/36072.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/17804631/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/36072.html">2.05
+          		
+          			± 0.2 
+          		
+          		
+          			(19)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/36072.html">
+             
+              2.05 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/2158.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/98.html">Neocortex Martinotti cell</a></td>
+            <td>
+                
+                    Auditory cortex low-threshold spiking cell
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Age-dependent effect of hearing loss on cortical inhibitory synapse function.
+	        (<a href="../../../../../article/ephys_prop/33708.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/22090457/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/33708.html">5.3
+          		
+          			± 1.1 
+          		
+          		
+          			(13)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/33708.html">
+             
+              5.3 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/28.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/98.html">Neocortex Martinotti cell</a></td>
+            <td>
+                
+                    Somatosensory cortex layer 4 fusiform GABAergic somatostatin-immunoreactive interneuron
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Altered firing rates and patterns in interneurons in experimental cortical dysplasia.
+	        (<a href="../../../../../article/ephys_prop/88477.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/21084454/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/88477.html">2.31
+          		
+          			± 0.19 
+          		
+          		
+          			(57)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/88477.html">
+             
+              2.31 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/36057.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/98.html">Neocortex Martinotti cell</a></td>
+            <td>
+                
+                    primary auditory cortex layer 2-4 non-fast-spiking somatostatin-positive GFP-expressing Martinotti cell
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Spatial profile of excitatory and inhibitory synaptic connectivity in mouse primary auditory cortex.
+	        (<a href="../../../../../article/ephys_prop/92109.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/22514322/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/92109.html">4.83
+          		
+          		
+          			(46)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/92109.html">
+             
+              4.83 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/46582.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/98.html">Neocortex Martinotti cell</a></td>
+            <td>
+                
+                    primary auditory cortex layer 2-4 non-fast-spiking inhibitory cell
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Spatial profile of excitatory and inhibitory synaptic connectivity in mouse primary auditory cortex.
+	        (<a href="../../../../../article/ephys_prop/92109.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/22514322/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/92109.html">3.24
+          		
+          		
+          			(57)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/92109.html">
+             
+              3.24 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/46582.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/110.html">Neocortex pyramidal cell layer 2-3</a></td>
+            <td>
+                
+                    Visual cortex layer 2-3 pyramidal cell
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Subtype-specific dendritic Ca(2+) dynamics of inhibitory interneurons in the rat visual cortex.
+	        (<a href="../../../../../article/ephys_prop/27420.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/20554844/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/27420.html">1.18
+          		
+          			± 0.02 
+          		
+          		
+          			(22)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/27420.html">
+             
+              1.18 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/152.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/110.html">Neocortex pyramidal cell layer 2-3</a></td>
+            <td>
+                
+                    primary auditory cortex layer 2-4 apical pyramidal cell
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Spatial profile of excitatory and inhibitory synaptic connectivity in mouse primary auditory cortex.
+	        (<a href="../../../../../article/ephys_prop/92109.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/22514322/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/92109.html">3.64
+          		
+          		
+          			(49)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/92109.html">
+             
+              3.64 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/46582.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/111.html">Neocortex pyramidal cell layer 5-6</a></td>
+            <td>
+                
+                    Neocortex excitatory pyramidal neurons 
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Functional integration of human neural precursor cells in mouse cortex.
+	        (<a href="../../../../../article/ephys_prop/91423.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/25763840/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/91423.html">2.05
+          		
+          			± 0.22 
+          		
+          		
+          			(12)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/91423.html">
+             
+              2.05 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/44788.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/111.html">Neocortex pyramidal cell layer 5-6</a></td>
+            <td>
+                
+                    Primary motor cortex layer 5b corticostriatal pyramidal neuron 
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Intrinsic electrophysiology of mouse corticospinal neurons: a class-specific triad of spike-related properties.
+	        (<a href="../../../../../article/ephys_prop/88566.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/22761308/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/88566.html">1.7
+          		
+          			± 0.25 
+          		
+          		
+          			(10)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/88566.html">
+             
+              1.7 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/36261.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/111.html">Neocortex pyramidal cell layer 5-6</a></td>
+            <td>
+                
+                    Primary motor cortex layer 5b corticospinal thick-tufted large pyramidal neuron
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Intrinsic electrophysiology of mouse corticospinal neurons: a class-specific triad of spike-related properties.
+	        (<a href="../../../../../article/ephys_prop/88566.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/22761308/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/88566.html">0.87
+          		
+          			± 0.24 
+          		
+          		
+          			(23)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/88566.html">
+             
+              0.87 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/36261.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/111.html">Neocortex pyramidal cell layer 5-6</a></td>
+            <td>
+                
+                    Primary motor cortex layer 5b corticospinal thick-tufted large pyramidal neuron
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Intrinsic electrophysiology of mouse corticospinal neurons: a class-specific triad of spike-related properties.
+	        (<a href="../../../../../article/ephys_prop/88566.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/22761308/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/88566.html">0.88
+          		
+          			± 0.2 
+          		
+          		
+          			(10)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/88566.html">
+             
+              0.88 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/36261.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/111.html">Neocortex pyramidal cell layer 5-6</a></td>
+            <td>
+                
+                    Secondary somatosensory cortex layer 5b corticospinal thick-tufted large pyramidal neuron
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Intrinsic electrophysiology of mouse corticospinal neurons: a class-specific triad of spike-related properties.
+	        (<a href="../../../../../article/ephys_prop/88566.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/22761308/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/88566.html">0.77
+          		
+          			± 0.11 
+          		
+          		
+          			(7)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/88566.html">
+             
+              0.77 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/36261.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/111.html">Neocortex pyramidal cell layer 5-6</a></td>
+            <td>
+                
+                    Primary motor cortex layer 5b corticospinal thick-tufted large pyramidal neuron
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Intrinsic electrophysiology of mouse corticospinal neurons: a class-specific triad of spike-related properties.
+	        (<a href="../../../../../article/ephys_prop/88566.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/22761308/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/88566.html">1.03
+          		
+          			± 0.34 
+          		
+          		
+          			(9)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/88566.html">
+             
+              1.03 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/36261.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/109.html">Neocortex uncharacterized cell</a></td>
+            <td>
+                
+                    Neocortex calretinin-expressing GABAergic inhibitory interneurons
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Functional integration of human neural precursor cells in mouse cortex.
+	        (<a href="../../../../../article/ephys_prop/91423.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/25763840/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/91423.html">5.48
+          		
+          			± 0.91 
+          		
+          		
+          			(10)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/91423.html">
+             
+              5.48 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/44788.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/109.html">Neocortex uncharacterized cell</a></td>
+            <td>
+                
+                    Neocortex parvalbumin-expressing GABAergic inhibitory interneurons
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Functional integration of human neural precursor cells in mouse cortex.
+	        (<a href="../../../../../article/ephys_prop/91423.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/25763840/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/91423.html">0.99
+          		
+          			± 0.08 
+          		
+          		
+          			(11)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/91423.html">
+             
+              0.99 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/44788.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/109.html">Neocortex uncharacterized cell</a></td>
+            <td>
+                
+                    Neocortex somatostatin-expressing GABAergic inhibitory interneurons
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Functional integration of human neural precursor cells in mouse cortex.
+	        (<a href="../../../../../article/ephys_prop/91423.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/25763840/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/91423.html">2.63
+          		
+          			± 0.4 
+          		
+          		
+          			(11)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/91423.html">
+             
+              2.63 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/44788.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/109.html">Neocortex uncharacterized cell</a></td>
+            <td>
+                
+                    Somatosensory cortex GABAergic layer 4 calretinin-immunoreactive interneuron
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Altered firing rates and patterns in interneurons in experimental cortical dysplasia.
+	        (<a href="../../../../../article/ephys_prop/88477.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/21084454/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/88477.html">8.92
+          		
+          			± 0.86 
+          		
+          		
+          			(47)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/88477.html">
+             
+              8.92 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/36057.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/115.html">Neostriatum cholinergic cell</a></td>
+            <td>
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Cell-specific spike-timing-dependent plasticity in GABAergic and cholinergic interneurons in corticostriatal rat brain slices.
+	        (<a href="../../../../../article/ephys_prop/43018.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/17974593/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/43018.html">1.2
+          		
+          			± 0.1 
+          		
+          		
+          			(65)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/43018.html">
+             
+              1.2 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/10072.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/209.html">Neostriatum gabaergic interneuron</a></td>
+            <td>
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Cell-specific spike-timing-dependent plasticity in GABAergic and cholinergic interneurons in corticostriatal rat brain slices.
+	        (<a href="../../../../../article/ephys_prop/43018.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/17974593/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/43018.html">2.0
+          		
+          			± 0.2 
+          		
+          		
+          			(45)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/43018.html">
+             
+              2.0 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/10072.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/209.html">Neostriatum gabaergic interneuron</a></td>
+            <td>
+                
+                    Neostriatum fast-spiking interneuron
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Heterogeneity of spike frequency adaptation among medium spiny neurones from the rat striatum.
+	        (<a href="../../../../../article/ephys_prop/82513.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/14596850/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/82513.html">1.0
+          		
+          			± 0.02 
+          		
+          		
+          			(7)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/82513.html">
+             
+              1.0 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/24593.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/117.html">Neostriatum medium spiny neuron</a></td>
+            <td>
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Cell-specific spike-timing-dependent plasticity in GABAergic and cholinergic interneurons in corticostriatal rat brain slices.
+	        (<a href="../../../../../article/ephys_prop/43018.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/17974593/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/43018.html">0.96
+          		
+          			± 0.02 
+          		
+          		
+          			(50)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/43018.html">
+             
+              0.96 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/10072.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/117.html">Neostriatum medium spiny neuron</a></td>
+            <td>
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Heterogeneity of spike frequency adaptation among medium spiny neurones from the rat striatum.
+	        (<a href="../../../../../article/ephys_prop/82513.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/14596850/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/82513.html">1.53
+          		
+          			± 0.04 
+          		
+          		
+          			(139)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/82513.html">
+             
+              1.53 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/24593.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/117.html">Neostriatum medium spiny neuron</a></td>
+            <td>
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        P2Y1 receptor modulation of Ca2+-activated K+ currents in medium-sized neurons from neonatal rat striatal slices.
+	        (<a href="../../../../../article/ephys_prop/50667.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/22131374/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/50667.html">1.15
+          		
+          			± 0.07 
+          		
+          		
+          			(7)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/50667.html">
+             
+              1.15 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/7610.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/235.html">Other</a></td>
+            <td>
+                
+                    Dorsolateral prefrontal cortex layer 3 non-pyamidal burst spiking neuron
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Functional properties of GABA synaptic inputs onto GABA neurons in monkey prefrontal cortex.
+	        (<a href="../../../../../article/ephys_prop/93396.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/25540225/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/93396.html">4.17
+          		
+          			± 0.87 
+          		
+          		
+          			(6)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/93396.html">
+             
+              4.17 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/49453.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/235.html">Other</a></td>
+            <td>
+                
+                    Hippocampus CA1 stratum oriens and striatum radiatum innervating bistratified cells
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Characterization of neurons in the CA2 subfield of the adult rat hippocampus.
+	        (<a href="../../../../../article/ephys_prop/30098.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/17611285/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/30098.html">1.4
+          		
+          			± 0.05 
+          		
+          		
+          			(5)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/30098.html">
+             
+              1.4 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/2184.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/235.html">Other</a></td>
+            <td>
+                
+                    Dorsolateral prefrontal cortex layer 3 non-pyamidal regular spiking neuron
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Functional properties of GABA synaptic inputs onto GABA neurons in monkey prefrontal cortex.
+	        (<a href="../../../../../article/ephys_prop/93396.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/25540225/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/93396.html">2.03
+          		
+          			± 0.13 
+          		
+          		
+          			(24)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/93396.html">
+             
+              2.03 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/49453.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/235.html">Other</a></td>
+            <td>
+                
+                    Hippocampus CA2 narrow arbor basket cell
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Characterization of neurons in the CA2 subfield of the adult rat hippocampus.
+	        (<a href="../../../../../article/ephys_prop/30098.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/17611285/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/30098.html">1.3
+          		
+          			± 0.4 
+          		
+          		
+          			(6)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/30098.html">
+             
+              1.3 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/2184.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/235.html">Other</a></td>
+            <td>
+                
+                    Main Olfactory Bulb granule cell layer GABAergic deep short axon cells
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Distinct deep short-axon cell subtypes of the main olfactory bulb provide novel intrabulbar and extrabulbar GABAergic connections.
+	        (<a href="../../../../../article/ephys_prop/35838.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/18701684/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/35838.html">1.64
+          		
+          			± 0.61 
+          		
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/35838.html">
+             
+              1.64 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/2036.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/235.html">Other</a></td>
+            <td>
+                
+                    Dorsolateral prefrontal cortex layer 3 non-pyamidal fast spiking neuron
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Functional properties of GABA synaptic inputs onto GABA neurons in monkey prefrontal cortex.
+	        (<a href="../../../../../article/ephys_prop/93396.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/25540225/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/93396.html">1.07
+          		
+          			± 0.02 
+          		
+          		
+          			(34)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/93396.html">
+             
+              1.07 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/49453.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/235.html">Other</a></td>
+            <td>
+                
+                    Main Olfactory Bulb external plexiform layer GABAergic deep short axon cells 
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Distinct deep short-axon cell subtypes of the main olfactory bulb provide novel intrabulbar and extrabulbar GABAergic connections.
+	        (<a href="../../../../../article/ephys_prop/35838.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/18701684/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/35838.html">1.87
+          		
+          			± 2.84 
+          		
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/35838.html">
+             
+              1.87 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/2036.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/235.html">Other</a></td>
+            <td>
+                
+                    Main Olfactory Bulb glomerular layer GABAergic deep short axon cells 
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Distinct deep short-axon cell subtypes of the main olfactory bulb provide novel intrabulbar and extrabulbar GABAergic connections.
+	        (<a href="../../../../../article/ephys_prop/35838.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/18701684/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/35838.html">1.84
+          		
+          			± 0.92 
+          		
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/35838.html">
+             
+              1.84 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/2036.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/235.html">Other</a></td>
+            <td>
+                
+                    Visual cortex layer 2-3 inhibitory late spiking interneuron
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Subtype-specific dendritic Ca(2+) dynamics of inhibitory interneurons in the rat visual cortex.
+	        (<a href="../../../../../article/ephys_prop/27420.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/20554844/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/27420.html">1.02
+          		
+          			± 0.01 
+          		
+          		
+          			(28)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/27420.html">
+             
+              1.02 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/152.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/235.html">Other</a></td>
+            <td>
+                
+                    hypothalamic non-GnRH expressing neuron
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        GABA- and glutamate-activated channels in green fluorescent protein-tagged gonadotropin-releasing hormone neurons in transgenic mice.
+	        (<a href="../../../../../article/ephys_prop/37695.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/10066257/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/37695.html">2.5
+          		
+          			± 1.5 
+          		
+          		
+          			(26)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/37695.html">
+             
+              2.5 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/3303.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/235.html">Other</a></td>
+            <td>
+                
+                    Auditory cortex layer 3/4 pyramidal neurons with rapid long term depreciation
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Synaptic mechanisms underlying thalamic activation-induced plasticity in the rat auditory cortex.
+	        (<a href="../../../../../article/ephys_prop/93361.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/24501259/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/93361.html">0.35
+          		
+          			± 0.06 
+          		
+          		
+          			(8)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/93361.html">
+             
+              0.35 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/49371.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/235.html">Other</a></td>
+            <td>
+                
+                    Visual cortex layer 2-3 inhibitory regular spiking non-pyramidal cell
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Subtype-specific dendritic Ca(2+) dynamics of inhibitory interneurons in the rat visual cortex.
+	        (<a href="../../../../../article/ephys_prop/27420.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/20554844/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/27420.html">1.76
+          		
+          			± 0.22 
+          		
+          		
+          			(15)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/27420.html">
+             
+              1.76 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/152.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/235.html">Other</a></td>
+            <td>
+                
+                    lamina terminalis- preoptic area-diagonal band of Broca GnRH expressing neurons
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        GABA- and glutamate-activated channels in green fluorescent protein-tagged gonadotropin-releasing hormone neurons in transgenic mice.
+	        (<a href="../../../../../article/ephys_prop/37695.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/10066257/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/37695.html">1.9
+          		
+          			± 0.6 
+          		
+          		
+          			(26)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/37695.html">
+             
+              1.9 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/3303.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/235.html">Other</a></td>
+            <td>
+                
+                    dentate gyrus somatostatin-expressing cell
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Differentiation and functional incorporation of embryonic stem cell-derived GABAergic interneurons in the dentate gyrus of mice with temporal lobe epilepsy.
+	        (<a href="../../../../../article/ephys_prop/35002.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/22219269/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/35002.html">1.6
+          		
+          			± 0.3 
+          		
+          		
+          			(5)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/35002.html">
+             
+              1.6 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/1488.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/235.html">Other</a></td>
+            <td>
+                
+                    Auditory cortex layer 3/4 pyramidal neurons with slow long term depreciation
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Synaptic mechanisms underlying thalamic activation-induced plasticity in the rat auditory cortex.
+	        (<a href="../../../../../article/ephys_prop/93361.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/24501259/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/93361.html">0.42
+          		
+          			± 0.04 
+          		
+          		
+          			(10)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/93361.html">
+             
+              0.42 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/49371.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/235.html">Other</a></td>
+            <td>
+                
+                    Hippocampus CA1 stratum radiatum parvalbumin-positive with perisomatic innervation GABAergic interneurons
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Phenotype-dependent Ca(2+) dynamics in single boutons of various anatomically identified GABAergic interneurons in the rat hippocampus.
+	        (<a href="../../../../../article/ephys_prop/93570.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/26566266/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/93570.html">1.5
+          		
+          			± 0.1 
+          		
+          		
+          			(29)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/93570.html">
+             
+              1.5 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/49827.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/235.html">Other</a></td>
+            <td>
+                
+                    Neostriatum long-lasting afterhyperpolarization interneuron
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Heterogeneity of spike frequency adaptation among medium spiny neurones from the rat striatum.
+	        (<a href="../../../../../article/ephys_prop/82513.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/14596850/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/82513.html">1.11
+          		
+          			± 0.02 
+          		
+          		
+          			(11)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/82513.html">
+             
+              1.11 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/24593.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/235.html">Other</a></td>
+            <td>
+                
+                    Hippocampal CA1 fast-spiking bistratified interneurons 
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Endocannabinoid-mediated long-term depression of afferent excitatory synapses in hippocampal pyramidal cells and GABAergic interneurons.
+	        (<a href="../../../../../article/ephys_prop/92211.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/23055515/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/92211.html">1.94
+          		
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/92211.html">
+             
+              1.94 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/46827.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/235.html">Other</a></td>
+            <td>
+                
+                    Auditory cortex layer 3/4 pyramidal neurons 
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Synaptic mechanisms underlying thalamic activation-induced plasticity in the rat auditory cortex.
+	        (<a href="../../../../../article/ephys_prop/93361.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/24501259/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/93361.html">0.49
+          		
+          			± 0.09 
+          		
+          		
+          			(10)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/93361.html">
+             
+              0.49 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/49371.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/235.html">Other</a></td>
+            <td>
+                
+                    Hippocampus CA1 stratum radiatum fast-spiking partially parvalbumin-positive GABAergic interneurons
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Phenotype-dependent Ca(2+) dynamics in single boutons of various anatomically identified GABAergic interneurons in the rat hippocampus.
+	        (<a href="../../../../../article/ephys_prop/93570.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/26566266/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/93570.html">1.7
+          		
+          			± 0.1 
+          		
+          		
+          			(29)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/93570.html">
+             
+              1.7 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/49827.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/235.html">Other</a></td>
+            <td>
+                
+                    Auditory cortex layer 3/4 pyramidal neurons with short-lasting long term potentiation
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Synaptic mechanisms underlying thalamic activation-induced plasticity in the rat auditory cortex.
+	        (<a href="../../../../../article/ephys_prop/93361.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/24501259/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/93361.html">0.29
+          		
+          			± 0.08 
+          		
+          		
+          			(20)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/93361.html">
+             
+              0.29 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/49371.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/235.html">Other</a></td>
+            <td>
+                
+                    Hippocampus CA1 stratum radiatum non-fast-spiking GABAergic interneurons
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Phenotype-dependent Ca(2+) dynamics in single boutons of various anatomically identified GABAergic interneurons in the rat hippocampus.
+	        (<a href="../../../../../article/ephys_prop/93570.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/26566266/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/93570.html">3.5
+          		
+          			± 0.2 
+          		
+          		
+          			(29)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/93570.html">
+             
+              3.5 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/49827.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/235.html">Other</a></td>
+            <td>
+                
+                    Hippocampus CA2 narrow arbor stratum oriens and striatum radiatum innervating bistratified cells
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Characterization of neurons in the CA2 subfield of the adult rat hippocampus.
+	        (<a href="../../../../../article/ephys_prop/30098.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/17611285/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/30098.html">1.14
+          		
+          			± 0.5 
+          		
+          		
+          			(3)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/30098.html">
+             
+              1.14 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/2184.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/235.html">Other</a></td>
+            <td>
+                
+                    Hippocampus CA3 dendritic layer-innervating CB1-expressing interneurons
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Anatomically heterogeneous populations of CB1 cannabinoid receptor-expressing interneurons in the CA3 region of the hippocampus show homogeneous input-output characteristics.
+	        (<a href="../../../../../article/ephys_prop/91551.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/25044969/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/91551.html">3.6
+          		
+          		
+          			(26)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/91551.html">
+             
+              3.6 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/45189.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/235.html">Other</a></td>
+            <td>
+                
+                    Auditory cortex layer 3/4 pyramidal neurons with long-lasting long term potentiation
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Synaptic mechanisms underlying thalamic activation-induced plasticity in the rat auditory cortex.
+	        (<a href="../../../../../article/ephys_prop/93361.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/24501259/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/93361.html">0.41
+          		
+          			± 0.04 
+          		
+          		
+          			(7)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/93361.html">
+             
+              0.41 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/49371.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/235.html">Other</a></td>
+            <td>
+                
+                    Hippocampus CA2 wide arbor stratum oriens and striatum radiatum innervating bistratified cells
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Characterization of neurons in the CA2 subfield of the adult rat hippocampus.
+	        (<a href="../../../../../article/ephys_prop/30098.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/17611285/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/30098.html">2.7
+          		
+          		
+          			(2)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/30098.html">
+             
+              2.7 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/2184.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/235.html">Other</a></td>
+            <td>
+                
+                    Hippocampus CA3 perforant-path associated CB1-expressing interneurons
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Anatomically heterogeneous populations of CB1 cannabinoid receptor-expressing interneurons in the CA3 region of the hippocampus show homogeneous input-output characteristics.
+	        (<a href="../../../../../article/ephys_prop/91551.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/25044969/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/91551.html">4.2
+          		
+          		
+          			(11)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/91551.html">
+             
+              4.2 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/45189.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/235.html">Other</a></td>
+            <td>
+                
+                    Dorsolateral prefrontal cortex layer 3 non-pyamidal irregular spiking neuron
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Functional properties of GABA synaptic inputs onto GABA neurons in monkey prefrontal cortex.
+	        (<a href="../../../../../article/ephys_prop/93396.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/25540225/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/93396.html">3.23
+          		
+          			± 0.69 
+          		
+          		
+          			(6)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/93396.html">
+             
+              3.23 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/49453.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/235.html">Other</a></td>
+            <td>
+                
+                    Hippocampus CA3  mossy fiber associated CB1-expressing interneurons
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Anatomically heterogeneous populations of CB1 cannabinoid receptor-expressing interneurons in the CA3 region of the hippocampus show homogeneous input-output characteristics.
+	        (<a href="../../../../../article/ephys_prop/91551.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/25044969/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/91551.html">4.1
+          		
+          		
+          			(16)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/91551.html">
+             
+              4.1 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/45189.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/183.html">Substantia nigra pars compacta dopaminergic cell</a></td>
+            <td>
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Non-linear developmental trajectory of electrical phenotype in rat substantia nigra pars compacta dopaminergic neurons.
+	        (<a href="../../../../../article/ephys_prop/119499.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/25329344/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/119499.html">0.99
+          		
+          			± 0.35 
+          		
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/119499.html">
+             
+              0.99 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/50026.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/183.html">Substantia nigra pars compacta dopaminergic cell</a></td>
+            <td>
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Non-linear developmental trajectory of electrical phenotype in rat substantia nigra pars compacta dopaminergic neurons.
+	        (<a href="../../../../../article/ephys_prop/119499.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/25329344/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/119499.html">0.92
+          		
+          			± 0.31 
+          		
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/119499.html">
+             
+              0.92 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/50026.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/183.html">Substantia nigra pars compacta dopaminergic cell</a></td>
+            <td>
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Non-linear developmental trajectory of electrical phenotype in rat substantia nigra pars compacta dopaminergic neurons.
+	        (<a href="../../../../../article/ephys_prop/119499.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/25329344/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/119499.html">0.95
+          		
+          			± 0.33 
+          		
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/119499.html">
+             
+              0.95 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/50026.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/183.html">Substantia nigra pars compacta dopaminergic cell</a></td>
+            <td>
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Non-linear developmental trajectory of electrical phenotype in rat substantia nigra pars compacta dopaminergic neurons.
+	        (<a href="../../../../../article/ephys_prop/119499.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/25329344/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/119499.html">1.76
+          		
+          			± 0.53 
+          		
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/119499.html">
+             
+              1.76 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/50026.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/183.html">Substantia nigra pars compacta dopaminergic cell</a></td>
+            <td>
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Non-linear developmental trajectory of electrical phenotype in rat substantia nigra pars compacta dopaminergic neurons.
+	        (<a href="../../../../../article/ephys_prop/119499.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/25329344/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/119499.html">1.29
+          		
+          			± 0.8 
+          		
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/119499.html">
+             
+              1.29 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/50026.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/183.html">Substantia nigra pars compacta dopaminergic cell</a></td>
+            <td>
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Non-linear developmental trajectory of electrical phenotype in rat substantia nigra pars compacta dopaminergic neurons.
+	        (<a href="../../../../../article/ephys_prop/119499.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/25329344/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/119499.html">1.8
+          		
+          			± 0.31 
+          		
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/119499.html">
+             
+              1.8 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/50026.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/183.html">Substantia nigra pars compacta dopaminergic cell</a></td>
+            <td>
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Non-linear developmental trajectory of electrical phenotype in rat substantia nigra pars compacta dopaminergic neurons.
+	        (<a href="../../../../../article/ephys_prop/119499.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/25329344/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/119499.html">2.07
+          		
+          			± 0.71 
+          		
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/119499.html">
+             
+              2.07 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/50026.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/183.html">Substantia nigra pars compacta dopaminergic cell</a></td>
+            <td>
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Non-linear developmental trajectory of electrical phenotype in rat substantia nigra pars compacta dopaminergic neurons.
+	        (<a href="../../../../../article/ephys_prop/119499.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/25329344/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/119499.html">1.11
+          		
+          			± 0.44 
+          		
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/119499.html">
+             
+              1.11 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/50026.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/183.html">Substantia nigra pars compacta dopaminergic cell</a></td>
+            <td>
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Non-linear developmental trajectory of electrical phenotype in rat substantia nigra pars compacta dopaminergic neurons.
+	        (<a href="../../../../../article/ephys_prop/119499.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/25329344/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/119499.html">0.93
+          		
+          			± 0.31 
+          		
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/119499.html">
+             
+              0.93 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/50026.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/183.html">Substantia nigra pars compacta dopaminergic cell</a></td>
+            <td>
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Non-linear developmental trajectory of electrical phenotype in rat substantia nigra pars compacta dopaminergic neurons.
+	        (<a href="../../../../../article/ephys_prop/119499.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/25329344/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/119499.html">1.07
+          		
+          			± 0.43 
+          		
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/119499.html">
+             
+              1.07 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/50026.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/183.html">Substantia nigra pars compacta dopaminergic cell</a></td>
+            <td>
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Non-linear developmental trajectory of electrical phenotype in rat substantia nigra pars compacta dopaminergic neurons.
+	        (<a href="../../../../../article/ephys_prop/119499.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/25329344/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/119499.html">2.08
+          		
+          			± 0.71 
+          		
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/119499.html">
+             
+              2.08 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/50026.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/183.html">Substantia nigra pars compacta dopaminergic cell</a></td>
+            <td>
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Non-linear developmental trajectory of electrical phenotype in rat substantia nigra pars compacta dopaminergic neurons.
+	        (<a href="../../../../../article/ephys_prop/119499.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/25329344/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/119499.html">1.3
+          		
+          			± 0.5 
+          		
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/119499.html">
+             
+              1.3 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/50026.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/183.html">Substantia nigra pars compacta dopaminergic cell</a></td>
+            <td>
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Non-linear developmental trajectory of electrical phenotype in rat substantia nigra pars compacta dopaminergic neurons.
+	        (<a href="../../../../../article/ephys_prop/119499.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/25329344/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/119499.html">1.01
+          		
+          			± 0.32 
+          		
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/119499.html">
+             
+              1.01 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/50026.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/183.html">Substantia nigra pars compacta dopaminergic cell</a></td>
+            <td>
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Non-linear developmental trajectory of electrical phenotype in rat substantia nigra pars compacta dopaminergic neurons.
+	        (<a href="../../../../../article/ephys_prop/119499.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/25329344/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/119499.html">1.97
+          		
+          			± 0.27 
+          		
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/119499.html">
+             
+              1.97 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/50026.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/183.html">Substantia nigra pars compacta dopaminergic cell</a></td>
+            <td>
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        Non-linear developmental trajectory of electrical phenotype in rat substantia nigra pars compacta dopaminergic neurons.
+	        (<a href="../../../../../article/ephys_prop/119499.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/25329344/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/119499.html">1.01
+          		
+          			± 0.3 
+          		
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/119499.html">
+             
+              1.01 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/50026.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/194.html">Thalamus relay cell</a></td>
+            <td>
+                
+                    thalamus ventroposteromedial nucleus neurons receiving inputs from cortex layer 6
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        VPM and PoM nuclei of the rat somatosensory thalamus: intrinsic neuronal properties and corticothalamic feedback.
+	        (<a href="../../../../../article/ephys_prop/88443.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/17389627/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/88443.html">11.9
+          		
+          			± 5.7 
+          		
+          		
+          			(12)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/88443.html">
+             
+              11.9 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/35969.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/194.html">Thalamus relay cell</a></td>
+            <td>
+                
+                    thalamus medial portion of the posterior complex nucleus neurons receiving inputs from cortex layer 6
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        VPM and PoM nuclei of the rat somatosensory thalamus: intrinsic neuronal properties and corticothalamic feedback.
+	        (<a href="../../../../../article/ephys_prop/88443.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/17389627/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/88443.html">16.8
+          		
+          			± 8.4 
+          		
+          		
+          			(7)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/88443.html">
+             
+              16.8 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/35969.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/194.html">Thalamus relay cell</a></td>
+            <td>
+                
+                    thalamus ventroposteromedial nucleus neurons receiving inputs from cortex layer 6
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        VPM and PoM nuclei of the rat somatosensory thalamus: intrinsic neuronal properties and corticothalamic feedback.
+	        (<a href="../../../../../article/ephys_prop/88443.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/17389627/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/88443.html">2.0
+          		
+          			± 0.9 
+          		
+          		
+          			(13)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/88443.html">
+             
+              2.0 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/35969.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="../../../../../neuron/194.html">Thalamus relay cell</a></td>
+            <td>
+                
+                    thalamus medial portion of the posterior complex nucleus neurons receiving inputs from cortex layer 6
+                
+            </td>
+            <td><a href="../../../../../ephys_prop/48.html">adaptation ratio (last/first ISI)</a></td>
+            
+            <td>
+	        VPM and PoM nuclei of the rat somatosensory thalamus: intrinsic neuronal properties and corticothalamic feedback.
+	        (<a href="../../../../../article/ephys_prop/88443.html">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/17389627/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="../../../../../article/ephys_prop/88443.html">2.8
+          		
+          			± 2.7 
+          		
+          		
+          			(10)
+          		
+          </a></td>
+          
+          <td>
+            <a href="../../../../../article/ephys_prop/88443.html">
+             
+              2.8 (ratio)
+            
+            </a>
+          </td>
+          
+          	<td><a href="../../../../../datatable/ephys_prop/35969.html">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+    </tbody>
+</table>
+</body>
+</html>
+
+
+
+</body>   
+</div>
+<div id="footer">
+<footer>
+    
+    <table align="center" width="1200px" class="footer_bar">
+        <tr>
+            <td class="footer_bar">
+                <p align="left">
+                    &copy; 2012-2016 <a href="https://twitter.com/neuronJoy" target="_blank">Shreejoy Tripathy</a> and
+                    <a href="http://rick.gerk.in/" target="_blank">Richard Gerkin</a>
+                    <br> 
+                    University of British Columbia and Arizona State University
+                    
+                    <!--<br>Funding: NIH, NIF, and the RK Mellon Foundation-->
+                    <br>
+                    Release Version 5.0
+                    <!--Optimized for Mozilla Firefox, Safari, and fast internet connections -->
+                </p>
+            </td>
+            <td class="footer_bar">
+                <p align="center">
+                
+                <p align="left">Not signed in <a class="btn btn-small btn-primary" href="https://neuroelectro.org/accounts/login?next=/ephys_prop/48/data/"><i class="icon-user icon-white"></i>  Log in</a></p>
+                
+                </p>
+
+            </td>
+            <td class="footer_bar">
+                <div class="funding_logo_container" align="right">
+                    <a href="http://www.cihr-irsc.gc.ca/e/193.html" class="funding_logo">
+                        <img src="https://web.archive.org/web/20211028102021im_/https://neuroelectro.org/static/src/cihr_logo_big_e.png" id="logo" width="100" height="40">
+                    </a>
+                    <a href="http://neurodevnet.ca/" class="funding_logo">
+                        <img src="https://web.archive.org/web/20211028102021im_/https://neuroelectro.org/static/src/NeuroDevNetLOGO.jpg" id="logo" width="100" height="40">
+                    </a>
+                    <a href="http://www.nih.gov/" class="funding_logo">
+                        <img src="https://web.archive.org/web/20211028102021im_/https://neuroelectro.org/static/src/nihMasterLogo.png" id="logo" width="100" height="40">
+                    </a>
+                    <p id="supported_by">Support provided by</p>
+                </div>
+
+            </td>
+        </tr>
+    </table>
+    
+</footer>
+</div>
+</html>
+<!--
+     FILE ARCHIVED ON 10:20:21 Oct 28, 2021 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:32:25 Jan 16, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.797
+  exclusion.robots: 0.042
+  exclusion.robots.policy: 0.025
+  esindex: 0.015
+  cdx.remote: 34.45
+  LoadShardBlock: 120.966 (3)
+  PetaboxLoader3.datanode: 94.355 (4)
+  load_resource: 164.286
+  PetaboxLoader3.resolve: 61.735
+-->
