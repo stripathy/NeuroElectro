@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head><script type="text/javascript" src="https://web.archive.org/_static/js/bundle-playback.js?v=HxkREWBo" charset="utf-8"></script>
+<script type="text/javascript" src="https://web.archive.org/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
+<script type="text/javascript" src="https://web.archive.org/_static/js/ruffle/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://www.neuroelectro.org/ephys_prop/14/","20130720021915","https://web.archive.org/","web","/_static/",
+	      "1374286755");
+</script>
+<link rel="stylesheet" type="text/css" href="https://web.archive.org/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="https://web.archive.org/_static/css/iconochive.css?v=3PDvdIFv" />
+<!-- End Wayback Rewrite JS Include -->
+
+    <title>NeuroElectro :: spike overshoot</title>
+    
+    <link rel="shortcut icon" href="https://web.archive.org/web/20130720021915im_/http://www.neuroelectro.org/static/src/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://web.archive.org/web/20130720021915cs_/http://www.neuroelectro.org/static/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://web.archive.org/web/20130720021915cs_/http://www.neuroelectro.org/static/src/local.css"/>
+    
+    
+    <!--stuff for google tracking-->
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-35182339-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+</head>
+
+
+
+<div id="content">
+<body>
+	
+	<a href="http://www.neuroelectro.org/">
+    	<img src="https://web.archive.org/web/20130720021915im_/http://www.neuroelectro.org/static/src/neuroelectro_logo_1.png" id="logo">
+    </a>
+
+    
+
+<html>
+
+<head>
+
+<!--<link rel="stylesheet" type="text/css" href="/static/src/local.css" />-->
+<link href="https://web.archive.org/web/20130720021915cs_/http://www.neuroelectro.org/static/src/SimpleNavBarStyles.css" rel="stylesheet" type="text/css">
+<script src="https://web.archive.org/web/20130720021915js_/http://www.neuroelectro.org/static/src/SimpleNavBarScripts.js" language="JavaScript" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+
+
+
+<!-- ############### #### Navigation Bar #### ############### -->
+
+
+<!-- main nav bar titles -->
+<!-- Note how the the closing angle bracket of each </a> tag runs up against the next <a> tag,
+      to avoid leaving a gap between each menu title and the next one. -->
+      
+<!-- REPLACE each "placeholder.html" URL below with the specific page you want the user
+      to go to when the given menu title is clicked. For example, the first link below
+      is for the "Home" menu title, so you'd probably replace the first URL with index.html. -->
+
+<div class="mynavbar">
+
+<a class="navbartitle" id="t1" href="http://www.neuroelectro.org/neuroelectro">About</a><a class="navbartitle" id="t2" href="http://www.neuroelectro.org/neuroelectro/neuron/index" onmouseout="HideItem('neuron_submenu');" onmouseover="ShowItem('neuron_submenu');">Neuron Types</a><a class="navbartitle" id="t3" href="http://www.neuroelectro.org/neuroelectro/ephys_prop/index">Electrophysiology Properties</a><a class="navbartitle" id="t4" href="http://www.neuroelectro.org/neuroelectro/article/index">Articles</a><a class="navbartitle" id="t5" href="http://www.neuroelectro.org/neuroelectro/faqs">FAQs/Methods</a><a class="navbartitle" id="t6" href="http://www.neuroelectro.org/neuroelectro/contribute">Contribute</a><a class="navbartitle" id="t7" href="http://www.neuroelectro.org/neuroelectro/contact_info">Contact</a>
+    
+
+    <!-- neuron sub-menu, shown as needed  -->
+<div class="submenu" id="neuron_submenu" onmouseover="ShowItem('neuron_submenu');" onmouseout="HideItem('neuron_submenu');">
+  <div class="submenubox">
+    <ul>
+      <li><a href="http://www.neuroelectro.org/neuroelectro/neuron/index" class="submenlink">Neuron Listing</a></li>
+      <li><a href="http://www.neuroelectro.org/neuroelectro/neuron/clustering" class="submenlink">Neuron Clustering</a></li>
+    </ul>
+  </div>
+</div>
+</div>
+
+<!-- ################## end of Navigation Bar ################### -->
+
+
+</body>
+</html>
+
+    
+
+    
+    
+
+<head>
+<script language="javascript" type="text/javascript" src="https://web.archive.org/web/20130720021915js_/http://www.neuroelectro.org/static/src/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="https://web.archive.org/web/20130720021915js_/http://www.neuroelectro.org/static/src/jquery.jqplot.min.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20130720021915js_/http://www.neuroelectro.org/static/src/plugins/jqplot.canvasTextRenderer.min.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20130720021915js_/http://www.neuroelectro.org/static/src/plugins/jqplot.canvasAxisTickRenderer.min.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20130720021915js_/http://www.neuroelectro.org/static/src/plugins/jqplot.categoryAxisRenderer.min.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20130720021915js_/http://www.neuroelectro.org/static/src/plugins/jqplot.highlighter.min.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20130720021915js_/http://www.neuroelectro.org/static/src/plugins/jqplot.canvasAxisLabelRenderer.min.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20130720021915js_/http://www.neuroelectro.org/static/src/plugins/jqplot.cursor.min.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20130720021915js_/http://www.neuroelectro.org/static/src/plugins/jqplot.pointLabels.min.js"></script>
+<!--<script type="text/javascript" src="/static/src/plugins/jqplot.eventListenerHooks.min.js"></script>-->
+<link rel="stylesheet" type="text/css" href="https://web.archive.org/web/20130720021915cs_/http://www.neuroelectro.org/static/src/jquery.jqplot.min.css"/>
+<script src="https://web.archive.org/web/20130720021915js_/http://twitter.github.com/bootstrap/assets/js/bootstrap-tooltip.js"></script>
+<style type="text/css">
+.jqplot-axis {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90%; 
+}
+.jqplot-highlighter-tooltip {
+    background-color: #B4EEB4;
+    filter:alpha(opacity=90);
+    opacity:0.75;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span.question_tooltip {
+  cursor: pointer;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: #89A4CC;
+  line-height: 16px;
+  color: White;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+}
+span.question_tooltip:hover { background-color: #3D6199; }
+div.tooltip {
+  background-color: #3D6199;
+  color: White;
+  position: absolute;
+  left: 25px;
+  top: -25px;
+  z-index: 1000000;
+  width: 250px;
+  border-radius: 5px;
+}
+div.tooltip:before {
+  border-color: transparent #3D6199 transparent transparent;
+  border-right: 6px solid #3D6199;
+  border-style: solid;
+  border-width: 6px 6px 6px 0px;
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  line-height: 0;
+  position: absolute;
+  top: 40%;
+  left: -6px;
+}
+div.tooltip p {
+  margin: 10px;
+  color: White;
+
+</style>
+
+</head>
+
+<script>
+$(document).ready(function(){
+  var ticks = ['Cerebellum granule cell', 'Dorsal root ganglion cell', 'DRG temperature cell', 'Hypothalamus oxytocin neuroendocrine magnocellular cell', 'Neocortex basket cell', 'Neocortex layer 4 stellate cell', 'Neocortex pyramidal cell layer 2-3', 'Neocortex pyramidal cell layer 5-6', 'Neostriatum gaba/parvalbumin interneuron', 'Neostriatum medium spiny neuron', 'Spinal cord intermediate horn motor neuron sympathetic', 'Spinal cord ventral horn interneuron V2', 'Substantia nigra pars compacta dopaminergic cell'];
+  var plot1b = $.jqplot('chart1', [[[2, 49.0, 'Dorsal root ganglion cell', 'Vagotomy decreases excitability in primary vagal afferent somata.', 'Lancaster E; Oh EJ; Weinreich D', '1038'], [2, 51.0, 'Dorsal root ganglion cell', 'Calcium and calcium-activated currents in vagotomized rat primary vagal afferent neurons.', 'Lancaster E; Oh EJ; Gover T; Weinreich D', '8537'], [3, 16.5, 'DRG temperature cell', 'Early postnatal loss of heat sensitivity among cutaneous myelinated nociceptors in Swiss-Webster mice.', 'Ye Y; Woodbury CJ', '5885']], [[1, 22.5, 'Cerebellum granule cell', 'Persistent Nav1.6 current at axon initial segments tunes spike timing of cerebellar granule cells.', 'Osorio N; Cathala L; Meisler MH; Crest M; Magistretti J; Delmas P', '7834'], [1, 11.6, 'Cerebellum granule cell', 'Ionic mechanism of electroresponsiveness in cerebellar granule cells implicates the action of a persistent sodium current.', "D'Angelo E; De Filippi G; Rossi P; Taglietti V", '1290'], [1, 53.6, 'Cerebellum granule cell', 'Altered neuron excitability and synaptic plasticity in the cerebellar granular layer of juvenile prion protein knock-out mice with impaired motor control.', "Prestori F; Rossi P; Bearzatto B; Lain\xe9 J; Necchi D; Diwakar S; Schiffmann SN; Axelrad H; D'Angelo E", '2049'], [4, 20.2, 'Hypothalamus oxytocin neuroendocrine magnocellular cell', 'Excitatory role of the hyperpolarization-activated inward current in phasic and tonic firing of rat supraoptic neurons.', 'Ghamari-Langroudi M; Bourque CW', '3158'], [5, 17.4, 'Neocortex basket cell', 'Predominance of late-spiking neurons in layer VI of rat perirhinal cortex.', 'McGann JP; Moyer JR; Brown TH', '3021'], [6, 33.0, 'Neocortex layer 4 stellate cell', 'Predominance of late-spiking neurons in layer VI of rat perirhinal cortex.', 'McGann JP; Moyer JR; Brown TH', '3021'], [7, 9.7, 'Neocortex pyramidal cell layer 2-3', 'Epileptogenesis following neocortical trauma from two sources of disinhibition.', 'Yang L; Benardo LS', '1356'], [7, 28.5, 'Neocortex pyramidal cell layer 2-3', 'Prolonged synaptic integration in perirhinal cortical neurons.', 'Beggs JM; Moyer JR; McGann JP; Brown TH', '1107'], [8, 24.2, 'Neocortex pyramidal cell layer 5-6', 'Epileptogenesis following neocortical trauma from two sources of disinhibition.', 'Yang L; Benardo LS', '1356'], [8, 37.0, 'Neocortex pyramidal cell layer 5-6', 'Increased excitability and inward rectification in layer V cortical pyramidal neurons in the epileptic mutant mouse Stargazer.', 'Di Pasquale E; Keegan KD; Noebels JL', '1439'], [8, 50.4, 'Neocortex pyramidal cell layer 5-6', 'Electrophysiological Abnormalities in Both Axotomized and Nonaxotomized Pyramidal Neurons following Mild Traumatic Brain Injury.', 'Greer JE; Povlishock JT; Jacobs KM', '14294'], [9, -13.0, 'Neostriatum gaba/parvalbumin interneuron', 'Up and down states in striatal medium spiny neurons simultaneously recorded with spontaneous activity in fast-spiking interneurons studied in cortex-striatum-substantia nigra organotypic cultures.', 'Plenz D; Kitai ST', '3439'], [10, 2.0, 'Neostriatum medium spiny neuron', 'Up and down states in striatal medium spiny neurons simultaneously recorded with spontaneous activity in fast-spiking interneurons studied in cortex-striatum-substantia nigra organotypic cultures.', 'Plenz D; Kitai ST', '3439'], [10, 20.7, 'Neostriatum medium spiny neuron', 'The nitric oxide-guanylyl cyclase signaling pathway modulates membrane activity States and electrophysiological properties of striatal medium spiny neurons recorded in vivo.', 'West AR; Grace AA', '2637'], [10, 22.1, 'Neostriatum medium spiny neuron', 'The nitric oxide-guanylyl cyclase signaling pathway modulates membrane activity States and electrophysiological properties of striatal medium spiny neurons recorded in vivo.', 'West AR; Grace AA', '2638'], [11, 11.8, 'Spinal cord intermediate horn motor neuron sympathetic', 'Heterogeneity of membrane properties in sympathetic preganglionic neurons of neonatal mice: evidence of four subpopulations in the intermediolateral nucleus.', 'Zimmerman A; Hochman S', '187'], [12, 19.0, 'Spinal cord ventral horn interneuron V2', 'Firing and cellular properties of V2a interneurons in the rodent spinal cord.', 'Dougherty KJ; Kiehn O', '1869'], [13, 33.6, 'Substantia nigra pars compacta dopaminergic cell', 'Regulation of action potential size and excitability in substantia nigra compacta neurons: sensitivity to 4-aminopyridine.', 'Nedergaard S', '1157']]], {
+    title: "spike overshoot",
+    series:[
+        {
+            showLine:false,
+            color:"#EAA228",
+        },
+        {
+            showLine:false,
+            color:"#4bb2c5",
+        }
+    ],
+    axesDefaults: {
+        tickRenderer: $.jqplot.CanvasAxisTickRenderer ,
+        tickOptions: {
+          fontSize: '12pt',
+        }
+    },
+    axes: {
+      xaxis: {
+        renderer: $.jqplot.CategoryAxisRenderer,
+        ticks: ticks,
+        labelOptions:{
+            fontFamily: 'arial',
+        },
+        tickOptions: {
+          angle: -90,
+        }
+      },
+      yaxis: {
+        label: "mV",
+        labelRenderer: $.jqplot.CanvasAxisLabelRenderer,
+        autoscale : true,
+        tickOptions:{
+            formatString: '%1d'
+        },
+        labelOptions:{
+            fontFamily: 'arial',
+        },
+      },
+    },
+    highlighter: {
+        show: true,
+        sizeAdjust: 12,
+        tooltipAxes: 'y',
+        tooltipLocation: 'ne',
+        useAxesFormatters: true,
+        yvalues: 4,
+        formatString: '<table class="jqplot-highlighter"> \
+        <tr><td>Value:</td><td>%s</td></tr> \
+        <tr><td>Neuron:</td><td>%s</td></tr> \
+        <tr><td>Title:</td><td>%s</td></tr> \
+        <tr><td>Authors:</td><td>%s</td></tr> \
+        </table>'
+    },
+  });
+
+    $('#chart1').bind('jqplotDataClick', 
+        function (ev, seriesIndex, pointIndex, data) {
+            var data_pt_ind = data[5];
+            var linkStr = "/neuroelectro/data_table/" + data_pt_ind;
+            window.open(linkStr, '_self');
+            
+        }
+    );
+
+    // add id elements to corresponding neuron ticks based on the neuron id
+    
+        $(".jqplot-xaxis canvas")[0].id = 21;
+    
+        $(".jqplot-xaxis canvas")[1].id = 72;
+    
+        $(".jqplot-xaxis canvas")[2].id = 57;
+    
+        $(".jqplot-xaxis canvas")[3].id = 92;
+    
+        $(".jqplot-xaxis canvas")[4].id = 99;
+    
+        $(".jqplot-xaxis canvas")[5].id = 107;
+    
+        $(".jqplot-xaxis canvas")[6].id = 110;
+    
+        $(".jqplot-xaxis canvas")[7].id = 111;
+    
+        $(".jqplot-xaxis canvas")[8].id = 209;
+    
+        $(".jqplot-xaxis canvas")[9].id = 117;
+    
+        $(".jqplot-xaxis canvas")[10].id = 165;
+    
+        $(".jqplot-xaxis canvas")[11].id = 175;
+    
+        $(".jqplot-xaxis canvas")[12].id = 183;
+    
+    
+    //based on clicking an axis tick, open webpage corresponding to neuron id
+    $(".jqplot-xaxis-tick")
+    .css({
+        cursor: "pointer",
+        zIndex: "1",
+    })
+    .click(function(){ 
+        var neuron_tick_id = $(this).attr('id');
+        var linkStr = "/neuroelectro/neuron/" + neuron_tick_id;
+        window.open(linkStr, '_self');
+    })
+    .mouseenter(function(){ 
+        oldTop = $(this).css('top');
+        $(this).css({top: '10px'});
+    })
+    .mouseleave(function(){ 
+        $(this).css({top : oldTop});
+    });
+  $("span.question").hover(function () {
+    $(this).append('<div class="tooltip"><p>Difference between the peak of the action potential and 0 mV</p></div>');
+  }, function () {
+    $("div.tooltip").remove();
+  });
+
+});
+</script>
+
+
+<h1>spike overshoot  
+<!--<span class="question_tooltip">?</span>-->
+</h1>
+
+<!--
+<h2>Synonyms of this ephys property: </h2>
+<ul>
+
+</ul>
+<h2>Units of this ephys property: </h2>
+<li></li>
+-->
+
+<h2>Electrophysiological values of spike overshoot across neuron types:</h2>
+<ul>
+<lh>Interactivity:</lh>
+<li>Mouse over neuron report data points and click to view corresponding publication</li>
+<li>Click on neuron name axis labels (e.g. Dentate gyrus granule cell) to view corresponding neuron page</li>
+<li>Blue dots = human validated; Orange dots = not human validated</li>
+</ul>  
+
+<div id="chart1" style="height:800px;width:1200px; "></div>
+
+<!-- Table listing of all properties across neurons -->
+<!--
+<table border="1">
+<tr>
+<th>Neuron Type</th>
+<th>Value</th>
+</tr>
+
+    <tr>
+    <td><a href="/neuroelectro/neuron/21/">Cerebellum granule cell</a></td>
+    <td><a href="/neuroelectro/data_table/">22.5</td>
+    </tr>
+
+    <tr>
+    <td><a href="/neuroelectro/neuron/21/">Cerebellum granule cell</a></td>
+    <td><a href="/neuroelectro/data_table/">11.6</td>
+    </tr>
+
+    <tr>
+    <td><a href="/neuroelectro/neuron/21/">Cerebellum granule cell</a></td>
+    <td><a href="/neuroelectro/data_table/">53.6</td>
+    </tr>
+
+    <tr>
+    <td><a href="/neuroelectro/neuron/72/">Dorsal root ganglion cell</a></td>
+    <td><a href="/neuroelectro/data_table/">49.0</td>
+    </tr>
+
+    <tr>
+    <td><a href="/neuroelectro/neuron/72/">Dorsal root ganglion cell</a></td>
+    <td><a href="/neuroelectro/data_table/">51.0</td>
+    </tr>
+
+    <tr>
+    <td><a href="/neuroelectro/neuron/57/">DRG temperature cell</a></td>
+    <td><a href="/neuroelectro/data_table/">16.5</td>
+    </tr>
+
+    <tr>
+    <td><a href="/neuroelectro/neuron/92/">Hypothalamus oxytocin neuroendocrine magnocellular cell</a></td>
+    <td><a href="/neuroelectro/data_table/">20.2</td>
+    </tr>
+
+    <tr>
+    <td><a href="/neuroelectro/neuron/99/">Neocortex basket cell</a></td>
+    <td><a href="/neuroelectro/data_table/">17.4</td>
+    </tr>
+
+    <tr>
+    <td><a href="/neuroelectro/neuron/107/">Neocortex layer 4 stellate cell</a></td>
+    <td><a href="/neuroelectro/data_table/">33.0</td>
+    </tr>
+
+    <tr>
+    <td><a href="/neuroelectro/neuron/110/">Neocortex pyramidal cell layer 2-3</a></td>
+    <td><a href="/neuroelectro/data_table/">9.7</td>
+    </tr>
+
+    <tr>
+    <td><a href="/neuroelectro/neuron/110/">Neocortex pyramidal cell layer 2-3</a></td>
+    <td><a href="/neuroelectro/data_table/">28.5</td>
+    </tr>
+
+    <tr>
+    <td><a href="/neuroelectro/neuron/111/">Neocortex pyramidal cell layer 5-6</a></td>
+    <td><a href="/neuroelectro/data_table/">24.2</td>
+    </tr>
+
+    <tr>
+    <td><a href="/neuroelectro/neuron/111/">Neocortex pyramidal cell layer 5-6</a></td>
+    <td><a href="/neuroelectro/data_table/">37.0</td>
+    </tr>
+
+    <tr>
+    <td><a href="/neuroelectro/neuron/111/">Neocortex pyramidal cell layer 5-6</a></td>
+    <td><a href="/neuroelectro/data_table/">50.4</td>
+    </tr>
+
+    <tr>
+    <td><a href="/neuroelectro/neuron/209/">Neostriatum gaba/parvalbumin interneuron</a></td>
+    <td><a href="/neuroelectro/data_table/">-13.0</td>
+    </tr>
+
+    <tr>
+    <td><a href="/neuroelectro/neuron/117/">Neostriatum medium spiny neuron</a></td>
+    <td><a href="/neuroelectro/data_table/">2.0</td>
+    </tr>
+
+    <tr>
+    <td><a href="/neuroelectro/neuron/117/">Neostriatum medium spiny neuron</a></td>
+    <td><a href="/neuroelectro/data_table/">20.7</td>
+    </tr>
+
+    <tr>
+    <td><a href="/neuroelectro/neuron/117/">Neostriatum medium spiny neuron</a></td>
+    <td><a href="/neuroelectro/data_table/">22.1</td>
+    </tr>
+
+    <tr>
+    <td><a href="/neuroelectro/neuron/165/">Spinal cord intermediate horn motor neuron sympathetic</a></td>
+    <td><a href="/neuroelectro/data_table/">11.8</td>
+    </tr>
+
+    <tr>
+    <td><a href="/neuroelectro/neuron/175/">Spinal cord ventral horn interneuron V2</a></td>
+    <td><a href="/neuroelectro/data_table/">19.0</td>
+    </tr>
+
+    <tr>
+    <td><a href="/neuroelectro/neuron/183/">Substantia nigra pars compacta dopaminergic cell</a></td>
+    <td><a href="/neuroelectro/data_table/">33.6</td>
+    </tr>
+
+</table>
+<br>
+-->
+
+
+</body>   
+</div>
+<div id="footer">
+<footer>
+    
+    <hr>
+    <table align="center" width="1200px">
+        <tr>
+            <td>
+                <p align="left">
+                    &copy; 2012 Shreejoy Tripathy - stripathy (at) cmu (dot) edu
+                    <br>
+                    Richard Gerkin - rickg (at) cmu (dot) edu
+                    <br> 
+                    Carnegie Mellon University and University of Pittsburgh
+                    
+                    <!--<br>Funding: NIH, NIF, and the RK Mellon Foundation-->
+                    <br>
+                    <!--Optimized for Mozilla Firefox, Safari, and fast internet connections -->
+                </p>
+            </td>
+            <td>
+                
+                <p align="left">Not signed in <a class="btn btn-small btn-primary" href="http://www.neuroelectro.org/accounts/login?next=/ephys_prop/14/"><i class="icon-user icon-white"></i>  Log in</a></p>
+                
+
+            </td>
+            <td>
+                <p align="right">
+                <a href="http://www.neuinfo.org/">
+                <img src="https://web.archive.org/web/20130720021915im_/http://neuinfo.org/images/registered-with-nif.png" alt="Registered with NIF" width="125" height="40" style="border:none;">
+                </a>
+                </p>
+            </td>
+        </tr>
+    </table>
+    
+</footer>
+</div>
+</html>
+<!--
+     FILE ARCHIVED ON 02:19:15 Jul 20, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 18:48:18 Jan 20, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.594
+  exclusion.robots: 0.031
+  exclusion.robots.policy: 0.018
+  esindex: 0.012
+  cdx.remote: 1429.433
+  LoadShardBlock: 696.829 (3)
+  PetaboxLoader3.datanode: 181.238 (4)
+  PetaboxLoader3.resolve: 720.187 (2)
+  load_resource: 273.12
+-->
