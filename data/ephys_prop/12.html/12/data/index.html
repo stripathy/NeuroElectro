@@ -1,0 +1,2542 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head><script type="text/javascript" src="https://web.archive.org/_static/js/bundle-playback.js?v=HxkREWBo" charset="utf-8"></script>
+<script type="text/javascript" src="https://web.archive.org/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
+<script type="text/javascript" src="https://web.archive.org/_static/js/ruffle/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://neuroelectro.org/ephys_prop/12/data/","20240909182857","https://web.archive.org/","web","/_static/",
+	      "1725906537");
+</script>
+<link rel="stylesheet" type="text/css" href="https://web.archive.org/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="https://web.archive.org/_static/css/iconochive.css?v=3PDvdIFv" />
+<!-- End Wayback Rewrite JS Include -->
+
+    <title>NeuroElectro :: access resistance Data</title>
+	
+    <link rel="shortcut icon" href="https://https://web.archive.org/web/20240909182857im_/https://neuroelectro.org/static/src/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://https://web.archive.org/web/20240909182857cs_/https://neuroelectro.org/static/bootstrap_old/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://https://web.archive.org/web/20240909182857cs_/https://neuroelectro.org/static/src/local.css"/>
+    
+    
+        <script type="text/javascript" charset="utf-8" src="https://https://web.archive.org/web/20240909182857js_/https://neuroelectro.org/static/src/DataTables/media/js/jquery.js"></script>
+
+  <script type="text/javascript" src="https://https://web.archive.org/web/20240909182857js_/https://neuroelectro.org/static/src/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+  
+  <!-- Add fancyBox -->
+  <link rel="stylesheet" href="https://https://web.archive.org/web/20240909182857cs_/https://neuroelectro.org/static/src/fancybox/source/jquery.fancybox.css?v=2.1.3" type="text/css" media="screen"/>
+  <script type="text/javascript" src="https://https://web.archive.org/web/20240909182857js_/https://neuroelectro.org/static/src/fancybox/source/jquery.fancybox.pack.js?v=2.1.3"></script>
+  
+  <!-- Optionally add helpers - button, thumbnail and/or media -->
+  <link rel="stylesheet" href="https://https://web.archive.org/web/20240909182857cs_/https://neuroelectro.org/static/src/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen"/>
+  <script type="text/javascript" src="https://https://web.archive.org/web/20240909182857js_/https://neuroelectro.org/static/src/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+  <script type="text/javascript" src="https://https://web.archive.org/web/20240909182857js_/https://neuroelectro.org/static/src/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+  
+  <link rel="stylesheet" href="https://https://web.archive.org/web/20240909182857cs_/https://neuroelectro.org/static/src/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen"/>
+  <script type="text/javascript" src="https://https://web.archive.org/web/20240909182857js_/https://neuroelectro.org/static/src/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+	
+	
+     
+ 	<style>
+ 		#maintanence_message{
+ 			color: red;
+ 		    text-align: center;
+ 		}
+        .funding_logo {
+            display:inline-block;
+            text-align: center;
+        }
+        #supported_by{
+            text-align: center;
+            position: relative;
+            left: 35px;
+        }
+ 	</style>
+	
+    
+    <!--stuff for google tracking-->
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-35182339-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+	
+    </script>
+</head>
+
+
+
+
+
+<div id="content">
+<body>
+	
+    <table align="center" width="1200px" class="logo_bar">
+        <tr>
+            <td class="logo_bar">
+                <div align="left">
+					
+					<a href="https://neuroelectro.org/">
+				    	<img src="https://https://web.archive.org/web/20240909182857im_/https://neuroelectro.org/static/src/neuroelectro_logo_3.png" id="logo">
+				    </a>
+				    
+                </div>
+            </td>
+            <td class="logo_bar">
+                <div align="right">
+                <a href="../../../../../publications.html">
+                NeuroElectro Publications</a> &nbsp;
+                <br>
+                
+                </div>
+                
+            </td>
+        </tr>
+    </table>
+
+    
+
+<html>
+
+<head>
+
+<!--<link rel="stylesheet" type="text/css" href="/static/src/local.css" />-->
+<link href="https://https://web.archive.org/web/20240909182857cs_/https://neuroelectro.org/static/src/SimpleNavBarStyles.css" rel="stylesheet" type="text/css">
+<script src="https://https://web.archive.org/web/20240909182857js_/https://neuroelectro.org/static/src/SimpleNavBarScripts.js" language="JavaScript" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+
+
+
+<!-- ############### #### Navigation Bar #### ############### -->
+
+
+<!-- main nav bar titles -->
+<!-- Note how the the closing angle bracket of each </a> tag runs up against the next <a> tag,
+      to avoid leaving a gap between each menu title and the next one. -->
+      
+<div class="mynavbar">
+
+<a class="navbartitle" id="t1" href="https://neuroelectro.org/" onmouseout="HideItem('about_submenu');" onmouseover="ShowItem('about_submenu');">About</a><a class="navbartitle" id="t2" href="../../../../../neuron/index.html" onmouseout="HideItem('neuron_submenu');" onmouseover="ShowItem('neuron_submenu');">Neuron Types</a><a class="navbartitle" id="t3" href="../../../../../ephys_prop/index.html">Electrophysiology Properties</a><a class="navbartitle" id="t4" href="../../../../../article/index.html">Articles</a><a class="navbartitle" id="t5" href="../../../../../faqs.html" onmouseout="HideItem('faqs_submenu');" onmouseover="ShowItem('faqs_submenu');">FAQs</a><a class="navbartitle" id="t6" href="../../../../../api/docs.html" onmouseout="HideItem('api_submenu');" onmouseover="ShowItem('api_submenu');">Data/API</a><a class="navbartitle" id="t7" href="../../../../../contribute.html">Get Involved</a>
+
+    
+    <!-- about sub-menu, shown as needed  -->
+<div class="submenu" id="about_submenu" onmouseover="ShowItem('about_submenu');" onmouseout="HideItem('about_submenu');">
+  <div class="submenubox">
+    <ul>
+      <li><a href="../../../../../publications.html" class="submenlink">Publications</a></li>
+      <!-- <li><a href="/citation_info" class="submenlink">How to Cite</a></li> -->
+      <li><a href="https://groups.google.com/forum/#!forum/neuroelectro" class="submenlink" target="_blank">Mailing List</a></li>
+      <li><a href="https://neuroelectro.org/contact_info" class="submenlink">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+    <!-- neuron sub-menu, shown as needed  -->
+<div class="submenu" id="neuron_submenu" onmouseover="ShowItem('neuron_submenu');" onmouseout="HideItem('neuron_submenu');">
+  <div class="submenubox">
+    <ul>
+      <li><a href="../../../../../neuron/index.html" class="submenlink">Neuron Listing</a></li>
+        <li><a href="../../../../../neuron_search.html" class="submenlink">Neuron Search</a></li>
+      <li><a href="../../../../../neuron/clustering.html" class="submenlink">Neuron Clustering</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- api sub-menu, shown as needed  -->
+
+<div class="submenu" id="api_submenu" onmouseover="ShowItem('api_submenu');" onmouseout="HideItem('api_submenu');">
+  <div class="submenubox">
+    <ul>
+      <li><a href="../../../../../api/docs.html" class="submenlink">API Documentation</a></li>
+      <!-- <li><a href='/static/src/neuroelectro_data_download.zip' class="submenlink" target="_blank">Data Download</a></li>  -->
+      <li><a href="../../../../../publications.html" class="submenlink">How to Cite</a></li>
+      <li><a href="https://groups.google.com/forum/#!forum/neuroelectro" class="submenlink" target="_blank">Ask a Question</a></li>
+      <li><a href="https://github.com/neuroelectro" class="submenlink" target="_blank">Code Repository (GitHub)</a></li>
+    </ul>
+  </div>
+</div>
+
+
+</div>
+
+<!-- ################## end of Navigation Bar ################### -->
+
+
+</body>
+</html>
+
+    
+
+    
+    
+<script language="javascript" type="text/javascript">
+$(document).ready( function () {
+    $(".fancybox").fancybox();
+    $('#neuron_ephys_table').dataTable({
+        "iDisplayLength": 25
+    });
+    var oTable = $('#neuron_ephys_table').dataTable();
+    oTable.fnSort( [ [0,'asc']] );
+} );
+</script>
+
+<h1>access resistance  
+<!--<span class="question_tooltip">?</span>-->
+</h1>
+
+<p>
+Common definition: Sum of the electrode resistance and the resistance at the electrode-cell junction </br>
+</p>
+
+<h2>Electrophysiological values of <i>access resistance</i> across neuron types from literature:</h2>
+  <table id="norm_criteria_button">
+  <tr>
+  <td>
+    <ul>
+    <lh>Normalization criteria:</lh>
+    <li> Values are unchanged from those reported. Refer to individual articles for definition and calculation methodology.</li>
+    </ul>  
+  </td>
+  <td id="data_table_button">
+    <div style="text-align:center">
+      <a class="btn btn-large btn-info submit_button" href="https://neuroelectro.org/ephys_prop/12/"><i class="fa fa-bar-chart-o"></i> View data in graphical form</i></a>
+      <br>
+        <a class="fancybox btn btn-large btn-danger submit_button" data-fancybox-type="iframe" href="https://neuroelectro.org/nedm_comment_box/"><i class="icon-thumbs-down icon-white"></i> Report miscurated data</i></a>
+      </div>
+  </td>
+  </tr>
+  </table>
+  
+ <!DOCTYPE html>
+<html>
+<head>
+<script language="Javascript" type="text/javascript" src="https://https://web.archive.org/web/20240909182857js_/https://neuroelectro.org/static/src/jquery.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="https://https://web.archive.org/web/20240909182857js_/https://neuroelectro.org/static/src/DataTables/media/js/jquery.js"></script>
+        <script type="text/javascript" charset="utf-8" src="https://https://web.archive.org/web/20240909182857js_/https://neuroelectro.org/static/src/DataTables/media/js/jquery.dataTables.js"></script>
+        <style type="text/css" title="currentStyle">
+            @import "https://https://web.archive.org/web/20240909182857cs_/https://neuroelectro.org/static/src/DataTables/media/css/demo_table.css";
+        </style>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+
+<script language="javascript" type="text/javascript">
+$(document).ready( function () {
+    $('#neuron_ephys_table').dataTable({
+        "iDisplayLength": 25
+    });
+    var oTable = $('#neuron_ephys_table').dataTable();
+    oTable.fnSort( [ [0,'asc']] );
+} );
+</script>
+
+<body>
+<h1>Neuron electrophysiology data values (Table form)</h1>
+<table id="neuron_ephys_table" class="display">
+    <thead>
+        <tr>
+            <th>Neuron Type</th>
+            <th>Neuron Description</th>
+            <th>Ephys Prop</th>
+            <th>Article</th>
+            <th>Extracted Value</th>
+            <th>Standardized Value</th>
+      		<th>Content Source</th>
+            <!-- <th>Error</th>
+            <th>n</th> -->
+        </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/2/">Amygdala basolateral nucleus pyramidal neuron</a></td>
+            <td>
+                
+                    Basolateral amygdala principal neurons with input from ventral hippocampus
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Ex vivo dissection of optogenetically activated mPFC and hippocampal inputs to neurons in the basolateral amygdala: implications for fear and emotional memory.
+	        (<a href="https://neuroelectro.org/article/85710/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/24634648/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/85710/">21.58
+          		
+          			± 0.93 
+          		
+          		
+          			(45)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/85710/">
+             
+              21.58 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/27636/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/2/">Amygdala basolateral nucleus pyramidal neuron</a></td>
+            <td>
+                
+                    Basolateral amygdala principal neuron with input from medial prefrontal cortex
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Ex vivo dissection of optogenetically activated mPFC and hippocampal inputs to neurons in the basolateral amygdala: implications for fear and emotional memory.
+	        (<a href="https://neuroelectro.org/article/85710/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/24634648/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/85710/">20.8
+          		
+          			± 0.58 
+          		
+          		
+          			(65)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/85710/">
+             
+              20.8 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/27636/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/21/">Cerebellum granule cell</a></td>
+            <td>
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Altered neuron excitability and synaptic plasticity in the cerebellar granular layer of juvenile prion protein knock-out mice with impaired motor control.
+	        (<a href="https://neuroelectro.org/article/35862/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/18614678/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/35862/">21.2
+          		
+          			± 1.6 
+          		
+          		
+          			(22)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/35862/">
+             
+              21.2 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/2048/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/21/">Cerebellum granule cell</a></td>
+            <td>
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Fibroblast growth factor homologous factors control neuronal excitability through modulation of voltage-gated sodium channels.
+	        (<a href="https://neuroelectro.org/article/11498/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/17678857/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/11498/">26.6
+          		
+          			± 14.0 
+          		
+          		
+          			(7)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/11498/">
+             
+              26.6 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/21275/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/18/">Cerebellum Purkinje cell</a></td>
+            <td>
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Aminopyridines correct early dysfunction and delay neurodegeneration in a mouse model of spinocerebellar ataxia type 1.
+	        (<a href="https://neuroelectro.org/article/9102/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/21849540/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/9102/">23.65
+          		
+          		
+          			(18)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/9102/">
+             
+              23.65 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/1575/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/67/">Dentate gyrus hilar cell</a></td>
+            <td>
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Unitary IPSPs enhance hilar mossy cell gain in the rat hippocampus.
+	        (<a href="https://neuroelectro.org/article/32852/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/17082230/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/32852/">18.1
+          		
+          			± 0.7 
+          		
+          		
+          			(34)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/32852/">
+             
+              18.1 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/8473/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/72/">Dorsal root ganglion cell</a></td>
+            <td>
+                
+                    thoracolumbar colorectal dorsal root ganglion cell
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Altered purinergic signaling in colorectal dorsal root ganglion neurons contributes to colorectal hypersensitivity.
+	        (<a href="https://neuroelectro.org/article/33784/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/20861433/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/33784/">6.0
+          		
+          			± 0.3 
+          		
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/33784/">
+             
+              6e-09 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/109/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/72/">Dorsal root ganglion cell</a></td>
+            <td>
+                
+                    lumbosacral colorectal dorsal root ganglion cell
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Altered purinergic signaling in colorectal dorsal root ganglion neurons contributes to colorectal hypersensitivity.
+	        (<a href="https://neuroelectro.org/article/33784/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/20861433/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/33784/">6.5
+          		
+          			± 0.3 
+          		
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/33784/">
+             
+              6.5e-09 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/109/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/72/">Dorsal root ganglion cell</a></td>
+            <td>
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Heat-induced action potential discharges in nociceptive primary sensory neurons of rats.
+	        (<a href="https://neuroelectro.org/article/13966/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/19439674/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/13966/">6.6
+          		
+          			± 0.57 
+          		
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/13966/">
+             
+              6.6 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/5487/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/72/">Dorsal root ganglion cell</a></td>
+            <td>
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Electrophysiological analysis of dorsal root ganglion neurons pre- and post-coexpression of green fluorescent protein and functional 5-HT3 receptor.
+	        (<a href="https://neuroelectro.org/article/46751/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/9212261/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/46751/">10.2
+          		
+          			± 2.3 
+          		
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/46751/">
+             
+              10.2 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/5789/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/85/">Hippocampus CA1 pyramidal cell</a></td>
+            <td>
+                
+                    Ventral hippocampus CA1 pyramidal cell
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Dorsoventral Differences in Intrinsic Properties in Developing CA1 Pyramidal Cells.
+	        (<a href="https://neuroelectro.org/article/10360/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/22423094/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/10360/">19.0
+          		
+          			± 1.0 
+          		
+          		
+          			(40)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/10360/">
+             
+              19.0 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/1458/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/85/">Hippocampus CA1 pyramidal cell</a></td>
+            <td>
+                
+                    Dorsal hippocampus CA1 pyramidal cell
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Dorsoventral Differences in Intrinsic Properties in Developing CA1 Pyramidal Cells.
+	        (<a href="https://neuroelectro.org/article/10360/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/22423094/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/10360/">22.0
+          		
+          			± 1.0 
+          		
+          		
+          			(46)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/10360/">
+             
+              22.0 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/1458/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/85/">Hippocampus CA1 pyramidal cell</a></td>
+            <td>
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Early and simultaneous emergence of multiple hippocampal biomarkers of aging is mediated by Ca2+-induced Ca2+ release.
+	        (<a href="https://neuroelectro.org/article/36399/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/16571755/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/36399/">99.9
+          		
+          			± 5.81 
+          		
+          		
+          			(21)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/36399/">
+             
+              99.9 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/2372/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/85/">Hippocampus CA1 pyramidal cell</a></td>
+            <td>
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Stability and plasticity of intrinsic membrane properties in hippocampal CA1 pyramidal neurons: effects of internal anions.
+	        (<a href="https://neuroelectro.org/article/32572/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/17138601/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/32572/">31.0
+          		
+          			± 6.0 
+          		
+          		
+          			(9)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/32572/">
+             
+              31.0 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/8453/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/85/">Hippocampus CA1 pyramidal cell</a></td>
+            <td>
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Early and simultaneous emergence of multiple hippocampal biomarkers of aging is mediated by Ca2+-induced Ca2+ release.
+	        (<a href="https://neuroelectro.org/article/36399/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/16571755/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/36399/">100.93
+          		
+          			± 8.91 
+          		
+          		
+          			(15)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/36399/">
+            
+              --
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/2372/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/85/">Hippocampus CA1 pyramidal cell</a></td>
+            <td>
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Stability and plasticity of intrinsic membrane properties in hippocampal CA1 pyramidal neurons: effects of internal anions.
+	        (<a href="https://neuroelectro.org/article/32572/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/17138601/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/32572/">16.0
+          		
+          			± 3.0 
+          		
+          		
+          			(34)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/32572/">
+             
+              16.0 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/8453/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/85/">Hippocampus CA1 pyramidal cell</a></td>
+            <td>
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Early and simultaneous emergence of multiple hippocampal biomarkers of aging is mediated by Ca2+-induced Ca2+ release.
+	        (<a href="https://neuroelectro.org/article/36399/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/16571755/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/36399/">100.11
+          		
+          			± 7.09 
+          		
+          		
+          			(19)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/36399/">
+            
+              --
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/2372/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/85/">Hippocampus CA1 pyramidal cell</a></td>
+            <td>
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Stability and plasticity of intrinsic membrane properties in hippocampal CA1 pyramidal neurons: effects of internal anions.
+	        (<a href="https://neuroelectro.org/article/32572/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/17138601/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/32572/">17.0
+          		
+          			± 3.0 
+          		
+          		
+          			(49)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/32572/">
+             
+              17.0 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/8453/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/85/">Hippocampus CA1 pyramidal cell</a></td>
+            <td>
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Early and simultaneous emergence of multiple hippocampal biomarkers of aging is mediated by Ca2+-induced Ca2+ release.
+	        (<a href="https://neuroelectro.org/article/36399/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/16571755/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/36399/">106.13
+          		
+          			± 6.34 
+          		
+          		
+          			(16)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/36399/">
+            
+              --
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/2372/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/85/">Hippocampus CA1 pyramidal cell</a></td>
+            <td>
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Early and simultaneous emergence of multiple hippocampal biomarkers of aging is mediated by Ca2+-induced Ca2+ release.
+	        (<a href="https://neuroelectro.org/article/36399/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/16571755/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/36399/">97.8
+          		
+          			± 3.97 
+          		
+          		
+          			(21)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/36399/">
+             
+              97.8 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/2372/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/85/">Hippocampus CA1 pyramidal cell</a></td>
+            <td>
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        A spontaneous mutation involving Kcnq2 (Kv7.2) reduces M-current density and spike frequency adaptation in mouse CA1 neurons.
+	        (<a href="https://neuroelectro.org/article/5686/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/16481438/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/5686/">13.2
+          		
+          			± 0.5 
+          		
+          		
+          			(25)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/5686/">
+             
+              13.2 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/2379/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/85/">Hippocampus CA1 pyramidal cell</a></td>
+            <td>
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Disrupting function of FK506-binding protein 1b/12.6 induces the Ca²+-dysregulation aging phenotype in hippocampal neurons.
+	        (<a href="https://neuroelectro.org/article/32797/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/21289178/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/32797/">116.11
+          		
+          			± 6.38 
+          		
+          		
+          			(16)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/32797/">
+            
+              --
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/1666/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/85/">Hippocampus CA1 pyramidal cell</a></td>
+            <td>
+                
+                    proximal CA1 pyramidal excitatory neuron
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Distinct physiological and developmental properties of hippocampal CA2 subfield revealed by using anti-Purkinje cell protein 4 (PCP4) immunostaining.
+	        (<a href="https://neuroelectro.org/article/91866/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/24166578/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/91866/">24.0
+          		
+          			± 3.7 
+          		
+          		
+          			(14)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/91866/">
+             
+              24.0 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/45942/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/87/">Hippocampus CA2 pyramidal neuron</a></td>
+            <td>
+                
+                    Hippocampus CA2 excitatory pyramidal neuron
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Distinct physiological and developmental properties of hippocampal CA2 subfield revealed by using anti-Purkinje cell protein 4 (PCP4) immunostaining.
+	        (<a href="https://neuroelectro.org/article/91866/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/24166578/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/91866/">23.7
+          		
+          			± 4.1 
+          		
+          		
+          			(14)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/91866/">
+             
+              23.7 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/45942/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/89/">Hippocampus CA3 pyramidal cell</a></td>
+            <td>
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Aging-Related Hyperexcitability in CA3 Pyramidal Neurons Is Mediated by Enhanced A-Type K+ Channel Function and Expression.
+	        (<a href="https://neuroelectro.org/article/92410/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/26400949/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/92410/">21.33
+          		
+          			± 1.08 
+          		
+          		
+          			(44)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/92410/">
+             
+              21.33 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/47341/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/89/">Hippocampus CA3 pyramidal cell</a></td>
+            <td>
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Aging-Related Hyperexcitability in CA3 Pyramidal Neurons Is Mediated by Enhanced A-Type K+ Channel Function and Expression.
+	        (<a href="https://neuroelectro.org/article/92410/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/26400949/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/92410/">21.56
+          		
+          			± 0.77 
+          		
+          		
+          			(52)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/92410/">
+             
+              21.56 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/47341/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/89/">Hippocampus CA3 pyramidal cell</a></td>
+            <td>
+                
+                    Distal CA3 excitatory pyramidal neuron
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Distinct physiological and developmental properties of hippocampal CA2 subfield revealed by using anti-Purkinje cell protein 4 (PCP4) immunostaining.
+	        (<a href="https://neuroelectro.org/article/91866/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/24166578/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/91866/">19.9
+          		
+          			± 4.7 
+          		
+          		
+          			(20)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/91866/">
+             
+              19.9 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/45942/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/91/">Hypoglossal nucleus motor neuron</a></td>
+            <td>
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Excitatory-inhibitory imbalance in hypoglossal neurons during the critical period of postnatal development in the rat.
+	        (<a href="https://neuroelectro.org/article/45438/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/21486774/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/45438/">25.23
+          		
+          			± 1.28 
+          		
+          		
+          			(21)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/45438/">
+             
+              25.23 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/10906/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/91/">Hypoglossal nucleus motor neuron</a></td>
+            <td>
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Excitatory-inhibitory imbalance in hypoglossal neurons during the critical period of postnatal development in the rat.
+	        (<a href="https://neuroelectro.org/article/45438/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/21486774/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/45438/">24.24
+          		
+          			± 3.08 
+          		
+          		
+          			(21)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/45438/">
+            
+              --
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/10906/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/91/">Hypoglossal nucleus motor neuron</a></td>
+            <td>
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Excitatory-inhibitory imbalance in hypoglossal neurons during the critical period of postnatal development in the rat.
+	        (<a href="https://neuroelectro.org/article/45438/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/21486774/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/45438/">24.32
+          		
+          			± 1.09 
+          		
+          		
+          			(21)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/45438/">
+            
+              --
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/10906/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/91/">Hypoglossal nucleus motor neuron</a></td>
+            <td>
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Excitatory-inhibitory imbalance in hypoglossal neurons during the critical period of postnatal development in the rat.
+	        (<a href="https://neuroelectro.org/article/45438/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/21486774/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/45438/">24.04
+          		
+          			± 0.65 
+          		
+          		
+          			(21)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/45438/">
+            
+              --
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/10906/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/91/">Hypoglossal nucleus motor neuron</a></td>
+            <td>
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Excitatory-inhibitory imbalance in hypoglossal neurons during the critical period of postnatal development in the rat.
+	        (<a href="https://neuroelectro.org/article/45438/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/21486774/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/45438/">20.82
+          		
+          			± 1.26 
+          		
+          		
+          			(21)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/45438/">
+            
+              --
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/10906/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/92/">Hypothalamus oxytocin neuroendocrine magnocellular cell</a></td>
+            <td>
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Differential GABAA receptor clustering determines GABA synapse plasticity in rat oxytocin neurons around parturition and the onset of lactation.
+	        (<a href="https://neuroelectro.org/article/78257/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/15607948/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/78257/">9.3
+          		
+          			± 0.3 
+          		
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/78257/">
+             
+              9.3 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/21269/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/94/">Locus coeruleus noradrenergic neuron</a></td>
+            <td>
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Developmental changes in pacemaker currents in mouse locus coeruleus neurons.
+	        (<a href="https://neuroelectro.org/article/93586/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/22018689/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/93586/">4.6
+          		
+          			± 0.1 
+          		
+          		
+          			(96)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/93586/">
+             
+              4.6 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/49869/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/94/">Locus coeruleus noradrenergic neuron</a></td>
+            <td>
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Developmental changes in pacemaker currents in mouse locus coeruleus neurons.
+	        (<a href="https://neuroelectro.org/article/93586/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/22018689/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/93586/">4.0
+          		
+          			± 0.1 
+          		
+          		
+          			(33)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/93586/">
+             
+              4.0 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/49869/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/223/">Medial vestibular nucleus neuron</a></td>
+            <td>
+                
+                    Medial vestibular nucleus non-GABAergic neurons expressing Thy1
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Firing properties of GABAergic versus non-GABAergic vestibular nucleus neurons conferred by a differential balance of potassium currents.
+	        (<a href="https://neuroelectro.org/article/34032/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/17392422/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/34032/">8.1
+          		
+          			± 3.3 
+          		
+          		
+          			(39)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/34032/">
+             
+              8.1 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/382/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/223/">Medial vestibular nucleus neuron</a></td>
+            <td>
+                
+                    Medial vestibular nucleus GABAergic neurons 
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Firing properties of GABAergic versus non-GABAergic vestibular nucleus neurons conferred by a differential balance of potassium currents.
+	        (<a href="https://neuroelectro.org/article/34032/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/17392422/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/34032/">9.8
+          		
+          			± 3.9 
+          		
+          		
+          			(35)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/34032/">
+             
+              9.8 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/382/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/99/">Neocortex basket cell</a></td>
+            <td>
+                
+                    frontal cortex fast spiking neuron
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Neuregulin-1 signals from the periphery regulate AMPA receptor sensitivity and expression in GABAergic interneurons in developing neocortex.
+	        (<a href="https://neuroelectro.org/article/35201/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/21490211/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/35201/">16.0
+          		
+          			± 0.8 
+          		
+          		
+          			(20)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/35201/">
+             
+              16.0 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/1637/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/106/">Neocortex interneuron deep</a></td>
+            <td>
+                
+                    ventral hippocampus stimulated interneurons in basolateral amygdala
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Ex vivo dissection of optogenetically activated mPFC and hippocampal inputs to neurons in the basolateral amygdala: implications for fear and emotional memory.
+	        (<a href="https://neuroelectro.org/article/85710/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/24634648/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/85710/">31.65
+          		
+          			± 1.86 
+          		
+          		
+          			(16)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/85710/">
+             
+              31.65 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/27639/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/106/">Neocortex interneuron deep</a></td>
+            <td>
+                
+                    medial prefrontal cortex stimulated interneuron in basolateral amygdala
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Ex vivo dissection of optogenetically activated mPFC and hippocampal inputs to neurons in the basolateral amygdala: implications for fear and emotional memory.
+	        (<a href="https://neuroelectro.org/article/85710/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/24634648/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/85710/">33.99
+          		
+          			± 1.57 
+          		
+          		
+          			(35)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/85710/">
+             
+              33.99 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/27639/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/106/">Neocortex interneuron deep</a></td>
+            <td>
+                
+                    ventral hippocampus stimulated non-fast spiking interneurons in basolateral amygdala
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Ex vivo dissection of optogenetically activated mPFC and hippocampal inputs to neurons in the basolateral amygdala: implications for fear and emotional memory.
+	        (<a href="https://neuroelectro.org/article/85710/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/24634648/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/85710/">34.32
+          		
+          			± 2.77 
+          		
+          		
+          			(9)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/85710/">
+             
+              34.32 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/27639/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/106/">Neocortex interneuron deep</a></td>
+            <td>
+                
+                    ventral hippocampus stimulated fast-spiking interneurons in basolateral amygdala
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Ex vivo dissection of optogenetically activated mPFC and hippocampal inputs to neurons in the basolateral amygdala: implications for fear and emotional memory.
+	        (<a href="https://neuroelectro.org/article/85710/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/24634648/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/85710/">28.22
+          		
+          			± 1.78 
+          		
+          		
+          			(7)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/85710/">
+             
+              28.22 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/27639/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/106/">Neocortex interneuron deep</a></td>
+            <td>
+                
+                    medial prefrontal cortex stimulated fast-spiking interneuron in basolateral amygdala
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Ex vivo dissection of optogenetically activated mPFC and hippocampal inputs to neurons in the basolateral amygdala: implications for fear and emotional memory.
+	        (<a href="https://neuroelectro.org/article/85710/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/24634648/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/85710/">32.59
+          		
+          			± 2.48 
+          		
+          		
+          			(6)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/85710/">
+             
+              32.59 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/27639/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/106/">Neocortex interneuron deep</a></td>
+            <td>
+                
+                    medial prefrontal cortex stimulated non-fast spiking interneuron in basolateral amygdala
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Ex vivo dissection of optogenetically activated mPFC and hippocampal inputs to neurons in the basolateral amygdala: implications for fear and emotional memory.
+	        (<a href="https://neuroelectro.org/article/85710/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/24634648/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/85710/">34.28
+          		
+          			± 1.84 
+          		
+          		
+          			(29)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/85710/">
+             
+              34.28 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/27639/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/98/">Neocortex Martinotti cell</a></td>
+            <td>
+                
+                    sensorimotor cortex layer 2/3 somatostatin-expressing group 2 cell
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Electrophysiological classification of somatostatin-positive interneurons in mouse sensorimotor cortex.
+	        (<a href="https://neuroelectro.org/article/34112/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/16707715/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/34112/">28.8
+          		
+          			± 9.0 
+          		
+          		
+          			(7)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/34112/">
+             
+              28.8 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/492/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/98/">Neocortex Martinotti cell</a></td>
+            <td>
+                
+                    sensorimotor cortex layer 2/3 somatostatin-expressing group 3 cell
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Electrophysiological classification of somatostatin-positive interneurons in mouse sensorimotor cortex.
+	        (<a href="https://neuroelectro.org/article/34112/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/16707715/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/34112/">56.6
+          		
+          			± 17.5 
+          		
+          		
+          			(15)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/34112/">
+             
+              56.6 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/492/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/98/">Neocortex Martinotti cell</a></td>
+            <td>
+                
+                    sensorimotor cortex layer 2/3 somatostatin-expressing group 1 cell
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Electrophysiological classification of somatostatin-positive interneurons in mouse sensorimotor cortex.
+	        (<a href="https://neuroelectro.org/article/34112/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/16707715/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/34112/">36.2
+          		
+          			± 9.6 
+          		
+          		
+          			(17)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/34112/">
+             
+              36.2 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/492/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/98/">Neocortex Martinotti cell</a></td>
+            <td>
+                
+                    sensorimotor cortex layer 2/3 somatostatin-expressing group 4 cell
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Electrophysiological classification of somatostatin-positive interneurons in mouse sensorimotor cortex.
+	        (<a href="https://neuroelectro.org/article/34112/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/16707715/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/34112/">37.2
+          		
+          			± 13.0 
+          		
+          		
+          			(7)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/34112/">
+             
+              37.2 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/492/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/111/">Neocortex pyramidal cell layer 5-6</a></td>
+            <td>
+                
+                    somatosensory cortex layer V thick tufted pyramidal cell
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Morphological, electrophysiological, and synaptic properties of corticocallosal pyramidal cells in the neonatal rat neocortex.
+	        (<a href="https://neuroelectro.org/article/88515/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/17124287/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/88515/">21.9
+          		
+          			± 4.9 
+          		
+          		
+          			(35)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/88515/">
+             
+              21.9 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/36135/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/111/">Neocortex pyramidal cell layer 5-6</a></td>
+            <td>
+                
+                    somatosensory cortex layer V corticocallosal projecting pyramidal cell
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Morphological, electrophysiological, and synaptic properties of corticocallosal pyramidal cells in the neonatal rat neocortex.
+	        (<a href="https://neuroelectro.org/article/88515/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/17124287/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/88515/">23.7
+          		
+          			± 5.4 
+          		
+          		
+          			(22)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/88515/">
+             
+              23.7 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/36135/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/109/">Neocortex uncharacterized cell</a></td>
+            <td>
+                
+                    medial prefrontal cortex infralimbic layer II,III, and V pyramidal neurons
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Spontaneous recovery of fear reverses extinction-induced excitability of infralimbic neurons.
+	        (<a href="https://neuroelectro.org/article/89755/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/25089624/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/89755/">18.0
+          		
+          			± 1.0 
+          		
+          		
+          			(15)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/89755/">
+             
+              18.0 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/39835/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/209/">Neostriatum gabaergic interneuron</a></td>
+            <td>
+                
+                    Neostriatum persistent low-threshold spike interneurons
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Acetylcholine encodes long-lasting presynaptic plasticity at glutamatergic synapses in the dorsal striatum after repeated amphetamine exposure.
+	        (<a href="https://neuroelectro.org/article/91997/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/23785153/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/91997/">15.9
+          		
+          			± 1.4 
+          		
+          		
+          			(10)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/91997/">
+             
+              15.9 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/46285/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/209/">Neostriatum gabaergic interneuron</a></td>
+            <td>
+                
+                    Neostriatum tonically active interneuron
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Acetylcholine encodes long-lasting presynaptic plasticity at glutamatergic synapses in the dorsal striatum after repeated amphetamine exposure.
+	        (<a href="https://neuroelectro.org/article/91997/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/23785153/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/91997/">20.8
+          		
+          			± 0.7 
+          		
+          		
+          			(34)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/91997/">
+             
+              20.8 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/46285/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/117/">Neostriatum medium spiny neuron</a></td>
+            <td>
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Acetylcholine encodes long-lasting presynaptic plasticity at glutamatergic synapses in the dorsal striatum after repeated amphetamine exposure.
+	        (<a href="https://neuroelectro.org/article/91997/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/23785153/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/91997/">14.0
+          		
+          			± 0.7 
+          		
+          		
+          			(114)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/91997/">
+             
+              14.0 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/46285/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/235/">Other</a></td>
+            <td>
+                
+                    Cochlear Spiral ganglion Ca2+ dependant neuron
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Spike encoding of neurotransmitter release timing by spiral ganglion neurons of the cochlea.
+	        (<a href="https://neuroelectro.org/article/64179/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/22492033/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/64179/">46.0
+          		
+          		
+          			(8)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/64179/">
+             
+              46.0 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/14479/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/235/">Other</a></td>
+            <td>
+                
+                    Hippocampus CA1-CA3 primary neuron
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Miniature release events of glutamate from hippocampal neurons are influenced by the dystonia-associated protein torsinA.
+	        (<a href="https://neuroelectro.org/article/76877/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/22588999/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/76877/">13.67
+          		
+          			± 0.83 
+          		
+          		
+          			(17)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/76877/">
+             
+              13.67 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/20068/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/217/">Paraventricular hypothalamic nucleus neurons</a></td>
+            <td>
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Pre- and postsynaptic plasticity underlying augmented glutamatergic inputs to hypothalamic presympathetic neurons in spontaneously hypertensive rats.
+	        (<a href="https://neuroelectro.org/article/45721/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/18238817/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/45721/">16.1
+          		
+          			± 1.1 
+          		
+          		
+          			(51)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/45721/">
+             
+              16.1 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/11067/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/217/">Paraventricular hypothalamic nucleus neurons</a></td>
+            <td>
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Pre- and postsynaptic plasticity underlying augmented glutamatergic inputs to hypothalamic presympathetic neurons in spontaneously hypertensive rats.
+	        (<a href="https://neuroelectro.org/article/45721/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/18238817/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/45721/">16.4
+          		
+          			± 1.3 
+          		
+          		
+          			(56)
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/45721/">
+             
+              16.4 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/11067/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/194/">Thalamus relay cell</a></td>
+            <td>
+                
+                    Paraventricular Thalamus relay cell
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Alterations in GABA(A) receptor mediated inhibition in adjacent dorsal midline thalamic nuclei in a rat model of chronic limbic epilepsy.
+	        (<a href="https://neuroelectro.org/article/47927/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/17855591/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/47927/">10.64
+          		
+          			± 1.18 
+          		
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/47927/">
+             
+              10.64 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/6315/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+        <tr>
+            <td><a href="https://neuroelectro.org/neuron/194/">Thalamus relay cell</a></td>
+            <td>
+                
+                    Mediolateral Thalamic relay cell
+                
+            </td>
+            <td><a href="https://neuroelectro.org/ephys_prop/12/">access resistance</a></td>
+            
+            <td>
+	        Alterations in GABA(A) receptor mediated inhibition in adjacent dorsal midline thalamic nuclei in a rat model of chronic limbic epilepsy.
+	        (<a href="https://neuroelectro.org/article/47927/">NeuroElectro data</a>)
+	        (<a href="http://www.ncbi.nlm.nih.gov/pubmed/17855591/" target="_blank">PubMed</a>)
+	        </td>
+          <td><a href="https://neuroelectro.org/article/47927/">11.12
+          		
+          			± 0.86 
+          		
+          		
+          </a></td>
+          
+          <td>
+            <a href="https://neuroelectro.org/article/47927/">
+             
+              11.12 (MΩ)
+            
+            </a>
+          </td>
+          
+          	<td><a href="https://neuroelectro.org/data_table/6315/">Data Table</a></td>
+          
+    <!--     <td></td>
+             <td></td> -->
+        </tr>
+         
+    
+    </tbody>
+</table>
+</body>
+</html>
+
+
+
+</body>   
+</div>
+<div id="footer">
+<footer>
+    
+    <table align="center" width="1200px" class="footer_bar">
+        <tr>
+            <td class="footer_bar">
+                <p align="left">
+                    &copy; 2012-2016 <a href="https://twitter.com/neuronJoy" target="_blank">Shreejoy Tripathy</a> and
+                    <a href="http://rick.gerk.in/" target="_blank">Richard Gerkin</a>
+                    <br> 
+                    University of British Columbia and Arizona State University
+                    
+                    <!--<br>Funding: NIH, NIF, and the RK Mellon Foundation-->
+                    <br>
+                    Release Version 5.0
+                    <!--Optimized for Mozilla Firefox, Safari, and fast internet connections -->
+                </p>
+            </td>
+            <td class="footer_bar">
+                <p align="center">
+                
+                <p align="left">Not signed in <a class="btn btn-small btn-primary" href="https://neuroelectro.org/accounts/login?next=/ephys_prop/12/data/"><i class="icon-user icon-white"></i>  Log in</a></p>
+                
+                </p>
+
+            </td>
+            <td class="footer_bar">
+                <div class="funding_logo_container" align="right">
+                    <a href="http://www.cihr-irsc.gc.ca/e/193.html" class="funding_logo">
+                        <img src="https://https://web.archive.org/web/20240909182857im_/https://neuroelectro.org/static/src/cihr_logo_big_e.png" id="logo" width="100" height="40">
+                    </a>
+                    <a href="http://neurodevnet.ca/" class="funding_logo">
+                        <img src="https://https://web.archive.org/web/20240909182857im_/https://neuroelectro.org/static/src/NeuroDevNetLOGO.jpg" id="logo" width="100" height="40">
+                    </a>
+                    <a href="http://www.nih.gov/" class="funding_logo">
+                        <img src="https://https://web.archive.org/web/20240909182857im_/https://neuroelectro.org/static/src/nihMasterLogo.png" id="logo" width="100" height="40">
+                    </a>
+                    <p id="supported_by">Support provided by</p>
+                </div>
+
+            </td>
+        </tr>
+    </table>
+    
+</footer>
+</div>
+</html>
+<!--
+     FILE ARCHIVED ON 18:28:57 Sep 09, 2024 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 19:52:46 Jan 20, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.512
+  exclusion.robots: 0.026
+  exclusion.robots.policy: 0.014
+  esindex: 0.011
+  cdx.remote: 286.436
+  LoadShardBlock: 117.417 (3)
+  PetaboxLoader3.datanode: 187.196 (4)
+  load_resource: 300.949
+  PetaboxLoader3.resolve: 204.481
+-->
