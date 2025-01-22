@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head><script type="text/javascript" src="https://web.archive.org/_static/js/bundle-playback.js?v=HxkREWBo" charset="utf-8"></script>
+<script type="text/javascript" src="https://web.archive.org/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
+<script type="text/javascript" src="https://web.archive.org/_static/js/ruffle/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://neuroelectro.org/ephys_prop/11/","20240814232726","https://web.archive.org/","web","/_static/",
+	      "1723678046");
+</script>
+<link rel="stylesheet" type="text/css" href="https://web.archive.org/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="https://web.archive.org/_static/css/iconochive.css?v=3PDvdIFv" />
+<!-- End Wayback Rewrite JS Include -->
+
+    <title>NeuroElectro :: cell diameter</title>
+	
+    <link rel="shortcut icon" href="https://web.archive.org/web/20240814232726im_/https://neuroelectro.org/static/src/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://web.archive.org/web/20240814232726cs_/https://neuroelectro.org/static/bootstrap_old/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://web.archive.org/web/20240814232726cs_/https://neuroelectro.org/static/src/local.css"/>
+    
+    
+<script type="text/javascript" charset="utf-8" src="https://web.archive.org/web/20240814232726js_/https://neuroelectro.org/static/src/DataTables/media/js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://web.archive.org/web/20240814232726js_/https://neuroelectro.org/static/src/DataTables/media/js/jquery.dataTables.js"></script>
+<style type="text/css" title="currentStyle">
+    @import "https://web.archive.org/web/20240814232726cs_/https://neuroelectro.org/static/src/DataTables/media/css/demo_table.css";
+</style>
+<!--<script language="javascript" type="text/javascript" src="/static/src/jquery.min.js"></script>-->
+<script language="javascript" type="text/javascript" src="https://web.archive.org/web/20240814232726js_/https://neuroelectro.org/static/src/jquery.jqplot.min.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20240814232726js_/https://neuroelectro.org/static/src/plugins/jqplot.canvasTextRenderer.min.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20240814232726js_/https://neuroelectro.org/static/src/plugins/jqplot.canvasAxisTickRenderer.min.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20240814232726js_/https://neuroelectro.org/static/src/plugins/jqplot.categoryAxisRenderer.min.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20240814232726js_/https://neuroelectro.org/static/src/plugins/jqplot.logAxisRenderer.min.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20240814232726js_/https://neuroelectro.org/static/src/plugins/jqplot.highlighter.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20240814232726js_/https://neuroelectro.org/static/src/plugins/jqplot.canvasAxisLabelRenderer.min.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20240814232726js_/https://neuroelectro.org/static/src/plugins/jqplot.cursor.min.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20240814232726js_/https://neuroelectro.org/static/src/plugins/jqplot.pointLabels.min.js"></script>
+<!--<script type="text/javascript" src="/static/src/plugins/jqplot.eventListenerHooks.min.js"></script>-->
+<link rel="stylesheet" type="text/css" href="https://web.archive.org/web/20240814232726cs_/https://neuroelectro.org/static/src/jquery.jqplot.min.css"/>
+<script type="text/javascript" src="https://web.archive.org/web/20240814232726js_/https://neuroelectro.org/static/src/plugins/jqplot.ohlcRenderer.min.js"></script>
+  <!-- Add jQuery library -->
+  <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>-->
+  
+  <!-- Add mousewheel plugin (this is optional) -->
+  <script type="text/javascript" src="https://web.archive.org/web/20240814232726js_/https://neuroelectro.org/static/src/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+  
+  <!-- Add fancyBox -->
+  <link rel="stylesheet" href="https://web.archive.org/web/20240814232726cs_/https://neuroelectro.org/static/src/fancybox/source/jquery.fancybox.css?v=2.1.3" type="text/css" media="screen"/>
+  <script type="text/javascript" src="https://web.archive.org/web/20240814232726js_/https://neuroelectro.org/static/src/fancybox/source/jquery.fancybox.pack.js?v=2.1.3"></script>
+  
+  <!-- Optionally add helpers - button, thumbnail and/or media -->
+  <link rel="stylesheet" href="https://web.archive.org/web/20240814232726cs_/https://neuroelectro.org/static/src/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen"/>
+  <script type="text/javascript" src="https://web.archive.org/web/20240814232726js_/https://neuroelectro.org/static/src/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+  <script type="text/javascript" src="https://web.archive.org/web/20240814232726js_/https://neuroelectro.org/static/src/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+  
+  <link rel="stylesheet" href="https://web.archive.org/web/20240814232726cs_/https://neuroelectro.org/static/src/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen"/>
+  <script type="text/javascript" src="https://web.archive.org/web/20240814232726js_/https://neuroelectro.org/static/src/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<style type="text/css">
+.jqplot-axis {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90%; 
+}
+.jqplot-highlighter-tooltip {
+    background-color: #B4EEB4;
+    filter:alpha(opacity=90);
+    opacity:0.9;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p {
+  margin-left:25px;
+}
+table#norm_criteria_button {
+  margin-left:25px;
+  margin-right:25px;
+}
+#chart1{
+  margin-left:5px;
+  margin-right:5px;
+  margin-bottom:25px;
+}
+
+
+</style>
+
+	
+	
+     
+ 	<style>
+ 		#maintanence_message{
+ 			color: red;
+ 		    text-align: center;
+ 		}
+        .funding_logo {
+            display:inline-block;
+            text-align: center;
+        }
+        #supported_by{
+            text-align: center;
+            position: relative;
+            left: 35px;
+        }
+ 	</style>
+	
+    
+    <!--stuff for google tracking-->
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-35182339-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+	
+    </script>
+</head>
+
+
+<script>
+$(document).ready(function(){
+  var ticks = ['Amygdaloid nucleus paracapsular intercalated cell', 'Basalis nucleus cholinergic neuron', 'Cerebellum granule cell', 'Colliculus superior intermediate vertical fusiform cell', 'Colliculus superior wide field vertical cell', 'Dorsal root ganglion cell', 'DRG temperature cell', 'Hippocampus CA1 pyramidal cell', 'Macula hair cell', 'Neocortex basket cell', 'Neocortex Cajal-Retzius cell', 'Neocortex Martinotti cell', 'Neostriatum cholinergic cell', 'Neostriatum medium spiny neuron', 'Other', 'Retina photoreceptor cone cell', 'Spinal cord intermediate horn motor neuron sympathetic', 'Substantia nigra pars compacta dopaminergic cell', 'Trigeminal nucleus motor neuron', 'Trigeminal nucleus principal cell', 'Ventral tegmental area dopamine neuron'];
+  var customRenderer; 
+  if (0 == 1){
+    customRenderer = $.jqplot.LogAxisRenderer;
+  }
+  else{
+    customRenderer = $.jqplot.canvasAxisTickRenderer;
+  }
+  var plot1b = $.jqplot('chart1', [[[4.9903686823036235, 1.8, 'Colliculus superior wide field vertical cell', 'Adaptive temporal integration of motion in direction-selective neurons</br>in macaque visual cortex.', 'Bair W; Movshon JA', 'J. Neurosci.', '2004', '11661'], [6.004997350371567, 23.1, 'Dorsal root ganglion cell', 'Chronic spontaneous activity generated in the somata of primary</br>nociceptors is associated with pain-related behavior after spinal cord</br>injury.', 'Bedi SS; Yang Q; Crook RJ; Du J; Wu Z; Fishman HM; Grill RJ; Carlton</br>SM; Walters ET', 'J. Neurosci.', '2010', '1704'], [5.996165994858393, 27.5, 'Dorsal root ganglion cell', 'Characteristics of sodium currents in rat geniculate ganglion neurons.', 'Nakamura S; Bradley RM', 'J. Neurophysiol.', '2011', '5495'], [5.981412921117412, 19.4, 'Dorsal root ganglion cell', 'Chronic spontaneous activity generated in the somata of primary</br>nociceptors is associated with pain-related behavior after spinal cord</br>injury.', 'Bedi SS; Yang Q; Crook RJ; Du J; Wu Z; Fishman HM; Grill RJ; Carlton</br>SM; Walters ET', 'J. Neurosci.', '2010', '1705'], [5.9903788927966675, 24.1, 'Dorsal root ganglion cell', 'Bladder overactivity and hyperexcitability of bladder afferent neurons</br>after intrathecal delivery of nerve growth factor in rats.', 'Yoshimura N; Bennett NE; Hayashi Y; Ogawa T; Nishizawa O; Chancellor</br>MB; de Groat WC; Seki S', 'J. Neurosci.', '2006', '2293'], [5.984451188542793, 22.0, 'Dorsal root ganglion cell', 'Distinct ASIC currents are expressed in rat putative nociceptors and</br>are modulated by nerve injury.', 'Poirot O; Berta T; Decosterd I; Kellenberger S', 'J. Physiol. (Lond.)', '2006', '7806'], [6.006203697153839, 34.1, 'Dorsal root ganglion cell', 'Bladder overactivity and hyperexcitability of bladder afferent neurons</br>after intrathecal delivery of nerve growth factor in rats.', 'Yoshimura N; Bennett NE; Hayashi Y; Ogawa T; Nishizawa O; Chancellor</br>MB; de Groat WC; Seki S', 'J. Neurosci.', '2006', '2293'], [5.994119394978809, 22.3, 'Dorsal root ganglion cell', 'Chronic spontaneous activity generated in the somata of primary</br>nociceptors is associated with pain-related behavior after spinal cord</br>injury.', 'Bedi SS; Yang Q; Crook RJ; Du J; Wu Z; Fishman HM; Grill RJ; Carlton</br>SM; Walters ET', 'J. Neurosci.', '2010', '1703'], [5.996426649692964, 28.9, 'Dorsal root ganglion cell', 'Heat-induced action potential discharges in nociceptive primary</br>sensory neurons of rats.', 'Greffrath W; Schwarz ST; B\xfcsselberg D; Treede RD', 'J. Neurophysiol.', '2009', '5487'], [6.984786560969827, 19.7, 'DRG temperature cell', 'A cold- and menthol-activated current in rat dorsal root ganglion</br>neurones: properties and role in cold transduction.', 'Reid G; Babes A; Pluteanu F', 'J. Physiol. (Lond.)', '2002', '7897'], [7.005097269965145, 21.4, 'DRG temperature cell', 'A cold- and menthol-activated current in rat dorsal root ganglion</br>neurones: properties and role in cold transduction.', 'Reid G; Babes A; Pluteanu F', 'J. Physiol. (Lond.)', '2002', '7897'], [7.005712949969545, 21.5, 'DRG temperature cell', 'A cold- and menthol-activated current in rat dorsal root ganglion</br>neurones: properties and role in cold transduction.', 'Reid G; Babes A; Pluteanu F', 'J. Physiol. (Lond.)', '2002', '7897'], [6.992370043621554, 21.5, 'DRG temperature cell', 'A cold- and menthol-activated current in rat dorsal root ganglion</br>neurones: properties and role in cold transduction.', 'Reid G; Babes A; Pluteanu F', 'J. Physiol. (Lond.)', '2002', '7897'], [8.00477299458718, 30.0, 'Hippocampus CA1 pyramidal cell', 'Dendritic excitability and neuronal morphology as determinants of</br>synaptic efficacy.', 'Komendantov AO; Ascoli GA', 'J. Neurophysiol.', '2009', '234'], [8.994367640354897, 2.7, 'Macula hair cell', 'Regeneration of vestibular otolith afferents after ototoxic damage.', 'Zakir M; Dickman JD', 'J. Neurosci.', '2006', '11862'], [10.985895547363263, 10.1, 'Neocortex Cajal-Retzius cell', 'Axonal projection, input and output synapses, and synaptic physiology</br>of Cajal-Retzius cells in the developing rat neocortex.', 'Radnikow G; Feldmeyer D; L\xfcbke J', 'J. Neurosci.', '2002', '2868']], [[1.0167196952256463, 19.8, 'Amygdaloid nucleus paracapsular intercalated cell', 'Different fear states engage distinct networks within the intercalated</br>cell clusters of the amygdala.', 'Busti D; Geracitano R; Whittle N; Dalezios Y; Ma?ko M; Kaufmann W;</br>S\xe4tzler K; Singewald N; Capogna M; Ferraguti F', 'J. Neurosci.', '2011', '1640'], [0.9925042139746816, 14.0, 'Amygdaloid nucleus paracapsular intercalated cell', 'Different fear states engage distinct networks within the intercalated</br>cell clusters of the amygdala.', 'Busti D; Geracitano R; Whittle N; Dalezios Y; Ma?ko M; Kaufmann W;</br>S\xe4tzler K; Singewald N; Capogna M; Ferraguti F', 'J. Neurosci.', '2011', '1640'], [2.0130319673982666, 15.9, 'Basalis nucleus cholinergic neuron (basal forebrain cholinergic</br>neuron)', 'Distribution and intrinsic membrane properties of basal forebrain</br>GABAergic and parvalbumin neurons in the mouse.', 'McKenna JT; Yang C; Franciosi S; Winston S; Abarr KK; Rigby MS;</br>Yanagawa Y; McCarley RW; Brown RE', 'J. Comp. Neurol.', '2013', '45994'], [1.9946792666417992, 35.3, 'Basalis nucleus cholinergic neuron (Basalis nucleus magnocellular</br>cholinergic neuron)', 'Physiological properties of cholinergic and non-cholinergic</br>magnocellular neurons in acute slices from adult mouse nucleus</br>basalis.', 'Hedrick T; Waters J', 'PLoS ONE', '2010', '41780'], [2.01009345582929, 15.8, 'Basalis nucleus cholinergic neuron (Basalis nucleus magnocellular</br>cholinergic neuron)', 'Physiological properties of cholinergic and non-cholinergic</br>magnocellular neurons in acute slices from adult mouse nucleus</br>basalis.', 'Hedrick T; Waters J', 'PLoS ONE', '2010', '41780'], [1.9978362485076606, 24.4, 'Basalis nucleus cholinergic neuron (basal forebrain cholinergic</br>neuron)', 'Distribution and intrinsic membrane properties of basal forebrain</br>GABAergic and parvalbumin neurons in the mouse.', 'McKenna JT; Yang C; Franciosi S; Winston S; Abarr KK; Rigby MS;</br>Yanagawa Y; McCarley RW; Brown RE', 'J. Comp. Neurol.', '2013', '45994'], [3.001007525202178, 7.4, 'Cerebellum granule cell', 'Maturation of EPSCs and intrinsic membrane properties enhances</br>precision at a cerebellar synapse.', 'Cathala L; Brickley S; Cull-Candy S; Farrant M', 'J. Neurosci.', '2003', '50024'], [3.006348506067946, 9.5, 'Cerebellum granule cell', 'Maturation of EPSCs and intrinsic membrane properties enhances</br>precision at a cerebellar synapse.', 'Cathala L; Brickley S; Cull-Candy S; Farrant M', 'J. Neurosci.', '2003', '50024'], [3.0148942749926095, 5.9, 'Cerebellum granule cell', 'Dendritic patch-clamp recordings from cerebellar granule cells</br>demonstrate electrotonic compactness.', 'Delvendahl I; Straub I; Hallermann S', 'Front Cell Neurosci', '2015', '27561'], [4.001421390948783, 11.79, 'Colliculus superior intermediate vertical fusiform cell (superior</br>colliculus intermediate grey layer  GFP-positive GABAergic</br>interneuron)', 'Organization of GABAergic inhibition in the motor output layer of the</br>superior colliculus.', 'Sooksawate T; Isa K; Behan M; Yanagawa Y; Isa T', 'Eur. J. Neurosci.', '2011', '19974'], [3.988092208780652, 15.89, 'Colliculus superior intermediate vertical fusiform cell (superior</br>colliculus intermediate grey layer commissural tectofugal projecting</br>GFP-positive GABAergic neuron)', 'Organization of GABAergic inhibition in the motor output layer of the</br>superior colliculus.', 'Sooksawate T; Isa K; Behan M; Yanagawa Y; Isa T', 'Eur. J. Neurosci.', '2011', '19974'], [5.999240311092084, 43.0, 'Dorsal root ganglion cell (Dorsal root ganglion Myelinated Cutaneous</br>Afferent Neuron)', 'Differential effects of NGF and BDNF on axotomy-induced changes in</br>GABA(A)-receptor-mediated conductance and sodium currents in cutaneous</br>afferent neurons.', 'Oyelese AA; Rizzo MA; Waxman SG; Kocsis JD', 'J. Neurophysiol.', '1997', '1383'], [5.9935730067162085, 40.0, 'Dorsal root ganglion cell (Salicylic acid?resistant transient lumbar</br>dorsal root ganglion neurons)', 'Identification and characterization of a subset of mouse sensory</br>neurons that express acid-sensing ion channel 3.', 'Lin YW; Min MY; Lin CC; Chen WN; Wu WL; Yu HM; Chen CC', 'Neuroscience', '2008', '21919'], [5.984834061598967, 51.7, 'Dorsal root ganglion cell', 'Similar electrophysiological changes in axotomized and neighboring</br>intact dorsal root ganglion neurons.', 'Ma C; Shu Y; Zheng Z; Chen Y; Yao H; Greenquist KW; White FA; LaMotte</br>RH', 'J. Neurophysiol.', '2003', '842'], [5.993001952135217, 38.9, 'Dorsal root ganglion cell', 'Chronic compression of mouse dorsal root ganglion alters voltage-gated</br>sodium and potassium currents in medium-sized dorsal root ganglion</br>neurons.', 'Fan N; Donnelly DF; LaMotte RH', 'J. Neurophysiol.', '2011', '41'], [5.987505871846264, 24.2, 'Dorsal root ganglion cell', 'Electrophysiological analysis of dorsal root ganglion neurons pre- and</br>post-coexpression of green fluorescent protein and functional 5-HT3</br>receptor.', 'Smith GM; Berry RL; Yang J; Tanelian D', 'J. Neurophysiol.', '1997', '5789'], [5.98686139604416, 41.2, 'Dorsal root ganglion cell (Salicylic acid? resistant sustained lumbar</br>dorsal root ganglion neurons)', 'Identification and characterization of a subset of mouse sensory</br>neurons that express acid-sensing ion channel 3.', 'Lin YW; Min MY; Lin CC; Chen WN; Wu WL; Yu HM; Chen CC', 'Neuroscience', '2008', '21919'], [6.008186103478591, 27.2, 'Dorsal root ganglion cell', 'Similar electrophysiological changes in axotomized and neighboring</br>intact dorsal root ganglion neurons.', 'Ma C; Shu Y; Zheng Z; Chen Y; Yao H; Greenquist KW; White FA; LaMotte</br>RH', 'J. Neurophysiol.', '2003', '842'], [6.013708771138127, 30.0, 'Dorsal root ganglion cell', 'Store-operated Ca2+ entry in sensory neurons: functional role and the</br>effect of painful nerve injury.', 'Gemes G; Bangaru ML; Wu HE; Tang Q; Weihrauch D; Koopmeiners AS;</br>Cruikshank JM; Kwok WM; Hogan QH', 'J. Neurosci.', '2011', '1648'], [6.013116615266068, 40.6, 'Dorsal root ganglion cell (No acid-evoked current lumbar root ganglion</br>neurons)', 'Identification and characterization of a subset of mouse sensory</br>neurons that express acid-sensing ion channel 3.', 'Lin YW; Min MY; Lin CC; Chen WN; Wu WL; Yu HM; Chen CC', 'Neuroscience', '2008', '21919'], [5.989851052628882, 39.6, 'Dorsal root ganglion cell', 'Similar electrophysiological changes in axotomized and neighboring</br>intact dorsal root ganglion neurons.', 'Ma C; Shu Y; Zheng Z; Chen Y; Yao H; Greenquist KW; White FA; LaMotte</br>RH', 'J. Neurophysiol.', '2003', '842'], [6.007114388814423, 29.0, 'Dorsal root ganglion cell', 'Distinctive neurophysiological properties of embryonic trigeminal and</br>geniculate neurons in culture.', 'Grigaliunas A; Bradley RM; MacCallum DK; Mistretta CM', 'J. Neurophysiol.', '2002', '895'], [5.994602998965405, 28.0, 'Dorsal root ganglion cell', 'Store-operated Ca2+ entry in sensory neurons: functional role and the</br>effect of painful nerve injury.', 'Gemes G; Bangaru ML; Wu HE; Tang Q; Weihrauch D; Koopmeiners AS;</br>Cruikshank JM; Kwok WM; Hogan QH', 'J. Neurosci.', '2011', '1648'], [6.0010606298401985, 23.5, 'Dorsal root ganglion cell (small dorsal root ganglion cell)', 'Modulation of action potential firing by iberiotoxin and NS1619 in rat</br>dorsal root ganglion neurons.', 'Zhang XF; Gopalakrishnan M; Shieh CC', 'Neuroscience', '2003', '21959'], [6.001284359033529, 40.1, 'Dorsal root ganglion cell', 'Hyperexcitability of axotomized and neighboring unaxotomized sensory</br>neurons is reduced days after perineural clonidine at the site of</br>injury.', 'Liu B; Eisenach JC', 'J. Neurophysiol.', '2005', '587'], [5.998990746926065, 32.3, 'Dorsal root ganglion cell (Trigeminal ganglion Long-duration AP</br>neuron)', 'Capsaicin inhibits activation of voltage-gated sodium currents in</br>capsaicin-sensitive trigeminal ganglion neurons.', 'Liu L; Oortgiesen M; Li L; Simon SA', 'J. Neurophysiol.', '2001', '1025'], [5.993605957249353, 28.96, 'Dorsal root ganglion cell', 'Enhanced excitability of sensory neurons in rats with cutaneous</br>hyperalgesia produced by chronic compression of the dorsal root</br>ganglion.', 'Zhang JM; Song XJ; LaMotte RH', 'J. Neurophysiol.', '1999', '1158'], [6.0065084562525115, 37.6, 'Dorsal root ganglion cell (medium dorsal root ganglion cell)', 'Modulation of action potential firing by iberiotoxin and NS1619 in rat</br>dorsal root ganglion neurons.', 'Zhang XF; Gopalakrishnan M; Shieh CC', 'Neuroscience', '2003', '21959'], [6.002981479423949, 39.6, 'Dorsal root ganglion cell', 'Hyperexcitability of axotomized and neighboring unaxotomized sensory</br>neurons is reduced days after perineural clonidine at the site of</br>injury.', 'Liu B; Eisenach JC', 'J. Neurophysiol.', '2005', '587'], [6.005549531651685, 27.0, 'Dorsal root ganglion cell', 'Subclassified acutely dissociated cells of rat DRG: histochemistry and</br>patterns of capsaicin-, proton-, and ATP-activated currents.', 'Petruska JC; Napaporn J; Johnson RD; Gu JG; Cooper BY', 'J. Neurophysiol.', '2000', '1073'], [5.990452365090302, 40.95, 'Dorsal root ganglion cell', 'Enhanced excitability of sensory neurons in rats with cutaneous</br>hyperalgesia produced by chronic compression of the dorsal root</br>ganglion.', 'Zhang JM; Song XJ; LaMotte RH', 'J. Neurophysiol.', '1999', '1158'], [5.996426467663398, 21.8, 'Dorsal root ganglion cell (Isolectin B(4)-negative peptidergic</br>neurons)', 'Isolectin B(4)-positive and -negative nociceptors are functionally</br>distinct.', 'Stucky CL; Lewin GR', 'J. Neurosci.', '1999', '3262'], [5.9888613192104225, 39.5, 'Dorsal root ganglion cell', 'Hyperexcitability of axotomized and neighboring unaxotomized sensory</br>neurons is reduced days after perineural clonidine at the site of</br>injury.', 'Liu B; Eisenach JC', 'J. Neurophysiol.', '2005', '587'], [5.9958050259435955, 20.1, 'Dorsal root ganglion cell (small dorsal root ganglion)', 'Dissociation of dorsal root ganglion neurons induces hyperexcitability</br>that is maintained by increased responsiveness to cAMP and cGMP.', 'Zheng JH; Walters ET; Song XJ', 'J. Neurophysiol.', '2007', '420'], [5.994164739725937, 54.81, 'Dorsal root ganglion cell', 'Enhanced excitability of sensory neurons in rats with cutaneous</br>hyperalgesia produced by chronic compression of the dorsal root</br>ganglion.', 'Zhang JM; Song XJ; LaMotte RH', 'J. Neurophysiol.', '1999', '1158'], [5.983016137136548, 23.6, 'Dorsal root ganglion cell (Isolectin B(4)-negative peptidergic</br>neurons)', 'Isolectin B(4)-positive and -negative nociceptors are functionally</br>distinct.', 'Stucky CL; Lewin GR', 'J. Neurosci.', '1999', '3262'], [5.991432138111439, 41.5, 'Dorsal root ganglion cell', 'Hyperexcitability of axotomized and neighboring unaxotomized sensory</br>neurons is reduced days after perineural clonidine at the site of</br>injury.', 'Liu B; Eisenach JC', 'J. Neurophysiol.', '2005', '587'], [5.999854535667163, 22.2, 'Dorsal root ganglion cell (Isolectin B(4)-positive nonpeptidergic</br>neurons)', 'Isolectin B(4)-positive and -negative nociceptors are functionally</br>distinct.', 'Stucky CL; Lewin GR', 'J. Neurosci.', '1999', '3262'], [5.997321250985874, 39.8, 'Dorsal root ganglion cell', 'Hyperexcitability of axotomized and neighboring unaxotomized sensory</br>neurons is reduced days after perineural clonidine at the site of</br>injury.', 'Liu B; Eisenach JC', 'J. Neurophysiol.', '2005', '587'], [6.010495083208501, 22.8, 'Dorsal root ganglion cell (Isolectin B(4)-positive nonpeptidergic</br>neurons)', 'Isolectin B(4)-positive and -negative nociceptors are functionally</br>distinct.', 'Stucky CL; Lewin GR', 'J. Neurosci.', '1999', '3262'], [6.014274634667401, 20.7, 'Dorsal root ganglion cell', 'A cold- and menthol-activated current in rat dorsal root ganglion</br>neurones: properties and role in cold transduction.', 'Reid G; Babes A; Pluteanu F', 'J. Physiol. (Lond.)', '2002', '7899'], [5.998172147731664, 54.6, 'Dorsal root ganglion cell (lumbar 4 and lumbar 5 dorsal root ganglion</br>large cell)', 'Hyperexcitability of axotomized and neighboring unaxotomized sensory</br>neurons is reduced days after perineural clonidine at the site of</br>injury.', 'Liu B; Eisenach JC', 'J. Neurophysiol.', '2005', '586'], [5.987213804114272, 23.6, 'Dorsal root ganglion cell', 'Increased excitability of afferent neurons innervating rat urinary</br>bladder after chronic bladder inflammation.', 'Yoshimura N; de Groat WC', 'J. Neurosci.', '1999', '3276'], [5.988790874453715, 38.1, 'Dorsal root ganglion cell (lumbar dorsal root ganglion neuron)', 'Identification and characterization of a subset of mouse sensory</br>neurons that express acid-sensing ion channel 3.', 'Lin YW; Min MY; Lin CC; Chen WN; Wu WL; Yu HM; Chen CC', 'Neuroscience', '2008', '21918'], [5.998943370098418, 40.0, 'Dorsal root ganglion cell (Salicylic acid sensitive lumbar dorsal root</br>ganglion neurons)', 'Identification and characterization of a subset of mouse sensory</br>neurons that express acid-sensing ion channel 3.', 'Lin YW; Min MY; Lin CC; Chen WN; Wu WL; Yu HM; Chen CC', 'Neuroscience', '2008', '21919'], [7.0014792781563795, 18.8, 'DRG temperature cell', 'A cold- and menthol-activated current in rat dorsal root ganglion</br>neurones: properties and role in cold transduction.', 'Reid G; Babes A; Pluteanu F', 'J. Physiol. (Lond.)', '2002', '7899'], [10.002400964825636, 202.0, 'Neocortex basket cell (Frontal Cortex Non-Pyramidal Parvalbumin</br>expressing, Gabaergic Fast Spiking Neuron)', 'Neurochemical features and synaptic connections of large</br>physiologically-identified GABAergic cells in the rat frontal cortex.', 'Kawaguchi Y; Kubota Y', 'Neuroscience', '1998', '22489'], [12.005310791861977, 223.0, 'Neocortex Martinotti cell (frontal cortex Layer 2/3 non-pyramidal</br>Somatostatin expressing, Gabaergic Regular Spiking Neuron)', 'Neurochemical features and synaptic connections of large</br>physiologically-identified GABAergic cells in the rat frontal cortex.', 'Kawaguchi Y; Kubota Y', 'Neuroscience', '1998', '22489'], [13.007325646195294, 11.0, 'Neostriatum cholinergic cell (Neostriatum aspiny fast-firing cell)', 'A telencephalic nucleus essential for song learning contains neurons</br>with physiological characteristics of both striatum and globus</br>pallidus.', 'Farries MA; Perkel DJ', 'J. Neurosci.', '2002', '2909'], [12.999026859165356, 19.0, 'Neostriatum cholinergic cell (neostriatium long-duration</br>afterhyperpolarization cholinergic cell)', 'A telencephalic nucleus essential for song learning contains neurons</br>with physiological characteristics of both striatum and globus</br>pallidus.', 'Farries MA; Perkel DJ', 'J. Neurosci.', '2002', '2909'], [13.0136928186669, 10.7, 'Neostriatum cholinergic cell (Neostriatum aspiny low-threshold spike</br>cholinergic cell)', 'A telencephalic nucleus essential for song learning contains neurons</br>with physiological characteristics of both striatum and globus</br>pallidus.', 'Farries MA; Perkel DJ', 'J. Neurosci.', '2002', '2909'], [12.980030071517982, 11.7, 'Neostriatum cholinergic cell (Neostriatum fast-spiking cell)', 'A telencephalic nucleus essential for song learning contains neurons</br>with physiological characteristics of both striatum and globus</br>pallidus.', 'Farries MA; Perkel DJ', 'J. Neurosci.', '2002', '2909'], [14.004894690762763, 7.6, 'Neostriatum medium spiny neuron', 'A telencephalic nucleus essential for song learning contains neurons</br>with physiological characteristics of both striatum and globus</br>pallidus.', 'Farries MA; Perkel DJ', 'J. Neurosci.', '2002', '2909'], [14.996702979147104, 19.0, 'Other (Trigeminal ganglion neurons)', 'Effects of familial hemiplegic migraine type 1 mutation T666M on</br>voltage-gated calcium channel activities in trigeminal ganglion</br>neurons.', 'Tao J; Liu P; Xiao Z; Zhao H; Gerber BR; Cao YQ', 'J. Neurophysiol.', '2012', '9'], [14.993774443488036, 265.0, 'Other (frontal cortex Layer 2/3 non-pyramidal cholecystokinin</br>Gabaergic Burst Spiking Neuron)', 'Neurochemical features and synaptic connections of large</br>physiologically-identified GABAergic cells in the rat frontal cortex.', 'Kawaguchi Y; Kubota Y', 'Neuroscience', '1998', '22489'], [14.991907140257286, 14.2, 'Other (Basal forebrain GAD67-expressing GABAergic small neurons)', 'Distribution and intrinsic membrane properties of basal forebrain</br>GABAergic and parvalbumin neurons in the mouse.', 'McKenna JT; Yang C; Franciosi S; Winston S; Abarr KK; Rigby MS;</br>Yanagawa Y; McCarley RW; Brown RE', 'J. Comp. Neurol.', '2013', '45994'], [14.988564638038786, 18.0, 'Other (basal forebrain GABAergic GAD67-expressing neurons receiving</br>inputs from prefrontal cortex)', 'Distribution and intrinsic membrane properties of basal forebrain</br>GABAergic and parvalbumin neurons in the mouse.', 'McKenna JT; Yang C; Franciosi S; Winston S; Abarr KK; Rigby MS;</br>Yanagawa Y; McCarley RW; Brown RE', 'J. Comp. Neurol.', '2013', '45994'], [15.008223960055567, 17.7, 'Other (Basal forebrain parvalbumin-expressing neurons)', 'Distribution and intrinsic membrane properties of basal forebrain</br>GABAergic and parvalbumin neurons in the mouse.', 'McKenna JT; Yang C; Franciosi S; Winston S; Abarr KK; Rigby MS;</br>Yanagawa Y; McCarley RW; Brown RE', 'J. Comp. Neurol.', '2013', '45994'], [14.990869166634981, 29.7, 'Other (Basalis nucleus magnocellular non-cholinergic neuron)', 'Physiological properties of cholinergic and non-cholinergic</br>magnocellular neurons in acute slices from adult mouse nucleus</br>basalis.', 'Hedrick T; Waters J', 'PLoS ONE', '2010', '41780'], [14.98152079970331, 13.7, 'Other (Basal forebrain large GABAergic GAD67-expressing neurons)', 'Distribution and intrinsic membrane properties of basal forebrain</br>GABAergic and parvalbumin neurons in the mouse.', 'McKenna JT; Yang C; Franciosi S; Winston S; Abarr KK; Rigby MS;</br>Yanagawa Y; McCarley RW; Brown RE', 'J. Comp. Neurol.', '2013', '45994'], [15.005389271829536, 20.1, 'Other (Cutaneous Sensory Neuron)', 'Cutaneous sensory neurons expressing the Mrgprd receptor sense</br>extracellular ATP and are putative nociceptors.', 'Dussor G; Zylka MJ; Anderson DJ; McCleskey EW', 'J. Neurophysiol.', '2008', '314'], [15.02168791239921, 9.7, 'Other (Basal forebrain GAD67-expressing GABAergic small neurons)', 'Distribution and intrinsic membrane properties of basal forebrain</br>GABAergic and parvalbumin neurons in the mouse.', 'McKenna JT; Yang C; Franciosi S; Winston S; Abarr KK; Rigby MS;</br>Yanagawa Y; McCarley RW; Brown RE', 'J. Comp. Neurol.', '2013', '45994'], [14.999244623728421, 12.0, 'Other (sensorimotor cortex sideways-oriented layer 2 pyramidal cells)', 'Morphological and electrophysiological properties of atypically</br>oriented layer 2 pyramidal cells of the juvenile rat neocortex.', 'van Brederode JF; Foehring RC; Spain WJ', 'Neuroscience', '2000', '24571'], [15.012413192727832, 32.8, 'Other (Petrosal Ganglia)', 'Biophysical properties and responses to neurotransmitters of petrosal</br>and geniculate ganglion neurons innervating the tongue.', 'Koga T; Bradley RM', 'J. Neurophysiol.', '2000', '1083'], [14.995211515201833, 11.8, 'Other (basal forebrain GABAergic GAD67-expressing neurons receiving</br>inputs from prefrontal cortex)', 'Distribution and intrinsic membrane properties of basal forebrain</br>GABAergic and parvalbumin neurons in the mouse.', 'McKenna JT; Yang C; Franciosi S; Winston S; Abarr KK; Rigby MS;</br>Yanagawa Y; McCarley RW; Brown RE', 'J. Comp. Neurol.', '2013', '45994'], [15.005479958448605, 31.8, 'Other (Geniculate Ganglia)', 'Biophysical properties and responses to neurotransmitters of petrosal</br>and geniculate ganglion neurons innervating the tongue.', 'Koga T; Bradley RM', 'J. Neurophysiol.', '2000', '1083'], [14.999573849330782, 29.9, 'Other (Dorsolateral pontine rostral subcoeruleus nucleus cholinergic</br>neurons )', 'Electrophysiological characterization of neurons in the dorsolateral</br>pontine rapid-eye-movement sleep induction zone of the rat: Intrinsic</br>membrane properties and responses to carbachol and orexins.', 'Brown RE; Winston S; Basheer R; Thakkar MM; McCarley RW', 'Neuroscience', '2006', '21280'], [15.00573164432131, 13.5, 'Other (Basalis nucleus magnocellular non-cholinergic neuron)', 'Physiological properties of cholinergic and non-cholinergic</br>magnocellular neurons in acute slices from adult mouse nucleus</br>basalis.', 'Hedrick T; Waters J', 'PLoS ONE', '2010', '41780'], [15.012188593074997, 14.2, 'Other (Dorsolateral pontine rostral subcoeruleus nucleus cholinergic</br>neurons )', 'Electrophysiological characterization of neurons in the dorsolateral</br>pontine rapid-eye-movement sleep induction zone of the rat: Intrinsic</br>membrane properties and responses to carbachol and orexins.', 'Brown RE; Winston S; Basheer R; Thakkar MM; McCarley RW', 'Neuroscience', '2006', '21280'], [15.009894465080516, 24.4, 'Other (Basal forebrain large GABAergic GAD67-expressing neurons)', 'Distribution and intrinsic membrane properties of basal forebrain</br>GABAergic and parvalbumin neurons in the mouse.', 'McKenna JT; Yang C; Franciosi S; Winston S; Abarr KK; Rigby MS;</br>Yanagawa Y; McCarley RW; Brown RE', 'J. Comp. Neurol.', '2013', '45994'], [14.973535822228035, 25.7, 'Other (Spinal Cord Motor Neuron)', 'Effect of prolonged riluzole exposure on cultured motoneurons in a</br>mouse model of ALS.', 'Schuster JE; Fu R; Siddique T; Heckman CJ', 'J. Neurophysiol.', '2012', '10762'], [15.000440988207501, 234.0, 'Other (frontal cortex Layer 2/3 non-pyramidal cholecystokinin regular</br>spiking neuron)', 'Neurochemical features and synaptic connections of large</br>physiologically-identified GABAergic cells in the rat frontal cortex.', 'Kawaguchi Y; Kubota Y', 'Neuroscience', '1998', '22489'], [15.015056348406222, 24.0, 'Other (Basal forebrain parvalbumin-expressing neurons)', 'Distribution and intrinsic membrane properties of basal forebrain</br>GABAergic and parvalbumin neurons in the mouse.', 'McKenna JT; Yang C; Franciosi S; Winston S; Abarr KK; Rigby MS;</br>Yanagawa Y; McCarley RW; Brown RE', 'J. Comp. Neurol.', '2013', '45994'], [15.997975686410967, 2.0, 'Retina photoreceptor cone cell', 'Chromatic properties of horizontal and ganglion cell responses follow</br>a dual gradient in cone opsin expression.', 'Yin L; Smith RG; Sterling P; Brainard DH', 'J. Neurosci.', '2006', '12828'], [16.003188023592134, 2.8, 'Retina photoreceptor cone cell', 'Chromatic properties of horizontal and ganglion cell responses follow</br>a dual gradient in cone opsin expression.', 'Yin L; Smith RG; Sterling P; Brainard DH', 'J. Neurosci.', '2006', '12828'], [17.01495864226984, 32.0, 'Spinal cord intermediate horn motor neuron sympathetic', 'Hyperexcitability of cultured spinal motoneurons from presymptomatic</br>ALS mice.', 'Kuo JJ; Schonewille M; Siddique T; Schults AN; Fu R; B\xe4r PR; Anelli R;</br>Heckman CJ; Kroese AB', 'J. Neurophysiol.', '2004', '771'], [17.99031415256984, 27.6, 'Substantia nigra pars compacta dopaminergic cell (Substantia nigra</br>pars compacta calbindin expressing dopaminergic cell )', 'I(h) channels contribute to the different functional properties of</br>identified dopaminergic subpopulations in the midbrain.', 'Neuhoff H; Neu A; Liss B; Roeper J', 'J. Neurosci.', '2002', '2930'], [18.006625296462925, 28.8, 'Substantia nigra pars compacta dopaminergic cell (Substantia nigra</br>pars compacta calbindin-negative dopaminergic cell )', 'I(h) channels contribute to the different functional properties of</br>identified dopaminergic subpopulations in the midbrain.', 'Neuhoff H; Neu A; Liss B; Roeper J', 'J. Neurosci.', '2002', '2930'], [18.98774204422764, 29.0, 'Trigeminal nucleus motor neuron', 'Nociceptive craniofacial muscle primary afferent neurons synapse in</br>both the rostral and caudal brain stem.', 'Dessem D; Moritani M; Ambalavanar R', 'J. Neurophysiol.', '2007', '11441'], [20.010411126326552, 20.3, 'Trigeminal nucleus principal cell', 'Functional analysis of a migraine-associated TRESK K+ channel</br>mutation.', 'Liu P; Xiao Z; Ren F; Guo Z; Chen Z; Zhao H; Cao YQ', 'J. Neurosci.', '2013', '46645'], [21.0066621998398, 20.9, 'Ventral tegmental area dopamine neuron (Ventral tegmental area</br>calbindin expressing dopaminergic neuron )', 'I(h) channels contribute to the different functional properties of</br>identified dopaminergic subpopulations in the midbrain.', 'Neuhoff H; Neu A; Liss B; Roeper J', 'J. Neurosci.', '2002', '2930'], [20.981874640395866, 26.8, 'Ventral tegmental area dopamine neuron (Ventral tegmental area</br>calbindin-negative dopaminergic cell)', 'I(h) channels contribute to the different functional properties of</br>identified dopaminergic subpopulations in the midbrain.', 'Neuhoff H; Neu A; Liss B; Roeper J', 'J. Neurosci.', '2002', '2930']]], {
+    title: "cell diameter",
+    series:[
+        {
+            showLine:false,
+            color:"#EAA228",
+        },
+        {
+            showLine:false,
+            color:"#4bb2c5",
+        }
+    ],
+    axesDefaults: {
+        tickRenderer: $.jqplot.CanvasAxisTickRenderer ,
+        tickOptions: {
+          fontSize: '12pt',
+          //formatString:'%.1f',
+        }
+        
+    },
+    axes: {
+      xaxis: {
+        renderer: $.jqplot.CategoryAxisRenderer,
+        ticks: ticks,
+        labelOptions:{
+            fontFamily: 'arial',
+        },
+        tickOptions: {
+          angle: -90,
+        }
+      },
+      yaxis: {
+        label: "um",
+        labelRenderer: $.jqplot.CanvasAxisLabelRenderer,
+        //renderer: $.jqplot.LogAxisRenderer,
+        renderer: customRenderer,
+        autoscale : true,
+        labelOptions:{
+            fontFamily: 'arial',
+            fontSize: '12pt',
+        },
+      },
+    },
+    highlighter: {
+        show: true,
+        sizeAdjust: 12,
+        tooltipAxes: 'y',
+        tooltipLocation: 'ne',
+        useAxesFormatters: false,
+        yvalues: 6,
+        formatString: '<table class="jqplot-highlighter"> \
+        <tr><td>Value:</td><td>%s (um)</td></tr> \
+        <tr><td>Neuron:</td><td>%s</td></tr> \
+        <tr><td>Title:</td><td>%s</td></tr> \
+        <tr><td>Authors:</td><td>%s</td></tr> \
+        <tr><td>Journal:</td><td>%s, %s</td></tr> \
+        </table>'
+    },
+    cursor:{
+        show: true, 
+        zoom: true,
+        looseZoom: true,
+        showTooltip:false, 
+        followMouse: true, 
+        showTooltipOutsideZoom: false, 
+        constrainOutsideZoom: false,
+    }, 
+/*    legend:{
+      show: true, 
+      location: 'n', 
+      placement: 'inside',
+      //marginLeft: 300,
+      labels: ['non-human curated', 'human curated'],
+    },*/
+  });
+  console.log(plot1b);
+    $('#chart1').bind('jqplotDataClick', 
+        function (ev, seriesIndex, pointIndex, data) {
+            var data_pt_ind = data[7];
+            var linkStr;
+            if (data_pt_ind < 0) // this is a hack to redirect non-data table ext data to the article page
+            {
+                linkStr = "/article/" + (-data_pt_ind);
+            }
+            else 
+            {
+                linkStr = "/data_table/" + data_pt_ind;
+            }
+            window.open(linkStr, '_self');
+            
+        }
+    );
+    // add id elements to corresponding neuron ticks based on the neuron id
+    
+        $(".jqplot-xaxis canvas")[0].id = 4;
+    
+        $(".jqplot-xaxis canvas")[1].id = 14;
+    
+        $(".jqplot-xaxis canvas")[2].id = 21;
+    
+        $(".jqplot-xaxis canvas")[3].id = 46;
+    
+        $(".jqplot-xaxis canvas")[4].id = 52;
+    
+        $(".jqplot-xaxis canvas")[5].id = 72;
+    
+        $(".jqplot-xaxis canvas")[6].id = 57;
+    
+        $(".jqplot-xaxis canvas")[7].id = 85;
+    
+        $(".jqplot-xaxis canvas")[8].id = 95;
+    
+        $(".jqplot-xaxis canvas")[9].id = 99;
+    
+        $(".jqplot-xaxis canvas")[10].id = 97;
+    
+        $(".jqplot-xaxis canvas")[11].id = 98;
+    
+        $(".jqplot-xaxis canvas")[12].id = 115;
+    
+        $(".jqplot-xaxis canvas")[13].id = 117;
+    
+        $(".jqplot-xaxis canvas")[14].id = 235;
+    
+        $(".jqplot-xaxis canvas")[15].id = 153;
+    
+        $(".jqplot-xaxis canvas")[16].id = 165;
+    
+        $(".jqplot-xaxis canvas")[17].id = 183;
+    
+        $(".jqplot-xaxis canvas")[18].id = 199;
+    
+        $(".jqplot-xaxis canvas")[19].id = 200;
+    
+        $(".jqplot-xaxis canvas")[20].id = 203;
+    
+
+    // function to keep x-axes active on zoom
+   $('#chart1').bind('jqplotZoom', function(ev, gridpos, datapos, plot, cursor){
+      resetXLabels();
+    });
+
+    // function to keep x-axes active after zoom out event
+   $('#chart1').bind('jqplotResetZoom', function(ev, gridpos, datapos, plot, cursor){
+      resetXLabels();
+    });
+
+   function resetXLabels(){
+      $(".jqplot-xaxis-tick")
+      .css({
+          cursor: "pointer",
+          zIndex: "1",
+      })
+      .click(function(){ 
+          var neuron_tick_id = $(this).attr('id');
+          var linkStr = "/neuron/" + neuron_tick_id;
+          window.open(linkStr, '_self');
+      })
+      .mouseenter(function(){ 
+          oldTop = $(this).css('top');
+          $(this).css({top: '10px'});
+      })
+      .mouseleave(function(){ 
+          $(this).css({top : oldTop});
+      });
+   }
+
+    //based on clicking an axis tick, open webpage corresponding to neuron id
+    resetXLabels();
+
+  // $("span.question").hover(function () {
+  //   $(this).append('<div class="tooltip"><p>Diameter of the cell soma</p></div>');
+  // }, function () {
+  //   $("div.tooltip").remove();
+  // });
+  $(".fancybox").fancybox();
+});
+</script>
+
+
+<div id="content">
+<body>
+	
+    <table align="center" width="1200px" class="logo_bar">
+        <tr>
+            <td class="logo_bar">
+                <div align="left">
+					
+					<a href="https://neuroelectro.org/">
+				    	<img src="https://web.archive.org/web/20240814232726im_/https://neuroelectro.org/static/src/neuroelectro_logo_3.png" id="logo">
+				    </a>
+				    
+                </div>
+            </td>
+            <td class="logo_bar">
+                <div align="right">
+                <a href="https://neuroelectro.org/publications">
+                NeuroElectro Publications</a> &nbsp;
+                <br>
+                
+                </div>
+                
+            </td>
+        </tr>
+    </table>
+
+    
+
+<html>
+
+<head>
+
+<!--<link rel="stylesheet" type="text/css" href="/static/src/local.css" />-->
+<link href="https://web.archive.org/web/20240814232726cs_/https://neuroelectro.org/static/src/SimpleNavBarStyles.css" rel="stylesheet" type="text/css">
+<script src="https://web.archive.org/web/20240814232726js_/https://neuroelectro.org/static/src/SimpleNavBarScripts.js" language="JavaScript" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+
+
+
+<!-- ############### #### Navigation Bar #### ############### -->
+
+
+<!-- main nav bar titles -->
+<!-- Note how the the closing angle bracket of each </a> tag runs up against the next <a> tag,
+      to avoid leaving a gap between each menu title and the next one. -->
+      
+<div class="mynavbar">
+
+<a class="navbartitle" id="t1" href="https://neuroelectro.org/" onmouseout="HideItem('about_submenu');" onmouseover="ShowItem('about_submenu');">About</a><a class="navbartitle" id="t2" href="https://neuroelectro.org/neuron/index" onmouseout="HideItem('neuron_submenu');" onmouseover="ShowItem('neuron_submenu');">Neuron Types</a><a class="navbartitle" id="t3" href="https://neuroelectro.org/ephys_prop/index">Electrophysiology Properties</a><a class="navbartitle" id="t4" href="https://neuroelectro.org/article/index">Articles</a><a class="navbartitle" id="t5" href="https://neuroelectro.org/faqs" onmouseout="HideItem('faqs_submenu');" onmouseover="ShowItem('faqs_submenu');">FAQs</a><a class="navbartitle" id="t6" href="https://neuroelectro.org/api/docs" onmouseout="HideItem('api_submenu');" onmouseover="ShowItem('api_submenu');">Data/API</a><a class="navbartitle" id="t7" href="https://neuroelectro.org/contribute">Get Involved</a>
+
+    
+    <!-- about sub-menu, shown as needed  -->
+<div class="submenu" id="about_submenu" onmouseover="ShowItem('about_submenu');" onmouseout="HideItem('about_submenu');">
+  <div class="submenubox">
+    <ul>
+      <li><a href="https://neuroelectro.org/publications" class="submenlink">Publications</a></li>
+      <!-- <li><a href="/citation_info" class="submenlink">How to Cite</a></li> -->
+      <li><a href="https://groups.google.com/forum/#!forum/neuroelectro" class="submenlink" target="_blank">Mailing List</a></li>
+      <li><a href="https://neuroelectro.org/contact_info" class="submenlink">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+    <!-- neuron sub-menu, shown as needed  -->
+<div class="submenu" id="neuron_submenu" onmouseover="ShowItem('neuron_submenu');" onmouseout="HideItem('neuron_submenu');">
+  <div class="submenubox">
+    <ul>
+      <li><a href="https://neuroelectro.org/neuron/index" class="submenlink">Neuron Listing</a></li>
+        <li><a href="https://neuroelectro.org/neuron_search" class="submenlink">Neuron Search</a></li>
+      <li><a href="https://neuroelectro.org/neuron/clustering" class="submenlink">Neuron Clustering</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- api sub-menu, shown as needed  -->
+
+<div class="submenu" id="api_submenu" onmouseover="ShowItem('api_submenu');" onmouseout="HideItem('api_submenu');">
+  <div class="submenubox">
+    <ul>
+      <li><a href="https://neuroelectro.org/api/docs" class="submenlink">API Documentation</a></li>
+      <!-- <li><a href='/static/src/neuroelectro_data_download.zip' class="submenlink" target="_blank">Data Download</a></li>  -->
+      <li><a href="https://neuroelectro.org/publications" class="submenlink">How to Cite</a></li>
+      <li><a href="https://groups.google.com/forum/#!forum/neuroelectro" class="submenlink" target="_blank">Ask a Question</a></li>
+      <li><a href="https://github.com/neuroelectro" class="submenlink" target="_blank">Code Repository (GitHub)</a></li>
+    </ul>
+  </div>
+</div>
+
+
+</div>
+
+<!-- ################## end of Navigation Bar ################### -->
+
+
+</body>
+</html>
+
+    
+
+    
+    
+<h1>cell diameter  
+<!--<span class="question_tooltip">?</span>-->
+</h1>
+
+<p>
+Common definition: Diameter of the cell soma </br>
+</p>
+
+<!--
+<h2>Synonyms of this ephys property: </h2>
+<ul>
+
+</ul>
+<h2>Units of this ephys property: </h2>
+<li></li>
+-->
+
+<h2>Electrophysiological values of <i>cell diameter</i> across neuron types from literature:</h2>
+  <table id="norm_criteria_button">
+  <tr>
+  <td>
+    <ul>
+    <lh>Standardization criteria:</lh>
+    <li> Values are unchanged from those reported. Refer to individual articles for definition and calculation methodology.</li>
+    <lh>Legend:</lh>
+    <li>Blue dots = text-mined values human curated; Orange dots = text-mined values not human curated </li>
+    <lh>Interactivity:</lh>
+    <li>Mouse over neuron report data points and click to view corresponding publication</li>
+    <li>Click on neuron name axis labels (e.g. Dentate gyrus granule cell) to view corresponding neuron page</li>
+    <li>Zoom in on a section of plot by dragging cursor. Zoom out by double clicking on plot.</li>
+    </ul>  
+  </td>
+  <td id="data_table_button">
+    <div style="text-align:center">
+      <a class="btn btn-large btn-info submit_button" href="https://neuroelectro.org/ephys_prop/11/data/"><i class="icon-th-list icon-white"></i>  View data in table form</i></a>
+      <br>
+        <a class="fancybox btn btn-large btn-danger submit_button" data-fancybox-type="iframe" href="https://neuroelectro.org/nedm_comment_box/"><i class="icon-thumbs-down icon-white"></i> Report miscurated data</i></a>
+      </div>
+  </td>
+
+  </tr>
+  </table>
+
+<div id="chart1" style="height:800px;width:1190px; "></div>
+
+
+</body>   
+</div>
+<div id="footer">
+<footer>
+    
+    <table align="center" width="1200px" class="footer_bar">
+        <tr>
+            <td class="footer_bar">
+                <p align="left">
+                    &copy; 2012-2016 <a href="https://twitter.com/neuronJoy" target="_blank">Shreejoy Tripathy</a> and
+                    <a href="http://rick.gerk.in/" target="_blank">Richard Gerkin</a>
+                    <br> 
+                    University of British Columbia and Arizona State University
+                    
+                    <!--<br>Funding: NIH, NIF, and the RK Mellon Foundation-->
+                    <br>
+                    Release Version 5.0
+                    <!--Optimized for Mozilla Firefox, Safari, and fast internet connections -->
+                </p>
+            </td>
+            <td class="footer_bar">
+                <p align="center">
+                
+                <p align="left">Not signed in <a class="btn btn-small btn-primary" href="https://neuroelectro.org/accounts/login?next=/ephys_prop/11/"><i class="icon-user icon-white"></i>  Log in</a></p>
+                
+                </p>
+
+            </td>
+            <td class="footer_bar">
+                <div class="funding_logo_container" align="right">
+                    <a href="http://www.cihr-irsc.gc.ca/e/193.html" class="funding_logo">
+                        <img src="https://web.archive.org/web/20240814232726im_/https://neuroelectro.org/static/src/cihr_logo_big_e.png" id="logo" width="100" height="40">
+                    </a>
+                    <a href="http://neurodevnet.ca/" class="funding_logo">
+                        <img src="https://web.archive.org/web/20240814232726im_/https://neuroelectro.org/static/src/NeuroDevNetLOGO.jpg" id="logo" width="100" height="40">
+                    </a>
+                    <a href="http://www.nih.gov/" class="funding_logo">
+                        <img src="https://web.archive.org/web/20240814232726im_/https://neuroelectro.org/static/src/nihMasterLogo.png" id="logo" width="100" height="40">
+                    </a>
+                    <p id="supported_by">Support provided by</p>
+                </div>
+
+            </td>
+        </tr>
+    </table>
+    
+</footer>
+</div>
+</html>
+<!--
+     FILE ARCHIVED ON 23:27:26 Aug 14, 2024 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 18:48:09 Jan 20, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.774
+  exclusion.robots: 0.037
+  exclusion.robots.policy: 0.022
+  esindex: 0.014
+  cdx.remote: 26.304
+  LoadShardBlock: 85.602 (3)
+  PetaboxLoader3.datanode: 118.031 (4)
+  load_resource: 390.39
+  PetaboxLoader3.resolve: 317.66
+-->

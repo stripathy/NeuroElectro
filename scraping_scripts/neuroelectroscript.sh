@@ -6,8 +6,8 @@ BASE_URL="https://web.archive.org/web/20240901182905/https://neuroelectro.org/ep
 # BASE_URL="https://web.archive.org/web/20151004071336/https://neuroelectro.org/neuron/"
 
 # Create the output directory if it doesn't exist
-mkdir -p electrodeArchiveGITFINAL
-cd electrodeArchiveGITFINAL || exit
+# mkdir -p electrodeArchiveGITFINAL
+# cd electrodeArchiveGITFINAL || exit
 # mkdir -p neuronArchiveGITFINAL
 # cd neuronArchiveGITFINAL || exit
 
@@ -35,13 +35,13 @@ cd electrodeArchiveGITFINAL || exit
 
 count=0  # Initialize a counter
 
-for i in {1..100}; do
+for i in {5..20}; do
     mkdir -p "$i"
 
     wget --user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
          --recursive --no-clobber --convert-links --page-requisites \
-         --no-parent -P "$i" "${BASE_URL}${i}/"
-
+         --no-parent -P "$i" "${BASE_URL}${i}/data/"
+    
     # if [[ ! -s "$i/$i.html" ]]; then
     #     echo "File $i.html is empty. Deleting..."
     #     rm -f "$i/$i.html"

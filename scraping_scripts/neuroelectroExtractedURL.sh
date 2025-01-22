@@ -1,10 +1,11 @@
 #!/bin/bash
 
 # Define directories for downloads
-# DATA_TABLE_DIR="/Users/hugohudson/Downloads/NeuroElectro-main-2/datatable/ephys_prop/"
-# ARTICLE_DIR="/Users/hugohudson/Downloads/NeuroElectro-main-2/article/ephys_prop/"
-DATA_TABLE_DIR="/Users/hugohudson/Downloads/NeuroElectro-main-2/datatable/neuron/"
-ARTICLE_DIR="/Users/hugohudson/Downloads/NeuroElectro-main-2/article/neuron/"
+
+# DATA_TABLE_DIR="/Users/hugohudson/Downloads/NeuroElectro-main-8/datatable/neuron2/"
+# ARTICLE_DIR="/Users/hugohudson/Downloads/NeuroElectro-main-8/article/neuron2/"
+DATA_TABLE_DIR="/Users/hugohudson/Downloads/NeuroElectro-main-8/datatable/ephys_prop2/"
+ARTICLE_DIR="/Users/hugohudson/Downloads/NeuroElectro-main-8/article/ephys_prop2/"
 
 # Create directories if they don't exist
 mkdir -p "$DATA_TABLE_DIR"
@@ -44,6 +45,6 @@ while IFS= read -r url; do
         echo "Downloaded $counter pages. Waiting for 5 minutes..."
         sleep 300
     fi
-done < urls.txt
+done < ephys_urls_finish.txt
 
 echo "Download complete!"

@@ -1,8 +1,8 @@
 #!/bin/bash
 
-BASE_URL="https://web.archive.org/web/20211205193428/https://neuroelectro.org/ephys_prop"
-DIR="/Users/hugohudson/Downloads/NeuroElectro-main-2/ephys_prop"
-DATA_DIR="/Users/hugohudson/Downloads/NeuroElectro-main-2/data/ephys"  # Folder for all downloads
+BASE_URL="https://web.archive.org/web/20211205193428/https://neuroelectro.org/neuron"
+DIR="/Users/hugohudson/Downloads/NeuroElectro-main-8/ephys_prop"
+DATA_DIR="/Users/hugohudson/Downloads/NeuroElectro-main-8/data2/ephys"  # Folder for all downloads
 count=0  # Initialize a counter
 
 # Create the data folder if it doesn't exist
