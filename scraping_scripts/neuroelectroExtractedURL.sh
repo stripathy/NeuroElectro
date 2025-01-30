@@ -2,10 +2,11 @@
 
 # Define directories for downloads
 
-# DATA_TABLE_DIR="/Users/hugohudson/Downloads/NeuroElectro-main-8/datatable/neuron2/"
-# ARTICLE_DIR="/Users/hugohudson/Downloads/NeuroElectro-main-8/article/neuron2/"
-DATA_TABLE_DIR="/Users/hugohudson/Downloads/NeuroElectro-main-8/datatable/ephys_prop2/"
-ARTICLE_DIR="/Users/hugohudson/Downloads/NeuroElectro-main-8/article/ephys_prop2/"
+
+# DATA_TABLE_DIR="/Users/hugohudson/Downloads/NeuroElectro-main-8/datatable/ephys_prop2/"
+# ARTICLE_DIR="/Users/hugohudson/Downloads/NeuroElectro-main-8/article/ephys_prop2/"
+DATA_TABLE_DIR="/Users/hugohudson/Downloads/NeuroElectro-main-8/datatable/neuron_new_fr/"
+ARTICLE_DIR="/Users/hugohudson/Downloads/NeuroElectro-main-8/article/neuron_new_fr/"
 
 # Create directories if they don't exist
 mkdir -p "$DATA_TABLE_DIR"
@@ -24,7 +25,6 @@ while IFS= read -r url; do
         continue
     fi
 
-    echo "File number: $id"
 
     # Determine the target directory
     if [[ $url == *"/data_table/"* ]]; then
@@ -45,6 +45,6 @@ while IFS= read -r url; do
         echo "Downloaded $counter pages. Waiting for 5 minutes..."
         sleep 300
     fi
-done < ephys_urls_finish.txt
+done < final_neuron_urls.txt
 
 echo "Download complete!"

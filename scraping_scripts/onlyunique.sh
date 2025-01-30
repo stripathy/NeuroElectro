@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Input file
-INPUT_FILE="ephys_urls.txt"
-OUTPUT_FILE="ephys_urls_unique.txt"
+INPUT_FILE="final_neuron_urls.txt"
+OUTPUT_FILE="final_neuron_urls_unique.txt"
 
 # Temporary file to store extracted last numbers and original URLs
 TEMP_FILE=$(mktemp)

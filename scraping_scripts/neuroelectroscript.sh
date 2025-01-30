@@ -2,8 +2,8 @@
 #!/bin/bash
 
 # Set base URL for Wayback Machine snapshot
-BASE_URL="https://web.archive.org/web/20240901182905/https://neuroelectro.org/ephys_prop/"
-# BASE_URL="https://web.archive.org/web/20151004071336/https://neuroelectro.org/neuron/"
+# BASE_URL="https://web.archive.org/web/20240901182905/https://neuroelectro.org/ephys_prop/"
+BASE_URL="https://web.archive.org/web/20151004071336/https://neuroelectro.org/neuron/"
 
 # Create the output directory if it doesn't exist
 # mkdir -p electrodeArchiveGITFINAL
