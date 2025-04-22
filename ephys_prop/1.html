@@ -214,11 +214,11 @@ $(document).ready(function(){
             var linkStr;
             if (data_pt_ind < 0) // this is a hack to redirect non-data table ext data to the article page
             {
-                linkStr = "/article/" + (-data_pt_ind);
+                linkStr = "/article/ephys_prop/" + (-data_pt_ind)  + ".html";
             }
             else 
             {
-                linkStr = "/data_table/" + data_pt_ind;
+                linkStr = "/data_table/ephys_prop/" + data_pt_ind + ".html";
             }
             window.location.href = linkStr;
             
