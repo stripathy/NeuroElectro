@@ -214,13 +214,13 @@ $(document).ready(function(){
             var linkStr;
             if (data_pt_ind < 0) // this is a hack to redirect non-data table ext data to the article page
             {
-                linkStr = "/article/" + (-data_pt_ind);
+                linkStr = "/article/ephys_prop/" + (-data_pt_ind)  + ".html";
             }
             else 
             {
-                linkStr = "/data_table/" + data_pt_ind;
+                linkStr = "/datatable/ephys_prop/" + data_pt_ind + ".html";
             }
-            window.open(linkStr, '_self');
+            window.location.href = linkStr;
             
         }
     );
@@ -295,8 +295,8 @@ $(document).ready(function(){
       })
       .click(function(){ 
           var neuron_tick_id = $(this).attr('id');
-          var linkStr = "/neuron/" + neuron_tick_id;
-          window.open(linkStr, '_self');
+          var linkStr = "/neuron/" + neuron_tick_id + ".html";
+          window.location.href = linkStr;
       })
       .mouseenter(function(){ 
           oldTop = $(this).css('top');

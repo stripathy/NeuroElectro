@@ -383,8 +383,8 @@ $(document).ready(function(){
       })
       .click(function(){ 
           var neuron_tick_id = $(this).attr('id');
-          var linkStr = "/neuron/" + neuron_tick_id;
-          window.open(linkStr, '_self');
+          var linkStr = "/neuron/" + neuron_tick_id + ".html";
+          window.location.href = linkStr;
       })
       .mouseenter(function(){ 
           oldTop = $(this).css('top');
