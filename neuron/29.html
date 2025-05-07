@@ -278,19 +278,19 @@ $(document).ready(function(){
                         var linkStr;
                         if (data_pt_ind < 0) // this is a hack to redirect non-data table ext data to the article page
                         {
-                            linkStr = "/article/" + (-data_pt_ind);
+                            linkStr = "/article/neuron" + (-data_pt_ind) + ".html";
                         }
                         else 
                         {
-                            linkStr = "/data_table/" + data_pt_ind;
+                            linkStr = "/data_table/neuron/" + data_pt_ind + ".html";
                         }
-                        window.open(linkStr, '_self');
+                        window.location.href = linkStr
                     }
                 else
                     {
                         var data_pt_ind = data[4];
-                        var linkStr = "/ephys_prop/" + data_pt_ind;
-                        window.open(linkStr, '_self');                    
+                        var linkStr = "/ephys_prop/" + data_pt_ind + ".html";
+                        window.location.href = linkStr;                    
                     }
                 
                 
@@ -451,19 +451,19 @@ $(document).ready(function(){
                         var linkStr;
                         if (data_pt_ind < 0) // this is a hack to redirect non-data table ext data to the article page
                         {
-                            linkStr = "/article/" + (-data_pt_ind);
+                            linkStr = "/article/neuron" + (-data_pt_ind) + ".html";
                         }
                         else 
                         {
-                            linkStr = "/data_table/" + data_pt_ind;
+                            linkStr = "/data_table/neuron/" + data_pt_ind + ".html";
                         }
-                        window.open(linkStr, '_self');
+                        window.location.href = linkStr
                     }
                 else
                     {
                         var data_pt_ind = data[4];
-                        var linkStr = "/ephys_prop/" + data_pt_ind;
-                        window.open(linkStr, '_self');                    
+                        var linkStr = "/ephys_prop/" + data_pt_ind + ".html";
+                        window.location.href = linkStr;                    
                     }
                 
                 
@@ -624,19 +624,19 @@ $(document).ready(function(){
                         var linkStr;
                         if (data_pt_ind < 0) // this is a hack to redirect non-data table ext data to the article page
                         {
-                            linkStr = "/article/" + (-data_pt_ind);
+                            linkStr = "/article/neuron" + (-data_pt_ind) + ".html";
                         }
                         else 
                         {
-                            linkStr = "/data_table/" + data_pt_ind;
+                            linkStr = "/data_table/neuron/" + data_pt_ind + ".html";
                         }
-                        window.open(linkStr, '_self');
+                        window.location.href = linkStr
                     }
                 else
                     {
                         var data_pt_ind = data[4];
-                        var linkStr = "/ephys_prop/" + data_pt_ind;
-                        window.open(linkStr, '_self');                    
+                        var linkStr = "/ephys_prop/" + data_pt_ind + ".html";
+                        window.location.href = linkStr;                    
                     }
                 
                 
@@ -799,19 +799,19 @@ $(document).ready(function(){
                         var linkStr;
                         if (data_pt_ind < 0) // this is a hack to redirect non-data table ext data to the article page
                         {
-                            linkStr = "/article/" + (-data_pt_ind);
+                            linkStr = "/article/neuron" + (-data_pt_ind) + ".html";
                         }
                         else 
                         {
-                            linkStr = "/data_table/" + data_pt_ind;
+                            linkStr = "/data_table/neuron/" + data_pt_ind + ".html";
                         }
-                        window.open(linkStr, '_self');
+                        window.location.href = linkStr
                     }
                 else
                     {
                         var data_pt_ind = data[4];
-                        var linkStr = "/ephys_prop/" + data_pt_ind;
-                        window.open(linkStr, '_self');                    
+                        var linkStr = "/ephys_prop/" + data_pt_ind + ".html";
+                        window.location.href = linkStr;                    
                     }
                 
                 
@@ -974,19 +974,19 @@ $(document).ready(function(){
                         var linkStr;
                         if (data_pt_ind < 0) // this is a hack to redirect non-data table ext data to the article page
                         {
-                            linkStr = "/article/" + (-data_pt_ind);
+                            linkStr = "/article/neuron" + (-data_pt_ind) + ".html";
                         }
                         else 
                         {
-                            linkStr = "/data_table/" + data_pt_ind;
+                            linkStr = "/data_table/neuron/" + data_pt_ind + ".html";
                         }
-                        window.open(linkStr, '_self');
+                        window.location.href = linkStr
                     }
                 else
                     {
                         var data_pt_ind = data[4];
-                        var linkStr = "/ephys_prop/" + data_pt_ind;
-                        window.open(linkStr, '_self');                    
+                        var linkStr = "/ephys_prop/" + data_pt_ind + ".html";
+                        window.location.href = linkStr;                    
                     }
                 
                 
@@ -1147,19 +1147,19 @@ $(document).ready(function(){
                         var linkStr;
                         if (data_pt_ind < 0) // this is a hack to redirect non-data table ext data to the article page
                         {
-                            linkStr = "/article/" + (-data_pt_ind);
+                            linkStr = "/article/neuron" + (-data_pt_ind) + ".html";
                         }
                         else 
                         {
-                            linkStr = "/data_table/" + data_pt_ind;
+                            linkStr = "/data_table/neuron/" + data_pt_ind + ".html";
                         }
-                        window.open(linkStr, '_self');
+                        window.location.href = linkStr
                     }
                 else
                     {
                         var data_pt_ind = data[4];
-                        var linkStr = "/ephys_prop/" + data_pt_ind;
-                        window.open(linkStr, '_self');                    
+                        var linkStr = "/ephys_prop/" + data_pt_ind + ".html";
+                        window.location.href = linkStr;                    
                     }
                 
                 
@@ -1183,8 +1183,8 @@ $(document).ready(function(){
     })
     .click(function(){ 
         var ephys_label_id = $(this).attr('id');
-        var linkStr = "/ephys_prop/" + ephys_label_id;
-        window.open(linkStr, '_self');
+        var linkStr = "/ephys_prop/" + ephys_label_id + ".html";
+        window.location.href = linkStr;
     })
     .tooltip({
         track: true,
@@ -1233,8 +1233,8 @@ $(document).ready(function(){
     })
     .click(function(){ 
         var ephys_label_id = $(this).attr('id');
-        var linkStr = "/ephys_prop/" + ephys_label_id;
-        window.open(linkStr, '_self');
+        var linkStr = "/ephys_prop/" + ephys_label_id + ".html";
+        window.location.href = linkStr;
     })
     .tooltip({
         track: true,

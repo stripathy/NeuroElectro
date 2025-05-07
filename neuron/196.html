@@ -141,8 +141,8 @@ $(document).ready(function(){
     })
     .click(function(){ 
         var ephys_label_id = $(this).attr('id');
-        var linkStr = "/ephys_prop/" + ephys_label_id;
-        window.open(linkStr, '_self');
+        var linkStr = "/ephys_prop/" + ephys_label_id + ".html";
+        window.location.href = linkStr;
     })
     .tooltip({
         track: true,
@@ -191,8 +191,8 @@ $(document).ready(function(){
     })
     .click(function(){ 
         var ephys_label_id = $(this).attr('id');
-        var linkStr = "/ephys_prop/" + ephys_label_id;
-        window.open(linkStr, '_self');
+        var linkStr = "/ephys_prop/" + ephys_label_id + ".html";
+        window.location.href = linkStr;
     })
     .tooltip({
         track: true,
